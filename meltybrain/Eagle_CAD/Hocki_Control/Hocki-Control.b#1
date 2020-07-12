@@ -57,8 +57,12 @@
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
 <layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="53" name="tGND_GNDA" color="7" fill="1" visible="no" active="no"/>
+<layer number="54" name="bGND_GNDA" color="7" fill="1" visible="no" active="no"/>
+<layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
 <layer number="88" name="SimResults" color="9" fill="1" visible="no" active="no"/>
 <layer number="89" name="SimProbes" color="9" fill="1" visible="no" active="no"/>
 <layer number="90" name="Modules" color="5" fill="1" visible="no" active="no"/>
@@ -70,6 +74,48 @@
 <layer number="96" name="Values" color="7" fill="1" visible="no" active="no"/>
 <layer number="97" name="Info" color="7" fill="1" visible="no" active="no"/>
 <layer number="98" name="Guide" color="6" fill="1" visible="no" active="no"/>
+<layer number="100" name="Muster" color="7" fill="1" visible="no" active="yes"/>
+<layer number="101" name="Patch_Top" color="7" fill="1" visible="no" active="yes"/>
+<layer number="102" name="Vscore" color="7" fill="1" visible="no" active="yes"/>
+<layer number="103" name="tMap" color="7" fill="1" visible="no" active="yes"/>
+<layer number="104" name="Name" color="7" fill="1" visible="no" active="yes"/>
+<layer number="105" name="tPlate" color="7" fill="1" visible="no" active="yes"/>
+<layer number="106" name="bPlate" color="7" fill="1" visible="no" active="yes"/>
+<layer number="107" name="Crop" color="7" fill="1" visible="no" active="yes"/>
+<layer number="116" name="Patch_BOT" color="7" fill="1" visible="no" active="yes"/>
+<layer number="121" name="_tsilk" color="7" fill="1" visible="no" active="yes"/>
+<layer number="122" name="_bsilk" color="7" fill="1" visible="no" active="yes"/>
+<layer number="125" name="_tNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="144" name="Drill_legend" color="7" fill="1" visible="no" active="yes"/>
+<layer number="151" name="HeatSink" color="7" fill="1" visible="no" active="yes"/>
+<layer number="199" name="Contour" color="7" fill="1" visible="no" active="yes"/>
+<layer number="201" name="201bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="202" name="202bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="203" name="203bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="204" name="204bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="205" name="205bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="206" name="206bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="207" name="207bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="208" name="208bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="209" name="209bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="210" name="210bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="211" name="211bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="212" name="212bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="213" name="213bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="214" name="214bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="215" name="215bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="216" name="216bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="217" name="217bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="218" name="218bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="219" name="219bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="220" name="220bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="221" name="221bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="222" name="222bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="223" name="223bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="224" name="224bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="250" name="Descript" color="7" fill="1" visible="no" active="yes"/>
+<layer number="251" name="SMDround" color="7" fill="1" visible="no" active="yes"/>
+<layer number="254" name="cooling" color="7" fill="1" visible="no" active="yes"/>
 </layers>
 <board>
 <plain>
@@ -79,6 +125,81 @@
 <wire x1="0" y1="100" x2="0" y2="0" width="0" layer="20"/>
 </plain>
 <libraries>
+<library name="Hocki_library">
+<packages>
+<package name="TEENSY_4.1">
+<pad name="GND1" x="-7.24" y="30" drill="1.016"/>
+<pad name="0" x="-7.24" y="27.46" drill="1.016"/>
+<pad name="1" x="-7.24" y="24.92" drill="1.016"/>
+<pad name="2" x="-7.24" y="22.38" drill="1.016"/>
+<pad name="3" x="-7.24" y="19.84" drill="1.016"/>
+<pad name="4" x="-7.24" y="17.3" drill="1.016"/>
+<pad name="5" x="-7.24" y="14.76" drill="1.016"/>
+<pad name="6" x="-7.24" y="12.22" drill="1.016"/>
+<pad name="7" x="-7.24" y="9.68" drill="1.016"/>
+<pad name="8" x="-7.24" y="7.14" drill="1.016"/>
+<pad name="9" x="-7.24" y="4.6" drill="1.016"/>
+<pad name="10" x="-7.24" y="2.06" drill="1.016"/>
+<pad name="11" x="-7.24" y="-0.48" drill="1.016"/>
+<pad name="12" x="-7.24" y="-3.02" drill="1.016"/>
+<pad name="3.3V1" x="-7.24" y="-5.56" drill="1.016"/>
+<pad name="24" x="-7.24" y="-8.1" drill="1.016"/>
+<pad name="25" x="-7.24" y="-10.64" drill="1.016"/>
+<pad name="26" x="-7.24" y="-13.18" drill="1.016"/>
+<pad name="27" x="-7.24" y="-15.72" drill="1.016"/>
+<pad name="28" x="-7.24" y="-18.26" drill="1.016"/>
+<pad name="29" x="-7.24" y="-20.8" drill="1.016"/>
+<pad name="30" x="-7.24" y="-23.34" drill="1.016"/>
+<pad name="31" x="-7.24" y="-25.88" drill="1.016"/>
+<pad name="32" x="-7.24" y="-28.42" drill="1.016"/>
+<pad name="33" x="7.24" y="-28.42" drill="1.016"/>
+<pad name="34" x="7.24" y="-25.88" drill="1.016"/>
+<pad name="35" x="7.24" y="-23.34" drill="1.016"/>
+<pad name="36" x="7.24" y="-20.8" drill="1.016"/>
+<pad name="37" x="7.24" y="-18.26" drill="1.016"/>
+<pad name="38" x="7.24" y="-15.72" drill="1.016"/>
+<pad name="39" x="7.24" y="-13.18" drill="1.016"/>
+<pad name="40" x="7.24" y="-10.64" drill="1.016"/>
+<pad name="41" x="7.24" y="-8.1" drill="1.016"/>
+<pad name="GND3" x="7.24" y="-5.56" drill="1.016"/>
+<pad name="13" x="7.24" y="-3.02" drill="1.016"/>
+<pad name="14" x="7.24" y="-0.48" drill="1.016"/>
+<pad name="15" x="7.24" y="2.06" drill="1.016"/>
+<pad name="16" x="7.24" y="4.6" drill="1.016"/>
+<pad name="17" x="7.24" y="7.14" drill="1.016"/>
+<pad name="18" x="7.24" y="9.68" drill="1.016"/>
+<pad name="19" x="7.24" y="12.22" drill="1.016"/>
+<pad name="20" x="7.24" y="14.76" drill="1.016"/>
+<pad name="21" x="7.24" y="17.3" drill="1.016"/>
+<pad name="22" x="7.24" y="19.84" drill="1.016"/>
+<pad name="23" x="7.24" y="22.38" drill="1.016"/>
+<pad name="3.3V2" x="7.24" y="24.92" drill="1.016"/>
+<pad name="GND2" x="7.24" y="27.46" drill="1.016"/>
+<pad name="5V" x="7.24" y="30" drill="1.016"/>
+<wire x1="-8.9" y1="31.5" x2="-4" y2="31.5" width="0.127" layer="21"/>
+<wire x1="-4" y1="31.5" x2="4" y2="31.5" width="0.127" layer="21"/>
+<wire x1="4" y1="31.5" x2="8.9" y2="31.5" width="0.127" layer="21"/>
+<wire x1="8.9" y1="31.5" x2="8.9" y2="-29.5" width="0.127" layer="21"/>
+<wire x1="8.9" y1="-29.5" x2="6.3" y2="-29.5" width="0.127" layer="21"/>
+<wire x1="6.24" y1="-29.5" x2="-8.9" y2="-29.5" width="0.127" layer="21"/>
+<wire x1="-8.9" y1="-29.5" x2="-8.9" y2="31.5" width="0.127" layer="21"/>
+<text x="-9" y="32" size="1" layer="25" font="vector">&gt;NAME</text>
+<text x="-9" y="-31" size="1" layer="27" font="vector" align="top-left">&gt;VALUE</text>
+<wire x1="-6.24" y1="-17.7" x2="-6.24" y2="-29.5" width="0.127" layer="21"/>
+<wire x1="6.3" y1="-29.5" x2="6.24" y2="-29.5" width="0.127" layer="21"/>
+<wire x1="6.24" y1="-29.5" x2="6.24" y2="-17.7" width="0.127" layer="21"/>
+<wire x1="6.24" y1="-17.7" x2="-6.24" y2="-17.7" width="0.127" layer="21"/>
+<wire x1="-6.24" y1="-29.5" x2="-5" y2="-29.5" width="0.127" layer="21"/>
+<wire x1="-5" y1="-29.5" x2="-5" y2="-28" width="0.127" layer="21"/>
+<wire x1="-5" y1="-28" x2="5" y2="-28" width="0.127" layer="21"/>
+<wire x1="5" y1="-28" x2="5" y2="-29.5" width="0.127" layer="21"/>
+<wire x1="5" y1="-29.5" x2="6.24" y2="-29.5" width="0.127" layer="21"/>
+<wire x1="-4" y1="31.5" x2="-4" y2="33.1" width="0.127" layer="21"/>
+<wire x1="-4" y1="33.1" x2="4" y2="33.1" width="0.127" layer="21"/>
+<wire x1="4" y1="33.1" x2="4" y2="31.5" width="0.127" layer="21"/>
+</package>
+</packages>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -272,6 +393,11 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
+<element name="U1" library="Hocki_library" package="TEENSY_4.1" value="TEENSY_4.1" x="-10.16" y="33.02" smashed="yes">
+<attribute name="DKPN" value="1568-DEV-16771-ND" x="-10.16" y="33.02" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="-19.16" y="65.02" size="1" layer="25" font="vector"/>
+<attribute name="VALUE" x="-19.16" y="2.02" size="1" layer="27" font="vector" align="top-left"/>
+</element>
 </elements>
 <signals>
 </signals>
