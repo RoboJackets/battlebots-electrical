@@ -1,0 +1,5 @@
+*
+!*.lbr
+!*.sch
+!*.brd
+!.gitignore
