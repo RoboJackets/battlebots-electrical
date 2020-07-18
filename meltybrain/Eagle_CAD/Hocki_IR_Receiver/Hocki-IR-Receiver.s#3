@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
@@ -162,7 +162,7 @@
 </layers>
 <schematic xreflabel="%F%N/%S.%C%R" xrefpart="/%S.%C%R">
 <libraries>
-<library name="Hocki_library">
+<library name="Hocki_Library">
 <packages>
 <package name="8-VSSOP">
 <smd name="1" x="-2.2" y="0.975" dx="1.45" dy="0.45" layer="1"/>
@@ -9491,7 +9491,7 @@ Source: AVX .. aphvc.pdf</description>
 </class>
 </classes>
 <parts>
-<part name="U1" library="Hocki_library" deviceset="OPA2380AIDGKR" device=""/>
+<part name="U1" library="Hocki_Library" deviceset="OPA2380AIDGKR" device=""/>
 <part name="R1" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="10M"/>
 <part name="R2" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="1M"/>
 <part name="SUPPLY1" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="1.0V" device=""/>
@@ -9502,11 +9502,11 @@ Source: AVX .. aphvc.pdf</description>
 <part name="GND2" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
 <part name="R5" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="50"/>
 <part name="R6" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="50"/>
-<part name="D1" library="Hocki_library" deviceset="RB521S30T1G" device=""/>
+<part name="D1" library="Hocki_Library" deviceset="RB521S30T1G" device=""/>
 <part name="C1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="50n"/>
 <part name="R7" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="30k"/>
 <part name="GND6" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="U2" library="Hocki_library" deviceset="OPA2380AIDGKR" device=""/>
+<part name="U2" library="Hocki_Library" deviceset="OPA2380AIDGKR" device=""/>
 <part name="R8" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="100k"/>
 <part name="R9" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="10k"/>
 <part name="SUPPLY3" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="1.0V" device=""/>
@@ -9517,34 +9517,34 @@ Source: AVX .. aphvc.pdf</description>
 <part name="GND4" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
 <part name="R12" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="50"/>
 <part name="R13" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="50"/>
-<part name="D2" library="Hocki_library" deviceset="RB521S30T1G" device=""/>
+<part name="D2" library="Hocki_Library" deviceset="RB521S30T1G" device=""/>
 <part name="C4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="50n"/>
 <part name="R14" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="30k"/>
 <part name="GND5" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
 <part name="C2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.5p"/>
 <part name="C3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="2p"/>
-<part name="D3" library="Hocki_library" deviceset="RB521S30T1G" device=""/>
+<part name="D3" library="Hocki_Library" deviceset="RB521S30T1G" device=""/>
 <part name="C5" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="50n"/>
 <part name="R15" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="30k"/>
 <part name="GND7" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="U5" library="Hocki_library" deviceset="SN74LVC1G58DCKR" device=""/>
-<part name="U6" library="Hocki_library" deviceset="NL27WZ32USG" device=""/>
-<part name="U3" library="Hocki_library" deviceset="TLV3502AIDCNR" device=""/>
-<part name="U4" library="Hocki_library" deviceset="TLV3502AIDCNR" device=""/>
+<part name="U5" library="Hocki_Library" deviceset="SN74LVC1G58DCKR" device=""/>
+<part name="U6" library="Hocki_Library" deviceset="NL27WZ32USG" device=""/>
+<part name="U3" library="Hocki_Library" deviceset="TLV3502AIDCNR" device=""/>
+<part name="U4" library="Hocki_Library" deviceset="TLV3502AIDCNR" device=""/>
 <part name="SUPPLY5" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="1.0V" device=""/>
 <part name="SUPPLY6" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="1.0V" device=""/>
 <part name="GND8" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
 <part name="GND9" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
 <part name="SUPPLY7" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="SUPPLY8" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
-<part name="R16" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="10k"/>
+<part name="R16" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="500"/>
 <part name="GND10" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
 <part name="GND11" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
 <part name="GND12" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
 <part name="SUPPLY9" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="GND13" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
 <part name="SUPPLY10" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
-<part name="U7" library="Hocki_library" deviceset="TMUX1204DGSR" device=""/>
+<part name="U7" library="Hocki_Library" deviceset="TMUX1204DGSR" device=""/>
 <part name="R17" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="100"/>
 <part name="R18" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="300"/>
 <part name="GND14" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
@@ -9552,8 +9552,8 @@ Source: AVX .. aphvc.pdf</description>
 <part name="R20" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="300"/>
 <part name="SUPPLY11" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="GND15" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="U8" library="Hocki_library" deviceset="LP38693MP-5.0/NOPB" device=""/>
-<part name="U9" library="Hocki_library" deviceset="TLV73310PDBVT" device=""/>
+<part name="U8" library="Hocki_Library" deviceset="LP38693MP-5.0/NOPB" device=""/>
+<part name="U9" library="Hocki_Library" deviceset="TLV73310PDBVT" device=""/>
 <part name="SUPPLY12" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="VIN" device=""/>
 <part name="SUPPLY13" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="GND16" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
@@ -9565,13 +9565,13 @@ Source: AVX .. aphvc.pdf</description>
 <part name="GND18" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
 <part name="GND19" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
 <part name="SUPPLY14" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="1.0V" device=""/>
-<part name="U10" library="Hocki_library" deviceset="LMH6612MAX/NOPB" device=""/>
-<part name="U11" library="Hocki_library" deviceset="LMH6612MAX/NOPB" device=""/>
+<part name="U10" library="Hocki_Library" deviceset="LMH6612MAX/NOPB" device=""/>
+<part name="U11" library="Hocki_Library" deviceset="LMH6612MAX/NOPB" device=""/>
 <part name="SUPPLY15" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="GND20" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
 <part name="SUPPLY16" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="GND21" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="R21" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="10k"/>
+<part name="R21" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="500"/>
 <part name="GND22" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
 <part name="GND23" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
 <part name="R22" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="10k"/>
@@ -9597,10 +9597,15 @@ Source: AVX .. aphvc.pdf</description>
 <part name="GND30" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
 <part name="C18" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1u"/>
 <part name="GND31" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="D4" library="Hocki_library" deviceset="TEFD4300F" device=""/>
-<part name="D5" library="Hocki_library" deviceset="TEFD4300F" device=""/>
-<part name="D6" library="Hocki_library" deviceset="TEFD4300F" device=""/>
-<part name="D7" library="Hocki_library" deviceset="TEFD4300F" device=""/>
+<part name="D4" library="Hocki_Library" deviceset="TEFD4300F" device=""/>
+<part name="D5" library="Hocki_Library" deviceset="TEFD4300F" device=""/>
+<part name="D6" library="Hocki_Library" deviceset="TEFD4300F" device=""/>
+<part name="D7" library="Hocki_Library" deviceset="TEFD4300F" device=""/>
+<part name="R28" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="500"/>
+<part name="R29" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="500"/>
+<part name="R30" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="500"/>
+<part name="R31" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="500"/>
+<part name="GND32" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -9803,9 +9808,9 @@ A0=A+!B!C</text>
 <instance part="SUPPLY10" gate="G$1" x="177.8" y="17.78" smashed="yes">
 <attribute name="VALUE" x="177.8" y="20.574" size="1.778" layer="96" align="bottom-center"/>
 </instance>
-<instance part="U7" gate="A" x="218.44" y="7.62" smashed="yes">
-<attribute name="NAME" x="208.28" y="20.32" size="1.778" layer="95"/>
-<attribute name="VALUE" x="208.28" y="-5.08" size="1.778" layer="96" align="top-left"/>
+<instance part="U7" gate="A" x="284.48" y="7.62" smashed="yes">
+<attribute name="NAME" x="274.32" y="20.32" size="1.778" layer="95"/>
+<attribute name="VALUE" x="274.32" y="-5.08" size="1.778" layer="96" align="top-left"/>
 </instance>
 <instance part="R17" gate="G$1" x="-10.16" y="50.8" smashed="yes" rot="R90">
 <attribute name="NAME" x="-11.6586" y="46.99" size="1.778" layer="95" rot="R90"/>
@@ -9826,11 +9831,11 @@ A0=A+!B!C</text>
 <attribute name="NAME" x="-8.89" y="-6.5786" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="-8.89" y="-1.778" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="SUPPLY11" gate="G$1" x="238.76" y="27.94" smashed="yes">
-<attribute name="VALUE" x="238.76" y="30.734" size="1.778" layer="96" align="bottom-center"/>
+<instance part="SUPPLY11" gate="G$1" x="304.8" y="27.94" smashed="yes">
+<attribute name="VALUE" x="304.8" y="30.734" size="1.778" layer="96" align="bottom-center"/>
 </instance>
-<instance part="GND15" gate="1" x="238.76" y="-2.54" smashed="yes">
-<attribute name="VALUE" x="238.76" y="-2.794" size="1.778" layer="96" align="top-center"/>
+<instance part="GND15" gate="1" x="304.8" y="-2.54" smashed="yes">
+<attribute name="VALUE" x="304.8" y="-2.794" size="1.778" layer="96" align="top-center"/>
 </instance>
 <instance part="U8" gate="A" x="-45.72" y="83.82" smashed="yes">
 <attribute name="NAME" x="-55.88" y="91.44" size="1.778" layer="95" ratio="6" rot="SR0"/>
@@ -9984,12 +9989,12 @@ A0=A+!B!C</text>
 <instance part="GND30" gate="1" x="180.34" y="7.62" smashed="yes">
 <attribute name="VALUE" x="180.34" y="7.366" size="1.778" layer="96" align="top-center"/>
 </instance>
-<instance part="C18" gate="G$1" x="241.3" y="25.4" smashed="yes">
-<attribute name="NAME" x="242.316" y="26.035" size="1.778" layer="95"/>
-<attribute name="VALUE" x="242.316" y="21.209" size="1.778" layer="96"/>
+<instance part="C18" gate="G$1" x="307.34" y="25.4" smashed="yes">
+<attribute name="NAME" x="308.356" y="26.035" size="1.778" layer="95"/>
+<attribute name="VALUE" x="308.356" y="21.209" size="1.778" layer="96"/>
 </instance>
-<instance part="GND31" gate="1" x="241.3" y="17.78" smashed="yes">
-<attribute name="VALUE" x="241.3" y="17.526" size="1.778" layer="96" align="top-center"/>
+<instance part="GND31" gate="1" x="307.34" y="17.78" smashed="yes">
+<attribute name="VALUE" x="307.34" y="17.526" size="1.778" layer="96" align="top-center"/>
 </instance>
 <instance part="D4" gate="G$1" x="-190.5" y="40.64" smashed="yes" rot="R90">
 <attribute name="NAME" x="-193.04" y="38.1" size="1.778" layer="95" rot="R90"/>
@@ -10006,6 +10011,25 @@ A0=A+!B!C</text>
 <instance part="D7" gate="G$1" x="-187.96" y="-20.32" smashed="yes" rot="R90">
 <attribute name="NAME" x="-190.5" y="-22.86" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="-185.42" y="-22.86" size="1.778" layer="96" rot="R90" align="top-left"/>
+</instance>
+<instance part="R28" gate="G$1" x="256.54" y="2.54" smashed="yes" rot="R90">
+<attribute name="NAME" x="255.0414" y="1.27" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="259.842" y="1.27" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="R29" gate="G$1" x="238.76" y="5.08" smashed="yes" rot="R90">
+<attribute name="NAME" x="237.2614" y="3.81" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="242.062" y="3.81" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="R30" gate="G$1" x="220.98" y="7.62" smashed="yes" rot="R90">
+<attribute name="NAME" x="219.4814" y="6.35" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="224.282" y="6.35" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="R31" gate="G$1" x="205.74" y="10.16" smashed="yes" rot="R90">
+<attribute name="NAME" x="204.2414" y="8.89" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="209.042" y="8.89" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="GND32" gate="1" x="238.76" y="-12.7" smashed="yes">
+<attribute name="VALUE" x="238.76" y="-12.954" size="1.778" layer="96" align="top-center"/>
 </instance>
 </instances>
 <busses>
@@ -10217,8 +10241,8 @@ A0=A+!B!C</text>
 </segment>
 <segment>
 <pinref part="U7" gate="A" pin="GND"/>
-<wire x1="236.22" y1="2.54" x2="238.76" y2="2.54" width="0.1524" layer="91"/>
-<wire x1="238.76" y1="2.54" x2="238.76" y2="0" width="0.1524" layer="91"/>
+<wire x1="302.26" y1="2.54" x2="304.8" y2="2.54" width="0.1524" layer="91"/>
+<wire x1="304.8" y1="2.54" x2="304.8" y2="0" width="0.1524" layer="91"/>
 <pinref part="GND15" gate="1" pin="GND"/>
 </segment>
 <segment>
@@ -10316,6 +10340,23 @@ A0=A+!B!C</text>
 <pinref part="C18" gate="G$1" pin="2"/>
 <pinref part="GND31" gate="1" pin="GND"/>
 </segment>
+<segment>
+<pinref part="R28" gate="G$1" pin="1"/>
+<wire x1="256.54" y1="-2.54" x2="256.54" y2="-7.62" width="0.1524" layer="91"/>
+<wire x1="256.54" y1="-7.62" x2="238.76" y2="-7.62" width="0.1524" layer="91"/>
+<wire x1="238.76" y1="-7.62" x2="238.76" y2="-10.16" width="0.1524" layer="91"/>
+<pinref part="R29" gate="G$1" pin="1"/>
+<wire x1="238.76" y1="0" x2="238.76" y2="-7.62" width="0.1524" layer="91"/>
+<junction x="238.76" y="-7.62"/>
+<pinref part="R30" gate="G$1" pin="1"/>
+<wire x1="220.98" y1="2.54" x2="220.98" y2="-7.62" width="0.1524" layer="91"/>
+<wire x1="220.98" y1="-7.62" x2="238.76" y2="-7.62" width="0.1524" layer="91"/>
+<pinref part="R31" gate="G$1" pin="1"/>
+<wire x1="205.74" y1="5.08" x2="205.74" y2="-7.62" width="0.1524" layer="91"/>
+<wire x1="205.74" y1="-7.62" x2="220.98" y2="-7.62" width="0.1524" layer="91"/>
+<junction x="220.98" y="-7.62"/>
+<pinref part="GND32" gate="1" pin="GND"/>
+</segment>
 </net>
 <net name="5V" class="0">
 <segment>
@@ -10374,16 +10415,16 @@ A0=A+!B!C</text>
 </segment>
 <segment>
 <pinref part="U7" gate="A" pin="VCC"/>
-<wire x1="236.22" y1="15.24" x2="238.76" y2="15.24" width="0.1524" layer="91"/>
-<wire x1="238.76" y1="15.24" x2="238.76" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="302.26" y1="15.24" x2="304.8" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="304.8" y1="15.24" x2="304.8" y2="27.94" width="0.1524" layer="91"/>
 <pinref part="SUPPLY11" gate="G$1" pin="5V"/>
 <pinref part="U7" gate="A" pin="EN"/>
-<wire x1="236.22" y1="12.7" x2="238.76" y2="12.7" width="0.1524" layer="91"/>
-<wire x1="238.76" y1="12.7" x2="238.76" y2="15.24" width="0.1524" layer="91"/>
-<junction x="238.76" y="15.24"/>
+<wire x1="302.26" y1="12.7" x2="304.8" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="304.8" y1="12.7" x2="304.8" y2="15.24" width="0.1524" layer="91"/>
+<junction x="304.8" y="15.24"/>
 <pinref part="C18" gate="G$1" pin="1"/>
-<wire x1="241.3" y1="27.94" x2="238.76" y2="27.94" width="0.1524" layer="91"/>
-<junction x="238.76" y="27.94"/>
+<wire x1="307.34" y1="27.94" x2="304.8" y2="27.94" width="0.1524" layer="91"/>
+<junction x="304.8" y="27.94"/>
 </segment>
 <segment>
 <pinref part="U8" gate="A" pin="VOUT"/>
@@ -10436,8 +10477,9 @@ A0=A+!B!C</text>
 </segment>
 <segment>
 <pinref part="U7" gate="A" pin="S2"/>
-<wire x1="203.2" y1="12.7" x2="200.66" y2="12.7" width="0.1524" layer="91"/>
-<label x="200.66" y="12.7" size="1.778" layer="95" rot="R180" xref="yes"/>
+<wire x1="269.24" y1="12.7" x2="220.98" y2="12.7" width="0.1524" layer="91"/>
+<label x="220.98" y="12.7" size="1.778" layer="95" rot="R180" xref="yes"/>
+<pinref part="R30" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$6" class="0">
@@ -10554,8 +10596,9 @@ A0=A+!B!C</text>
 </segment>
 <segment>
 <pinref part="U7" gate="A" pin="S3"/>
-<wire x1="203.2" y1="10.16" x2="200.66" y2="10.16" width="0.1524" layer="91"/>
-<label x="200.66" y="10.16" size="1.778" layer="95" rot="R180" xref="yes"/>
+<wire x1="269.24" y1="10.16" x2="238.76" y2="10.16" width="0.1524" layer="91"/>
+<label x="238.76" y="10.16" size="1.778" layer="95" rot="R180" xref="yes"/>
+<pinref part="R29" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="10KGAIN" class="0">
@@ -10571,8 +10614,9 @@ A0=A+!B!C</text>
 </segment>
 <segment>
 <pinref part="U7" gate="A" pin="S4"/>
-<wire x1="203.2" y1="7.62" x2="200.66" y2="7.62" width="0.1524" layer="91"/>
-<label x="200.66" y="7.62" size="1.778" layer="95" rot="R180" xref="yes"/>
+<wire x1="269.24" y1="7.62" x2="256.54" y2="7.62" width="0.1524" layer="91"/>
+<label x="256.54" y="7.62" size="1.778" layer="95" rot="R180" xref="yes"/>
+<pinref part="R28" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="10MGAIN" class="0">
@@ -10583,8 +10627,9 @@ A0=A+!B!C</text>
 </segment>
 <segment>
 <pinref part="U7" gate="A" pin="S1"/>
-<wire x1="203.2" y1="15.24" x2="200.66" y2="15.24" width="0.1524" layer="91"/>
-<label x="200.66" y="15.24" size="1.778" layer="95" rot="R180" xref="yes"/>
+<wire x1="269.24" y1="15.24" x2="205.74" y2="15.24" width="0.1524" layer="91"/>
+<label x="205.74" y="15.24" size="1.778" layer="95" rot="R180" xref="yes"/>
+<pinref part="R31" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$7" class="0">
@@ -10670,8 +10715,8 @@ A0=A+!B!C</text>
 </segment>
 <segment>
 <pinref part="U7" gate="A" pin="A1"/>
-<wire x1="203.2" y1="0" x2="200.66" y2="0" width="0.1524" layer="91"/>
-<label x="200.66" y="0" size="1.778" layer="95" rot="R180" xref="yes"/>
+<wire x1="269.24" y1="0" x2="266.7" y2="0" width="0.1524" layer="91"/>
+<label x="266.7" y="0" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="A0" class="0">
@@ -10682,8 +10727,8 @@ A0=A+!B!C</text>
 </segment>
 <segment>
 <pinref part="U7" gate="A" pin="A0"/>
-<wire x1="203.2" y1="2.54" x2="200.66" y2="2.54" width="0.1524" layer="91"/>
-<label x="200.66" y="2.54" size="1.778" layer="95" rot="R180" xref="yes"/>
+<wire x1="269.24" y1="2.54" x2="266.7" y2="2.54" width="0.1524" layer="91"/>
+<label x="266.7" y="2.54" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="N$13" class="0">
@@ -10721,8 +10766,8 @@ A0=A+!B!C</text>
 <net name="VG_SIGNAL" class="0">
 <segment>
 <pinref part="U7" gate="A" pin="D"/>
-<wire x1="236.22" y1="7.62" x2="241.3" y2="7.62" width="0.1524" layer="91"/>
-<label x="241.3" y="7.62" size="1.778" layer="95" xref="yes"/>
+<wire x1="302.26" y1="7.62" x2="307.34" y2="7.62" width="0.1524" layer="91"/>
+<label x="307.34" y="7.62" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="VIN" class="0">
