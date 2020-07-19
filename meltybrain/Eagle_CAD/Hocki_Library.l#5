@@ -1308,6 +1308,7 @@
 <technologies>
 <technology name="">
 <attribute name="DKPN" value="BC2071-ND" constant="no"/>
+<attribute name="VALUE" value="62n" constant="no"/>
 </technology>
 </technologies>
 </device>
