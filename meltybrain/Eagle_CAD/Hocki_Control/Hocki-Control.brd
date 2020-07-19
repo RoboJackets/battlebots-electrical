@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.2">
+<eagle version="9.6.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="no" altdistance="0.1" altunitdist="mm" altunit="mm"/>
+<grid distance="0.01" unitdist="mm" unit="mm" style="lines" multiple="1" display="no" altdistance="0.1" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
@@ -52,7 +52,7 @@
 <layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
@@ -414,6 +414,32 @@
 <rectangle x1="-4" y1="-2" x2="4" y2="2" layer="39"/>
 <text x="-4" y="2" size="1" layer="25">&gt;NAME</text>
 <text x="-4" y="-2" size="1" layer="27" align="top-left">&gt;VALUE</text>
+</package>
+<package name="CONN_BM05B-SRSS-TB_JST">
+<smd name="1" x="2" y="1.4284" dx="0.6604" dy="1.5494" layer="1"/>
+<smd name="2" x="1" y="1.4284" dx="0.6604" dy="1.5494" layer="1"/>
+<smd name="3" x="0" y="1.4284" dx="0.6604" dy="1.5494" layer="1"/>
+<smd name="4" x="-1" y="1.4284" dx="0.6604" dy="1.5494" layer="1"/>
+<smd name="5" x="-2" y="1.4284" dx="0.6604" dy="1.5494" layer="1"/>
+<smd name="6" x="-3.3" y="-1.0966" dx="1.2954" dy="1.905" layer="1"/>
+<smd name="7" x="3.3" y="-1.0966" dx="1.2954" dy="1.905" layer="1"/>
+<wire x1="-2.3114" y1="-1.9304" x2="2.3114" y2="-1.9304" width="0.1524" layer="21"/>
+<wire x1="3.6322" y1="0.1778" x2="3.6322" y2="1.9304" width="0.1524" layer="21"/>
+<wire x1="3.6322" y1="1.9304" x2="2.667" y2="1.9304" width="0.1524" layer="21"/>
+<wire x1="-3.6322" y1="1.9304" x2="-3.6322" y2="0.1778" width="0.1524" layer="21"/>
+<wire x1="-2.667" y1="1.9304" x2="-3.6322" y2="1.9304" width="0.1524" layer="21"/>
+<wire x1="4.6482" y1="1.4224" x2="3.8862" y2="1.4224" width="0.508" layer="21" curve="-180"/>
+<wire x1="3.8862" y1="1.4224" x2="4.6482" y2="1.4224" width="0.508" layer="21" curve="-180"/>
+<text x="-1.7272" y="0.7874" size="1.27" layer="21" ratio="6" rot="SR0">&gt;Value</text>
+<wire x1="-3.5052" y1="-1.8034" x2="3.5052" y2="-1.8034" width="0.1524" layer="51"/>
+<wire x1="3.5052" y1="-1.8034" x2="3.5052" y2="1.8034" width="0.1524" layer="51"/>
+<wire x1="3.5052" y1="1.8034" x2="-3.5052" y2="1.8034" width="0.1524" layer="51"/>
+<wire x1="-3.5052" y1="1.8034" x2="-3.5052" y2="-1.8034" width="0.1524" layer="51"/>
+<wire x1="2.3876" y1="3.3274" x2="1.6256" y2="3.3274" width="0.508" layer="51" curve="-180"/>
+<wire x1="1.6256" y1="3.3274" x2="2.3876" y2="3.3274" width="0.508" layer="51" curve="-180"/>
+<wire x1="4.6482" y1="1.4224" x2="3.8862" y2="1.4224" width="0.508" layer="22" curve="-180"/>
+<wire x1="3.8862" y1="1.4224" x2="4.6482" y2="1.4224" width="0.508" layer="22" curve="-180"/>
+<text x="-3.2766" y="0.7874" size="1.27" layer="25" ratio="6" rot="SR0">&gt;Name</text>
 </package>
 </packages>
 </library>
@@ -1558,6 +1584,67 @@ for trimmer refence see : &lt;u&gt;www.electrospec-inc.com/cross_references/trim
 </package3d>
 </packages3d>
 </library>
+<library name="con-jst-ph">
+<description>&lt;b&gt;JST Connectors&lt;/b&gt; - PH 2.0 MM Series&lt;p&gt;
+&lt;p&gt;THIS LIBRARY IS PROVIDED AS IS AND WITHOUT WARRANTY OF ANY KIND, EXPRESSED OR IMPLIED.&lt;br&gt;
+USE AT YOUR OWN RISK!&lt;p&gt;
+&lt;author&gt;Copyright (C) 2016, Bob Starr&lt;br&gt; http://www.bobstarr.net&lt;br&gt;&lt;/author&gt;</description>
+<packages>
+<package name="B5B-PH-K">
+<description>&lt;b&gt;HEADER&lt;/b&gt;</description>
+<pad name="1" x="-4" y="0" drill="0.8128" shape="square" rot="R90"/>
+<pad name="2" x="-2" y="0" drill="0.8128" shape="octagon" rot="R90"/>
+<pad name="3" x="0" y="0" drill="0.8128" shape="octagon" rot="R90"/>
+<pad name="4" x="2" y="0" drill="0.8128" shape="octagon" rot="R90"/>
+<pad name="5" x="4" y="0" drill="0.8128" shape="octagon" rot="R90"/>
+<text x="-5.969" y="2.286" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<text x="-5.08" y="-1.905" size="1.016" layer="27" ratio="10">&gt;VALUE</text>
+<wire x1="-5.95" y1="1.7" x2="5.95" y2="1.7" width="0.0508" layer="51"/>
+<wire x1="5.95" y1="1.7" x2="5.95" y2="-2.8" width="0.0508" layer="51"/>
+<wire x1="5.95" y1="-2.8" x2="4.15" y2="-2.8" width="0.0508" layer="51"/>
+<wire x1="4.15" y1="-2.8" x2="-4.15" y2="-2.8" width="0.0508" layer="51"/>
+<wire x1="-4.15" y1="-2.8" x2="-5.95" y2="-2.8" width="0.0508" layer="51"/>
+<wire x1="-5.95" y1="-2.8" x2="-5.95" y2="1.7" width="0.0508" layer="51"/>
+<wire x1="-6.15" y1="1.9" x2="6.15" y2="1.9" width="0.2032" layer="21"/>
+<wire x1="6.15" y1="1.9" x2="6.15" y2="-3" width="0.2032" layer="21"/>
+<wire x1="6.15" y1="-3" x2="-6.15" y2="-3" width="0.2032" layer="21"/>
+<wire x1="-6.15" y1="-3" x2="-6.15" y2="1.9" width="0.2032" layer="21"/>
+<wire x1="-5.7" y1="-2.6" x2="-5.7" y2="1.5" width="0.0508" layer="51"/>
+<wire x1="5.7" y1="1.5" x2="-5.7" y2="1.5" width="0.0508" layer="51"/>
+<wire x1="5.7" y1="-2.6" x2="5.7" y2="1.5" width="0.0508" layer="51"/>
+<wire x1="-4.15" y1="-2.6" x2="-5.7" y2="-2.6" width="0.0508" layer="51"/>
+<wire x1="5.7" y1="-2.6" x2="4.15" y2="-2.6" width="0.0508" layer="51"/>
+<wire x1="-4.15" y1="-2.8" x2="-4.15" y2="-2.6" width="0.0508" layer="51"/>
+<wire x1="4.15" y1="-2.8" x2="4.15" y2="-2.6" width="0.0508" layer="51"/>
+<text x="-5.969" y="-4.445" size="1.016" layer="25" ratio="18">&gt;LABEL</text>
+</package>
+<package name="B2B-PH-K">
+<description>&lt;b&gt;HEADER&lt;/b&gt;</description>
+<pad name="1" x="-1" y="0" drill="0.8128" shape="square" rot="R90"/>
+<pad name="2" x="1" y="0" drill="0.8128" shape="octagon" rot="R90"/>
+<text x="-2.921" y="2.286" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<text x="-1.905" y="-1.905" size="1.016" layer="27" ratio="10">&gt;VALUE</text>
+<wire x1="-2.95" y1="1.7" x2="2.95" y2="1.7" width="0.0508" layer="51"/>
+<wire x1="2.95" y1="1.7" x2="2.95" y2="-2.8" width="0.0508" layer="51"/>
+<wire x1="2.95" y1="-2.8" x2="1.15" y2="-2.8" width="0.0508" layer="51"/>
+<wire x1="1.15" y1="-2.8" x2="-1.15" y2="-2.8" width="0.0508" layer="51"/>
+<wire x1="-1.15" y1="-2.8" x2="-2.95" y2="-2.8" width="0.0508" layer="51"/>
+<wire x1="-2.95" y1="-2.8" x2="-2.95" y2="1.7" width="0.0508" layer="51"/>
+<wire x1="-3.15" y1="1.9" x2="3.15" y2="1.9" width="0.2032" layer="21"/>
+<wire x1="3.15" y1="1.9" x2="3.15" y2="-3" width="0.2032" layer="21"/>
+<wire x1="3.15" y1="-3" x2="-3.15" y2="-3" width="0.2032" layer="21"/>
+<wire x1="-3.15" y1="-3" x2="-3.15" y2="1.9" width="0.2032" layer="21"/>
+<wire x1="-2.7" y1="-2.6" x2="-2.7" y2="1.5" width="0.0508" layer="51"/>
+<wire x1="2.7" y1="1.5" x2="-2.7" y2="1.5" width="0.0508" layer="51"/>
+<wire x1="2.7" y1="-2.6" x2="2.7" y2="1.5" width="0.0508" layer="51"/>
+<wire x1="-1.15" y1="-2.6" x2="-2.7" y2="-2.6" width="0.0508" layer="51"/>
+<wire x1="2.7" y1="-2.6" x2="1.15" y2="-2.6" width="0.0508" layer="51"/>
+<wire x1="-1.15" y1="-2.8" x2="-1.15" y2="-2.6" width="0.0508" layer="51"/>
+<wire x1="1.15" y1="-2.8" x2="1.15" y2="-2.6" width="0.0508" layer="51"/>
+<text x="-2.921" y="-4.445" size="1.016" layer="25" ratio="18">&gt;LABEL</text>
+</package>
+</packages>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -2269,6 +2356,31 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <attribute name="DKPN" value="PCF1555CT-ND" x="-39.3" y="-19.1" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="-43.3" y="-17.1" size="1" layer="25"/>
 <attribute name="VALUE" x="-43.3" y="-21.1" size="1" layer="27" align="top-left"/>
+</element>
+<element name="P1" library="con-jst-ph" package="B5B-PH-K" value="B5B-PH-K" x="48.69" y="-5.54" smashed="yes" rot="R90">
+<attribute name="LABEL" value="" x="48.69" y="-5.54" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="46.404" y="-11.509" size="1.016" layer="25" ratio="18" rot="R90"/>
+<attribute name="VALUE" x="50.595" y="-10.62" size="1.016" layer="27" ratio="10" rot="R90"/>
+</element>
+<element name="P2" library="con-jst-ph" package="B5B-PH-K" value="B5B-PH-K" x="47.46" y="-23.53" smashed="yes" rot="R90">
+<attribute name="LABEL" value="" x="47.46" y="-23.53" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="45.174" y="-29.499" size="1.016" layer="25" ratio="18" rot="R90"/>
+<attribute name="VALUE" x="49.365" y="-28.61" size="1.016" layer="27" ratio="10" rot="R90"/>
+</element>
+<element name="P3" library="con-jst-ph" package="B2B-PH-K" value="B2B-PH-K" x="41.71" y="4.22" smashed="yes" rot="R90">
+<attribute name="LABEL" value="" x="41.71" y="4.22" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="39.424" y="1.299" size="1.016" layer="25" ratio="18" rot="R90"/>
+<attribute name="VALUE" x="43.615" y="2.315" size="1.016" layer="27" ratio="10" rot="R90"/>
+</element>
+<element name="J1" library="Hocki_Library" package="CONN_BM05B-SRSS-TB_JST" value="JST-SR_5" x="35.08" y="-14.08" smashed="yes" rot="R90">
+<attribute name="BUILT_BY" value="EMA_Cory" x="35.08" y="-14.08" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="COPYRIGHT" value="Copyright (C) 2018 Accelerated Designs. All rights reserved" x="35.08" y="-14.08" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="DATASHEET" value="http://www.jst-mfg.com/product/pdf/eng/eSR.pdf" x="35.08" y="-14.08" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="DKPN" value="455-1791-1-ND" x="35.08" y="-14.08" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="34.2926" y="-17.3566" size="1.27" layer="25" ratio="6" rot="SR90"/>
+<attribute name="SOURCELIBRARY" value="JST_2020-07-08" x="35.08" y="-14.08" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VALUE" x="34.2926" y="-15.8072" size="1.27" layer="21" ratio="6" rot="SR90"/>
+<attribute name="VENDOR" value="JST" x="35.08" y="-14.08" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 </elements>
 <signals>
