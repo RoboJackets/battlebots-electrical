@@ -190,7 +190,7 @@
 <wire x1="-1.5" y1="-1.5" x2="1.5" y2="-1.5" width="0.1" layer="51"/>
 <wire x1="1.5" y1="-1.5" x2="1.5" y2="1.5" width="0.1" layer="51"/>
 <wire x1="1.5" y1="1.5" x2="-1.5" y2="1.5" width="0.1" layer="51"/>
-<rectangle x1="-1.75" y1="-1.75" x2="1.75" y2="1.75" layer="39"/>
+<rectangle x1="-1.5" y1="-1.5" x2="1.5" y2="1.5" layer="39"/>
 <circle x="-1.3" y="1.05" radius="0.1" width="0.05" layer="21"/>
 <text x="-2" y="2" size="1" layer="25" font="vector">&gt;NAME</text>
 <text x="-2" y="-2" size="1" layer="27" font="vector" align="top-left">&gt;VALUE</text>
@@ -529,6 +529,13 @@
 <wire x1="3.6" y1="3" x2="-3.6" y2="3" width="0.2" layer="21"/>
 <text x="-3.6" y="3.2" size="1" layer="25">&gt;NAME</text>
 <text x="-3.6" y="-3.1" size="1" layer="27" align="top-left">&gt;VALUE</text>
+</package>
+<package name="ECH-U1H184GX9">
+<smd name="1" x="-2.9" y="0" dx="2" dy="3.8" layer="1" rot="R180"/>
+<smd name="2" x="2.9" y="0" dx="2" dy="3.8" layer="1" rot="R180"/>
+<rectangle x1="-4" y1="-2" x2="4" y2="2" layer="39"/>
+<text x="-4" y="2" size="1" layer="25">&gt;NAME</text>
+<text x="-4" y="-2" size="1" layer="27" align="top-left">&gt;VALUE</text>
 </package>
 </packages>
 <symbols>
@@ -1309,6 +1316,28 @@
 <technology name="">
 <attribute name="DKPN" value="BC2071-ND" constant="no"/>
 <attribute name="VALUE" value="62n" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ECH-U1H184GX9" prefix="C" uservalue="yes">
+<description>0.18µF Film Capacitor 50V Polyphenylene Sulfide (PPS), Metallized - Stacked 2416 (6041 Metric)
+&lt;p&gt;&lt;\p&gt;
+&lt;a href="https://www.digikey.com/product-detail/en/panasonic-electronic-components/ECH-U1H184GX9/PCF1555CT-ND/1630918"&gt;DigiKey&lt;\a&gt;</description>
+<gates>
+<gate name="G$1" symbol="C-EU" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="ECH-U1H184GX9">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DKPN" value="PCF1555CT-ND" constant="no"/>
+<attribute name="VALUE" value="0.18u" constant="no"/>
 </technology>
 </technologies>
 </device>
