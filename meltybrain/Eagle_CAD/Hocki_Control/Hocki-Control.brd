@@ -3,7 +3,7 @@
 <eagle version="9.5.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="no" altdistance="0.1" altunitdist="mm" altunit="mm"/>
@@ -2374,6 +2374,18 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <attribute name="SPICEPREFIX" value="C" x="-24.3" y="-19.7" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="-26.205" y="-19.065" size="1.27" layer="27" rot="R270"/>
 </element>
+<element name="C45" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="47n" x="6.3" y="-21.7" smashed="yes" rot="R180">
+<attribute name="NAME" x="7.57" y="-22.97" size="1.27" layer="25" rot="R180"/>
+<attribute name="POPULARITY" value="24" x="6.3" y="-21.7" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="SPICEPREFIX" value="C" x="6.3" y="-21.7" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="VALUE" x="7.57" y="-19.16" size="1.27" layer="27" rot="R180"/>
+</element>
+<element name="C46" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="47n" x="11.9" y="-21.7" smashed="yes">
+<attribute name="NAME" x="10.63" y="-20.43" size="1.27" layer="25"/>
+<attribute name="POPULARITY" value="24" x="11.9" y="-21.7" size="1.778" layer="27" display="off"/>
+<attribute name="SPICEPREFIX" value="C" x="11.9" y="-21.7" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="10.63" y="-24.24" size="1.27" layer="27"/>
+</element>
 </elements>
 <signals>
 <signal name="GND">
@@ -2892,6 +2904,9 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <wire x1="13.2" y1="-14.3" x2="12.5" y2="-14.3" width="0.2" layer="1"/>
 <wire x1="12.471025" y1="-19.75" x2="13.7" y2="-18.521025" width="0.2" layer="1"/>
 <wire x1="13.7" y1="-18.521025" x2="13.7" y2="-14.8" width="0.2" layer="1"/>
+<contactref element="C46" pad="2"/>
+<wire x1="13.3" y1="-21.7" x2="13.7" y2="-21.3" width="0.1524" layer="1"/>
+<wire x1="13.7" y1="-21.3" x2="13.7" y2="-18.521025" width="0.1524" layer="1"/>
 </signal>
 <signal name="N$4">
 <contactref element="U7" pad="6"/>
@@ -2907,6 +2922,15 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <contactref element="C2" pad="1"/>
 <wire x1="10.4" y1="-16.335" x2="11.735" y2="-16.335" width="0.2" layer="1"/>
 <wire x1="11.735" y1="-16.335" x2="12.5" y2="-17.1" width="0.2" layer="1"/>
+<contactref element="C46" pad="1"/>
+<wire x1="10.5" y1="-21.7" x2="9.7068" y2="-20.9068" width="0.1524" layer="1"/>
+<wire x1="9.7068" y1="-20.9068" x2="9.7068" y2="-20.84865" width="0.1524" layer="1"/>
+<wire x1="9.7068" y1="-20.84865" x2="9.7" y2="-20.84185" width="0.1524" layer="1"/>
+<wire x1="9.7" y1="-19.1" x2="10.3" y2="-18.5" width="0.1524" layer="1"/>
+<wire x1="10.3" y1="-18.5" x2="11.5" y2="-18.5" width="0.1524" layer="1"/>
+<wire x1="11.5" y1="-18.5" x2="12.5" y2="-17.5" width="0.1524" layer="1"/>
+<wire x1="12.5" y1="-17.5" x2="12.5" y2="-17.1" width="0.1524" layer="1"/>
+<wire x1="9.7" y1="-20.84185" x2="9.7" y2="-19.1" width="0.1524" layer="1"/>
 </signal>
 <signal name="10K_IN">
 <contactref element="R3" pad="1"/>
@@ -2922,6 +2946,11 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <wire x1="2.7" y1="-17.3" x2="1.15" y2="-17.3" width="0.2" layer="1"/>
 <wire x1="1.15" y1="-17.3" x2="0.7" y2="-16.85" width="0.2" layer="1"/>
 <wire x1="0.7" y1="-16.85" x2="0.7" y2="-15.55" width="0.2" layer="1"/>
+<contactref element="C45" pad="1"/>
+<wire x1="7.7" y1="-21.7" x2="8.4932" y2="-20.9068" width="0.1524" layer="1"/>
+<wire x1="8.4932" y1="-20.9068" x2="8.4932" y2="-20.84865" width="0.1524" layer="1"/>
+<wire x1="8.85" y1="-20.49185" x2="8.85" y2="-19.7" width="0.1524" layer="1"/>
+<wire x1="8.4932" y1="-20.84865" x2="8.85" y2="-20.49185" width="0.1524" layer="1"/>
 </signal>
 <signal name="10K_OUT">
 <contactref element="R6" pad="2"/>
@@ -3077,6 +3106,9 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <wire x1="0.7" y1="-18.55" x2="0.7" y2="-18.85" width="0.2" layer="1"/>
 <wire x1="-10.523" y1="-20.477" x2="-11.1" y2="-19.9" width="0.2" layer="1"/>
 <wire x1="-0.927" y1="-20.477" x2="-10.523" y2="-20.477" width="0.2" layer="1"/>
+<contactref element="C45" pad="2"/>
+<wire x1="4.9" y1="-21.7" x2="4.3" y2="-21.7" width="0.1524" layer="1"/>
+<wire x1="4.3" y1="-21.7" x2="2.7" y2="-20.1" width="0.1524" layer="1"/>
 </signal>
 <signal name="N$2">
 <contactref element="U9" pad="1"/>
