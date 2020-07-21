@@ -330,27 +330,25 @@
 <wire x1="0.6" y1="0" x2="-0.6" y2="0.8" width="0.1524" layer="22"/>
 <wire x1="0.6" y1="0.8" x2="0.6" y2="-0.8" width="0.1524" layer="22"/>
 </package>
-<package name="SM05B-SRSS-TB(LF)(SN)">
-<wire x1="-3.5" y1="-0.7" x2="-3.5" y2="3.55" width="0.127" layer="51"/>
-<wire x1="-3.5" y1="3.55" x2="3.5" y2="3.55" width="0.127" layer="51"/>
-<wire x1="3.5" y1="3.55" x2="3.5" y2="-0.7" width="0.127" layer="51"/>
-<wire x1="3.5" y1="-0.7" x2="-3.5" y2="-0.7" width="0.127" layer="51"/>
-<wire x1="-2.61" y1="3.55" x2="-3.5" y2="3.55" width="0.127" layer="21"/>
-<wire x1="-3.5" y1="3.55" x2="-3.5" y2="1.21" width="0.127" layer="21"/>
-<wire x1="-2.39" y1="-0.7" x2="2.39" y2="-0.7" width="0.127" layer="21"/>
-<wire x1="2.61" y1="3.55" x2="3.5" y2="3.55" width="0.127" layer="21"/>
-<wire x1="3.5" y1="3.55" x2="3.5" y2="1.21" width="0.127" layer="21"/>
-<circle x="-2" y="5.2" radius="0.1" width="0.2" layer="21"/>
-<circle x="-2" y="5.2" radius="0.1" width="0.2" layer="51"/>
-<text x="-3.8" y="5.5" size="1" layer="25" font="vector">&gt;NAME</text>
-<text x="-3.5" y="-1.5" size="1" layer="27" font="vector" align="top-left">&gt;VALUE</text>
-<smd name="1" x="-2" y="3.875" dx="1.55" dy="0.6" layer="1" rot="R90"/>
-<smd name="S1" x="-3.3" y="0" dx="1.8" dy="1.2" layer="1" rot="R90"/>
-<smd name="S2" x="3.3" y="0" dx="1.8" dy="1.2" layer="1" rot="R90"/>
-<smd name="2" x="-1" y="3.875" dx="1.55" dy="0.6" layer="1" rot="R90"/>
-<smd name="3" x="0" y="3.875" dx="1.55" dy="0.6" layer="1" rot="R90"/>
-<smd name="4" x="1" y="3.875" dx="1.55" dy="0.6" layer="1" rot="R90"/>
-<smd name="5" x="2" y="3.875" dx="1.55" dy="0.6" layer="1" rot="R90"/>
+<package name="SM03B-SRSS-TB(LF)(SN)">
+<wire x1="-2.5" y1="-0.325" x2="2.5" y2="-0.325" width="0.127" layer="51"/>
+<wire x1="2.5" y1="-0.325" x2="2.5" y2="-4.575" width="0.127" layer="51"/>
+<wire x1="2.5" y1="-4.575" x2="-2.5" y2="-4.575" width="0.127" layer="51"/>
+<wire x1="-2.5" y1="-4.575" x2="-2.5" y2="-0.325" width="0.127" layer="51"/>
+<wire x1="-1.615" y1="-0.325" x2="-2.5" y2="-0.325" width="0.127" layer="21"/>
+<wire x1="-2.5" y1="-0.325" x2="-2.5" y2="-2.6" width="0.127" layer="21"/>
+<wire x1="-1.3" y1="-4.575" x2="1.3" y2="-4.575" width="0.127" layer="21"/>
+<wire x1="2.5" y1="-2.6" x2="2.5" y2="-0.325" width="0.127" layer="21"/>
+<wire x1="2.5" y1="-0.325" x2="1.615" y2="-0.325" width="0.127" layer="21"/>
+<circle x="-1.8" y="0.4" radius="0.1" width="0.3" layer="21"/>
+<circle x="-1.8" y="0.4" radius="0.1" width="0.3" layer="51"/>
+<text x="-3.81" y="1.27" size="1" layer="25" font="vector">&gt;NAME</text>
+<text x="-3.81" y="-5.35" size="1" layer="27" font="vector" align="top-left">&gt;VALUE</text>
+<smd name="2" x="0" y="0" dx="1.55" dy="0.6" layer="1" rot="R90"/>
+<smd name="1" x="-1" y="0" dx="1.55" dy="0.6" layer="1" rot="R90"/>
+<smd name="3" x="1" y="0" dx="1.55" dy="0.6" layer="1" rot="R90"/>
+<smd name="S1" x="-2.3" y="-3.875" dx="1.2" dy="1.8" layer="1" rot="R180"/>
+<smd name="S2" x="2.3" y="-3.875" dx="1.2" dy="1.8" layer="1" rot="R180"/>
 </package>
 </packages>
 <symbols>
@@ -521,26 +519,24 @@
 <text x="-7.62" y="-11.176" size="1.778" layer="96" ratio="6" rot="SR0" align="top-left">&gt;VALUE</text>
 <pin name="BYP" x="12.7" y="-7.62" length="middle" rot="R180"/>
 </symbol>
-<symbol name="SM05B-SRSS-TB(LF)(SN)">
-<wire x1="-5.08" y1="-10.16" x2="-5.08" y2="10.16" width="0.254" layer="94"/>
-<wire x1="-5.08" y1="10.16" x2="5.08" y2="10.16" width="0.254" layer="94"/>
-<wire x1="5.08" y1="10.16" x2="5.08" y2="-10.16" width="0.254" layer="94"/>
-<wire x1="5.08" y1="-10.16" x2="-5.08" y2="-10.16" width="0.254" layer="94"/>
-<text x="-5.08" y="10.922" size="1.778" layer="95">&gt;NAME</text>
-<text x="-5.08" y="-12.7" size="1.778" layer="96" align="top-left">&gt;VALUE</text>
-<pin name="1" x="-10.16" y="7.62" visible="pin" length="middle" direction="pas"/>
-<pin name="SHIELD" x="-10.16" y="-7.62" visible="pin" length="middle" direction="pas"/>
-<pin name="2" x="-10.16" y="5.08" visible="pin" length="middle" direction="pas"/>
-<pin name="3" x="-10.16" y="2.54" visible="pin" length="middle" direction="pas"/>
-<pin name="4" x="-10.16" y="0" visible="pin" length="middle" direction="pas"/>
-<pin name="5" x="-10.16" y="-2.54" visible="pin" length="middle" direction="pas"/>
-</symbol>
 <symbol name="9V">
 <description>&lt;h3&gt;12V Voltage Supply&lt;/h3&gt;</description>
 <wire x1="0.762" y1="1.27" x2="0" y2="2.54" width="0.254" layer="94"/>
 <wire x1="0" y1="2.54" x2="-0.762" y2="1.27" width="0.254" layer="94"/>
 <pin name="9V" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
 <text x="0" y="2.794" size="1.778" layer="96" align="bottom-center">&gt;VALUE</text>
+</symbol>
+<symbol name="SM03B-SRSS-TB(LF)(SN)">
+<wire x1="-5.08" y1="7.62" x2="5.08" y2="7.62" width="0.254" layer="94"/>
+<wire x1="5.08" y1="7.62" x2="5.08" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-7.62" x2="-5.08" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-7.62" x2="-5.08" y2="7.62" width="0.254" layer="94"/>
+<text x="-5.08" y="8.382" size="1.778" layer="95">&gt;NAME</text>
+<text x="-5.08" y="-7.874" size="1.778" layer="96" align="top-left">&gt;VALUE</text>
+<pin name="1" x="-10.16" y="5.08" visible="pin" length="middle" direction="pas"/>
+<pin name="2" x="-10.16" y="2.54" visible="pin" length="middle" direction="pas"/>
+<pin name="3" x="-10.16" y="0" visible="pin" length="middle" direction="pas"/>
+<pin name="SHIELD" x="-10.16" y="-5.08" visible="pin" length="middle" direction="pas"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -795,31 +791,6 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="SM05B-SRSS-TB(LF)(SN)" prefix="J">
-<description>Connector Header Surface Mount, Right Angle 5 position 0.039" (1.00mm)
-&lt;p&gt;&lt;\p&gt;
-&lt;a href="https://www.digikey.com/product-detail/en/jst-sales-america-inc/SM05B-SRSS-TB-LF-SN/455-1805-1-ND/926876"&gt;DigiKey&lt;\a&gt;</description>
-<gates>
-<gate name="G$1" symbol="SM05B-SRSS-TB(LF)(SN)" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="SM05B-SRSS-TB(LF)(SN)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-<connect gate="G$1" pin="4" pad="4"/>
-<connect gate="G$1" pin="5" pad="5"/>
-<connect gate="G$1" pin="SHIELD" pad="S1 S2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="DKPN" value="455-1805-1-ND" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="9V" prefix="SUPPLY">
 <description>&lt;h3&gt;9V Supply Symbol&lt;/h3&gt;
 &lt;p&gt;Power supply symbol for a specifically-stated 9V source.&lt;/p&gt;</description>
@@ -830,6 +801,29 @@
 <device name="">
 <technologies>
 <technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SM03B-SRSS-TB(LF)(SN)" prefix="J">
+<description>Connector Header Surface Mount, Right Angle 3 position 0.039" (1.00mm)
+&lt;p&gt;&lt;\p&gt;
+&lt;a href="https://www.digikey.com/product-detail/en/jst-sales-america-inc/SM03B-SRSS-TB-LF-SN/455-1803-1-ND/926874"&gt;DigiKey&lt;\a&gt;</description>
+<gates>
+<gate name="G$1" symbol="SM03B-SRSS-TB(LF)(SN)" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SM03B-SRSS-TB(LF)(SN)">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="SHIELD" pad="S1 S2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DKPN" value="455-1803-1-ND" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -13078,11 +13072,11 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <part name="U8" library="Hocki_Library" deviceset="AP2210K-*TRG1" device="" technology="5.0"/>
 <part name="C4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="100p"/>
 <part name="GND33" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="J1" library="Hocki_Library" deviceset="SM05B-SRSS-TB(LF)(SN)" device=""/>
 <part name="SUPPLY12" library="Hocki_Library" deviceset="9V" device=""/>
 <part name="SUPPLY17" library="Hocki_Library" deviceset="9V" device=""/>
 <part name="GND34" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
 <part name="SUPPLY18" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
+<part name="J1" library="Hocki_Library" deviceset="SM03B-SRSS-TB(LF)(SN)" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -13500,21 +13494,21 @@ A0=A+!B!C</text>
 <instance part="GND33" gate="1" x="-30.48" y="63.5" smashed="yes">
 <attribute name="VALUE" x="-30.48" y="63.246" size="1.778" layer="96" align="top-center"/>
 </instance>
-<instance part="J1" gate="G$1" x="347.98" y="5.08" smashed="yes">
-<attribute name="NAME" x="342.9" y="16.002" size="1.778" layer="95"/>
-<attribute name="VALUE" x="342.9" y="-7.62" size="1.778" layer="96" align="top-left"/>
-</instance>
 <instance part="SUPPLY12" gate="G$1" x="-63.5" y="91.44" smashed="yes">
 <attribute name="VALUE" x="-63.5" y="94.234" size="1.778" layer="96" align="bottom-center"/>
 </instance>
 <instance part="SUPPLY17" gate="G$1" x="327.66" y="17.78" smashed="yes">
 <attribute name="VALUE" x="327.66" y="20.574" size="1.778" layer="96" align="bottom-center"/>
 </instance>
-<instance part="GND34" gate="1" x="335.28" y="0" smashed="yes">
-<attribute name="VALUE" x="335.28" y="-0.254" size="1.778" layer="96" align="top-center"/>
+<instance part="GND34" gate="1" x="335.28" y="5.08" smashed="yes">
+<attribute name="VALUE" x="335.28" y="4.826" size="1.778" layer="96" align="top-center"/>
 </instance>
-<instance part="SUPPLY18" gate="G$1" x="327.66" y="0" smashed="yes">
-<attribute name="VALUE" x="327.66" y="2.794" size="1.778" layer="96" align="bottom-center"/>
+<instance part="SUPPLY18" gate="G$1" x="327.66" y="5.08" smashed="yes">
+<attribute name="VALUE" x="327.66" y="7.874" size="1.778" layer="96" align="bottom-center"/>
+</instance>
+<instance part="J1" gate="G$1" x="347.98" y="7.62" smashed="yes">
+<attribute name="NAME" x="342.9" y="16.002" size="1.778" layer="95"/>
+<attribute name="VALUE" x="342.9" y="-0.254" size="1.778" layer="96" align="top-left"/>
 </instance>
 </instances>
 <busses>
@@ -13821,9 +13815,9 @@ A0=A+!B!C</text>
 <pinref part="GND33" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="J1" gate="G$1" pin="5"/>
-<wire x1="337.82" y1="2.54" x2="335.28" y2="2.54" width="0.1524" layer="91"/>
 <pinref part="GND34" gate="1" pin="GND"/>
+<pinref part="J1" gate="G$1" pin="3"/>
+<wire x1="337.82" y1="7.62" x2="335.28" y2="7.62" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="5V" class="0">
@@ -13933,10 +13927,10 @@ A0=A+!B!C</text>
 <junction x="-27.94" y="-5.08"/>
 </segment>
 <segment>
-<pinref part="J1" gate="G$1" pin="SHIELD"/>
-<wire x1="337.82" y1="-2.54" x2="327.66" y2="-2.54" width="0.1524" layer="91"/>
+<wire x1="337.82" y1="2.54" x2="327.66" y2="2.54" width="0.1524" layer="91"/>
 <pinref part="SUPPLY18" gate="G$1" pin="5V"/>
-<wire x1="327.66" y1="-2.54" x2="327.66" y2="0" width="0.1524" layer="91"/>
+<wire x1="327.66" y1="2.54" x2="327.66" y2="5.08" width="0.1524" layer="91"/>
+<pinref part="J1" gate="G$1" pin="SHIELD"/>
 </segment>
 </net>
 <net name="1MGAIN" class="0">
@@ -14178,11 +14172,6 @@ A0=A+!B!C</text>
 <wire x1="269.24" y1="0" x2="266.7" y2="0" width="0.1524" layer="91"/>
 <label x="266.7" y="0" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
-<segment>
-<pinref part="J1" gate="G$1" pin="4"/>
-<wire x1="337.82" y1="5.08" x2="335.28" y2="5.08" width="0.1524" layer="91"/>
-<label x="335.28" y="5.08" size="1.778" layer="95" rot="R180" xref="yes"/>
-</segment>
 </net>
 <net name="A0" class="0">
 <segment>
@@ -14194,11 +14183,6 @@ A0=A+!B!C</text>
 <pinref part="U7" gate="A" pin="A0"/>
 <wire x1="269.24" y1="2.54" x2="266.7" y2="2.54" width="0.1524" layer="91"/>
 <label x="266.7" y="2.54" size="1.778" layer="95" rot="R180" xref="yes"/>
-</segment>
-<segment>
-<pinref part="J1" gate="G$1" pin="3"/>
-<wire x1="337.82" y1="7.62" x2="335.28" y2="7.62" width="0.1524" layer="91"/>
-<label x="335.28" y="7.62" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="N$13" class="0">
@@ -14238,9 +14222,9 @@ A0=A+!B!C</text>
 <pinref part="U7" gate="A" pin="D"/>
 <wire x1="302.26" y1="7.62" x2="307.34" y2="7.62" width="0.1524" layer="91"/>
 <label x="307.34" y="7.62" size="1.778" layer="95" xref="yes"/>
-<pinref part="J1" gate="G$1" pin="2"/>
 <wire x1="337.82" y1="10.16" x2="307.34" y2="10.16" width="0.1524" layer="91"/>
 <wire x1="307.34" y1="10.16" x2="307.34" y2="7.62" width="0.1524" layer="91"/>
+<pinref part="J1" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$17" class="0">
@@ -14392,10 +14376,10 @@ A0=A+!B!C</text>
 <pinref part="SUPPLY12" gate="G$1" pin="9V"/>
 </segment>
 <segment>
-<pinref part="J1" gate="G$1" pin="1"/>
 <wire x1="337.82" y1="12.7" x2="327.66" y2="12.7" width="0.1524" layer="91"/>
 <wire x1="327.66" y1="12.7" x2="327.66" y2="17.78" width="0.1524" layer="91"/>
 <pinref part="SUPPLY17" gate="G$1" pin="9V"/>
+<pinref part="J1" gate="G$1" pin="1"/>
 </segment>
 </net>
 </nets>
