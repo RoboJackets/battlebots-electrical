@@ -38,7 +38,7 @@
 <layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
-<layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="yes" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
 <layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
@@ -590,6 +590,46 @@
 <smd name="S1" x="-2.3" y="-3.875" dx="1.2" dy="1.8" layer="1" rot="R180"/>
 <smd name="S2" x="2.3" y="-3.875" dx="1.2" dy="1.8" layer="1" rot="R180"/>
 </package>
+<package name="12-TDFN">
+<smd name="1" x="-1.475" y="1.25" dx="0.65" dy="0.3" layer="1"/>
+<smd name="2" x="-1.475" y="0.75" dx="0.65" dy="0.3" layer="1"/>
+<smd name="3" x="-1.475" y="0.25" dx="0.65" dy="0.3" layer="1"/>
+<smd name="4" x="-1.475" y="-0.25" dx="0.65" dy="0.3" layer="1"/>
+<smd name="5" x="-1.475" y="-0.75" dx="0.65" dy="0.3" layer="1"/>
+<smd name="6" x="-1.475" y="-1.25" dx="0.65" dy="0.3" layer="1"/>
+<smd name="7" x="1.475" y="-1.25" dx="0.65" dy="0.3" layer="1"/>
+<smd name="8" x="1.475" y="-0.75" dx="0.65" dy="0.3" layer="1"/>
+<smd name="9" x="1.475" y="-0.25" dx="0.65" dy="0.3" layer="1"/>
+<smd name="10" x="1.475" y="0.25" dx="0.65" dy="0.3" layer="1"/>
+<smd name="11" x="1.475" y="0.75" dx="0.65" dy="0.3" layer="1"/>
+<smd name="12" x="1.475" y="1.25" dx="0.65" dy="0.3" layer="1"/>
+<smd name="13" x="0" y="0" dx="1.7" dy="2.5" layer="1"/>
+<wire x1="-0.9398" y1="-1.6764" x2="0.9398" y2="-1.6764" width="0.1524" layer="21"/>
+<wire x1="0.9398" y1="1.6764" x2="-0.9398" y2="1.6764" width="0.1524" layer="21"/>
+<text x="-2" y="-2" size="1" layer="27" font="vector" rot="SR0" align="top-left">&gt;VALUE</text>
+<wire x1="-1.5" y1="-1.5" x2="1.5" y2="-1.5" width="0.1524" layer="51"/>
+<wire x1="1.5" y1="-1.5" x2="1.5" y2="1.5" width="0.1524" layer="51"/>
+<wire x1="1.5" y1="1.5" x2="-1.5" y2="1.5" width="0.1524" layer="51"/>
+<wire x1="-1.5" y1="1.5" x2="-1.5" y2="-1.5" width="0.1524" layer="51"/>
+<text x="-2" y="2" size="1" layer="25" font="vector" rot="SR0">&gt;NAME</text>
+<circle x="-2.159" y="1.27" radius="0.127" width="0.1524" layer="21"/>
+</package>
+<package name="1007">
+<text x="-1.96" y="-1.35" size="1" layer="27" font="vector" align="top-left">&gt;VALUE</text>
+<text x="-1.96" y="1.35" size="1" layer="25" font="vector">&gt;NAME</text>
+<wire x1="1.35" y1="-1" x2="-1.35" y2="-1" width="0.127" layer="51"/>
+<wire x1="1.35" y1="1" x2="-1.35" y2="1" width="0.127" layer="51"/>
+<wire x1="1.35" y1="-1" x2="1.35" y2="1" width="0.127" layer="51"/>
+<wire x1="-1.35" y1="-1" x2="-1.35" y2="1" width="0.127" layer="51"/>
+<wire x1="-0.25" y1="1" x2="0.25" y2="1" width="0.127" layer="21"/>
+<wire x1="-0.25" y1="-1" x2="0.25" y2="-1" width="0.127" layer="21"/>
+<wire x1="-1.958" y1="-1.258" x2="1.958" y2="-1.258" width="0.05" layer="39"/>
+<wire x1="-1.958" y1="1.258" x2="1.958" y2="1.258" width="0.05" layer="39"/>
+<wire x1="-1.958" y1="-1.258" x2="-1.958" y2="1.258" width="0.05" layer="39"/>
+<wire x1="1.958" y1="-1.258" x2="1.958" y2="1.258" width="0.05" layer="39"/>
+<smd name="1" x="-1.14" y="0" dx="1.14" dy="2.02" layer="1"/>
+<smd name="2" x="1.14" y="0" dx="1.14" dy="2.02" layer="1"/>
+</package>
 </packages>
 <symbols>
 <symbol name="ADXL375">
@@ -949,6 +989,37 @@
 <pin name="2" x="-10.16" y="2.54" visible="pin" length="middle" direction="pas"/>
 <pin name="3" x="-10.16" y="0" visible="pin" length="middle" direction="pas"/>
 <pin name="SHIELD" x="-10.16" y="-5.08" visible="pin" length="middle" direction="pas"/>
+</symbol>
+<symbol name="MAX20075ATCA/V+">
+<pin name="SPS" x="-17.78" y="2.54" length="middle" direction="pas"/>
+<pin name="EN" x="-17.78" y="5.08" length="middle" direction="pas"/>
+<pin name="BST" x="17.78" y="7.62" length="middle" direction="pas" rot="R180"/>
+<pin name="SUP" x="-17.78" y="7.62" length="middle" direction="pas"/>
+<pin name="LX" x="17.78" y="5.08" length="middle" direction="pas" rot="R180"/>
+<pin name="PGND" x="-17.78" y="-2.54" length="middle" direction="pas"/>
+<pin name="AGND" x="-17.78" y="-5.08" length="middle" direction="pas"/>
+<pin name="FB" x="17.78" y="-2.54" length="middle" direction="pas" rot="R180"/>
+<pin name="OUT" x="17.78" y="0" length="middle" direction="pas" rot="R180"/>
+<pin name="BIAS" x="17.78" y="-5.08" length="middle" direction="pas" rot="R180"/>
+<pin name="SYNC" x="17.78" y="-7.62" length="middle" direction="pas" rot="R180"/>
+<pin name="PGOOD" x="17.78" y="2.54" length="middle" direction="pas" rot="R180"/>
+<wire x1="-12.7" y1="12.7" x2="-12.7" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-12.7" x2="12.7" y2="-12.7" width="0.1524" layer="94"/>
+<wire x1="12.7" y1="-12.7" x2="12.7" y2="12.7" width="0.1524" layer="94"/>
+<wire x1="12.7" y1="12.7" x2="-12.7" y2="12.7" width="0.1524" layer="94"/>
+<text x="-12.3444" y="14.1986" size="2.54" layer="95" ratio="6" rot="SR0">&gt;NAME</text>
+<text x="-12.9794" y="-13.7414" size="2.54" layer="96" ratio="6" rot="SR0" align="top-left">&gt;VALUE</text>
+<pin name="EPAD" x="-17.78" y="-7.62" length="middle" direction="pas"/>
+</symbol>
+<symbol name="INDUCTOR">
+<text x="-7.62" y="2.54" size="1.778" layer="95">&gt;NAME</text>
+<text x="-7.62" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
+<wire x1="-5.08" y1="0" x2="-2.54" y2="0" width="0.254" layer="94" curve="-180"/>
+<wire x1="-2.54" y1="0" x2="0" y2="0" width="0.254" layer="94" curve="-180"/>
+<wire x1="0" y1="0" x2="2.54" y2="0" width="0.254" layer="94" curve="-180"/>
+<wire x1="2.54" y1="0" x2="5.08" y2="0" width="0.254" layer="94" curve="-180"/>
+<pin name="1" x="-7.62" y="0" visible="off" length="short" direction="pas"/>
+<pin name="2" x="7.62" y="0" visible="off" length="short" direction="pas" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -1505,6 +1576,60 @@
 <technologies>
 <technology name="">
 <attribute name="DKPN" value="455-1803-1-ND" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MAX20075ATCA/V+" prefix="U">
+<description>Buck Switching Regulator IC Positive Programmable (Fixed) 1V 1 Output 600mA 12-WFDFN Exposed Pad
+&lt;p&gt;&lt;\p&gt;
+&lt;a href="https://www.digikey.com/product-detail/en/maxim-integrated/MAX20075ATCA-V/MAX20075ATCA-V-ND/6188700"&gt;DigiKey&lt;\a&gt;</description>
+<gates>
+<gate name="A" symbol="MAX20075ATCA/V+" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="12-TDFN">
+<connects>
+<connect gate="A" pin="AGND" pad="7"/>
+<connect gate="A" pin="BIAS" pad="10"/>
+<connect gate="A" pin="BST" pad="3"/>
+<connect gate="A" pin="EN" pad="2"/>
+<connect gate="A" pin="EPAD" pad="13"/>
+<connect gate="A" pin="FB" pad="8"/>
+<connect gate="A" pin="LX" pad="5"/>
+<connect gate="A" pin="OUT" pad="9"/>
+<connect gate="A" pin="PGND" pad="6"/>
+<connect gate="A" pin="PGOOD" pad="12"/>
+<connect gate="A" pin="SPS" pad="1"/>
+<connect gate="A" pin="SUP" pad="4"/>
+<connect gate="A" pin="SYNC" pad="11"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DKPN" value="MAX20075ATCA/V+-ND" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="CBC2518T4R7M" prefix="L" uservalue="yes">
+<description>4.7µH Unshielded Wirewound Inductor 920mA 260mOhm Max 1007 (2518 Metric)
+&lt;p&gt;&lt;\p&gt;
+&lt;a href="https://www.digikey.com/product-detail/en/taiyo-yuden/CBC2518T4R7M/587-1621-1-ND/1008236"&gt;DigiKey&lt;\a&gt;</description>
+<gates>
+<gate name="G$1" symbol="INDUCTOR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="1007">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DKPN" value="587-1621-1-ND" constant="no"/>
+<attribute name="VALUE" value="4.7u" constant="no"/>
 </technology>
 </technologies>
 </device>
