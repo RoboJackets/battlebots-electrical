@@ -407,44 +407,6 @@
 <text x="-2" y="2" size="1" layer="25" font="vector">&gt;NAME</text>
 <text x="-2" y="-2" size="1" layer="27" font="vector" align="top-left">&gt;VALUE</text>
 </package>
-<package name="SOT-223-5">
-<smd name="1" x="-3.15" y="2.25" dx="1.5" dy="1" layer="1"/>
-<smd name="2" x="-3.15" y="0.75" dx="1.5" dy="1" layer="1"/>
-<smd name="3" x="-3.15" y="-0.75" dx="1.5" dy="1" layer="1"/>
-<smd name="4" x="-3.15" y="-2.25" dx="1.5" dy="1" layer="1"/>
-<smd name="5" x="3.15" y="0" dx="1.5" dy="3.3" layer="1"/>
-<wire x1="-1.9" y1="1.7" x2="-1.9" y2="2.8" width="0.1524" layer="51"/>
-<wire x1="-1.9" y1="2.8" x2="-4" y2="2.8" width="0.1524" layer="51"/>
-<wire x1="-4" y1="2.8" x2="-4" y2="1.7" width="0.1524" layer="51"/>
-<wire x1="-4" y1="1.7" x2="-1.9" y2="1.7" width="0.1524" layer="51"/>
-<wire x1="-1.9" y1="0.2" x2="-1.9" y2="1.3" width="0.1524" layer="51"/>
-<wire x1="-1.9" y1="1.3" x2="-4" y2="1.3" width="0.1524" layer="51"/>
-<wire x1="-4" y1="1.3" x2="-4" y2="0.2" width="0.1524" layer="51"/>
-<wire x1="-4" y1="0.2" x2="-1.9" y2="0.2" width="0.1524" layer="51"/>
-<wire x1="-1.9" y1="-1.3" x2="-1.9" y2="-0.2" width="0.1524" layer="51"/>
-<wire x1="-1.9" y1="-0.2" x2="-4" y2="-0.2" width="0.1524" layer="51"/>
-<wire x1="-4" y1="-0.2" x2="-4" y2="-1.3" width="0.1524" layer="51"/>
-<wire x1="-4" y1="-1.3" x2="-1.9" y2="-1.3" width="0.1524" layer="51"/>
-<wire x1="-1.9" y1="-2.8" x2="-1.9" y2="-1.7" width="0.1524" layer="51"/>
-<wire x1="-1.9" y1="-1.7" x2="-4" y2="-1.7" width="0.1524" layer="51"/>
-<wire x1="-4" y1="-1.7" x2="-4" y2="-2.8" width="0.1524" layer="51"/>
-<wire x1="-4" y1="-2.8" x2="-1.9" y2="-2.8" width="0.1524" layer="51"/>
-<wire x1="1.8" y1="1.7" x2="1.8" y2="-1.7" width="0.1524" layer="51"/>
-<wire x1="1.8" y1="-1.7" x2="4" y2="-1.7" width="0.1524" layer="51"/>
-<wire x1="4" y1="-1.7" x2="4" y2="1.7" width="0.1524" layer="51"/>
-<wire x1="4" y1="1.7" x2="1.8" y2="1.7" width="0.1524" layer="51"/>
-<wire x1="-1.8542" y1="-3.3528" x2="1.8542" y2="-3.3528" width="0.1524" layer="51"/>
-<wire x1="1.8542" y1="-3.3528" x2="1.8542" y2="3.3528" width="0.1524" layer="51"/>
-<wire x1="1.8542" y1="3.3528" x2="-1.8542" y2="3.3528" width="0.1524" layer="51"/>
-<wire x1="-1.8542" y1="3.3528" x2="-1.8542" y2="-3.3528" width="0.1524" layer="51"/>
-<wire x1="-1.9812" y1="-3.4798" x2="1.9812" y2="-3.4798" width="0.1524" layer="21"/>
-<wire x1="1.9812" y1="-3.4798" x2="1.9812" y2="3.4798" width="0.1524" layer="21"/>
-<wire x1="1.9812" y1="3.4798" x2="-1.9812" y2="3.4798" width="0.1524" layer="21"/>
-<wire x1="-1.9812" y1="3.4798" x2="-1.9812" y2="-3.4798" width="0.1524" layer="21"/>
-<text x="-3.7386" y="3.483" size="1.27" layer="21" ratio="6" rot="SR0" align="top-left">*</text>
-<text x="-3" y="-4" size="1" layer="27" font="vector" rot="SR0" align="top-left">&gt;VALUE</text>
-<text x="-3" y="4" size="1" layer="25" font="vector" rot="SR0">&gt;NAME</text>
-</package>
 <package name="8-SOIC">
 <smd name="1" x="-2.7" y="1.905" dx="1.55" dy="0.6" layer="1"/>
 <smd name="2" x="-2.7" y="0.635" dx="1.55" dy="0.6" layer="1"/>
@@ -629,6 +591,25 @@
 <wire x1="1.958" y1="-1.258" x2="1.958" y2="1.258" width="0.05" layer="39"/>
 <smd name="1" x="-1.14" y="0" dx="1.14" dy="2.02" layer="1"/>
 <smd name="2" x="1.14" y="0" dx="1.14" dy="2.02" layer="1"/>
+</package>
+<package name="SOT-353">
+<smd name="1" x="-0.9" y="0.75" dx="0.6" dy="0.6" layer="1"/>
+<smd name="2" x="-0.9" y="0" dx="0.4" dy="0.6" layer="1" rot="R90"/>
+<smd name="3" x="-0.9" y="-0.75" dx="0.6" dy="0.6" layer="1"/>
+<smd name="4" x="0.9" y="-0.75" dx="0.6" dy="0.6" layer="1"/>
+<smd name="5" x="0.9" y="0.75" dx="0.6" dy="0.6" layer="1"/>
+<wire x1="-1.016" y1="-1.251" x2="1.016" y2="-1.251" width="0.1524" layer="21"/>
+<wire x1="1.016" y1="1.251" x2="-1.016" y2="1.251" width="0.1524" layer="21"/>
+<text x="-1.9844" y="2.3954" size="1.27" layer="21" font="vector" ratio="6" rot="SR0" align="top-left">*</text>
+<text x="-1" y="-2" size="1" layer="27" font="vector" rot="SR0" align="top-left">&gt;VALUE</text>
+<wire x1="-0.6096" y1="-1.124" x2="0.6096" y2="-1.124" width="0.1524" layer="51"/>
+<wire x1="0.6096" y1="-1.124" x2="0.6096" y2="1.124" width="0.1524" layer="51"/>
+<wire x1="0.6096" y1="1.124" x2="0.3048" y2="1.124" width="0.1524" layer="51"/>
+<wire x1="0.3048" y1="1.124" x2="-0.3048" y2="1.124" width="0.1524" layer="51"/>
+<wire x1="-0.3048" y1="1.124" x2="-0.6096" y2="1.124" width="0.1524" layer="51"/>
+<wire x1="-0.6096" y1="-1.124" x2="-0.6096" y2="1.124" width="0.1524" layer="51"/>
+<wire x1="0.3048" y1="1.124" x2="-0.3048" y2="1.124" width="0.1524" layer="51" curve="-180"/>
+<text x="-1" y="2" size="1" layer="25" font="vector" rot="SR0">&gt;NAME</text>
 </package>
 </packages>
 <symbols>
@@ -834,18 +815,6 @@
 <text x="-10.16" y="12.7" size="1.778" layer="95">&gt;NAME</text>
 <text x="-10.16" y="-12.7" size="1.778" layer="96" align="top-left">&gt;VALUE</text>
 </symbol>
-<symbol name="LP38693MP-5.0/NOPB">
-<pin name="EN" x="-15.24" y="-2.54" length="middle" direction="pas"/>
-<pin name="VOUT" x="15.24" y="2.54" length="middle" direction="pas" rot="R180"/>
-<pin name="VIN" x="-15.24" y="2.54" length="middle" direction="pas"/>
-<pin name="GND" x="15.24" y="-2.54" length="middle" direction="pas" rot="R180"/>
-<wire x1="-10.16" y1="5.08" x2="-10.16" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="-10.16" y1="-5.08" x2="10.16" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="10.16" y1="-5.08" x2="10.16" y2="5.08" width="0.254" layer="94"/>
-<wire x1="10.16" y1="5.08" x2="-10.16" y2="5.08" width="0.254" layer="94"/>
-<text x="-10.16" y="7.62" size="1.778" layer="95" ratio="6" rot="SR0">&gt;NAME</text>
-<text x="-10.16" y="-7.62" size="1.778" layer="96" ratio="6" rot="SR0" align="top-left">&gt;VALUE</text>
-</symbol>
 <symbol name="LMH6612MA">
 <pin name="OUTA" x="15.24" y="0" length="middle" direction="pas" rot="R180"/>
 <pin name="INA-" x="-17.78" y="0" length="middle" direction="pas"/>
@@ -1020,6 +989,18 @@
 <wire x1="2.54" y1="0" x2="5.08" y2="0" width="0.254" layer="94" curve="-180"/>
 <pin name="1" x="-7.62" y="0" visible="off" length="short" direction="pas"/>
 <pin name="2" x="7.62" y="0" visible="off" length="short" direction="pas" rot="R180"/>
+</symbol>
+<symbol name="74AHC1G04GW,125">
+<pin name="VCC" x="-12.7" y="0" length="middle" direction="pas"/>
+<pin name="IN" x="-12.7" y="-5.08" length="middle" direction="pas"/>
+<pin name="OUT" x="12.7" y="0" length="middle" direction="pas" rot="R180"/>
+<wire x1="-7.62" y1="2.54" x2="-7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-7.62" x2="7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-7.62" x2="7.62" y2="2.54" width="0.254" layer="94"/>
+<wire x1="7.62" y1="2.54" x2="-7.62" y2="2.54" width="0.254" layer="94"/>
+<text x="-7.62" y="3.81" size="1.778" layer="95" ratio="6" rot="SR0">&gt;NAME</text>
+<text x="-7.62" y="-8.636" size="1.778" layer="96" ratio="6" rot="SR0" align="top-left">&gt;VALUE</text>
+<pin name="GND" x="12.7" y="-5.08" length="middle" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -1630,6 +1611,29 @@
 <technology name="">
 <attribute name="DKPN" value="587-1621-1-ND" constant="no"/>
 <attribute name="VALUE" value="4.7u" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="74AHC1G04GW,125" prefix="U">
+<description>Inverter IC 1 Channel
+&lt;p&gt;&lt;\p&gt;
+&lt;a href="https://www.digikey.com/product-detail/en/nexperia-usa-inc/74AHC1G04GW-125/1727-3147-1-ND/1023328"&gt;DigiKey&lt;\a&gt;</description>
+<gates>
+<gate name="G$1" symbol="74AHC1G04GW,125" x="0" y="2.54"/>
+</gates>
+<devices>
+<device name="" package="SOT-353">
+<connects>
+<connect gate="G$1" pin="GND" pad="3"/>
+<connect gate="G$1" pin="IN" pad="2"/>
+<connect gate="G$1" pin="OUT" pad="4"/>
+<connect gate="G$1" pin="VCC" pad="5"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DKPN" value="1727-3147-1-ND" constant="no"/>
 </technology>
 </technologies>
 </device>
