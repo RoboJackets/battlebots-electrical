@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.2">
+<eagle version="9.6.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
@@ -556,6 +556,25 @@
 <text x="-2.54" y="-7.62" size="1.27" layer="27" font="vector">&gt;Value</text>
 <text x="2.286" y="-6.096" size="1.4224" layer="21" ratio="12">+</text>
 <text x="-3.429" y="-6.096" size="1.4224" layer="21" ratio="12">-</text>
+</package>
+<package name="JST-PH-2-SMT" urn="urn:adsk.eagle:footprint:6240117/1">
+<wire x1="-4" y1="2.5" x2="4" y2="2.5" width="0.2032" layer="51"/>
+<wire x1="4" y1="2.5" x2="4" y2="-2.5" width="0.2032" layer="51"/>
+<wire x1="-4" y1="-2.5" x2="-4" y2="2.5" width="0.2032" layer="51"/>
+<wire x1="4" y1="-2.5" x2="-4" y2="-2.5" width="0.2032" layer="51"/>
+<wire x1="-2.25" y1="2.5" x2="2.25" y2="2.5" width="0.127" layer="21"/>
+<wire x1="4" y1="-0.5" x2="4" y2="-2.5" width="0.127" layer="21"/>
+<wire x1="4" y1="-2.5" x2="1.75" y2="-2.5" width="0.127" layer="21"/>
+<wire x1="-1.75" y1="-2.5" x2="-4" y2="-2.5" width="0.127" layer="21"/>
+<wire x1="-4" y1="-2.5" x2="-4" y2="-0.5" width="0.127" layer="21"/>
+<smd name="1" x="-1" y="-1.8" dx="1" dy="5.5" layer="1"/>
+<smd name="2" x="1" y="-1.8" dx="1" dy="5.5" layer="1"/>
+<smd name="NC1" x="-3.4" y="0" dx="3.4" dy="1.6" layer="1" rot="R90"/>
+<smd name="NC2" x="3.4" y="0" dx="3.4" dy="1.6" layer="1" rot="R90"/>
+<text x="-2.54" y="3.81" size="1.27" layer="25" font="vector">&gt;Name</text>
+<text x="-2.54" y="-7.62" size="1.27" layer="27" font="vector">&gt;Value</text>
+<text x="-2.914" y="-6.096" size="1.4224" layer="21" ratio="12">+</text>
+<text x="2.271" y="-6.096" size="1.4224" layer="21" ratio="12">-</text>
 </package>
 </packages>
 <symbols>
@@ -1421,6 +1440,16 @@
 <connects>
 <connect gate="G$1" pin="1" pad="2"/>
 <connect gate="G$1" pin="2" pad="1"/>
+<connect gate="G$1" pin="SHIELD" pad="NC1 NC2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="" package="JST-PH-2-SMT">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
 <connect gate="G$1" pin="SHIELD" pad="NC1 NC2"/>
 </connects>
 <technologies>
@@ -9379,7 +9408,7 @@ Source: AVX .. aphvc.pdf</description>
 </class>
 </classes>
 <parts>
-<part name="U1" library="Hocki_Library" deviceset="TEENSY_4.1" device=""/>
+<part name="U1" library="Hocki_Library" deviceset="TEENSY_4.1" device="" override_package3d_urn="urn:adsk.eagle:package:22261832/3" override_package_urn="urn:adsk.eagle:footprint:22261835/1"/>
 <part name="U2" library="Hocki_Library" deviceset="ADXL375" device=""/>
 <part name="SUPPLY1" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="3.3V" device=""/>
 <part name="GND1" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
@@ -9578,7 +9607,7 @@ Source: AVX .. aphvc.pdf</description>
 <part name="R15" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="20k"/>
 <part name="GND59" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
 <part name="SUPPLY22" library="Hocki_Library" deviceset="9V" device=""/>
-<part name="J3" library="Hocki_Library" deviceset="SM03B-SRSS-TB(LF)(SN)" device=""/>
+<part name="J3" library="Hocki_Library" deviceset="SM03B-SRSS-TB(LF)(SN)" device="" override_package3d_urn="urn:adsk.eagle:package:22261818/2" override_package_urn="urn:adsk.eagle:footprint:22261819/1"/>
 <part name="GND60" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
 <part name="SUPPLY23" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="U22" library="Hocki_Library" deviceset="74AHC1G04GW,125" device=""/>
@@ -9591,7 +9620,7 @@ Source: AVX .. aphvc.pdf</description>
 <part name="C52" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="22u"/>
 <part name="GND57" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
 <part name="L1" library="Hocki_Library" deviceset="LQH5BPN100M38L" device="" value="10uH"/>
-<part name="J4" library="Hocki_Library" deviceset="SM04B-SRSS-TB(LF)(SN)" device=""/>
+<part name="J4" library="Hocki_Library" deviceset="SM04B-SRSS-TB(LF)(SN)" device="" override_package3d_urn="urn:adsk.eagle:package:22261809/2" override_package_urn="urn:adsk.eagle:footprint:22261810/1"/>
 <part name="J5" library="Hocki_Library" deviceset="SM04B-SRSS-TB(LF)(SN)" device=""/>
 <part name="P+2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="SUPPLY26" library="Hocki_Library" deviceset="9V" device=""/>
@@ -9606,7 +9635,7 @@ Source: AVX .. aphvc.pdf</description>
 <part name="GND66" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
 <part name="P+5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+24V" device=""/>
 <part name="GND67" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="CN1" library="Hocki_Library" deviceset="JST_2PIN" device="-SMT-RA"/>
+<part name="CN1" library="Hocki_Library" deviceset="JST_2PIN" device="" override_package3d_urn="urn:adsk.eagle:package:22261884/2" override_package_urn="urn:adsk.eagle:footprint:6240117/1"/>
 </parts>
 <sheets>
 <sheet>
@@ -10413,12 +10442,12 @@ Source: AVX .. aphvc.pdf</description>
 <instance part="P+5" gate="1" x="137.16" y="55.88" smashed="yes">
 <attribute name="VALUE" x="134.62" y="50.8" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="GND67" gate="1" x="137.16" y="40.64" smashed="yes">
-<attribute name="VALUE" x="137.16" y="40.386" size="1.778" layer="96" align="top-center"/>
+<instance part="GND67" gate="1" x="132.08" y="38.1" smashed="yes">
+<attribute name="VALUE" x="132.08" y="37.846" size="1.778" layer="96" align="top-center"/>
 </instance>
-<instance part="CN1" gate="G$1" x="124.46" y="48.26" smashed="yes" rot="R180">
-<attribute name="NAME" x="130.81" y="42.545" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="130.81" y="55.88" size="1.778" layer="96" rot="R180"/>
+<instance part="CN1" gate="G$1" x="121.92" y="48.26" smashed="yes" rot="MR0">
+<attribute name="NAME" x="128.27" y="53.975" size="1.778" layer="95" rot="MR0"/>
+<attribute name="VALUE" x="128.27" y="40.64" size="1.778" layer="96" rot="MR0"/>
 </instance>
 </instances>
 <busses>
@@ -10801,10 +10830,10 @@ Source: AVX .. aphvc.pdf</description>
 <pinref part="GND66" gate="1" pin="GND"/>
 </segment>
 <segment>
-<wire x1="137.16" y1="45.72" x2="137.16" y2="43.18" width="0.1524" layer="91"/>
+<pinref part="CN1" gate="G$1" pin="2"/>
+<wire x1="124.46" y1="48.26" x2="132.08" y2="48.26" width="0.1524" layer="91"/>
 <pinref part="GND67" gate="1" pin="GND"/>
-<pinref part="CN1" gate="G$1" pin="1"/>
-<wire x1="137.16" y1="45.72" x2="127" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="48.26" x2="132.08" y2="40.64" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="3.3V" class="0">
@@ -12195,13 +12224,13 @@ Source: AVX .. aphvc.pdf</description>
 <junction x="162.56" y="50.8"/>
 </segment>
 <segment>
-<wire x1="137.16" y1="48.26" x2="137.16" y2="50.8" width="0.1524" layer="91"/>
-<pinref part="P+5" gate="1" pin="+24V"/>
-<pinref part="CN1" gate="G$1" pin="2"/>
-<wire x1="137.16" y1="50.8" x2="137.16" y2="53.34" width="0.1524" layer="91"/>
-<wire x1="137.16" y1="48.26" x2="127" y2="48.26" width="0.1524" layer="91"/>
 <pinref part="CN1" gate="G$1" pin="SHIELD"/>
-<wire x1="127" y1="50.8" x2="137.16" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="45.72" x2="137.16" y2="45.72" width="0.1524" layer="91"/>
+<pinref part="P+5" gate="1" pin="+24V"/>
+<wire x1="137.16" y1="45.72" x2="137.16" y2="50.8" width="0.1524" layer="91"/>
+<pinref part="CN1" gate="G$1" pin="1"/>
+<wire x1="137.16" y1="50.8" x2="137.16" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="50.8" x2="137.16" y2="50.8" width="0.1524" layer="91"/>
 <junction x="137.16" y="50.8"/>
 </segment>
 </net>
@@ -12360,6 +12389,11 @@ will not be understood (or retained) with this version.
 Since Version 8.3, EAGLE supports the association of 3D packages
 with devices in libraries, schematics, and board files. Those 3D
 packages will not be understood (or retained) with this version.
+</note>
+<note version="9.4" severity="warning">
+Since Version 9.4, EAGLE supports the overriding of 3D packages
+in schematics and board files. Those overridden 3d packages
+will not be understood (or retained) with this version.
 </note>
 <note version="8.4" severity="warning">
 Since Version 8.4, EAGLE supports properties for SPICE simulation. 
