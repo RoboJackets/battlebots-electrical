@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.6.2">
+<eagle version="9.5.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -160,7 +160,7 @@
 <libraries>
 <library name="Hocki_Library">
 <packages>
-<package name="TEENSY_4.1">
+<package name="TEENSY_4.1" urn="urn:adsk.eagle:footprint:22261835/1">
 <pad name="GND1" x="-7.24" y="30" drill="1.016"/>
 <pad name="0" x="-7.24" y="27.46" drill="1.016"/>
 <pad name="1" x="-7.24" y="24.92" drill="1.016"/>
@@ -216,8 +216,6 @@
 <wire x1="8.9" y1="-29.5" x2="6.3" y2="-29.5" width="0.127" layer="21"/>
 <wire x1="6.24" y1="-29.5" x2="-8.9" y2="-29.5" width="0.127" layer="21"/>
 <wire x1="-8.9" y1="-29.5" x2="-8.9" y2="31.5" width="0.127" layer="21"/>
-<text x="-9" y="32" size="1" layer="25" font="vector">&gt;NAME</text>
-<text x="-9" y="-31" size="1" layer="27" font="vector" align="top-left">&gt;VALUE</text>
 <wire x1="-6.24" y1="-17.7" x2="-6.24" y2="-29.5" width="0.127" layer="21"/>
 <wire x1="6.3" y1="-29.5" x2="6.24" y2="-29.5" width="0.127" layer="21"/>
 <wire x1="6.24" y1="-29.5" x2="6.24" y2="-17.7" width="0.127" layer="21"/>
@@ -230,6 +228,8 @@
 <wire x1="-4" y1="31.5" x2="-4" y2="33.1" width="0.127" layer="21"/>
 <wire x1="-4" y1="33.1" x2="4" y2="33.1" width="0.127" layer="21"/>
 <wire x1="4" y1="33.1" x2="4" y2="31.5" width="0.127" layer="21"/>
+<text x="-9" y="32" size="1" layer="25" font="vector">&gt;NAME</text>
+<text x="-9" y="-31" size="1" layer="27" font="vector" align="top-left">&gt;VALUE</text>
 </package>
 <package name="14-LGA">
 <wire x1="-1.778" y1="2.794" x2="1.778" y2="2.794" width="0.127" layer="21"/>
@@ -424,7 +424,7 @@
 <wire x1="0.3048" y1="1.524" x2="-0.3048" y2="1.524" width="0.1524" layer="51" curve="-180"/>
 <text x="-1" y="2" size="1" layer="25" font="vector" rot="SR0">&gt;NAME</text>
 </package>
-<package name="SM03B-SRSS-TB(LF)(SN)">
+<package name="SM03B-SRSS-TB(LF)(SN)" urn="urn:adsk.eagle:footprint:22324088/1">
 <wire x1="-2.5" y1="-0.325" x2="2.5" y2="-0.325" width="0.127" layer="51"/>
 <wire x1="2.5" y1="-0.325" x2="2.5" y2="-4.575" width="0.127" layer="51"/>
 <wire x1="2.5" y1="-4.575" x2="-2.5" y2="-4.575" width="0.127" layer="51"/>
@@ -493,8 +493,9 @@
 <text x="-3" y="3" size="1" layer="25">&gt;NAME</text>
 <text x="-3" y="-3" size="1" layer="27" align="top-left">&gt;VALUE</text>
 </package>
-<package name="SM04B-SRSS-TB(LF)(SN)">
+<package name="SM04B-SRSS-TB(LF)(SN)" urn="urn:adsk.eagle:footprint:22261810/1">
 <circle x="-2.45" y="0.385" radius="0.1" width="0.3" layer="21"/>
+<circle x="-2.45" y="0.385" radius="0.1" width="0.3" layer="51"/>
 <text x="-3.72381875" y="1.131940625" size="1.271490625" layer="25">&gt;NAME</text>
 <text x="-3.713609375" y="-6.375909375" size="1.27071875" layer="27">&gt;VALUE</text>
 <wire x1="-3" y1="-0.325" x2="3" y2="-0.325" width="0.127" layer="51"/>
@@ -506,7 +507,6 @@
 <wire x1="2.2" y1="-0.325" x2="3" y2="-0.325" width="0.127" layer="21"/>
 <wire x1="3" y1="-0.325" x2="3" y2="-2.6" width="0.127" layer="21"/>
 <wire x1="-1.8" y1="-4.575" x2="1.8" y2="-4.575" width="0.127" layer="21"/>
-<circle x="-2.45" y="0.385" radius="0.1" width="0.3" layer="51"/>
 <smd name="S2" x="2.8" y="-3.875" dx="1.2" dy="1.8" layer="1" rot="R180"/>
 <smd name="S1" x="-2.8" y="-3.875" dx="1.2" dy="1.8" layer="1" rot="R180"/>
 <smd name="1" x="-1.5" y="0" dx="0.6" dy="1.55" layer="1"/>
@@ -576,7 +576,40 @@
 <text x="-2.914" y="-6.096" size="1.4224" layer="21" ratio="12">+</text>
 <text x="2.271" y="-6.096" size="1.4224" layer="21" ratio="12">-</text>
 </package>
+<package name="D26V0H1U2LP20-7">
+<smd name="1" x="-0.675" y="0" dx="0.55" dy="1.9" layer="1"/>
+<smd name="2" x="0.675" y="0" dx="0.55" dy="1.9" layer="1"/>
+<wire x1="-1" y1="1" x2="-1" y2="-1" width="0.2" layer="21"/>
+<wire x1="-1" y1="-1" x2="1" y2="-1" width="0.2" layer="21"/>
+<wire x1="1" y1="-1" x2="1" y2="1" width="0.2" layer="21"/>
+<wire x1="1" y1="1" x2="-1" y2="1" width="0.2" layer="21"/>
+<text x="-2" y="2" size="1" layer="25" font="vector">&gt;NAME</text>
+<text x="-2" y="-2" size="1" layer="27" font="vector" align="top-left">&gt;VALUE</text>
+<circle x="-1.6" y="-1.1" radius="0.282840625" width="0.2" layer="21"/>
+</package>
 </packages>
+<packages3d>
+<package3d name="TEENSY_4.1" urn="urn:adsk.eagle:package:22261832/3" type="model">
+<packageinstances>
+<packageinstance name="TEENSY_4.1"/>
+</packageinstances>
+</package3d>
+<package3d name="SM03B-SRSS-TB(LF)(SN)" urn="urn:adsk.eagle:package:22261818/2" locally_modified="yes" type="model">
+<packageinstances>
+<packageinstance name="SM03B-SRSS-TB(LF)(SN)"/>
+</packageinstances>
+</package3d>
+<package3d name="SM04B-SRSS-TB(LF)(SN)" urn="urn:adsk.eagle:package:22261809/2" type="model">
+<packageinstances>
+<packageinstance name="SM04B-SRSS-TB(LF)(SN)"/>
+</packageinstances>
+</package3d>
+<package3d name="JST-PH-2-SMT" urn="urn:adsk.eagle:package:22261884/2" type="model">
+<packageinstances>
+<packageinstance name="JST-PH-2-SMT"/>
+</packageinstances>
+</package3d>
+</packages3d>
 <symbols>
 <symbol name="TEENSY_4.1">
 <wire x1="-27.94" y1="55.88" x2="-27.94" y2="-58.42" width="0.254" layer="94"/>
@@ -895,6 +928,24 @@
 <pin name="2" x="-2.54" y="0" visible="pad" length="short" direction="pas" function="dot"/>
 <pin name="SHIELD" x="-2.54" y="-2.54" visible="pin" length="short" direction="pas" function="dot"/>
 </symbol>
+<symbol name="D26V0H1U2LP20-7">
+<wire x1="-1.27" y1="-1.27" x2="1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0" x2="-1.27" y2="1.27" width="0.254" layer="94"/>
+<wire x1="1.905" y1="1.27" x2="1.27" y2="1.27" width="0.254" layer="94"/>
+<wire x1="1.27" y1="1.27" x2="1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="1.27" x2="-1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="0" x2="-1.27" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0" x2="1.27" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="1.905" y1="1.27" x2="1.905" y2="1.016" width="0.254" layer="94"/>
+<wire x1="1.27" y1="-1.27" x2="0.635" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="0.635" y1="-1.016" x2="0.635" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="0" x2="-2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0" x2="2.54" y2="0" width="0.254" layer="94"/>
+<text x="-2.286" y="1.905" size="1.778" layer="95">&gt;NAME</text>
+<text x="-2.286" y="-3.429" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="A" x="-2.54" y="0" visible="off" length="point" direction="pas"/>
+<pin name="C" x="2.54" y="0" visible="off" length="point" direction="pas" rot="R180"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="TEENSY_4.1" prefix="U">
@@ -953,6 +1004,9 @@
 <connect gate="G$1" pin="GND" pad="GND1 GND2 GND3"/>
 <connect gate="G$1" pin="VIN" pad="5V"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:22261832/3"/>
+</package3dinstances>
 <technologies>
 <technology name="">
 <attribute name="DKPN" value="1568-DEV-16771-ND" constant="no"/>
@@ -1297,6 +1351,9 @@
 <connect gate="G$1" pin="3" pad="3"/>
 <connect gate="G$1" pin="SHIELD" pad="S1 S2"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:22261818/2"/>
+</package3dinstances>
 <technologies>
 <technology name="">
 <attribute name="DKPN" value="455-1803-1-ND" constant="no"/>
@@ -1391,6 +1448,9 @@
 <connect gate="G$2" pin="4" pad="4"/>
 <connect gate="G$2" pin="SHIELD" pad="S1 S2"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:22261809/2"/>
+</package3dinstances>
 <technologies>
 <technology name="">
 <attribute name="DKPN" value="455-1804-1-ND" constant="no"/>
@@ -1451,6 +1511,28 @@
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
 <connect gate="G$1" pin="SHIELD" pad="NC1 NC2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:22261884/2"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="D26V0H1U2LP20-7" prefix="D">
+<description>40V Clamp 9.5A Ipp Tvs Diode Surface Mount U-DFN2020-2
+&lt;p&gt;&lt;\p&gt;
+&lt;a href="https://www.digikey.com/product-detail/en/diodes-incorporated/D26V0H1U2LP20-7/D26V0H1U2LP20-7DICT-ND/4898881"&gt;DigiKey&lt;\a&gt;</description>
+<gates>
+<gate name="G$1" symbol="D26V0H1U2LP20-7" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="D26V0H1U2LP20-7">
+<connects>
+<connect gate="G$1" pin="A" pad="2"/>
+<connect gate="G$1" pin="C" pad="1"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -9408,7 +9490,7 @@ Source: AVX .. aphvc.pdf</description>
 </class>
 </classes>
 <parts>
-<part name="U1" library="Hocki_Library" deviceset="TEENSY_4.1" device="" override_package3d_urn="urn:adsk.eagle:package:22261832/3" override_package_urn="urn:adsk.eagle:footprint:22261835/1"/>
+<part name="U1" library="Hocki_Library" deviceset="TEENSY_4.1" device="" package3d_urn="urn:adsk.eagle:package:22261832/3"/>
 <part name="U2" library="Hocki_Library" deviceset="ADXL375" device=""/>
 <part name="SUPPLY1" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="3.3V" device=""/>
 <part name="GND1" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
@@ -9592,8 +9674,8 @@ Source: AVX .. aphvc.pdf</description>
 <part name="GND55" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
 <part name="C45" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="47n"/>
 <part name="C46" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="47n"/>
-<part name="J1" library="Hocki_Library" deviceset="SM03B-SRSS-TB(LF)(SN)" device=""/>
-<part name="J2" library="Hocki_Library" deviceset="SM03B-SRSS-TB(LF)(SN)" device=""/>
+<part name="J1" library="Hocki_Library" deviceset="SM03B-SRSS-TB(LF)(SN)" device="" package3d_urn="urn:adsk.eagle:package:22261818/2"/>
+<part name="J2" library="Hocki_Library" deviceset="SM03B-SRSS-TB(LF)(SN)" device="" package3d_urn="urn:adsk.eagle:package:22261818/2"/>
 <part name="SUPPLY19" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="SUPPLY20" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="C47" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="10u"/>
@@ -9607,7 +9689,7 @@ Source: AVX .. aphvc.pdf</description>
 <part name="R15" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="20k"/>
 <part name="GND59" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
 <part name="SUPPLY22" library="Hocki_Library" deviceset="9V" device=""/>
-<part name="J3" library="Hocki_Library" deviceset="SM03B-SRSS-TB(LF)(SN)" device="" override_package3d_urn="urn:adsk.eagle:package:22261818/2" override_package_urn="urn:adsk.eagle:footprint:22261819/1"/>
+<part name="J3" library="Hocki_Library" deviceset="SM03B-SRSS-TB(LF)(SN)" device="" package3d_urn="urn:adsk.eagle:package:22261818/2"/>
 <part name="GND60" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
 <part name="SUPPLY23" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="U22" library="Hocki_Library" deviceset="74AHC1G04GW,125" device=""/>
@@ -9620,8 +9702,8 @@ Source: AVX .. aphvc.pdf</description>
 <part name="C52" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="22u"/>
 <part name="GND57" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
 <part name="L1" library="Hocki_Library" deviceset="LQH5BPN100M38L" device="" value="10uH"/>
-<part name="J4" library="Hocki_Library" deviceset="SM04B-SRSS-TB(LF)(SN)" device="" override_package3d_urn="urn:adsk.eagle:package:22261809/2" override_package_urn="urn:adsk.eagle:footprint:22261810/1"/>
-<part name="J5" library="Hocki_Library" deviceset="SM04B-SRSS-TB(LF)(SN)" device=""/>
+<part name="J4" library="Hocki_Library" deviceset="SM04B-SRSS-TB(LF)(SN)" device="" package3d_urn="urn:adsk.eagle:package:22261809/2"/>
+<part name="J5" library="Hocki_Library" deviceset="SM04B-SRSS-TB(LF)(SN)" device="" package3d_urn="urn:adsk.eagle:package:22261809/2"/>
 <part name="P+2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="SUPPLY26" library="Hocki_Library" deviceset="9V" device=""/>
 <part name="U23" library="Hocki_Library" deviceset="LDL212PU50R" device=""/>
@@ -9635,7 +9717,8 @@ Source: AVX .. aphvc.pdf</description>
 <part name="GND66" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
 <part name="P+5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+24V" device=""/>
 <part name="GND67" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="CN1" library="Hocki_Library" deviceset="JST_2PIN" device="" override_package3d_urn="urn:adsk.eagle:package:22261884/2" override_package_urn="urn:adsk.eagle:footprint:6240117/1"/>
+<part name="CN1" library="Hocki_Library" deviceset="JST_2PIN" device="" package3d_urn="urn:adsk.eagle:package:22261884/2"/>
+<part name="D3" library="Hocki_Library" deviceset="D26V0H1U2LP20-7" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -10449,6 +10532,10 @@ Source: AVX .. aphvc.pdf</description>
 <attribute name="NAME" x="128.27" y="53.975" size="1.778" layer="95" rot="MR0"/>
 <attribute name="VALUE" x="128.27" y="40.64" size="1.778" layer="96" rot="MR0"/>
 </instance>
+<instance part="D3" gate="G$1" x="142.24" y="45.72" smashed="yes" rot="R90">
+<attribute name="NAME" x="140.335" y="43.434" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="145.669" y="43.434" size="1.778" layer="96" rot="R90"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -10779,6 +10866,9 @@ Source: AVX .. aphvc.pdf</description>
 <junction x="149.86" y="40.64"/>
 <pinref part="U21" gate="G$1" pin="GND"/>
 <wire x1="165.1" y1="40.64" x2="149.86" y2="40.64" width="0.1524" layer="91"/>
+<pinref part="D3" gate="G$1" pin="A"/>
+<wire x1="142.24" y1="43.18" x2="142.24" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="142.24" y1="40.64" x2="149.86" y2="40.64" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C48" gate="G$1" pin="2"/>
@@ -11560,11 +11650,6 @@ Source: AVX .. aphvc.pdf</description>
 </net>
 <net name="CS4" class="0">
 <segment>
-<pinref part="U1" gate="G$1" pin="10/PWM/MQSR/CS"/>
-<wire x1="261.62" y1="165.1" x2="256.54" y2="165.1" width="0.1524" layer="91"/>
-<label x="256.54" y="165.1" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-<segment>
 <pinref part="U12" gate="A" pin="B2"/>
 <wire x1="55.88" y1="109.22" x2="53.34" y2="109.22" width="0.1524" layer="91"/>
 <label x="53.34" y="109.22" size="1.27" layer="95" rot="R180" xref="yes"/>
@@ -11573,6 +11658,11 @@ Source: AVX .. aphvc.pdf</description>
 <pinref part="U5" gate="ADXL375" pin="!CS"/>
 <wire x1="134.62" y1="91.44" x2="124.46" y2="91.44" width="0.1524" layer="91"/>
 <label x="124.46" y="91.44" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="24/PWM/SCL2/TX6/A10"/>
+<wire x1="261.62" y1="129.54" x2="256.54" y2="129.54" width="0.1524" layer="91"/>
+<label x="256.54" y="129.54" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="CS2" class="0">
@@ -11594,11 +11684,6 @@ Source: AVX .. aphvc.pdf</description>
 </net>
 <net name="CS3" class="0">
 <segment>
-<pinref part="U1" gate="G$1" pin="9/PWM/OUT1C"/>
-<wire x1="261.62" y1="167.64" x2="256.54" y2="167.64" width="0.1524" layer="91"/>
-<label x="256.54" y="167.64" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-<segment>
 <pinref part="U12" gate="A" pin="B1"/>
 <wire x1="55.88" y1="114.3" x2="53.34" y2="114.3" width="0.1524" layer="91"/>
 <label x="53.34" y="114.3" size="1.27" layer="95" rot="R180" xref="yes"/>
@@ -11608,6 +11693,11 @@ Source: AVX .. aphvc.pdf</description>
 <wire x1="134.62" y1="119.38" x2="124.46" y2="119.38" width="0.1524" layer="91"/>
 <label x="124.46" y="119.38" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="10/PWM/MQSR/CS"/>
+<wire x1="261.62" y1="165.1" x2="256.54" y2="165.1" width="0.1524" layer="91"/>
+<label x="256.54" y="165.1" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
 </net>
 <net name="INT1A" class="0">
 <segment>
@@ -11616,9 +11706,9 @@ Source: AVX .. aphvc.pdf</description>
 <label x="175.26" y="190.5" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U1" gate="G$1" pin="40/A16"/>
-<wire x1="261.62" y1="88.9" x2="256.54" y2="88.9" width="0.1524" layer="91"/>
-<label x="256.54" y="88.9" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="U1" gate="G$1" pin="41/A17"/>
+<wire x1="261.62" y1="86.36" x2="256.54" y2="86.36" width="0.1524" layer="91"/>
+<label x="256.54" y="86.36" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="INT1B" class="0">
@@ -11628,9 +11718,9 @@ Source: AVX .. aphvc.pdf</description>
 <label x="175.26" y="187.96" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U1" gate="G$1" pin="41/A17"/>
-<wire x1="261.62" y1="86.36" x2="256.54" y2="86.36" width="0.1524" layer="91"/>
-<label x="256.54" y="86.36" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="U1" gate="G$1" pin="40/A16"/>
+<wire x1="261.62" y1="88.9" x2="256.54" y2="88.9" width="0.1524" layer="91"/>
+<label x="256.54" y="88.9" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="INT2A" class="0">
@@ -11664,9 +11754,9 @@ Source: AVX .. aphvc.pdf</description>
 <label x="175.26" y="134.62" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U1" gate="G$1" pin="8/PWM/IN1/TX2"/>
-<wire x1="261.62" y1="170.18" x2="256.54" y2="170.18" width="0.1524" layer="91"/>
-<label x="256.54" y="170.18" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="U1" gate="G$1" pin="7/PWM/OUT1A/RX2"/>
+<wire x1="261.62" y1="172.72" x2="256.54" y2="172.72" width="0.1524" layer="91"/>
+<label x="256.54" y="172.72" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="INT3B" class="0">
@@ -11676,9 +11766,9 @@ Source: AVX .. aphvc.pdf</description>
 <label x="175.26" y="132.08" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U1" gate="G$1" pin="7/PWM/OUT1A/RX2"/>
-<wire x1="261.62" y1="172.72" x2="256.54" y2="172.72" width="0.1524" layer="91"/>
-<label x="256.54" y="172.72" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="U1" gate="G$1" pin="8/PWM/IN1/TX2"/>
+<wire x1="261.62" y1="170.18" x2="256.54" y2="170.18" width="0.1524" layer="91"/>
+<label x="256.54" y="170.18" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="INT4A" class="0">
@@ -11700,9 +11790,9 @@ Source: AVX .. aphvc.pdf</description>
 <label x="175.26" y="104.14" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U1" gate="G$1" pin="24/PWM/SCL2/TX6/A10"/>
-<wire x1="261.62" y1="129.54" x2="256.54" y2="129.54" width="0.1524" layer="91"/>
-<label x="256.54" y="129.54" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="U1" gate="G$1" pin="26/MOSI1/A12"/>
+<wire x1="261.62" y1="124.46" x2="256.54" y2="124.46" width="0.1524" layer="91"/>
+<label x="256.54" y="124.46" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="S/R" class="0">
@@ -12222,6 +12312,9 @@ Source: AVX .. aphvc.pdf</description>
 <wire x1="165.1" y1="45.72" x2="162.56" y2="45.72" width="0.1524" layer="91"/>
 <wire x1="162.56" y1="45.72" x2="162.56" y2="50.8" width="0.1524" layer="91"/>
 <junction x="162.56" y="50.8"/>
+<pinref part="D3" gate="G$1" pin="C"/>
+<wire x1="142.24" y1="48.26" x2="142.24" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="142.24" y1="50.8" x2="149.86" y2="50.8" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="CN1" gate="G$1" pin="SHIELD"/>
@@ -12270,8 +12363,8 @@ Source: AVX .. aphvc.pdf</description>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="0/PWM/CRX2/CS1/RX1"/>
-<wire x1="261.62" y1="190.5" x2="259.08" y2="190.5" width="0.1524" layer="91"/>
-<label x="259.08" y="190.5" size="1.778" layer="95" rot="R180" xref="yes"/>
+<wire x1="261.62" y1="190.5" x2="256.54" y2="190.5" width="0.1524" layer="91"/>
+<label x="256.54" y="190.5" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="N$3" class="0">
@@ -12329,8 +12422,8 @@ Source: AVX .. aphvc.pdf</description>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="2/PWM/OUT2"/>
-<wire x1="261.62" y1="185.42" x2="259.08" y2="185.42" width="0.1524" layer="91"/>
-<label x="259.08" y="185.42" size="1.778" layer="95" rot="R180" xref="yes"/>
+<wire x1="261.62" y1="185.42" x2="256.54" y2="185.42" width="0.1524" layer="91"/>
+<label x="256.54" y="185.42" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="LED_DATA1" class="0">
@@ -12341,8 +12434,8 @@ Source: AVX .. aphvc.pdf</description>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="1/PWM/CTX2/MISO1/TX1"/>
-<wire x1="261.62" y1="187.96" x2="259.08" y2="187.96" width="0.1524" layer="91"/>
-<label x="259.08" y="187.96" size="1.778" layer="95" rot="R180" xref="yes"/>
+<wire x1="261.62" y1="187.96" x2="256.54" y2="187.96" width="0.1524" layer="91"/>
+<label x="256.54" y="187.96" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="LED_CLK2" class="0">
@@ -12353,8 +12446,8 @@ Source: AVX .. aphvc.pdf</description>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="4/PWM/BCLK2"/>
-<wire x1="261.62" y1="180.34" x2="259.08" y2="180.34" width="0.1524" layer="91"/>
-<label x="259.08" y="180.34" size="1.778" layer="95" rot="R180" xref="yes"/>
+<wire x1="261.62" y1="180.34" x2="256.54" y2="180.34" width="0.1524" layer="91"/>
+<label x="256.54" y="180.34" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="LED_DATA2" class="0">
@@ -12365,8 +12458,8 @@ Source: AVX .. aphvc.pdf</description>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="3/PWM/LRCLK2"/>
-<wire x1="261.62" y1="182.88" x2="259.08" y2="182.88" width="0.1524" layer="91"/>
-<label x="259.08" y="182.88" size="1.778" layer="95" rot="R180" xref="yes"/>
+<wire x1="261.62" y1="182.88" x2="256.54" y2="182.88" width="0.1524" layer="91"/>
+<label x="256.54" y="182.88" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 </nets>
@@ -12389,11 +12482,6 @@ will not be understood (or retained) with this version.
 Since Version 8.3, EAGLE supports the association of 3D packages
 with devices in libraries, schematics, and board files. Those 3D
 packages will not be understood (or retained) with this version.
-</note>
-<note version="9.4" severity="warning">
-Since Version 9.4, EAGLE supports the overriding of 3D packages
-in schematics and board files. Those overridden 3d packages
-will not be understood (or retained) with this version.
 </note>
 <note version="8.4" severity="warning">
 Since Version 8.4, EAGLE supports properties for SPICE simulation. 
