@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.6.2">
+<eagle version="9.5.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="no" altdistance="0.1" altunitdist="mm" altunit="mm"/>
@@ -52,7 +52,7 @@
 <layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
@@ -161,7 +161,7 @@
 <layer number="255" name="routoute" color="7" fill="1" visible="no" active="yes"/>
 </layers>
 <board>
-<fusionsync huburn="a.cGVyc29uYWw6dWUyZDhlY2M3" projecturn="a.cGVyc29uYWw6dWUyZDhlY2M3IzIwMjAwNzEyMzE1MDc1MjU2" f3durn="urn:adsk.wipprod:dm.lineage:OuSaG_R2Q9mGFnPAEtv9Kg" pcbguid="ced57c46-fdd1-4c9d-a043-21a067a15f17" lastpulledtime="" lastsyncedchangeguid="9b077a87-b929-af61-9d68-7071e09555d7" latestrevisionid="" lastsyncedrevisionid="" lastboardhashguid="631afea8-1c1f-bd73-f2a1-50890a0bde2b" lastpushedtime="2020-07-31T01:06:36Z" linktopcb3d="false"/>
+<fusionsync huburn="a.cGVyc29uYWw6dWUyZDhlY2M3" projecturn="a.cGVyc29uYWw6dWUyZDhlY2M3IzIwMjAwNzEyMzE1MDc1MjU2" f3durn="urn:adsk.wipprod:dm.lineage:OuSaG_R2Q9mGFnPAEtv9Kg" pcbguid="ced57c46-fdd1-4c9d-a043-21a067a15f17" lastpulledtime="" lastsyncedchangeguid="9b077a87-b929-af61-9d68-7071e09555d7"/>
 <plain>
 <wire x1="0" y1="0" x2="42" y2="0" width="0" layer="20"/>
 <wire x1="42" y1="0" x2="42" y2="35" width="0" layer="20"/>
@@ -175,8 +175,19 @@
 <circle x="39" y="3" radius="2.8" width="0.2" layer="21"/>
 <circle x="3" y="3" radius="2.8" width="0.2" layer="21"/>
 <circle x="3" y="32" radius="2.8" width="0.2" layer="21"/>
-<text x="19" y="25" size="2" layer="22" font="vector" rot="SMR270">IR Receiver V1</text>
+<text x="19" y="25" size="2" layer="22" font="vector" ratio="7" rot="SMR270">IR Receiver V1</text>
 <rectangle x1="20" y1="13" x2="27" y2="20" layer="22"/>
+<text x="5" y="23.8" size="4.5" layer="22" font="vector" ratio="7" rot="SMR270">Hocki</text>
+<wire x1="26.3" y1="32.5" x2="30" y2="32.5" width="0.2" layer="21"/>
+<wire x1="30" y1="32.5" x2="30" y2="34.4" width="0.2" layer="21"/>
+<wire x1="30" y1="34.4" x2="26.3" y2="34.4" width="0.2" layer="21"/>
+<wire x1="26.3" y1="34.4" x2="26.3" y2="32.5" width="0.2" layer="21"/>
+<text x="30.2" y="33.1" size="0.8128" layer="21" font="vector">5V</text>
+<wire x1="35.1" y1="20.6" x2="35.1" y2="16.9" width="0.2" layer="21"/>
+<wire x1="35.1" y1="16.9" x2="36.9" y2="16.9" width="0.2" layer="21"/>
+<wire x1="36.9" y1="16.9" x2="36.9" y2="20.6" width="0.2" layer="21"/>
+<wire x1="36.9" y1="20.6" x2="35.1" y2="20.6" width="0.2" layer="21"/>
+<text x="34.1" y="18.6" size="0.8128" layer="21" font="vector" rot="R270">9V</text>
 </plain>
 <libraries>
 <library name="rcl" urn="urn:adsk.eagle:library:334">
@@ -6400,6 +6411,59 @@ In this library you will find logos and images specific to RoboJackets. The part
 </package>
 </packages>
 </library>
+<library name="SparkFun-LED" urn="urn:adsk.eagle:library:529">
+<description>&lt;h3&gt;SparkFun LEDs&lt;/h3&gt;
+This library contains discrete LEDs for illumination or indication, but no displays.
+&lt;br&gt;
+&lt;br&gt;
+We've spent an enormous amount of time creating and checking these footprints and parts, but it is &lt;b&gt; the end user's responsibility&lt;/b&gt; to ensure correctness and suitablity for a given componet or application. 
+&lt;br&gt;
+&lt;br&gt;If you enjoy using this library, please buy one of our products at &lt;a href=" www.sparkfun.com"&gt;SparkFun.com&lt;/a&gt;.
+&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;Licensing:&lt;/b&gt; Creative Commons ShareAlike 4.0 International - https://creativecommons.org/licenses/by-sa/4.0/ 
+&lt;br&gt;
+&lt;br&gt;
+You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
+<packages>
+<package name="LED-0603" urn="urn:adsk.eagle:footprint:39307/1" library_version="1">
+<description>&lt;B&gt;LED 0603 SMT&lt;/B&gt;&lt;p&gt;
+0603, surface mount.
+&lt;p&gt;Specifications:
+&lt;ul&gt;&lt;li&gt;Pin count: 2&lt;/li&gt;
+&lt;li&gt;Pin pitch:0.075inch &lt;/li&gt;
+&lt;li&gt;Area: 0.06" x 0.03"&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;Example device(s):
+&lt;ul&gt;&lt;li&gt;LED - BLUE&lt;/li&gt;</description>
+<smd name="C" x="0.877" y="0" dx="1" dy="1" layer="1" roundness="30" rot="R270"/>
+<smd name="A" x="-0.877" y="0" dx="1" dy="1" layer="1" roundness="30" rot="R270"/>
+<text x="0" y="0.635" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-0.635" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
+<wire x1="1.5875" y1="0.47625" x2="1.5875" y2="-0.47625" width="0.127" layer="21"/>
+<wire x1="0.15875" y1="0.47625" x2="0.15875" y2="0" width="0.127" layer="51"/>
+<wire x1="0.15875" y1="0" x2="0.15875" y2="-0.47625" width="0.127" layer="51"/>
+<wire x1="0.15875" y1="0" x2="-0.15875" y2="0.3175" width="0.127" layer="51"/>
+<wire x1="0.15875" y1="0" x2="-0.15875" y2="-0.3175" width="0.127" layer="51"/>
+</package>
+</packages>
+<packages3d>
+<package3d name="LED-0603" urn="urn:adsk.eagle:package:39354/1" type="box" library_version="1">
+<description>LED 0603 SMT
+0603, surface mount.
+Specifications:
+Pin count: 2
+Pin pitch:0.075inch 
+Area: 0.06" x 0.03"
+
+Example device(s):
+LED - BLUE</description>
+<packageinstances>
+<packageinstance name="LED-0603"/>
+</packageinstances>
+</package3d>
+</packages3d>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -6586,140 +6650,140 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 </pass>
 </autorouter>
 <elements>
-<element name="C6" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="1u" x="33.4" y="26" smashed="yes">
-<attribute name="NAME" x="34.035" y="25.365" size="0.8128" layer="25" rot="R180"/>
+<element name="C6" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="1uF" x="33.4" y="26" smashed="yes">
+<attribute name="NAME" x="34.035" y="25.365" size="0.8128" layer="25" font="vector" rot="R180"/>
 <attribute name="POPULARITY" value="37" x="56.26" y="-28.61" size="1.778" layer="27" display="off"/>
 <attribute name="SPICEPREFIX" value="C" x="56.26" y="-28.61" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="32.765" y="24.095" size="1.27" layer="27"/>
 </element>
-<element name="C7" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="2.2u" x="28" y="26" smashed="yes" rot="R180">
-<attribute name="NAME" x="28.635" y="25.365" size="0.8128" layer="25" rot="R180"/>
+<element name="C10" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="2.2uF" x="28" y="26" smashed="yes" rot="R180">
+<attribute name="NAME" x="28.735" y="27.465" size="0.8128" layer="25" font="vector" rot="R180"/>
 <attribute name="POPULARITY" value="37" x="1.33" y="80.61" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="SPICEPREFIX" value="C" x="1.33" y="80.61" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VALUE" x="28.635" y="27.905" size="1.27" layer="27" rot="R180"/>
 </element>
-<element name="C8" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="1u" x="33" y="8" smashed="yes" rot="R180">
-<attribute name="NAME" x="32.265" y="8.735" size="0.8128" layer="25"/>
+<element name="C11" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="1uF" x="33" y="8" smashed="yes" rot="R180">
+<attribute name="NAME" x="32.465" y="8.635" size="0.8128" layer="25" font="vector"/>
 <attribute name="POPULARITY" value="37" x="2.52" y="62.61" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="SPICEPREFIX" value="C" x="2.52" y="62.61" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VALUE" x="33.635" y="9.905" size="1.27" layer="27" rot="R180"/>
 </element>
-<element name="C9" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="1u" x="33" y="2" smashed="yes">
-<attribute name="NAME" x="32.365" y="0.635" size="0.8128" layer="25"/>
+<element name="C12" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="1uF" x="33" y="2" smashed="yes">
+<attribute name="NAME" x="32.465" y="0.635" size="0.8128" layer="25" font="vector"/>
 <attribute name="POPULARITY" value="37" x="67.29" y="-52.61" size="1.778" layer="27" display="off"/>
 <attribute name="SPICEPREFIX" value="C" x="67.29" y="-52.61" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="32.365" y="0.095" size="1.27" layer="27"/>
 </element>
-<element name="D1" library="Hocki_Library" package="SOD-523" value="RB521S30T1G" x="17" y="21" smashed="yes" rot="R270">
-<attribute name="NAME" x="17.5" y="18.7" size="0.8128" layer="25" font="vector" rot="R90"/>
+<element name="D5" library="Hocki_Library" package="SOD-523" value="RB521S30T1G" x="17" y="21" smashed="yes" rot="R270">
+<attribute name="NAME" x="17.4" y="18.5" size="0.8128" layer="25" font="vector" rot="R90"/>
 <attribute name="VALUE" x="16" y="22" size="1" layer="27" font="vector" rot="R270" align="top-left"/>
 </element>
-<element name="D2" library="Hocki_Library" package="SOD-523" value="RB521S30T1G" x="17" y="15" smashed="yes" rot="R90">
-<attribute name="NAME" x="17.5" y="16" size="0.8128" layer="25" font="vector" rot="R90"/>
+<element name="D6" library="Hocki_Library" package="SOD-523" value="RB521S30T1G" x="17" y="15" smashed="yes" rot="R90">
+<attribute name="NAME" x="17.4" y="16.4" size="0.8128" layer="25" font="vector" rot="R90"/>
 <attribute name="VALUE" x="18" y="14" size="1" layer="27" font="vector" rot="R90" align="top-left"/>
 </element>
-<element name="D3" library="Hocki_Library" package="SOD-523" value="RB521S30T1G" x="17" y="6" smashed="yes" rot="R90">
-<attribute name="NAME" x="17.5" y="7" size="0.8128" layer="25" font="vector" rot="R90"/>
+<element name="D7" library="Hocki_Library" package="SOD-523" value="RB521S30T1G" x="17" y="6" smashed="yes" rot="R90">
+<attribute name="NAME" x="17.4" y="3.4" size="0.8128" layer="25" font="vector" rot="R90"/>
 <attribute name="VALUE" x="18" y="5" size="1" layer="27" font="vector" rot="R90" align="top-left"/>
 </element>
-<element name="R10" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="499" x="8" y="3" smashed="yes" rot="R180">
-<attribute name="NAME" x="9.235" y="2.265" size="0.8128" layer="25" rot="R180"/>
+<element name="R3" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="499" x="8" y="3" smashed="yes" rot="R180">
+<attribute name="NAME" x="8.635" y="2.265" size="0.8128" layer="25" font="vector" rot="R180"/>
 <attribute name="VALUE" x="8.635" y="4.905" size="1.27" layer="27" rot="R180"/>
 </element>
-<element name="R11" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="499" x="11" y="3" smashed="yes" rot="R180">
-<attribute name="NAME" x="12.335" y="2.265" size="0.8128" layer="25" rot="R180"/>
+<element name="R4" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="499" x="11" y="3" smashed="yes" rot="R180">
+<attribute name="NAME" x="11.535" y="2.265" size="0.8128" layer="25" font="vector" rot="R180"/>
 <attribute name="VALUE" x="11.635" y="4.905" size="1.27" layer="27" rot="R180"/>
 </element>
-<element name="R12" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="50" x="15" y="16" smashed="yes">
-<attribute name="NAME" x="15.935" y="15.265" size="0.8128" layer="25" rot="R180"/>
+<element name="R11" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="49.9" x="15" y="16" smashed="yes">
+<attribute name="NAME" x="16.035" y="17.465" size="0.8128" layer="25" font="vector" rot="R180"/>
 <attribute name="VALUE" x="14.365" y="14.095" size="1.27" layer="27"/>
 </element>
-<element name="R13" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="50" x="15" y="7" smashed="yes">
-<attribute name="NAME" x="13.765" y="7.635" size="0.8128" layer="25"/>
+<element name="R10" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="49.9" x="15" y="7" smashed="yes">
+<attribute name="NAME" x="14.065" y="7.635" size="0.8128" layer="25" font="vector"/>
 <attribute name="VALUE" x="14.365" y="5.095" size="1.27" layer="27"/>
 </element>
-<element name="R14" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="31.6k" x="16" y="11" smashed="yes">
-<attribute name="NAME" x="17.565" y="10.535" size="0.8128" layer="25"/>
+<element name="R13" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="31.6k" x="16" y="11" smashed="yes">
+<attribute name="NAME" x="17.565" y="10.535" size="0.8128" layer="25" font="vector"/>
 <attribute name="VALUE" x="15.365" y="9.095" size="1.27" layer="27"/>
 </element>
-<element name="R15" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="31.6k" x="15" y="3" smashed="yes">
-<attribute name="NAME" x="13.765" y="3.635" size="0.8128" layer="25"/>
+<element name="R14" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="31.6k" x="15" y="3" smashed="yes">
+<attribute name="NAME" x="10.565" y="4.065" size="0.8128" layer="25" font="vector" rot="R90"/>
 <attribute name="VALUE" x="14.365" y="1.095" size="1.27" layer="27"/>
 </element>
-<element name="R16" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="499" x="30" y="5" smashed="yes" rot="R90">
-<attribute name="NAME" x="29.265" y="3.665" size="0.8128" layer="25" rot="R90"/>
+<element name="R26" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="499" x="30" y="5" smashed="yes" rot="R90">
+<attribute name="NAME" x="29.065" y="6.635" size="0.8128" layer="25" font="vector"/>
 <attribute name="VALUE" x="31.905" y="4.365" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="R17" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="100" x="25" y="26" smashed="yes" rot="R180">
-<attribute name="NAME" x="25.635" y="25.265" size="0.8128" layer="25" rot="R180"/>
+<element name="R20" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="100" x="25" y="26" smashed="yes" rot="R180">
+<attribute name="NAME" x="26.035" y="27.465" size="0.8128" layer="25" font="vector" rot="R180"/>
 <attribute name="VALUE" x="25.635" y="27.905" size="1.27" layer="27" rot="R180"/>
 </element>
-<element name="R18" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="300" x="27" y="24" smashed="yes" rot="R180">
-<attribute name="NAME" x="26.765" y="24.735" size="0.8128" layer="25"/>
+<element name="R22" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="300" x="27" y="24" smashed="yes" rot="R180">
+<attribute name="NAME" x="26.065" y="24.535" size="0.8128" layer="25" font="vector"/>
 <attribute name="VALUE" x="27.635" y="25.905" size="1.27" layer="27" rot="R180"/>
 </element>
-<element name="R19" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="100" x="27" y="2" smashed="yes">
-<attribute name="NAME" x="25.665" y="2.535" size="0.8128" layer="25"/>
+<element name="R16" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="100" x="27" y="2" smashed="yes">
+<attribute name="NAME" x="26.065" y="0.535" size="0.8128" layer="25" font="vector"/>
 <attribute name="VALUE" x="26.365" y="0.095" size="1.27" layer="27"/>
 </element>
-<element name="R2" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="1M" x="12" y="20" smashed="yes">
-<attribute name="NAME" x="11.365" y="20.735" size="0.8128" layer="25"/>
+<element name="R6" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="1M" x="12" y="20" smashed="yes">
+<attribute name="NAME" x="11.465" y="20.635" size="0.8128" layer="25" font="vector"/>
 <attribute name="VALUE" x="11.365" y="18.095" size="1.27" layer="27"/>
 </element>
-<element name="R20" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="300" x="27" y="4" smashed="yes" rot="R180">
-<attribute name="NAME" x="26.635" y="5.365" size="0.8128" layer="25" rot="R180"/>
+<element name="R19" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="300" x="27" y="4" smashed="yes" rot="R180">
+<attribute name="NAME" x="25.435" y="4.365" size="0.8128" layer="25" font="vector" rot="R180"/>
 <attribute name="VALUE" x="27.635" y="5.905" size="1.27" layer="27" rot="R180"/>
 </element>
-<element name="R21" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="499" x="20" y="2" smashed="yes">
-<attribute name="NAME" x="19.065" y="2.635" size="0.8128" layer="25"/>
+<element name="R15" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="499" x="20" y="2" smashed="yes">
+<attribute name="NAME" x="19.065" y="0.535" size="0.8128" layer="25" font="vector"/>
 <attribute name="VALUE" x="19.365" y="0.095" size="1.27" layer="27"/>
 </element>
-<element name="R22" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="10k" x="27" y="22" smashed="yes" rot="R180">
-<attribute name="NAME" x="25.965" y="22.635" size="0.8128" layer="25"/>
+<element name="R23" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="10k" x="27" y="22" smashed="yes" rot="R180">
+<attribute name="NAME" x="25.965" y="22.635" size="0.8128" layer="25" font="vector"/>
 <attribute name="VALUE" x="27.635" y="23.905" size="1.27" layer="27" rot="R180"/>
 </element>
-<element name="R23" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="10k" x="27" y="10" smashed="yes" rot="R180">
-<attribute name="NAME" x="26.065" y="10.735" size="0.8128" layer="25"/>
+<element name="R25" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="10k" x="27" y="10" smashed="yes" rot="R180">
+<attribute name="NAME" x="26.065" y="10.735" size="0.8128" layer="25" font="vector"/>
 <attribute name="VALUE" x="27.635" y="11.905" size="1.27" layer="27" rot="R180"/>
 </element>
 <element name="R24" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="10k" x="27" y="16" smashed="yes" rot="R180">
-<attribute name="NAME" x="28.035" y="15.265" size="0.8128" layer="25" rot="R180"/>
+<attribute name="NAME" x="28.035" y="15.265" size="0.8128" layer="25" font="vector" rot="R180"/>
 <attribute name="VALUE" x="27.635" y="17.905" size="1.27" layer="27" rot="R180"/>
 </element>
-<element name="R25" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="30" x="22" y="24" smashed="yes">
-<attribute name="NAME" x="20.965" y="24.735" size="0.8128" layer="25"/>
+<element name="R17" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="30" x="22" y="24" smashed="yes">
+<attribute name="NAME" x="20.965" y="24.735" size="0.8128" layer="25" font="vector"/>
 <attribute name="VALUE" x="21.365" y="22.095" size="1.27" layer="27"/>
 </element>
-<element name="R26" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="30" x="22" y="14" smashed="yes">
-<attribute name="NAME" x="20.965" y="14.635" size="0.8128" layer="25"/>
+<element name="R18" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="30" x="22" y="14" smashed="yes">
+<attribute name="NAME" x="21.065" y="14.635" size="0.8128" layer="25" font="vector"/>
 <attribute name="VALUE" x="21.365" y="12.095" size="1.27" layer="27"/>
 </element>
-<element name="R27" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="30" x="22" y="12" smashed="yes">
-<attribute name="NAME" x="20.865" y="12.635" size="0.8128" layer="25"/>
+<element name="R21" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="30" x="22" y="12" smashed="yes">
+<attribute name="NAME" x="20.965" y="12.635" size="0.8128" layer="25" font="vector"/>
 <attribute name="VALUE" x="21.365" y="10.095" size="1.27" layer="27"/>
 </element>
-<element name="R3" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="499" x="8" y="32" smashed="yes" rot="R180">
-<attribute name="NAME" x="8.735" y="33.565" size="0.8128" layer="25" rot="R180"/>
+<element name="R1" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="499" x="8" y="32" smashed="yes" rot="R180">
+<attribute name="NAME" x="8.735" y="33.565" size="0.8128" layer="25" font="vector" rot="R180"/>
 <attribute name="VALUE" x="8.635" y="33.905" size="1.27" layer="27" rot="R180"/>
 </element>
-<element name="R4" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="499" x="11" y="32" smashed="yes" rot="R180">
-<attribute name="NAME" x="11.735" y="33.565" size="0.8128" layer="25" rot="R180"/>
+<element name="R2" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="499" x="11" y="32" smashed="yes" rot="R180">
+<attribute name="NAME" x="11.735" y="33.565" size="0.8128" layer="25" font="vector" rot="R180"/>
 <attribute name="VALUE" x="11.635" y="33.905" size="1.27" layer="27" rot="R180"/>
 </element>
-<element name="R6" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="50" x="15" y="20" smashed="yes">
-<attribute name="NAME" x="15.635" y="19.265" size="0.8128" layer="25" rot="R180"/>
+<element name="R9" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="49.9" x="15" y="20" smashed="yes">
+<attribute name="NAME" x="15.635" y="19.265" size="0.8128" layer="25" font="vector" rot="R180"/>
 <attribute name="VALUE" x="14.365" y="18.095" size="1.27" layer="27"/>
 </element>
-<element name="R7" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="31.6k" x="16" y="26" smashed="yes">
-<attribute name="NAME" x="17.465" y="25.635" size="0.8128" layer="25"/>
+<element name="R12" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="31.6k" x="16" y="26" smashed="yes">
+<attribute name="NAME" x="17.465" y="25.635" size="0.8128" layer="25" font="vector"/>
 <attribute name="VALUE" x="15.365" y="24.095" size="1.27" layer="27"/>
 </element>
-<element name="R8" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="100k" x="12" y="16" smashed="yes">
-<attribute name="NAME" x="11.365" y="16.635" size="0.8128" layer="25"/>
+<element name="R7" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="100k" x="12" y="16" smashed="yes">
+<attribute name="NAME" x="11.365" y="16.635" size="0.8128" layer="25" font="vector"/>
 <attribute name="VALUE" x="11.365" y="14.095" size="1.27" layer="27"/>
 </element>
-<element name="R9" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="10k" x="12" y="7" smashed="yes">
-<attribute name="NAME" x="11.365" y="7.735" size="0.8128" layer="25"/>
+<element name="R8" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="10k" x="12" y="7" smashed="yes">
+<attribute name="NAME" x="11.365" y="7.735" size="0.8128" layer="25" font="vector"/>
 <attribute name="VALUE" x="11.365" y="5.095" size="1.27" layer="27"/>
 </element>
 <element name="U1" library="Hocki_Library" package="8-VSSOP" value="OPA2380AIDGKR" x="12" y="25" smashed="yes" rot="R270">
@@ -6727,12 +6791,12 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <attribute name="NAME" x="10.1" y="24.4" size="0.8128" layer="25" font="vector" rot="SR90"/>
 <attribute name="VALUE" x="10" y="27" size="1" layer="27" font="vector" rot="SR270" align="top-left"/>
 </element>
-<element name="U10" library="Hocki_Library" package="8-SOIC" value="LMH6612MAX/NOPB" x="21" y="19" smashed="yes" rot="R270">
+<element name="U4" library="Hocki_Library" package="8-SOIC" value="LMH6612MAX/NOPB" x="21" y="19" smashed="yes" rot="R270">
 <attribute name="DKPN" value="296-46310-1-ND" x="15.92" y="-24.18" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="24" y="21" size="0.8128" layer="25" font="vector" rot="SR270"/>
 <attribute name="VALUE" x="18" y="21" size="1" layer="27" font="vector" rot="SR270" align="top-left"/>
 </element>
-<element name="U11" library="Hocki_Library" package="8-SOIC" value="LMH6612MAX/NOPB" x="21" y="7" smashed="yes" rot="R270">
+<element name="U5" library="Hocki_Library" package="8-SOIC" value="LMH6612MAX/NOPB" x="21" y="7" smashed="yes" rot="R270">
 <attribute name="DKPN" value="296-46310-1-ND" x="4.49" y="-18.4" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="23.8" y="8.7" size="0.8128" layer="25" font="vector" rot="SR270"/>
 <attribute name="VALUE" x="18" y="9" size="1" layer="27" font="vector" rot="SR270" align="top-left"/>
@@ -6742,195 +6806,213 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <attribute name="NAME" x="10.1" y="11.2" size="0.8128" layer="25" font="vector" rot="SR90"/>
 <attribute name="VALUE" x="10" y="14" size="1" layer="27" font="vector" rot="SR270" align="top-left"/>
 </element>
-<element name="U3" library="Hocki_Library" package="SOT-23-8" value="TLV3502AIDCNR" x="27" y="19" smashed="yes">
+<element name="U7" library="Hocki_Library" package="SOT-23-8" value="TLV3502AIDCNR" x="27" y="19" smashed="yes">
 <attribute name="DKPN" value="296-39267-1-ND" x="80.34" y="3.76" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="25.1" y="17.3" size="0.8128" layer="25" font="vector" rot="SR90"/>
+<attribute name="NAME" x="26.4" y="20.7" size="0.8128" layer="25" font="vector" rot="SR0"/>
 <attribute name="VALUE" x="26" y="17" size="1" layer="27" font="vector" rot="SR0" align="top-left"/>
 </element>
-<element name="U4" library="Hocki_Library" package="SOT-23-8" value="TLV3502AIDCNR" x="27" y="7" smashed="yes">
+<element name="U8" library="Hocki_Library" package="SOT-23-8" value="TLV3502AIDCNR" x="27" y="7" smashed="yes">
 <attribute name="DKPN" value="296-39267-1-ND" x="51.13" y="-18.4" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="26.4" y="8.7" size="0.8128" layer="25" font="vector" rot="SR0"/>
 <attribute name="VALUE" x="26" y="5" size="1" layer="27" font="vector" rot="SR0" align="top-left"/>
 </element>
-<element name="U5" library="Hocki_Library" package="SC-70-6" value="SN74LVC1G58DCKR" x="32" y="19" smashed="yes" rot="R90">
+<element name="U9" library="Hocki_Library" package="SC-70-6" value="SN74LVC1G58DCKR" x="32" y="19" smashed="yes" rot="R90">
 <attribute name="DKPN" value="296-15577-1-ND" x="63.75" y="69.8" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="30.7" y="18" size="0.8128" layer="25" font="vector" rot="R90"/>
 <attribute name="VALUE" x="33.3" y="18" size="1" layer="27" font="vector" rot="R90" align="top-left"/>
 </element>
-<element name="U6" library="Hocki_Library" package="US8" value="NL27WZ32USG" x="31" y="13" smashed="yes" rot="R90">
+<element name="U10" library="Hocki_Library" package="US8" value="NL27WZ32USG" x="31" y="13" smashed="yes" rot="R90">
 <attribute name="DKPN" value=" NL27WZ32USGOSCT-ND" x="64.02" y="48.56" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="29.5" y="12.7" size="0.8128" layer="25" font="vector" rot="SR90"/>
 <attribute name="VALUE" x="33" y="12" size="1" layer="27" font="vector" rot="SR90" align="top-left"/>
 </element>
-<element name="U7" library="Hocki_Library" package="10-VSSOP" value="TMUX1204DGSR" x="35" y="13" smashed="yes" rot="R90">
+<element name="U11" library="Hocki_Library" package="10-VSSOP" value="TMUX1204DGSR" x="35" y="13" smashed="yes" rot="R90">
 <attribute name="DKPN" value=" 296-TMUX1204DGSRCT-ND" x="68.02" y="35.86" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="33.3" y="12.1" size="0.8128" layer="25" font="vector" rot="R90"/>
+<attribute name="NAME" x="33.4" y="14.7" size="0.8128" layer="25" font="vector" rot="R90"/>
 <attribute name="VALUE" x="37" y="11" size="1" layer="27" font="vector" rot="R90" align="top-left"/>
 </element>
-<element name="U9" library="Hocki_Library" package="SOT-23-5" value="TLV73310PDBVT" x="33" y="5" smashed="yes" rot="R180">
+<element name="U6" library="Hocki_Library" package="SOT-23-5" value="TLV73310PDBVT" x="33" y="5" smashed="yes" rot="R180">
 <attribute name="DKPN" value="296-38484-1-ND" x="-7.64" y="20.24" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="34.4" y="6.5" size="0.8128" layer="25" font="vector" rot="SR0"/>
 <attribute name="VALUE" x="34" y="7" size="1" layer="27" font="vector" rot="SR180" align="top-left"/>
 </element>
-<element name="C10" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="1u" x="15" y="22" smashed="yes">
-<attribute name="NAME" x="13.665" y="20.635" size="0.8128" layer="25"/>
+<element name="C1" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="1uF" x="15" y="22" smashed="yes">
+<attribute name="NAME" x="14.465" y="20.635" size="0.8128" layer="25" font="vector"/>
 <attribute name="POPULARITY" value="37" x="15" y="22" size="1.778" layer="27" display="off"/>
 <attribute name="SPICEPREFIX" value="C" x="15" y="22" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="14.365" y="20.095" size="1.27" layer="27"/>
 </element>
-<element name="C11" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="1u" x="15" y="9" smashed="yes">
-<attribute name="NAME" x="13.765" y="9.535" size="0.8128" layer="25"/>
+<element name="C2" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="1uF" x="15" y="9" smashed="yes">
+<attribute name="NAME" x="14.465" y="9.535" size="0.8128" layer="25" font="vector"/>
 <attribute name="POPULARITY" value="37" x="15" y="9" size="1.778" layer="27" display="off"/>
 <attribute name="SPICEPREFIX" value="C" x="15" y="9" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="14.365" y="7.095" size="1.27" layer="27"/>
 </element>
-<element name="C12" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1u" x="24.5" y="15.5" smashed="yes" rot="R270">
-<attribute name="NAME" x="25.735" y="13.965" size="0.8128" layer="25" rot="R180"/>
+<element name="C8" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF" x="24.5" y="15.5" smashed="yes" rot="R270">
+<attribute name="NAME" x="24.935" y="13.865" size="0.8128" layer="25" font="vector" rot="R180"/>
 <attribute name="POPULARITY" value="37" x="24.5" y="15.5" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="SPICEPREFIX" value="C" x="24.5" y="15.5" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="22.595" y="16.135" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="C13" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1u" x="24" y="2" smashed="yes">
-<attribute name="NAME" x="22.265" y="2.635" size="0.8128" layer="25"/>
+<element name="C9" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF" x="24" y="2" smashed="yes">
+<attribute name="NAME" x="23.165" y="0.535" size="0.8128" layer="25" font="vector"/>
 <attribute name="POPULARITY" value="37" x="24" y="2" size="1.778" layer="27" display="off"/>
 <attribute name="SPICEPREFIX" value="C" x="24" y="2" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="23.365" y="0.095" size="1.27" layer="27"/>
 </element>
-<element name="C14" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1u" x="30" y="21" smashed="yes" rot="R90">
-<attribute name="NAME" x="29.365" y="20.365" size="0.8128" layer="25" rot="R90"/>
+<element name="C13" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF" x="30" y="21" smashed="yes" rot="R90">
+<attribute name="NAME" x="29.365" y="20.165" size="0.8128" layer="25" font="vector" rot="R90"/>
 <attribute name="POPULARITY" value="37" x="30" y="21" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="SPICEPREFIX" value="C" x="30" y="21" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="31.905" y="20.365" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="C15" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1u" x="30" y="9" smashed="yes" rot="R90">
-<attribute name="NAME" x="29.365" y="8.265" size="0.8128" layer="25" rot="R90"/>
+<element name="C14" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF" x="30" y="9" smashed="yes" rot="R90">
+<attribute name="NAME" x="29.365" y="8.265" size="0.8128" layer="25" font="vector" rot="R90"/>
 <attribute name="POPULARITY" value="37" x="30" y="9" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="SPICEPREFIX" value="C" x="30" y="9" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="31.905" y="8.365" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="C16" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1u" x="32.6" y="21.6" smashed="yes">
-<attribute name="NAME" x="31.965" y="22.235" size="0.8128" layer="25"/>
+<element name="C15" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF" x="32.6" y="21.6" smashed="yes">
+<attribute name="NAME" x="31.765" y="22.235" size="0.8128" layer="25" font="vector"/>
 <attribute name="POPULARITY" value="37" x="32.6" y="21.6" size="1.778" layer="27" display="off"/>
 <attribute name="SPICEPREFIX" value="C" x="32.6" y="21.6" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="31.965" y="19.695" size="1.27" layer="27"/>
 </element>
-<element name="C17" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1u" x="29.2" y="15.5" smashed="yes" rot="R90">
-<attribute name="NAME" x="28.065" y="13.135" size="0.8128" layer="25"/>
+<element name="C16" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF" x="29.2" y="15.5" smashed="yes" rot="R90">
+<attribute name="NAME" x="29.865" y="15.335" size="0.8128" layer="25" font="vector"/>
 <attribute name="POPULARITY" value="37" x="29.2" y="15.5" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="SPICEPREFIX" value="C" x="29.2" y="15.5" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="31.105" y="14.865" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="C18" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1u" x="38" y="15.6" smashed="yes">
-<attribute name="NAME" x="39.135" y="16.965" size="0.8128" layer="25" rot="R180"/>
+<element name="C17" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF" x="38" y="15.6" smashed="yes">
+<attribute name="NAME" x="38.935" y="16.965" size="0.8128" layer="25" font="vector" rot="R180"/>
 <attribute name="POPULARITY" value="37" x="38" y="15.6" size="1.778" layer="27" display="off"/>
 <attribute name="SPICEPREFIX" value="C" x="38" y="15.6" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="37.365" y="13.695" size="1.27" layer="27"/>
 </element>
-<element name="D4" library="Hocki_Library" package="TEFD4300F" value="TEFD4300F" x="7.5" y="25.2" smashed="yes" rot="MR90">
+<element name="D1" library="Hocki_Library" package="TEFD4300F" value="TEFD4300F" x="7.5" y="25.2" smashed="yes" rot="MR90">
 <attribute name="DKPN" value="TEFD4300F-ND" x="7.5" y="25.2" size="1.778" layer="28" rot="MR90" display="off"/>
-<attribute name="NAME" x="8.7" y="22.1" size="0.8128" layer="26" font="vector" rot="MR90"/>
+<attribute name="NAME" x="9.9" y="24.6" size="0.8128" layer="26" font="vector" rot="MR90"/>
 <attribute name="VALUE" x="4.5" y="23.2" size="1" layer="28" font="vector" rot="MR90" align="top-left"/>
 </element>
-<element name="D5" library="Hocki_Library" package="TEFD4300F" value="TEFD4300F" x="7.5" y="20.5" smashed="yes" rot="MR270">
+<element name="D3" library="Hocki_Library" package="TEFD4300F" value="TEFD4300F" x="7.5" y="20.5" smashed="yes" rot="MR270">
 <attribute name="DKPN" value="TEFD4300F-ND" x="7.5" y="20.5" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="NAME" x="8.7" y="17.5" size="0.8128" layer="26" font="vector" rot="MR90"/>
+<attribute name="NAME" x="9.8" y="19.9" size="0.8128" layer="26" font="vector" rot="MR90"/>
 <attribute name="VALUE" x="10.5" y="22.5" size="1" layer="28" font="vector" rot="MR270" align="top-left"/>
 </element>
-<element name="D6" library="Hocki_Library" package="TEFD4300F" value="TEFD4300F" x="7.6" y="13.8" smashed="yes" rot="MR90">
-<attribute name="DKPN" value="TEFD4300F-ND" x="7.6" y="13.8" size="1.778" layer="28" rot="MR90" display="off"/>
-<attribute name="NAME" x="8.8" y="10.8" size="0.8128" layer="26" font="vector" rot="MR90"/>
-<attribute name="VALUE" x="4.6" y="11.8" size="1" layer="28" font="vector" rot="MR90" align="top-left"/>
+<element name="D2" library="Hocki_Library" package="TEFD4300F" value="TEFD4300F" x="7.5" y="13.8" smashed="yes" rot="MR90">
+<attribute name="DKPN" value="TEFD4300F-ND" x="7.5" y="13.8" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="NAME" x="9.7" y="13.3" size="0.8128" layer="26" font="vector" rot="MR90"/>
+<attribute name="VALUE" x="4.5" y="11.8" size="1" layer="28" font="vector" rot="MR90" align="top-left"/>
 </element>
-<element name="D7" library="Hocki_Library" package="TEFD4300F" value="TEFD4300F" x="7.7" y="9.4" smashed="yes" rot="MR270">
-<attribute name="DKPN" value="TEFD4300F-ND" x="7.7" y="9.4" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="NAME" x="8.9" y="6.5" size="0.8128" layer="26" font="vector" rot="MR90"/>
-<attribute name="VALUE" x="10.7" y="11.4" size="1" layer="28" font="vector" rot="MR270" align="top-left"/>
+<element name="D4" library="Hocki_Library" package="TEFD4300F" value="TEFD4300F" x="7.5" y="9.4" smashed="yes" rot="MR270">
+<attribute name="DKPN" value="TEFD4300F-ND" x="7.5" y="9.4" size="1.778" layer="28" rot="MR270" display="off"/>
+<attribute name="NAME" x="9.8" y="8.8" size="0.8128" layer="26" font="vector" rot="MR90"/>
+<attribute name="VALUE" x="10.5" y="11.4" size="1" layer="28" font="vector" rot="MR270" align="top-left"/>
 </element>
-<element name="R28" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="499" x="37.7" y="12.8" smashed="yes" rot="R90">
-<attribute name="NAME" x="38.435" y="13.735" size="0.8128" layer="25" rot="R270"/>
+<element name="R30" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="499" x="37.7" y="12.8" smashed="yes" rot="R90">
+<attribute name="NAME" x="38.435" y="13.735" size="0.8128" layer="25" font="vector" rot="R270"/>
 <attribute name="VALUE" x="39.605" y="12.165" size="1.27" layer="27" rot="R90"/>
 </element>
 <element name="R29" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="499" x="36.8" y="8.5" smashed="yes" rot="R90">
-<attribute name="NAME" x="37.535" y="9.435" size="0.8128" layer="25" rot="R270"/>
+<attribute name="NAME" x="37.535" y="9.435" size="0.8128" layer="25" font="vector" rot="R270"/>
 <attribute name="VALUE" x="38.705" y="7.865" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="R30" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="499" x="12" y="18" smashed="yes">
-<attribute name="NAME" x="11.065" y="18.635" size="0.8128" layer="25"/>
+<element name="R28" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="499" x="12" y="18" smashed="yes">
+<attribute name="NAME" x="11.065" y="18.635" size="0.8128" layer="25" font="vector"/>
 <attribute name="VALUE" x="11.365" y="16.095" size="1.27" layer="27"/>
 </element>
-<element name="R31" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="499" x="17" y="29" smashed="yes" rot="R180">
-<attribute name="NAME" x="18.135" y="28.265" size="0.8128" layer="25" rot="R180"/>
+<element name="R27" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="499" x="17" y="29" smashed="yes" rot="R180">
+<attribute name="NAME" x="18.135" y="28.265" size="0.8128" layer="25" font="vector" rot="R180"/>
 <attribute name="VALUE" x="17.635" y="30.905" size="1.27" layer="27" rot="R180"/>
 </element>
 <element name="U$1" library="RoboJackets-Aesthetics" package="ROBOBUZZ_0.4X" value="" x="22" y="26" smashed="yes"/>
 <element name="U$2" library="RoboJackets-Aesthetics" package="ROBOJACKETS" value="" x="16" y="31" smashed="yes" rot="MR270"/>
-<element name="C1" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="47n" x="18" y="24" smashed="yes" rot="R180">
-<attribute name="NAME" x="18.77" y="23.13" size="0.8128" layer="25" rot="R180"/>
+<element name="C3" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="47nF" x="18" y="24" smashed="yes" rot="R180">
+<attribute name="NAME" x="18.57" y="22.93" size="0.8128" layer="25" font="vector" rot="R180"/>
 <attribute name="POPULARITY" value="24" x="18" y="24" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="SPICEPREFIX" value="C" x="18" y="24" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VALUE" x="19.27" y="26.54" size="1.27" layer="27" rot="R180"/>
 </element>
-<element name="C2" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="47n" x="17" y="13" smashed="yes" rot="R180">
-<attribute name="NAME" x="18.27" y="11.73" size="1.27" layer="25" rot="R180"/>
+<element name="C4" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="47nF" x="17" y="13" smashed="yes" rot="R180">
+<attribute name="NAME" x="19.57" y="13.57" size="0.8128" layer="25" font="vector" rot="R270"/>
 <attribute name="POPULARITY" value="24" x="17" y="13" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="SPICEPREFIX" value="C" x="17" y="13" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VALUE" x="18.27" y="15.54" size="1.27" layer="27" rot="R180"/>
 </element>
-<element name="C3" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="47n" x="14" y="5" smashed="yes" rot="R180">
-<attribute name="NAME" x="15.27" y="3.73" size="1.27" layer="25" rot="R180"/>
+<element name="C5" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="47nF" x="14" y="5" smashed="yes" rot="R180">
+<attribute name="NAME" x="14.53" y="1.47" size="0.8128" layer="25" font="vector"/>
 <attribute name="POPULARITY" value="24" x="14" y="5" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="SPICEPREFIX" value="C" x="14" y="5" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VALUE" x="15.27" y="7.54" size="1.27" layer="27" rot="R180"/>
 </element>
-<element name="R1" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R1206" package3d_urn="urn:adsk.eagle:package:23540/2" value="10M" x="13" y="29" smashed="yes">
-<attribute name="NAME" x="12.33" y="30.07" size="0.8128" layer="25"/>
+<element name="R5" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R1206" package3d_urn="urn:adsk.eagle:package:23540/2" value="10M" x="13" y="29" smashed="yes">
+<attribute name="NAME" x="12.33" y="30.07" size="0.8128" layer="25" font="vector"/>
 <attribute name="POPULARITY" value="19" x="13" y="29" size="1.778" layer="27" display="off"/>
 <attribute name="SPICEPREFIX" value="R" x="13" y="29" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="11.73" y="26.46" size="1.27" layer="27"/>
 </element>
-<element name="U8" library="Hocki_Library" package="SOT-23-5" value="AP2210K-5.0TRG1" x="30.7" y="28.4" smashed="yes" rot="R180">
+<element name="U3" library="Hocki_Library" package="SOT-23-5" value="AP2210K-5.0TRG1" x="30.7" y="28.4" smashed="yes" rot="R180">
 <attribute name="DKPN" value="AP2210K-5.0TRG1DICT-ND" x="30.7" y="28.4" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="31.3" y="26.4" size="1" layer="25" font="vector" rot="SR180"/>
+<attribute name="NAME" x="30" y="25.6" size="1" layer="25" font="vector" rot="SR0"/>
 <attribute name="VALUE" x="31.7" y="30.4" size="1" layer="27" font="vector" rot="SR180" align="top-left"/>
 </element>
-<element name="C4" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="100p" x="30.7" y="31.2" smashed="yes">
-<attribute name="NAME" x="30.065" y="31.835" size="0.8128" layer="25"/>
+<element name="C7" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="100pF" x="30.7" y="31.2" smashed="yes">
+<attribute name="NAME" x="30.165" y="31.835" size="0.8128" layer="25" font="vector"/>
 <attribute name="POPULARITY" value="37" x="30.7" y="31.2" size="1.778" layer="27" display="off"/>
 <attribute name="SPICEPREFIX" value="C" x="30.7" y="31.2" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="30.065" y="29.295" size="1.27" layer="27"/>
 </element>
 <element name="J1" library="Hocki_Library" package="SM03B-SRSS-TB(LF)(SN)" value="SM03B-SRSS-TB(LF)(SN)" x="37" y="23" smashed="yes" rot="R90">
 <attribute name="DKPN" value="455-1803-1-ND" x="37" y="23" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="35.73" y="19.19" size="1" layer="25" font="vector" rot="R90"/>
+<attribute name="NAME" x="37.29" y="26.07" size="1" layer="25" font="vector"/>
 <attribute name="VALUE" x="42.35" y="19.19" size="1" layer="27" font="vector" rot="R90" align="top-left"/>
+</element>
+<element name="D8" library="SparkFun-LED" library_urn="urn:adsk.eagle:library:529" package="LED-0603" package3d_urn="urn:adsk.eagle:package:39354/1" value="GREEN" x="36" y="18.9" smashed="yes" rot="R270">
+<attribute name="NAME" x="34.865" y="19.8" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center"/>
+<attribute name="PROD_ID" value="DIO-00821" x="36" y="18.9" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="VALUE" x="35.365" y="18.9" size="0.6096" layer="27" font="vector" ratio="20" rot="R270" align="top-center"/>
+</element>
+<element name="D9" library="SparkFun-LED" library_urn="urn:adsk.eagle:library:529" package="LED-0603" package3d_urn="urn:adsk.eagle:package:39354/1" value="GREEN" x="28.2" y="33.4" smashed="yes" rot="R180">
+<attribute name="NAME" x="28.1" y="32.265" size="0.8128" layer="25" font="vector" rot="R180" align="bottom-center"/>
+<attribute name="PROD_ID" value="DIO-00821" x="28.2" y="33.4" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="VALUE" x="28.2" y="34.035" size="0.6096" layer="27" font="vector" ratio="20" rot="R180" align="top-center"/>
+</element>
+<element name="R31" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="499" x="38.5" y="18" smashed="yes" rot="R180">
+<attribute name="NAME" x="40.865" y="17.065" size="0.8128" layer="25" rot="R90"/>
+<attribute name="VALUE" x="39.135" y="19.905" size="1.27" layer="27" rot="R180"/>
+</element>
+<element name="R32" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="300" x="24.7" y="33.4" smashed="yes">
+<attribute name="NAME" x="23.665" y="31.935" size="0.8128" layer="25"/>
+<attribute name="VALUE" x="24.065" y="31.495" size="1.27" layer="27"/>
 </element>
 </elements>
 <signals>
 <signal name="N$1">
 <contactref element="U1" pad="2"/>
-<contactref element="D4" pad="2"/>
+<contactref element="D1" pad="2"/>
 <wire x1="10.03" y1="29" x2="7.5" y2="26.47" width="0.2" layer="1"/>
-<contactref element="R1" pad="1"/>
+<contactref element="R5" pad="1"/>
 <wire x1="11.578" y1="29" x2="10.03" y2="29" width="0.2" layer="1"/>
 <wire x1="12.325" y1="27.2" x2="12.325" y2="28.253" width="0.2" layer="1"/>
 <wire x1="12.325" y1="28.253" x2="11.578" y2="29" width="0.2" layer="1"/>
 </signal>
 <signal name="N$3">
 <contactref element="U1" pad="6"/>
-<contactref element="R2" pad="1"/>
+<contactref element="R6" pad="1"/>
 <wire x1="11.675" y1="22.8" x2="11.675" y2="20.525" width="0.2" layer="1"/>
 <wire x1="11.675" y1="20.525" x2="11.15" y2="20" width="0.2" layer="1"/>
-<contactref element="D5" pad="2"/>
+<contactref element="D3" pad="2"/>
 <wire x1="7.5" y1="19.23" x2="8.26999375" y2="20" width="0.2" layer="1"/>
 <wire x1="8.26999375" y1="20" x2="11.15" y2="20" width="0.2" layer="1"/>
 </signal>
 <signal name="1.0V">
+<contactref element="R1" pad="2"/>
 <contactref element="R3" pad="2"/>
-<contactref element="R10" pad="2"/>
-<contactref element="R17" pad="2"/>
-<contactref element="R19" pad="2"/>
-<contactref element="U9" pad="5"/>
-<contactref element="C9" pad="1"/>
+<contactref element="R20" pad="2"/>
+<contactref element="R16" pad="2"/>
+<contactref element="U6" pad="5"/>
+<contactref element="C12" pad="1"/>
 <wire x1="5.773" y1="29.650475" x2="5.773" y2="4.577" width="0.2" layer="1"/>
 <wire x1="7.15" y1="3" x2="7.15" y2="3.2" width="0.2" layer="1"/>
 <wire x1="7.15" y1="3.2" x2="5.773" y2="4.577" width="0.2" layer="1"/>
@@ -6950,9 +7032,9 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 </signal>
 <signal name="N$5">
 <contactref element="U1" pad="5"/>
-<contactref element="R4" pad="2"/>
+<contactref element="R2" pad="2"/>
 <contactref element="U1" pad="3"/>
-<contactref element="R3" pad="1"/>
+<contactref element="R1" pad="1"/>
 <wire x1="10.15" y1="32" x2="8.85" y2="32" width="0.2" layer="1"/>
 <wire x1="11.675" y1="25.675" x2="11.675" y2="27.2" width="0.2" layer="1"/>
 <wire x1="11.025" y1="22.8" x2="11" y2="22.825" width="0.2" layer="1"/>
@@ -6964,33 +7046,33 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <wire x1="11" y1="22.825" x2="11" y2="25" width="0.2" layer="1"/>
 </signal>
 <signal name="GND">
-<contactref element="R4" pad="1"/>
+<contactref element="R2" pad="1"/>
 <contactref element="U1" pad="4"/>
-<contactref element="R7" pad="1"/>
-<contactref element="R11" pad="1"/>
+<contactref element="R12" pad="1"/>
+<contactref element="R4" pad="1"/>
 <contactref element="U2" pad="4"/>
+<contactref element="R13" pad="1"/>
 <contactref element="R14" pad="1"/>
-<contactref element="R15" pad="1"/>
-<contactref element="U4" pad="5"/>
-<contactref element="R16" pad="1"/>
-<contactref element="U3" pad="5"/>
-<contactref element="U5" pad="3"/>
-<contactref element="U5" pad="2"/>
-<contactref element="U6" pad="4"/>
-<contactref element="R18" pad="1"/>
-<contactref element="U7" pad="3"/>
-<contactref element="C7" pad="2"/>
-<contactref element="C6" pad="2"/>
-<contactref element="C8" pad="2"/>
+<contactref element="U8" pad="5"/>
+<contactref element="R26" pad="1"/>
+<contactref element="U7" pad="5"/>
+<contactref element="U9" pad="3"/>
 <contactref element="U9" pad="2"/>
-<contactref element="C9" pad="2"/>
 <contactref element="U10" pad="4"/>
-<contactref element="U11" pad="4"/>
-<contactref element="R21" pad="1"/>
-<contactref element="U11" pad="5"/>
-<contactref element="U11" pad="6"/>
-<contactref element="R20" pad="1"/>
+<contactref element="R22" pad="1"/>
+<contactref element="U11" pad="3"/>
+<contactref element="C10" pad="2"/>
+<contactref element="C6" pad="2"/>
+<contactref element="C11" pad="2"/>
+<contactref element="U6" pad="2"/>
+<contactref element="C12" pad="2"/>
 <contactref element="U4" pad="4"/>
+<contactref element="U5" pad="4"/>
+<contactref element="R15" pad="1"/>
+<contactref element="U5" pad="5"/>
+<contactref element="U5" pad="6"/>
+<contactref element="R19" pad="1"/>
+<contactref element="U8" pad="4"/>
 <polygon width="0.2" layer="16" thermals="no">
 <vertex x="0" y="35"/>
 <vertex x="0" y="0"/>
@@ -7038,25 +7120,25 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <via x="35.1" y="2" extent="1-16" drill="0.35"/>
 <wire x1="34.3" y1="5" x2="35.5" y2="5" width="0.2" layer="1"/>
 <via x="35.5" y="5" extent="1-16" drill="0.35"/>
-<contactref element="C10" pad="2"/>
+<contactref element="C1" pad="2"/>
 <wire x1="19.095" y1="9.7" x2="18.1" y2="9.7" width="0.2" layer="1"/>
 <via x="18.1" y="9.7" extent="1-16" drill="0.35"/>
 <wire x1="15.85" y1="22" x2="14.75" y2="23.1" width="0.2" layer="1"/>
 <wire x1="14.75" y1="23.1" x2="14" y2="23.1" width="0.2" layer="1"/>
 <via x="14" y="23.1" extent="1-16" drill="0.35"/>
-<contactref element="C11" pad="2"/>
+<contactref element="C2" pad="2"/>
 <wire x1="15.85" y1="9" x2="17" y2="9" width="0.2" layer="1"/>
 <via x="17" y="9" extent="1-16" drill="0.35"/>
-<contactref element="C12" pad="2"/>
-<contactref element="C13" pad="2"/>
+<contactref element="C8" pad="2"/>
+<contactref element="C9" pad="2"/>
 <wire x1="24.5" y1="14.65" x2="23.64" y2="15.51" width="0.2" layer="1"/>
 <wire x1="23.64" y1="15.51" x2="23.64" y2="17.537775" width="0.2" layer="1"/>
 <via x="23.64" y="17.537775" extent="1-16" drill="0.35"/>
 <wire x1="24.85" y1="2" x2="24.85" y2="2.95" width="0.2" layer="1"/>
 <wire x1="24.85" y1="2.95" x2="24.7" y2="3.1" width="0.2" layer="1"/>
 <via x="24.7" y="3.1" extent="1-16" drill="0.35"/>
+<contactref element="C13" pad="2"/>
 <contactref element="C14" pad="2"/>
-<contactref element="C15" pad="2"/>
 <wire x1="30" y1="21.85" x2="30" y2="23" width="0.2" layer="1"/>
 <via x="30" y="23" extent="1-16" drill="0.35"/>
 <wire x1="32.15" y1="8" x2="32" y2="8.15" width="0.2" layer="1"/>
@@ -7065,22 +7147,22 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <wire x1="30" y1="9.85" x2="30.65" y2="9.85" width="0.2" layer="1"/>
 <wire x1="30.65" y1="9.85" x2="31.2" y2="10.4" width="0.2" layer="1"/>
 <via x="31.2" y="10.4" extent="1-16" drill="0.35"/>
+<contactref element="C15" pad="2"/>
 <contactref element="C16" pad="2"/>
 <contactref element="C17" pad="2"/>
-<contactref element="C18" pad="2"/>
 <wire x1="34.6" y1="21.6" x2="33.45" y2="21.6" width="0.2" layer="1"/>
 <via x="34.6" y="21.6" extent="1-16" drill="0.35"/>
 <wire x1="35" y1="10.8" x2="35" y2="9.9936" width="0.2" layer="1"/>
 <wire x1="35" y1="9.9936" x2="34.5" y2="9.4936" width="0.2" layer="1"/>
 <via x="34.5" y="9.4936" extent="1-16" drill="0.35"/>
-<contactref element="D5" pad="1"/>
+<contactref element="D3" pad="1"/>
+<contactref element="D1" pad="1"/>
 <contactref element="D4" pad="1"/>
-<contactref element="D7" pad="1"/>
-<contactref element="D6" pad="1"/>
-<contactref element="R28" pad="1"/>
-<contactref element="R29" pad="1"/>
+<contactref element="D2" pad="1"/>
 <contactref element="R30" pad="1"/>
-<contactref element="R31" pad="1"/>
+<contactref element="R29" pad="1"/>
+<contactref element="R28" pad="1"/>
+<contactref element="R27" pad="1"/>
 <wire x1="17.85" y1="29" x2="19" y2="29" width="0.2" layer="1"/>
 <via x="19" y="29" extent="1-16" drill="0.35"/>
 <wire x1="11.15" y1="18" x2="10" y2="18" width="0.2" layer="1"/>
@@ -7093,9 +7175,9 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <via x="40" y="15" extent="1-16" drill="0.35"/>
 <wire x1="38.85" y1="15.6" x2="39.4" y2="15.6" width="0.2" layer="1"/>
 <wire x1="39.4" y1="15.6" x2="40" y2="15" width="0.2" layer="1"/>
-<contactref element="C1" pad="2"/>
-<contactref element="C2" pad="2"/>
 <contactref element="C3" pad="2"/>
+<contactref element="C4" pad="2"/>
+<contactref element="C5" pad="2"/>
 <wire x1="16.6" y1="24" x2="15" y2="24" width="0.2" layer="1"/>
 <via x="15" y="24" extent="1-16" drill="0.35"/>
 <wire x1="15.6" y1="13" x2="14" y2="13" width="0.2" layer="1"/>
@@ -7107,8 +7189,8 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <via x="13" y="2" extent="1-16" drill="0.35"/>
 <wire x1="14.15" y1="3" x2="13" y2="3" width="0.2" layer="1"/>
 <via x="13" y="3" extent="1-16" drill="0.35"/>
-<contactref element="U8" pad="2"/>
-<contactref element="C4" pad="2"/>
+<contactref element="U3" pad="2"/>
+<contactref element="C7" pad="2"/>
 <wire x1="31.55" y1="31.2" x2="32.7" y2="31.2" width="0.2" layer="1"/>
 <via x="32.7" y="31.2" extent="1-16" drill="0.35"/>
 <wire x1="27.15" y1="26" x2="27.15" y2="27.35" width="0.2" layer="1"/>
@@ -7132,43 +7214,52 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <wire x1="31.977" y1="17.877" x2="31.977" y2="17.505975" width="0.2" layer="1"/>
 <wire x1="31.977" y1="17.505975" x2="31.289625" y2="16.8186" width="0.2" layer="1"/>
 <wire x1="31.289625" y1="16.8186" x2="31" y2="16.8186" width="0.2" layer="1"/>
+<contactref element="R32" pad="1"/>
+<contactref element="R31" pad="1"/>
+<wire x1="23.85" y1="33.4" x2="22.7" y2="33.4" width="0.2" layer="1"/>
+<via x="22.7" y="33.4" extent="1-16" drill="0.35"/>
+<wire x1="39.1" y1="19.2" x2="39.4" y2="18.9" width="0.2" layer="1"/>
+<wire x1="39.4" y1="18.9" x2="39.4" y2="18.05" width="0.2" layer="1"/>
+<wire x1="39.35" y1="18" x2="39.4" y2="18.05" width="0.2" layer="1"/>
+<via x="39.1" y="19.2" extent="1-16" drill="0.35"/>
 </signal>
 <signal name="5V">
 <contactref element="U1" pad="8"/>
 <contactref element="U2" pad="8"/>
-<contactref element="U3" pad="8"/>
-<contactref element="U4" pad="8"/>
-<contactref element="U5" pad="5"/>
-<contactref element="U6" pad="8"/>
-<contactref element="U7" pad="6"/>
-<contactref element="U7" pad="5"/>
-<contactref element="U9" pad="1"/>
-<contactref element="U9" pad="3"/>
-<contactref element="C7" pad="1"/>
-<contactref element="C8" pad="1"/>
+<contactref element="U7" pad="8"/>
+<contactref element="U8" pad="8"/>
+<contactref element="U9" pad="5"/>
 <contactref element="U10" pad="8"/>
-<contactref element="U11" pad="8"/>
+<contactref element="U11" pad="6"/>
+<contactref element="U11" pad="5"/>
+<contactref element="U6" pad="1"/>
+<contactref element="U6" pad="3"/>
+<contactref element="C10" pad="1"/>
+<contactref element="C11" pad="1"/>
+<contactref element="U4" pad="8"/>
+<contactref element="U5" pad="8"/>
 <polygon width="0.2" layer="1" thermals="no">
 <vertex x="0" y="35"/>
 <vertex x="0" y="0"/>
 <vertex x="42" y="0"/>
 <vertex x="42" y="35"/>
 </polygon>
-<contactref element="C10" pad="1"/>
-<contactref element="C11" pad="1"/>
-<contactref element="C12" pad="1"/>
+<contactref element="C1" pad="1"/>
+<contactref element="C2" pad="1"/>
+<contactref element="C8" pad="1"/>
+<contactref element="C9" pad="1"/>
 <contactref element="C13" pad="1"/>
 <contactref element="C14" pad="1"/>
 <contactref element="C15" pad="1"/>
 <contactref element="C16" pad="1"/>
 <contactref element="C17" pad="1"/>
-<contactref element="C18" pad="1"/>
-<contactref element="U8" pad="5"/>
+<contactref element="U3" pad="5"/>
 <contactref element="J1" pad="S2"/>
 <contactref element="J1" pad="S1"/>
+<contactref element="D9" pad="A"/>
 </signal>
 <signal name="1MGAIN">
-<contactref element="U7" pad="9"/>
+<contactref element="U11" pad="9"/>
 <wire x1="34.5" y1="15.2" x2="34.5" y2="13.5" width="0.2" layer="1"/>
 <wire x1="34.5" y1="13.5" x2="34.0486125" y2="13.0486125" width="0.2" layer="1"/>
 <via x="34.0486125" y="13.0486125" extent="1-16" drill="0.35"/>
@@ -7177,10 +7268,10 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <wire x1="34.0486125" y1="15.15958125" x2="30.50819375" y2="18.7" width="0.2" layer="16"/>
 <wire x1="30.50819375" y1="18.7" x2="18.1" y2="18.7" width="0.2" layer="16"/>
 <wire x1="18.1" y1="18.7" x2="17.8" y2="18.4" width="0.2" layer="16"/>
-<contactref element="R30" pad="2"/>
-<contactref element="R2" pad="2"/>
+<contactref element="R28" pad="2"/>
+<contactref element="R6" pad="2"/>
 <contactref element="U1" pad="7"/>
-<contactref element="R6" pad="1"/>
+<contactref element="R9" pad="1"/>
 <wire x1="12.325" y1="22.8" x2="12.325" y2="20.525" width="0.2" layer="1"/>
 <wire x1="12.325" y1="20.525" x2="12.85" y2="20" width="0.2" layer="1"/>
 <wire x1="12.85" y1="20" x2="14.15" y2="20" width="0.2" layer="1"/>
@@ -7190,28 +7281,28 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 </signal>
 <signal name="N$6">
 <contactref element="U2" pad="2"/>
-<contactref element="R8" pad="1"/>
+<contactref element="R7" pad="1"/>
 <wire x1="12.325" y1="14.2" x2="12.325" y2="15.025" width="0.2" layer="1"/>
 <wire x1="12.325" y1="15.025" x2="11.35" y2="16" width="0.2" layer="1"/>
 <wire x1="11.35" y1="16" x2="11.15" y2="16" width="0.2" layer="1"/>
-<contactref element="D6" pad="2"/>
-<wire x1="7.6" y1="15.07" x2="8.53" y2="16" width="0.2" layer="1"/>
+<contactref element="D2" pad="2"/>
+<wire x1="7.5" y1="15.07" x2="8.53" y2="16" width="0.2" layer="1"/>
 <wire x1="8.53" y1="16" x2="11.15" y2="16" width="0.2" layer="1"/>
 </signal>
 <signal name="N$10">
 <contactref element="U2" pad="6"/>
-<contactref element="R9" pad="1"/>
+<contactref element="R8" pad="1"/>
 <wire x1="11.675" y1="9.8" x2="11.675" y2="7.525" width="0.2" layer="1"/>
 <wire x1="11.675" y1="7.525" x2="11.15" y2="7" width="0.2" layer="1"/>
-<contactref element="D7" pad="2"/>
-<wire x1="7.7" y1="8.13" x2="8.829990625" y2="7" width="0.2" layer="1"/>
-<wire x1="8.829990625" y1="7" x2="11.15" y2="7" width="0.2" layer="1"/>
+<contactref element="D4" pad="2"/>
+<wire x1="7.5" y1="8.13" x2="8.63" y2="7" width="0.2" layer="1"/>
+<wire x1="8.63" y1="7" x2="11.15" y2="7" width="0.2" layer="1"/>
 </signal>
 <signal name="N$12">
 <contactref element="U2" pad="5"/>
-<contactref element="R11" pad="2"/>
+<contactref element="R4" pad="2"/>
 <contactref element="U2" pad="3"/>
-<contactref element="R10" pad="1"/>
+<contactref element="R3" pad="1"/>
 <wire x1="10.15" y1="3" x2="8.85" y2="3" width="0.2" layer="1"/>
 <wire x1="11.675" y1="14.2" x2="11.675" y2="12.675" width="0.2" layer="1"/>
 <wire x1="11.675" y1="12.675" x2="11" y2="12" width="0.2" layer="1"/>
@@ -7226,10 +7317,10 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <wire x1="11" y1="12" x2="11" y2="9.825" width="0.2" layer="1"/>
 </signal>
 <signal name="100KPEAK">
-<contactref element="D2" pad="1"/>
-<contactref element="R14" pad="2"/>
-<contactref element="U10" pad="5"/>
-<contactref element="C2" pad="1"/>
+<contactref element="D6" pad="1"/>
+<contactref element="R13" pad="2"/>
+<contactref element="U4" pad="5"/>
+<contactref element="C4" pad="1"/>
 <wire x1="19.095" y1="16.3" x2="19.095" y2="13.695" width="0.2" layer="1"/>
 <wire x1="19.095" y1="13.695" x2="18.4" y2="13" width="0.2" layer="1"/>
 <wire x1="18.4" y1="13" x2="16.85" y2="11.45" width="0.2" layer="1"/>
@@ -7238,20 +7329,20 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <wire x1="18.34" y1="13" x2="18.4" y2="13" width="0.2" layer="1"/>
 </signal>
 <signal name="10KPEAK">
-<contactref element="D3" pad="1"/>
-<contactref element="R15" pad="2"/>
-<contactref element="U11" pad="3"/>
+<contactref element="D7" pad="1"/>
+<contactref element="R14" pad="2"/>
+<contactref element="U5" pad="3"/>
 <wire x1="20.365" y1="9.7" x2="20.365" y2="8.365" width="0.2" layer="1"/>
 <wire x1="17.34" y1="5.34" x2="17" y2="5.34" width="0.2" layer="1"/>
 <wire x1="20.365" y1="8.365" x2="17.34" y2="5.34" width="0.2" layer="1"/>
-<contactref element="C3" pad="1"/>
+<contactref element="C5" pad="1"/>
 <wire x1="17" y1="5.34" x2="16.66" y2="5" width="0.2" layer="1"/>
 <wire x1="16.66" y1="5" x2="15.4" y2="5" width="0.2" layer="1"/>
 <wire x1="15.85" y1="3" x2="15.85" y2="4.55" width="0.2" layer="1"/>
 <wire x1="15.85" y1="4.55" x2="15.4" y2="5" width="0.2" layer="1"/>
 </signal>
 <signal name="100KGAIN">
-<contactref element="U7" pad="4"/>
+<contactref element="U11" pad="4"/>
 <wire x1="35.5" y1="10.8" x2="35.5" y2="8.8372" width="0.2" layer="1"/>
 <wire x1="35.5" y1="8.8372" x2="35.3628" y2="8.7" width="0.2" layer="1"/>
 <via x="35.3628" y="8.7" extent="1-16" drill="0.35"/>
@@ -7263,8 +7354,8 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <wire x1="35.3628" y1="8.7" x2="36.0128" y2="9.35" width="0.2" layer="1"/>
 <wire x1="36.0128" y1="9.35" x2="36.8" y2="9.35" width="0.2" layer="1"/>
 <contactref element="U2" pad="1"/>
-<contactref element="R12" pad="1"/>
-<contactref element="R8" pad="2"/>
+<contactref element="R11" pad="1"/>
+<contactref element="R7" pad="2"/>
 <wire x1="12.85" y1="16" x2="14.15" y2="16" width="0.2" layer="1"/>
 <wire x1="12.85" y1="16" x2="12.975" y2="15.875" width="0.2" layer="1"/>
 <wire x1="12.975" y1="15.875" x2="12.975" y2="14.2" width="0.2" layer="1"/>
@@ -7274,19 +7365,19 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <wire x1="16" y1="14.8686" x2="16.3" y2="14.5686" width="0.2" layer="16"/>
 </signal>
 <signal name="10KGAIN">
-<contactref element="U7" pad="7"/>
+<contactref element="U11" pad="7"/>
 <wire x1="35.5" y1="15.2" x2="35.5" y2="13.8" width="0.2" layer="1"/>
 <via x="35.5" y="13.8" extent="1-16" drill="0.35"/>
 <via x="17.004096875" y="7.795903125" extent="1-16" drill="0.35"/>
 <wire x1="35.5" y1="13.8" x2="35.5" y2="12.00819375" width="0.2" layer="16"/>
 <wire x1="35.5" y1="12.00819375" x2="31.287709375" y2="7.795903125" width="0.2" layer="16"/>
 <wire x1="31.287709375" y1="7.795903125" x2="17.004096875" y2="7.795903125" width="0.2" layer="16"/>
-<contactref element="R28" pad="2"/>
+<contactref element="R30" pad="2"/>
 <wire x1="37.7" y1="13.65" x2="35.65" y2="13.65" width="0.2" layer="1"/>
 <wire x1="35.65" y1="13.65" x2="35.5" y2="13.8" width="0.2" layer="1"/>
-<contactref element="R9" pad="2"/>
+<contactref element="R8" pad="2"/>
 <contactref element="U2" pad="7"/>
-<contactref element="R13" pad="1"/>
+<contactref element="R10" pad="1"/>
 <wire x1="14.15" y1="7" x2="12.85" y2="7" width="0.2" layer="1"/>
 <wire x1="12.325" y1="9.8" x2="12.325" y2="7.525" width="0.2" layer="1"/>
 <wire x1="12.325" y1="7.525" x2="12.85" y2="7" width="0.2" layer="1"/>
@@ -7294,7 +7385,7 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <wire x1="14.945903125" y1="7.795903125" x2="17.004096875" y2="7.795903125" width="0.2" layer="1"/>
 </signal>
 <signal name="10MGAIN">
-<contactref element="U7" pad="2"/>
+<contactref element="U11" pad="2"/>
 <wire x1="34.5" y1="10.8" x2="34.5" y2="11.5" width="0.2" layer="1"/>
 <wire x1="35.88615" y1="12.88615" x2="36.2306" y2="12.88615" width="0.2" layer="1"/>
 <via x="36.2306" y="12.88615" extent="1-16" drill="0.35"/>
@@ -7306,9 +7397,9 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <wire x1="16.15" y1="29" x2="16.15" y2="29.05" width="0.2" layer="1"/>
 <wire x1="34.5" y1="11.5" x2="35.88615" y2="12.88615" width="0.2" layer="1"/>
 <wire x1="37.6306" y1="25.1694" x2="32.6" y2="30.2" width="0.2" layer="16"/>
-<contactref element="R31" pad="2"/>
+<contactref element="R27" pad="2"/>
 <contactref element="U1" pad="1"/>
-<contactref element="R1" pad="2"/>
+<contactref element="R5" pad="2"/>
 <wire x1="14.422" y1="29" x2="16.15" y2="29" width="0.2" layer="1"/>
 <wire x1="12.975" y1="27.2" x2="13" y2="27.225" width="0.2" layer="1"/>
 <wire x1="13" y1="27.225" x2="13" y2="28" width="0.2" layer="1"/>
@@ -7316,16 +7407,16 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <wire x1="14" y1="29" x2="14.422" y2="29" width="0.2" layer="1"/>
 </signal>
 <signal name="N$7">
-<contactref element="U4" pad="6"/>
-<contactref element="R16" pad="2"/>
+<contactref element="U8" pad="6"/>
+<contactref element="R26" pad="2"/>
 <wire x1="28.3" y1="6.675" x2="29.175" y2="6.675" width="0.2" layer="1"/>
 <wire x1="29.175" y1="6.675" x2="30" y2="5.85" width="0.2" layer="1"/>
 </signal>
 <signal name="10KLOGIC">
-<contactref element="U4" pad="7"/>
-<contactref element="R23" pad="1"/>
-<contactref element="U6" pad="1"/>
-<contactref element="U6" pad="5"/>
+<contactref element="U8" pad="7"/>
+<contactref element="R25" pad="1"/>
+<contactref element="U10" pad="1"/>
+<contactref element="U10" pad="5"/>
 <wire x1="27.85" y1="10" x2="27.5" y2="9.55" width="0.2" layer="1"/>
 <wire x1="27.5" y1="7.678975" x2="27.776003125" y2="7.325" width="0.2" layer="1"/>
 <wire x1="27.776003125" y1="7.325" x2="28.3" y2="7.325" width="0.2" layer="1"/>
@@ -7342,9 +7433,9 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <wire x1="29.45" y1="11.6" x2="30.25" y2="11.6" width="0.2" layer="1"/>
 </signal>
 <signal name="1MLOGIC">
-<contactref element="U3" pad="7"/>
-<contactref element="R22" pad="1"/>
-<contactref element="U5" pad="6"/>
+<contactref element="U7" pad="7"/>
+<contactref element="R23" pad="1"/>
+<contactref element="U9" pad="6"/>
 <wire x1="27.85" y1="22" x2="27.5" y2="21.65" width="0.2" layer="1"/>
 <wire x1="27.5" y1="21.65" x2="27.5" y2="19.6" width="0.2" layer="1"/>
 <wire x1="27.5" y1="19.6" x2="27.775" y2="19.325" width="0.2" layer="1"/>
@@ -7353,10 +7444,10 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <wire x1="30.575" y1="19.325" x2="31.35" y2="20.1" width="0.2" layer="1"/>
 </signal>
 <signal name="100KLOGIC">
-<contactref element="U3" pad="6"/>
+<contactref element="U7" pad="6"/>
 <contactref element="R24" pad="1"/>
-<contactref element="U5" pad="1"/>
-<contactref element="U6" pad="2"/>
+<contactref element="U9" pad="1"/>
+<contactref element="U10" pad="2"/>
 <wire x1="27.85" y1="16" x2="27.5" y2="16.45" width="0.2" layer="1"/>
 <wire x1="27.5" y1="18.321025" x2="27.776003125" y2="18.675" width="0.2" layer="1"/>
 <wire x1="27.776003125" y1="18.675" x2="28.3" y2="18.675" width="0.2" layer="1"/>
@@ -7370,8 +7461,8 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <wire x1="27.85" y1="13.55" x2="27.85" y2="16" width="0.2" layer="1"/>
 </signal>
 <signal name="N$9">
-<contactref element="U5" pad="4"/>
-<contactref element="U6" pad="6"/>
+<contactref element="U9" pad="4"/>
+<contactref element="U10" pad="6"/>
 <wire x1="34.7306" y1="19.26120625" x2="34.7306" y2="17.13879375" width="0.2" layer="1"/>
 <wire x1="31.905975" y1="15.627" x2="31.273" y2="14.994025" width="0.2" layer="1"/>
 <wire x1="31.273" y1="14.423" x2="31.25" y2="14.4" width="0.2" layer="1"/>
@@ -7382,8 +7473,8 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <wire x1="31.273" y1="14.994025" x2="31.273" y2="14.423" width="0.2" layer="1"/>
 </signal>
 <signal name="A1">
-<contactref element="U6" pad="7"/>
-<contactref element="U7" pad="10"/>
+<contactref element="U10" pad="7"/>
+<contactref element="U11" pad="10"/>
 <wire x1="30.75" y1="14.4" x2="30.75" y2="13.65" width="0.2" layer="1"/>
 <wire x1="30.75" y1="13.65" x2="31.2" y2="13.2" width="0.2" layer="1"/>
 <wire x1="31.2" y1="13.2" x2="33.3" y2="13.2" width="0.2" layer="1"/>
@@ -7391,8 +7482,8 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <wire x1="34" y1="15.2" x2="34" y2="13.9" width="0.2" layer="1"/>
 </signal>
 <signal name="A0">
-<contactref element="U6" pad="3"/>
-<contactref element="U7" pad="1"/>
+<contactref element="U10" pad="3"/>
+<contactref element="U11" pad="1"/>
 <wire x1="31.25" y1="11.6" x2="31.25" y2="12.35" width="0.2" layer="1"/>
 <wire x1="31.25" y1="12.35" x2="31.7" y2="12.8" width="0.2" layer="1"/>
 <wire x1="31.7" y1="12.8" x2="33.3" y2="12.8" width="0.2" layer="1"/>
@@ -7400,10 +7491,10 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <wire x1="34" y1="12.1" x2="34" y2="10.8" width="0.2" layer="1"/>
 </signal>
 <signal name="N$13">
-<contactref element="R17" pad="1"/>
-<contactref element="R18" pad="2"/>
-<contactref element="U3" pad="2"/>
-<contactref element="U3" pad="4"/>
+<contactref element="R20" pad="1"/>
+<contactref element="R22" pad="2"/>
+<contactref element="U7" pad="2"/>
+<contactref element="U7" pad="4"/>
 <wire x1="26.15" y1="24" x2="26.15" y2="25.7" width="0.2" layer="1"/>
 <wire x1="26.15" y1="25.7" x2="25.85" y2="26" width="0.2" layer="1"/>
 <wire x1="26.15" y1="24" x2="25" y2="24" width="0.2" layer="1"/>
@@ -7422,10 +7513,10 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <wire x1="25.7" y1="18.025" x2="25.702" y2="18.023" width="0.2" layer="1"/>
 </signal>
 <signal name="N$14">
-<contactref element="R19" pad="1"/>
-<contactref element="R20" pad="2"/>
-<contactref element="U4" pad="2"/>
-<contactref element="U4" pad="3"/>
+<contactref element="R16" pad="1"/>
+<contactref element="R19" pad="2"/>
+<contactref element="U8" pad="2"/>
+<contactref element="U8" pad="3"/>
 <wire x1="26.15" y1="4" x2="26.5" y2="4.35" width="0.2" layer="1"/>
 <wire x1="26.5" y1="6.321025" x2="26.146025" y2="6.675" width="0.2" layer="1"/>
 <wire x1="26.146025" y1="6.675" x2="25.7" y2="6.675" width="0.2" layer="1"/>
@@ -7434,7 +7525,7 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <wire x1="26.15" y1="4" x2="26.15" y2="2" width="0.2" layer="1"/>
 </signal>
 <signal name="VG_SIGNAL">
-<contactref element="U7" pad="8"/>
+<contactref element="U11" pad="8"/>
 <wire x1="35" y1="15.2" x2="35" y2="15.90819375" width="0.2" layer="1"/>
 <wire x1="35" y1="15.90819375" x2="35.2306" y2="16.13879375" width="0.2" layer="1"/>
 <wire x1="35.2306" y1="16.13879375" x2="35.2306" y2="22.5306" width="0.2" layer="1"/>
@@ -7443,10 +7534,10 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <wire x1="35.7" y1="23" x2="35.2306" y2="22.5306" width="0.2" layer="1"/>
 </signal>
 <signal name="N$17">
-<contactref element="R7" pad="2"/>
-<contactref element="D1" pad="1"/>
-<contactref element="U10" pad="3"/>
-<contactref element="C1" pad="1"/>
+<contactref element="R12" pad="2"/>
+<contactref element="D5" pad="1"/>
+<contactref element="U4" pad="3"/>
+<contactref element="C3" pad="1"/>
 <wire x1="20.365" y1="21.7" x2="20.365" y2="23.035" width="0.2" layer="1"/>
 <wire x1="20.365" y1="23.035" x2="19.4" y2="24" width="0.2" layer="1"/>
 <wire x1="19.4" y1="24" x2="19.2" y2="24.2" width="0.2" layer="1"/>
@@ -7456,31 +7547,31 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <wire x1="17" y1="22" x2="19.2" y2="24.2" width="0.2" layer="1"/>
 </signal>
 <signal name="N$18">
-<contactref element="U10" pad="6"/>
-<contactref element="R26" pad="1"/>
-<contactref element="U10" pad="7"/>
+<contactref element="U4" pad="6"/>
+<contactref element="R18" pad="1"/>
+<contactref element="U4" pad="7"/>
 <wire x1="21.635" y1="16.3" x2="21.635" y2="14.48499375" width="0.2" layer="1"/>
 <wire x1="21.15" y1="14" x2="21.635" y2="14.48499375" width="0.2" layer="1"/>
 <wire x1="20.365" y1="16.3" x2="21.635" y2="16.3" width="0.2" layer="1"/>
 </signal>
 <signal name="N$15">
-<contactref element="U11" pad="2"/>
-<contactref element="U11" pad="1"/>
-<contactref element="R27" pad="1"/>
+<contactref element="U5" pad="2"/>
+<contactref element="U5" pad="1"/>
+<contactref element="R21" pad="1"/>
 <wire x1="21.635" y1="9.7" x2="21.635" y2="11.515" width="0.2" layer="1"/>
 <wire x1="21.635" y1="11.515" x2="21.15" y2="12" width="0.2" layer="1"/>
 <wire x1="22.905" y1="9.7" x2="21.635" y2="9.7" width="0.2" layer="1"/>
 </signal>
 <signal name="N$19">
-<contactref element="U11" pad="7"/>
-<contactref element="R21" pad="2"/>
+<contactref element="U5" pad="7"/>
+<contactref element="R15" pad="2"/>
 <wire x1="21.635" y1="4.3" x2="21.635" y2="2.785" width="0.2" layer="1"/>
 <wire x1="21.635" y1="2.785" x2="20.85" y2="2" width="0.2" layer="1"/>
 </signal>
 <signal name="N$20">
-<contactref element="U3" pad="3"/>
+<contactref element="U7" pad="3"/>
 <contactref element="R24" pad="2"/>
-<contactref element="R26" pad="2"/>
+<contactref element="R18" pad="2"/>
 <wire x1="22.85" y1="14" x2="23.05" y2="13.8" width="0.2" layer="1"/>
 <wire x1="25.1" y1="13.8" x2="23.05" y2="13.8" width="0.2" layer="1"/>
 <wire x1="26.15" y1="14.85" x2="26.15" y2="16" width="0.2" layer="1"/>
@@ -7493,9 +7584,9 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <wire x1="24.923" y1="17.377" x2="24.923" y2="18.344025" width="0.2" layer="1"/>
 </signal>
 <signal name="N$22">
-<contactref element="R23" pad="2"/>
-<contactref element="U4" pad="1"/>
-<contactref element="R27" pad="2"/>
+<contactref element="R25" pad="2"/>
+<contactref element="U8" pad="1"/>
+<contactref element="R21" pad="2"/>
 <wire x1="26.15" y1="10" x2="26.15" y2="8.425" width="0.2" layer="1"/>
 <wire x1="26.15" y1="8.425" x2="25.7" y2="7.975" width="0.2" layer="1"/>
 <wire x1="22.85" y1="12" x2="25" y2="12" width="0.2" layer="1"/>
@@ -7503,50 +7594,50 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <wire x1="25" y1="12" x2="26.15" y2="10.85" width="0.2" layer="1"/>
 </signal>
 <signal name="N$23">
-<contactref element="U3" pad="1"/>
-<contactref element="R22" pad="2"/>
-<contactref element="R25" pad="2"/>
+<contactref element="U7" pad="1"/>
+<contactref element="R23" pad="2"/>
+<contactref element="R17" pad="2"/>
 <wire x1="26.15" y1="22" x2="26.15" y2="20.425" width="0.2" layer="1"/>
 <wire x1="26.15" y1="20.425" x2="25.7" y2="19.975" width="0.2" layer="1"/>
 <wire x1="22.85" y1="24" x2="24.85" y2="22" width="0.2" layer="1"/>
 <wire x1="24.85" y1="22" x2="26.15" y2="22" width="0.2" layer="1"/>
 </signal>
 <signal name="N$16">
-<contactref element="U10" pad="1"/>
-<contactref element="U10" pad="2"/>
-<contactref element="R25" pad="1"/>
+<contactref element="U4" pad="1"/>
+<contactref element="U4" pad="2"/>
+<contactref element="R17" pad="1"/>
 <wire x1="21.15" y1="24" x2="21.635" y2="23.51500625" width="0.2" layer="1"/>
 <wire x1="21.635" y1="23.51500625" x2="21.635" y2="21.7" width="0.2" layer="1"/>
 <wire x1="22.905" y1="21.7" x2="21.635" y2="21.7" width="0.2" layer="1"/>
 </signal>
 <signal name="N$21">
-<contactref element="R6" pad="2"/>
-<contactref element="D1" pad="2"/>
+<contactref element="R9" pad="2"/>
+<contactref element="D5" pad="2"/>
 <wire x1="15.85" y1="20" x2="16.66" y2="20" width="0.2" layer="1"/>
 <wire x1="16.66" y1="20" x2="17" y2="20.34" width="0.2" layer="1"/>
 </signal>
 <signal name="N$2">
-<contactref element="R12" pad="2"/>
-<contactref element="D2" pad="2"/>
+<contactref element="R11" pad="2"/>
+<contactref element="D6" pad="2"/>
 <wire x1="15.85" y1="16" x2="16.66" y2="16" width="0.2" layer="1"/>
 <wire x1="16.66" y1="16" x2="17" y2="15.66" width="0.2" layer="1"/>
 </signal>
 <signal name="N$4">
-<contactref element="R13" pad="2"/>
-<contactref element="D3" pad="2"/>
+<contactref element="R10" pad="2"/>
+<contactref element="D7" pad="2"/>
 <wire x1="15.85" y1="7" x2="16.66" y2="7" width="0.2" layer="1"/>
 <wire x1="16.66" y1="7" x2="17" y2="6.66" width="0.2" layer="1"/>
 </signal>
 <signal name="N$8">
-<contactref element="U8" pad="4"/>
-<contactref element="C4" pad="1"/>
+<contactref element="U3" pad="4"/>
+<contactref element="C7" pad="1"/>
 <wire x1="29.85" y1="31.2" x2="29.4" y2="30.75" width="0.2" layer="1"/>
 <wire x1="29.4" y1="30.75" x2="29.4" y2="29.35" width="0.2" layer="1"/>
 </signal>
 <signal name="9V">
 <contactref element="C6" pad="1"/>
-<contactref element="U8" pad="1"/>
-<contactref element="U8" pad="3"/>
+<contactref element="U3" pad="1"/>
+<contactref element="U3" pad="3"/>
 <wire x1="38.2" y1="22.3" x2="38.2" y2="25.8" width="0.4" layer="1"/>
 <wire x1="32" y1="27.45" x2="36.55" y2="27.45" width="0.4" layer="1"/>
 <wire x1="38.2" y1="25.8" x2="36.55" y2="27.45" width="0.4" layer="1"/>
@@ -7557,6 +7648,20 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <contactref element="J1" pad="1"/>
 <wire x1="37" y1="22" x2="37.9" y2="22" width="0.4" layer="1"/>
 <wire x1="37.9" y1="22" x2="38.2" y2="22.3" width="0.4" layer="1"/>
+<contactref element="D8" pad="A"/>
+<wire x1="36" y1="19.777" x2="36" y2="21" width="0.2" layer="1"/>
+<wire x1="36" y1="21" x2="37" y2="22" width="0.2" layer="1"/>
+</signal>
+<signal name="N$11">
+<contactref element="R32" pad="2"/>
+<contactref element="D9" pad="C"/>
+<wire x1="27.323" y1="33.4" x2="25.55" y2="33.4" width="0.2" layer="1"/>
+</signal>
+<signal name="N$24">
+<contactref element="R31" pad="2"/>
+<contactref element="D8" pad="C"/>
+<wire x1="37.65" y1="18" x2="36.023" y2="18" width="0.2" layer="1"/>
+<wire x1="36" y1="18.023" x2="36.023" y2="18" width="0.2" layer="1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
