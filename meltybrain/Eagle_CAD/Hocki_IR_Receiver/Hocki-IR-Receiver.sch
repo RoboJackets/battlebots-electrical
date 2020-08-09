@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.6.2">
+<eagle version="9.5.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -330,7 +330,7 @@
 <wire x1="0.6" y1="0" x2="-0.6" y2="0.8" width="0.1524" layer="22"/>
 <wire x1="0.6" y1="0.8" x2="0.6" y2="-0.8" width="0.1524" layer="22"/>
 </package>
-<package name="SM03B-SRSS-TB(LF)(SN)" urn="urn:adsk.eagle:footprint:22324088/1">
+<package name="SM03B-SRSS-TB(LF)(SN)">
 <wire x1="-2.5" y1="-0.325" x2="2.5" y2="-0.325" width="0.127" layer="51"/>
 <wire x1="2.5" y1="-0.325" x2="2.5" y2="-4.575" width="0.127" layer="51"/>
 <wire x1="2.5" y1="-4.575" x2="-2.5" y2="-4.575" width="0.127" layer="51"/>
@@ -351,13 +351,6 @@
 <smd name="S2" x="2.3" y="-3.875" dx="1.2" dy="1.8" layer="1" rot="R180"/>
 </package>
 </packages>
-<packages3d>
-<package3d name="SM03B-SRSS-TB(LF)(SN)" urn="urn:adsk.eagle:package:22261818/2" locally_modified="yes" type="model">
-<packageinstances>
-<packageinstance name="SM03B-SRSS-TB(LF)(SN)"/>
-</packageinstances>
-</package3d>
-</packages3d>
 <symbols>
 <symbol name="OPA2380AIDGKR">
 <pin name="OUTA" x="15.24" y="0" length="middle" direction="pas" rot="R180"/>
@@ -827,9 +820,6 @@
 <connect gate="G$1" pin="3" pad="3"/>
 <connect gate="G$1" pin="SHIELD" pad="S1 S2"/>
 </connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:22261818/2"/>
-</package3dinstances>
 <technologies>
 <technology name="">
 <attribute name="DKPN" value="455-1803-1-ND" constant="no"/>
