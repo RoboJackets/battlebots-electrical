@@ -1477,7 +1477,7 @@ for trimmer refence see : &lt;u&gt;www.electrospec-inc.com/cross_references/trim
 <wire x1="0.6" y1="0" x2="-0.6" y2="0.8" width="0.1524" layer="22"/>
 <wire x1="0.6" y1="0.8" x2="0.6" y2="-0.8" width="0.1524" layer="22"/>
 </package>
-<package name="SM03B-SRSS-TB(LF)(SN)">
+<package name="SM03B-SRSS-TB(LF)(SN)" urn="urn:adsk.eagle:footprint:22324088/1">
 <wire x1="-2.5" y1="-0.325" x2="2.5" y2="-0.325" width="0.127" layer="51"/>
 <wire x1="2.5" y1="-0.325" x2="2.5" y2="-4.575" width="0.127" layer="51"/>
 <wire x1="2.5" y1="-4.575" x2="-2.5" y2="-4.575" width="0.127" layer="51"/>
@@ -1498,6 +1498,13 @@ for trimmer refence see : &lt;u&gt;www.electrospec-inc.com/cross_references/trim
 <smd name="S2" x="2.3" y="-3.875" dx="1.2" dy="1.8" layer="1" rot="R180"/>
 </package>
 </packages>
+<packages3d>
+<package3d name="SM03B-SRSS-TB(LF)(SN)" urn="urn:adsk.eagle:package:22261818/2" locally_modified="yes" type="model">
+<packageinstances>
+<packageinstance name="SM03B-SRSS-TB(LF)(SN)"/>
+</packageinstances>
+</package3d>
+</packages3d>
 </library>
 <library name="resistor" urn="urn:adsk.eagle:library:348">
 <description>&lt;b&gt;Resistors, Capacitors, Inductors&lt;/b&gt;&lt;p&gt;
@@ -6963,7 +6970,7 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <attribute name="SPICEPREFIX" value="C" x="30.7" y="31.2" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="30.065" y="29.295" size="1.27" layer="27"/>
 </element>
-<element name="J1" library="Hocki_Library" package="SM03B-SRSS-TB(LF)(SN)" value="SM03B-SRSS-TB(LF)(SN)" x="37" y="23" smashed="yes" rot="R90">
+<element name="J1" library="Hocki_Library" package="SM03B-SRSS-TB(LF)(SN)" package3d_urn="urn:adsk.eagle:package:22261818/2" value="SM03B-SRSS-TB(LF)(SN)" x="37" y="23" smashed="yes" rot="R90">
 <attribute name="DKPN" value="455-1803-1-ND" x="37" y="23" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="37.29" y="26.07" size="1" layer="25" font="vector"/>
 <attribute name="VALUE" x="42.35" y="19.19" size="1" layer="27" font="vector" rot="R90" align="top-left"/>
