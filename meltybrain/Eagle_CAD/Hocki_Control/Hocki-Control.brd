@@ -157,7 +157,7 @@
 <layer number="255" name="routoute" color="7" fill="1" visible="no" active="yes"/>
 </layers>
 <board>
-<fusionsync huburn="a.cGVyc29uYWw6dWUyZDhlY2M3" projecturn="a.cGVyc29uYWw6dWUyZDhlY2M3IzIwMjAwNzEyMzE1MDc1MjU2" f3durn="urn:adsk.wipprod:dm.lineage:20vRQB6ZReuYg4mop2bfQQ" pcbguid="b0d3fd30-14f1-46bd-94a1-66033439a464" lastpulledtime="2020-07-28T02:53:51Z" lastsyncedchangeguid="38ad4052-c347-9130-0407-897f9c40eac8" latestrevisionid="" lastsyncedrevisionid="" lastboardhashguid="" lastpushedtime="" linktopcb3d="false"/>
+<fusionsync huburn="a.cGVyc29uYWw6dWUyZDhlY2M3" projecturn="a.cGVyc29uYWw6dWUyZDhlY2M3IzIwMjAwNzEyMzE1MDc1MjU2" f3durn="urn:adsk.wipprod:dm.lineage:20vRQB6ZReuYg4mop2bfQQ" pcbguid="b0d3fd30-14f1-46bd-94a1-66033439a464" lastpulledtime="2020-08-03T23:20:50Z" lastsyncedchangeguid="6f0731e7-f1c2-7deb-15ff-1342602f1299" latestrevisionid="" lastsyncedrevisionid="" lastboardhashguid="" lastpushedtime="" linktopcb3d="false"/>
 <plain>
 <circle x="35" y="15.8" radius="2.8" width="0.2" layer="21"/>
 <circle x="35" y="-24.2" radius="2.8" width="0.2" layer="21"/>
@@ -3143,11 +3143,9 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <wire x1="-3.4" y1="2.5" x2="-3" y2="2.1" width="0.2" layer="16"/>
 <wire x1="-3" y1="2.1" x2="-2.999996875" y2="2.1" width="0.2" layer="1"/>
 <via x="-3.02" y="-5.78" extent="1-16" drill="0.35"/>
-<wire x1="-3.02" y1="-6.88" x2="-3.07" y2="-6.93" width="0.2" layer="16"/>
-<wire x1="-3.07" y1="-6.93" x2="-6.0706" y2="-9.9306" width="0.2" layer="16"/>
+<wire x1="-2.72" y1="-6.58" x2="-6.0706" y2="-9.9306" width="0.2" layer="16"/>
 <wire x1="-3.02" y1="-5.78" x2="-1.025078125" y2="-7.774921875" width="0.2" layer="1"/>
 <wire x1="-1.025078125" y1="-7.774921875" x2="-0.194921875" y2="-7.774921875" width="0.2" layer="1"/>
-<wire x1="-3.02" y1="-6.88" x2="-2.72" y2="-6.58" width="0.2" layer="16"/>
 <wire x1="-2.72" y1="-6.58" x2="-2.72" y2="-5.48" width="0.2" layer="16"/>
 </signal>
 <signal name="5V">
