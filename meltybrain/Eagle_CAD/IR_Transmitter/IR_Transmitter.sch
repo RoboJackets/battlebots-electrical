@@ -288,7 +288,61 @@ In this library you will find MOSFETs and other circuit elements commonly used f
 <wire x1="0.3048" y1="1.524" x2="-0.3048" y2="1.524" width="0.1524" layer="51" curve="-180"/>
 <text x="-1" y="2" size="1" layer="25" font="vector" rot="SR0">&gt;NAME</text>
 </package>
+<package name="JST-PH-2-SMT-RA">
+<description>2-Pin JST PH Series Right-Angle Connector (+/- for batteries)</description>
+<wire x1="-4" y1="3" x2="4" y2="3" width="0.2032" layer="51"/>
+<wire x1="4" y1="3" x2="4" y2="-4.5" width="0.2032" layer="51"/>
+<wire x1="-4" y1="-4.5" x2="-4" y2="3" width="0.2032" layer="51"/>
+<wire x1="3.2" y1="-2" x2="-3.2" y2="-2" width="0.2032" layer="51"/>
+<wire x1="-3.2" y1="-2" x2="-3.2" y2="-4.5" width="0.2032" layer="51"/>
+<wire x1="-3.2" y1="-4.5" x2="-4" y2="-4.5" width="0.2032" layer="51"/>
+<wire x1="4" y1="-4.5" x2="3.2" y2="-4.5" width="0.2032" layer="51"/>
+<wire x1="3.2" y1="-4.5" x2="3.2" y2="-2" width="0.2032" layer="51"/>
+<wire x1="-2.25" y1="3" x2="2.25" y2="3" width="0.127" layer="21"/>
+<wire x1="4" y1="-0.5" x2="4" y2="-4.5" width="0.127" layer="21"/>
+<wire x1="4" y1="-4.5" x2="3.15" y2="-4.5" width="0.127" layer="21"/>
+<wire x1="3.15" y1="-4.5" x2="3.15" y2="-2" width="0.127" layer="21"/>
+<wire x1="3.15" y1="-2" x2="1.75" y2="-2" width="0.127" layer="21"/>
+<wire x1="-1.75" y1="-2" x2="-3.15" y2="-2" width="0.127" layer="21"/>
+<wire x1="-3.15" y1="-2" x2="-3.15" y2="-4.5" width="0.127" layer="21"/>
+<wire x1="-3.15" y1="-4.5" x2="-4" y2="-4.5" width="0.127" layer="21"/>
+<wire x1="-4" y1="-4.5" x2="-4" y2="-0.5" width="0.127" layer="21"/>
+<smd name="2" x="-1" y="-3.7" dx="1" dy="4.6" layer="1"/>
+<smd name="1" x="1" y="-3.7" dx="1" dy="4.6" layer="1"/>
+<smd name="NC1" x="-3.4" y="1.5" dx="3.4" dy="1.6" layer="1" rot="R90"/>
+<smd name="NC2" x="3.4" y="1.5" dx="3.4" dy="1.6" layer="1" rot="R90"/>
+<text x="-2.54" y="3.81" size="1.27" layer="25" font="vector">&gt;Name</text>
+<text x="-2.54" y="-7.62" size="1.27" layer="27" font="vector">&gt;Value</text>
+<text x="2.286" y="-6.096" size="1.4224" layer="21" ratio="12">+</text>
+<text x="-3.429" y="-6.096" size="1.4224" layer="21" ratio="12">-</text>
+</package>
+<package name="JST-PH-2-SMT" urn="urn:adsk.eagle:footprint:6240117/1">
+<wire x1="-4" y1="2.5" x2="4" y2="2.5" width="0.2032" layer="51"/>
+<wire x1="4" y1="2.5" x2="4" y2="-2.5" width="0.2032" layer="51"/>
+<wire x1="-4" y1="-2.5" x2="-4" y2="2.5" width="0.2032" layer="51"/>
+<wire x1="4" y1="-2.5" x2="-4" y2="-2.5" width="0.2032" layer="51"/>
+<wire x1="-2.25" y1="2.5" x2="2.25" y2="2.5" width="0.127" layer="21"/>
+<wire x1="4" y1="-0.5" x2="4" y2="-2.5" width="0.127" layer="21"/>
+<wire x1="4" y1="-2.5" x2="1.75" y2="-2.5" width="0.127" layer="21"/>
+<wire x1="-1.75" y1="-2.5" x2="-4" y2="-2.5" width="0.127" layer="21"/>
+<wire x1="-4" y1="-2.5" x2="-4" y2="-0.5" width="0.127" layer="21"/>
+<smd name="1" x="-1" y="-1.8" dx="1" dy="5.5" layer="1"/>
+<smd name="2" x="1" y="-1.8" dx="1" dy="5.5" layer="1"/>
+<smd name="NC1" x="-3.4" y="0" dx="3.4" dy="1.6" layer="1" rot="R90"/>
+<smd name="NC2" x="3.4" y="0" dx="3.4" dy="1.6" layer="1" rot="R90"/>
+<text x="-2.54" y="3.81" size="1.27" layer="25" font="vector">&gt;Name</text>
+<text x="-2.54" y="-7.62" size="1.27" layer="27" font="vector">&gt;Value</text>
+<text x="-2.914" y="-6.096" size="1.4224" layer="21" ratio="12">+</text>
+<text x="2.271" y="-6.096" size="1.4224" layer="21" ratio="12">-</text>
+</package>
 </packages>
+<packages3d>
+<package3d name="JST-PH-2-SMT" urn="urn:adsk.eagle:package:22261884/2" type="model">
+<packageinstances>
+<packageinstance name="JST-PH-2-SMT"/>
+</packageinstances>
+</package3d>
+</packages3d>
 <symbols>
 <symbol name="LMH6612MA">
 <pin name="OUTA" x="15.24" y="0" length="middle" direction="pas" rot="R180"/>
@@ -325,6 +379,17 @@ In this library you will find MOSFETs and other circuit elements commonly used f
 <wire x1="0" y1="2.54" x2="-0.762" y2="1.27" width="0.254" layer="94"/>
 <pin name="9V" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
 <text x="0" y="2.794" size="1.778" layer="96" align="bottom-center">&gt;VALUE</text>
+</symbol>
+<symbol name="JST_2PIN">
+<wire x1="-6.35" y1="-5.08" x2="1.27" y2="-5.08" width="0.4064" layer="94"/>
+<wire x1="1.27" y1="-5.08" x2="1.27" y2="5.08" width="0.4064" layer="94"/>
+<wire x1="1.27" y1="5.08" x2="-6.35" y2="5.08" width="0.4064" layer="94"/>
+<wire x1="-6.35" y1="5.08" x2="-6.35" y2="-5.08" width="0.4064" layer="94"/>
+<text x="-6.35" y="5.715" size="1.778" layer="95">&gt;NAME</text>
+<text x="-6.35" y="-7.62" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="1" x="-2.54" y="2.54" visible="pad" length="short" direction="pas" function="dot"/>
+<pin name="2" x="-2.54" y="0" visible="pad" length="short" direction="pas" function="dot"/>
+<pin name="SHIELD" x="-2.54" y="-2.54" visible="pin" length="short" direction="pas" function="dot"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -392,6 +457,44 @@ In this library you will find MOSFETs and other circuit elements commonly used f
 </gates>
 <devices>
 <device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="JST_2PIN" prefix="CN" uservalue="yes">
+<description>&lt;b&gt;JST 2-Pin Connectors of various flavors&lt;/b&gt;
+
+&lt;ul&gt;
+&lt;li&gt;SMT-RA (S2B-PH-SM4) 4UConnector #17311&lt;/li&gt;
+&lt;li&gt;SMT  (B2B-PH-SM4)&lt;/li&gt;
+&lt;li&gt;THM-RA (S2B-PH)&lt;/li&gt;
+&lt;li&gt;THM  (B2B-PH)&lt;/li&gt;
+&lt;/ul&gt;</description>
+<gates>
+<gate name="G$1" symbol="JST_2PIN" x="2.54" y="0"/>
+</gates>
+<devices>
+<device name="-SMT-RA" package="JST-PH-2-SMT-RA">
+<connects>
+<connect gate="G$1" pin="1" pad="2"/>
+<connect gate="G$1" pin="2" pad="1"/>
+<connect gate="G$1" pin="SHIELD" pad="NC1 NC2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="" package="JST-PH-2-SMT">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="SHIELD" pad="NC1 NC2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:22261884/2"/>
+</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -8500,6 +8603,112 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </deviceset>
 </devicesets>
 </library>
+<library name="RoboJackets-Connectors">
+<description>&lt;img src="http://www.robojackets.org/wp-content/themes/RoboJackets-3.0/img/banner.png" width="600"&gt;
+&lt;hr&gt;
+&lt;h1&gt;RoboJackets EAGLE Libraries - Connectors&lt;/h1&gt;&lt;/br&gt;
+&lt;p&gt;
+In this library you will find all the connectors used on any of our boards.
+&lt;/p&gt;</description>
+<packages>
+<package name="0353630460">
+<wire x1="-5" y1="2" x2="-5" y2="-8.5" width="0.127" layer="21"/>
+<wire x1="-5" y1="-8.5" x2="5" y2="-8.5" width="0.127" layer="21"/>
+<wire x1="5" y1="-8.5" x2="5" y2="2" width="0.127" layer="21"/>
+<wire x1="5" y1="2" x2="-5" y2="2" width="0.127" layer="21"/>
+<pad name="2" x="-1" y="0" drill="0.8" rot="R180"/>
+<pad name="1" x="-3" y="0" drill="0.8" shape="square" rot="R180"/>
+<pad name="3" x="1" y="0" drill="0.8" rot="R180"/>
+<pad name="4" x="3" y="0" drill="0.8" rot="R180"/>
+<text x="-5" y="2.1" size="1" layer="25" font="vector">&gt;NAME</text>
+<text x="-5" y="-8.6" size="1" layer="27" font="vector" align="top-left">&gt;Value</text>
+</package>
+<package name="0353620450">
+<wire x1="-5" y1="3" x2="-5" y2="-3" width="0.127" layer="21"/>
+<wire x1="-5" y1="-3" x2="7" y2="-3" width="0.127" layer="21"/>
+<wire x1="7" y1="-3" x2="7" y2="3" width="0.127" layer="21"/>
+<wire x1="7" y1="3" x2="-5" y2="3" width="0.127" layer="21"/>
+<pad name="2" x="0" y="0" drill="0.8" rot="R180"/>
+<pad name="1" x="-2" y="0" drill="0.8" shape="square" rot="R180"/>
+<pad name="3" x="2" y="0" drill="0.8" rot="R180"/>
+<pad name="4" x="4" y="0" drill="0.8" rot="R180"/>
+<text x="-3.99" y="3.52" size="1" layer="25" font="vector">&gt;NAME</text>
+<text x="-4" y="-3.5" size="1" layer="27" font="vector" align="top-left">&gt;VALUE</text>
+</package>
+</packages>
+<symbols>
+<symbol name="PINHD4">
+<wire x1="-6.35" y1="-5.08" x2="1.27" y2="-5.08" width="0.4064" layer="94"/>
+<wire x1="1.27" y1="-5.08" x2="1.27" y2="7.62" width="0.4064" layer="94"/>
+<wire x1="1.27" y1="7.62" x2="-6.35" y2="7.62" width="0.4064" layer="94"/>
+<wire x1="-6.35" y1="7.62" x2="-6.35" y2="-5.08" width="0.4064" layer="94"/>
+<text x="-6.35" y="8.255" size="1.778" layer="95">&gt;NAME</text>
+<text x="-6.35" y="-7.62" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="1" x="-2.54" y="5.08" visible="pad" length="short" direction="pas" function="dot"/>
+<pin name="2" x="-2.54" y="2.54" visible="pad" length="short" direction="pas" function="dot"/>
+<pin name="3" x="-2.54" y="0" visible="pad" length="short" direction="pas" function="dot"/>
+<pin name="4" x="-2.54" y="-2.54" visible="pad" length="short" direction="pas" function="dot"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="4PIN-03536?" prefix="J">
+<description>&lt;table&gt;
+&lt;tr&gt;
+&lt;td&gt;
+&lt;b&gt;Description: &lt;/b&gt;
+&lt;/td&gt;&lt;td&gt;
+Connector Header Through Hole, 4 position 0.079" (2.00mm)
+&lt;/td&gt;
+&lt;/tr&gt;&lt;tr&gt;
+&lt;td&gt;
+&lt;b&gt;Link H:&lt;/b&gt;
+&lt;/td&gt;
+&lt;td&gt;
+&lt;a href="https://www.digikey.com/products/en?keywords=WM18933-ND"&gt;Digi-Key&lt;/a&gt;
+&lt;/td&gt;
+&lt;/tr&gt;&lt;tr&gt;
+&lt;td&gt;
+&lt;b&gt;Link V:&lt;/b&gt;
+&lt;/td&gt;
+&lt;td&gt;
+&lt;a href="https://www.digikey.com/products/en?keywords=WM18933-ND"&gt;Digi-Key&lt;/a&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;&lt;br/&gt;</description>
+<gates>
+<gate name="G$1" symbol="PINHD4" x="0" y="-2.54"/>
+</gates>
+<devices>
+<device name="30460" package="0353630460">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DKPN" value="WM18933-ND" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="20450" package="0353620450">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DKPN" value="WM18922-ND"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -8529,6 +8738,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="C44" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="2.2u"/>
 <part name="GND4" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
 <part name="Q2" library="EmitterParts" deviceset="FQP47P06" device=""/>
+<part name="CN1" library="Hocki_Library" deviceset="JST_2PIN" device="-SMT-RA"/>
+<part name="J1" library="RoboJackets-Connectors" deviceset="4PIN-03536?" device="20450"/>
 </parts>
 <sheets>
 <sheet>
@@ -8603,6 +8814,14 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <attribute name="VALUE" x="-34.29" y="41.91" size="1.778" layer="96" rot="MR90" align="top-left"/>
 <attribute name="NAME" x="-26.67" y="41.91" size="1.778" layer="95" rot="MR90"/>
 </instance>
+<instance part="CN1" gate="G$1" x="-50.8" y="48.26" smashed="yes" rot="R180">
+<attribute name="NAME" x="-44.45" y="42.545" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="-44.45" y="55.88" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="J1" gate="G$1" x="-78.74" y="20.32" smashed="yes">
+<attribute name="NAME" x="-85.09" y="28.575" size="1.778" layer="95"/>
+<attribute name="VALUE" x="-85.09" y="12.7" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -8666,6 +8885,11 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="-20.32" y1="43.18" x2="-27.94" y2="43.18" width="0.1524" layer="91"/>
 <pinref part="Q2" gate="G$1" pin="G"/>
 <wire x1="-27.94" y1="43.18" x2="-27.94" y2="48.26" width="0.1524" layer="91"/>
+<pinref part="CN1" gate="G$1" pin="1"/>
+<wire x1="-48.26" y1="45.72" x2="-35.56" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="-35.56" y1="45.72" x2="-35.56" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="-35.56" y1="43.18" x2="-27.94" y2="43.18" width="0.1524" layer="91"/>
+<junction x="-27.94" y="43.18"/>
 </segment>
 <segment>
 <pinref part="GND4" gate="1" pin="GND"/>
@@ -8750,6 +8974,26 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="SUPPLY1" gate="G$1" pin="9V"/>
 <pinref part="Q2" gate="G$1" pin="D"/>
 <wire x1="-35.56" y1="63.5" x2="-35.56" y2="53.34" width="0.1524" layer="91"/>
+<pinref part="CN1" gate="G$1" pin="2"/>
+<wire x1="-48.26" y1="48.26" x2="-35.56" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="-35.56" y1="48.26" x2="-35.56" y2="50.8" width="0.1524" layer="91"/>
+<junction x="-35.56" y="53.34"/>
+<pinref part="CN1" gate="G$1" pin="SHIELD"/>
+<wire x1="-35.56" y1="50.8" x2="-35.56" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="-48.26" y1="50.8" x2="-35.56" y2="50.8" width="0.1524" layer="91"/>
+<junction x="-35.56" y="50.8"/>
+</segment>
+</net>
+<net name="N$8" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="PA6"/>
+<wire x1="-53.34" y1="2.54" x2="-58.42" y2="2.54" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$9" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="PB3"/>
+<wire x1="-53.34" y1="17.78" x2="-58.42" y2="17.78" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
