@@ -1706,14 +1706,12 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <wire x1="48.59" y1="1.6" x2="48.52" y2="1.53" width="0.1524" layer="1"/>
 <wire x1="56.1" y1="1.6" x2="54.94" y2="1.6" width="0.1524" layer="1"/>
 <wire x1="54.94" y1="1.6" x2="54.92" y2="1.58" width="0.1524" layer="1"/>
-<wire x1="49.7" y1="1.6" x2="54.92" y2="1.58" width="0" layer="19" extent="1-1"/>
-<wire x1="43.3" y1="1.6" x2="48.52" y2="1.53" width="0" layer="19" extent="1-1"/>
-<wire x1="37.2" y1="1.5" x2="42.12" y2="1.53" width="0" layer="19" extent="1-1"/>
-<wire x1="30.8" y1="1.6" x2="35.97" y2="1.53" width="0" layer="19" extent="1-1"/>
-<wire x1="24.5" y1="1.6" x2="29.58" y2="1.52" width="0" layer="19" extent="1-1"/>
-<wire x1="18.2" y1="1.6" x2="23.28" y2="1.52" width="0" layer="19" extent="1-1"/>
-<wire x1="11.9" y1="1.6" x2="17.03" y2="1.52" width="0" layer="19" extent="1-1"/>
-<wire x1="5.82" y1="6.55" x2="11.85" y2="3.39" width="0" layer="19" extent="1-1"/>
+<polygon width="0.1524" layer="1">
+<vertex x="0" y="0"/>
+<vertex x="0" y="9.9"/>
+<vertex x="58.1" y="9.9"/>
+<vertex x="58.1" y="0"/>
+</polygon>
 </signal>
 <signal name="GND">
 <contactref element="U$8" pad="3"/>
@@ -1783,13 +1781,6 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <wire x1="53.2" y1="1.6" x2="53.22" y2="1.58" width="0.1524" layer="1"/>
 <wire x1="6.4" y1="2.4" x2="6.4" y2="3.15" width="0.1524" layer="1"/>
 <wire x1="6.4" y1="3.15" x2="6" y2="3.55" width="0.1524" layer="1"/>
-<wire x1="46.82" y1="1.53" x2="52" y2="1.6" width="0" layer="19" extent="1-1"/>
-<wire x1="40.42" y1="1.53" x2="45.6" y2="1.6" width="0" layer="19" extent="1-1"/>
-<wire x1="34.27" y1="1.53" x2="39.2" y2="1.5" width="0" layer="19" extent="1-1"/>
-<wire x1="33.1" y1="1.6" x2="27.88" y2="1.52" width="0" layer="19" extent="1-1"/>
-<wire x1="21.58" y1="1.52" x2="26.7" y2="1.6" width="0" layer="19" extent="1-1"/>
-<wire x1="15.33" y1="1.52" x2="20.4" y2="1.6" width="0" layer="19" extent="1-1"/>
-<wire x1="9.03" y1="1.52" x2="14.1" y2="1.6" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$15">
 <contactref element="U$8" pad="2"/>
