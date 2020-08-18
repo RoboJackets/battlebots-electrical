@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.1">
+<eagle version="9.6.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="no" altdistance="0.1" altunitdist="mm" altunit="mm"/>
+<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
@@ -1725,13 +1725,13 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <signal name="N$16">
 <contactref element="U$8" pad="1"/>
 <contactref element="J1" pad="3"/>
-<wire x1="8.33416875" y1="6.2468" x2="8.4532" y2="6.36583125" width="0.1524" layer="1"/>
+<wire x1="8.15416875" y1="6.0668" x2="8.4532" y2="6.36583125" width="0.1524" layer="1"/>
 <wire x1="8.4532" y1="6.36583125" x2="8.4532" y2="7.63416875" width="0.1524" layer="1"/>
-<wire x1="8.4532" y1="7.63416875" x2="8.33416875" y2="7.7532" width="0.1524" layer="1"/>
-<wire x1="8.33416875" y1="7.7532" x2="8.1968" y2="7.7532" width="0.1524" layer="1"/>
-<wire x1="8.1968" y1="7.7532" x2="7.25" y2="8.7" width="0.1524" layer="1"/>
-<wire x1="5" y1="5.9" x2="5.3468" y2="6.2468" width="0.1524" layer="1"/>
-<wire x1="5.3468" y1="6.2468" x2="8.33416875" y2="6.2468" width="0.1524" layer="1"/>
+<wire x1="8.4532" y1="7.63416875" x2="7.46416875" y2="8.6232" width="0.1524" layer="1"/>
+<wire x1="7.46416875" y1="8.6232" x2="7.25" y2="8.6232" width="0.1524" layer="1"/>
+<wire x1="7.25" y1="8.6232" x2="7.25" y2="8.7" width="0.1524" layer="1"/>
+<wire x1="5" y1="5.9" x2="5.1668" y2="6.0668" width="0.1524" layer="1"/>
+<wire x1="5.1668" y1="6.0668" x2="8.15416875" y2="6.0668" width="0.1524" layer="1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
