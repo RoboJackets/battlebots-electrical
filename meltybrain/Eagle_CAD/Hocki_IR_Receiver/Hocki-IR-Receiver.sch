@@ -16885,7 +16885,7 @@ A0=A+!B!C</text>
 </instance>
 <instance part="U11" gate="A" x="157.48" y="-43.18" smashed="yes">
 <attribute name="NAME" x="147.32" y="-30.48" size="1.778" layer="95"/>
-<attribute name="VALUE" x="147.32" y="-55.88" size="1.778" layer="96" align="top-left"/>
+<attribute name="VALUE" x="162.56" y="-53.34" size="1.778" layer="96" align="top-left"/>
 </instance>
 <instance part="R20" gate="G$1" x="-172.72" y="-25.4" smashed="yes" rot="R90">
 <attribute name="NAME" x="-174.2186" y="-29.21" size="1.778" layer="95" rot="R90"/>
@@ -18058,9 +18058,9 @@ A0=A+!B!C</text>
 <segment>
 <pinref part="U4" gate="A" pin="OUTA"/>
 <pinref part="U4" gate="A" pin="INA-"/>
-<wire x1="121.92" y1="96.52" x2="109.22" y2="96.52" width="0.1524" layer="91"/>
-<wire x1="109.22" y1="96.52" x2="109.22" y2="114.3" width="0.1524" layer="91"/>
-<wire x1="109.22" y1="114.3" x2="165.1" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="96.52" x2="106.68" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="96.52" x2="106.68" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="114.3" x2="165.1" y2="114.3" width="0.1524" layer="91"/>
 <wire x1="165.1" y1="93.98" x2="165.1" y2="114.3" width="0.1524" layer="91"/>
 <wire x1="152.4" y1="99.06" x2="152.4" y2="93.98" width="0.1524" layer="91"/>
 <wire x1="152.4" y1="93.98" x2="165.1" y2="93.98" width="0.1524" layer="91"/>
