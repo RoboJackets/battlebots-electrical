@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -87,30 +87,8 @@
 <wire x1="-4.52" y1="3" x2="4.52" y2="3" width="0.05" layer="39"/>
 <wire x1="4.52" y1="3" x2="4.52" y2="-3" width="0.05" layer="39"/>
 <wire x1="4.52" y1="-3" x2="-4.52" y2="-3" width="0.05" layer="39"/>
-<polygon width="0.001" layer="1">
-<vertex x="-0.27" y="0.06"/>
-<vertex x="-0.27" y="1.79" curve="43"/>
-<vertex x="-1.87" y="2.4"/>
-<vertex x="-1.895" y="2.4" curve="89"/>
-<vertex x="-4.27" y="0" curve="89"/>
-<vertex x="-1.895" y="-2.4"/>
-<vertex x="-1.795" y="-2.4"/>
-<vertex x="-1.87" y="-2.4" curve="43"/>
-<vertex x="-0.27" y="-1.79"/>
-</polygon>
-<text x="-4.8" y="3.05" size="0.6096" layer="25">&gt;NAME</text>
-<text x="-4.8" y="-3.142" size="0.6096" layer="27" align="top-left">&gt;VALUE</text>
-<polygon width="0.001" layer="1">
-<vertex x="0.27" y="0.06"/>
-<vertex x="0.27" y="1.79" curve="-43"/>
-<vertex x="1.87" y="2.4"/>
-<vertex x="1.895" y="2.4" curve="-89"/>
-<vertex x="4.27" y="0" curve="-89"/>
-<vertex x="1.895" y="-2.4"/>
-<vertex x="1.795" y="-2.4"/>
-<vertex x="1.87" y="-2.4" curve="-43"/>
-<vertex x="0.27" y="-1.79"/>
-</polygon>
+<text x="-4.8" y="3.05" size="1" layer="25" font="vector">&gt;NAME</text>
+<text x="-4.8" y="-3.142" size="1" layer="27" font="vector" align="top-left">&gt;VALUE</text>
 <circle x="-5.2" y="0" radius="0.1" width="0.2" layer="21"/>
 <circle x="-5.2" y="0" radius="0.1" width="0.2" layer="51"/>
 <circle x="-1.27" y="0" radius="0.5" width="1" layer="29"/>
@@ -118,7 +96,6 @@
 <circle x="-1.27" y="0" radius="0.5" width="1" layer="30"/>
 <circle x="1.27" y="0" radius="0.5" width="1" layer="30"/>
 <circle x="0" y="0" radius="2.75" width="0.127" layer="51"/>
-<circle x="0" y="0" radius="2.75" width="0.127" layer="21"/>
 <pad name="C" x="-1.27" y="0" drill="1" diameter="2" stop="no"/>
 <pad name="A" x="1.27" y="0" drill="1" diameter="2" stop="no"/>
 </package>
@@ -131,8 +108,8 @@
 <wire x1="8.13" y1="3.26" x2="8.13" y2="-2.2" width="0.05" layer="39"/>
 <wire x1="8.13" y1="-2.2" x2="-3.05" y2="-2.2" width="0.05" layer="39"/>
 <wire x1="-3.05" y1="-2.2" x2="-3.05" y2="3.26" width="0.05" layer="39"/>
-<text x="-2.80028125" y="3.30028125" size="1.27" layer="25">&gt;NAME</text>
-<text x="-2.773140625" y="-2.203190625" size="1.27" layer="27" align="top-left">&gt;VALUE</text>
+<text x="-2.80028125" y="3.30028125" size="1" layer="25" font="vector">&gt;NAME</text>
+<text x="-2.773140625" y="-2.203190625" size="1" layer="27" font="vector" align="top-left">&gt;VALUE</text>
 <circle x="-3.6" y="0" radius="0.14141875" width="0.3" layer="21"/>
 <pad name="1" x="0" y="0" drill="1.34" shape="square"/>
 <pad name="2" x="2.54" y="0" drill="1.34"/>
@@ -148,8 +125,8 @@
 <wire x1="-1.4224" y1="0.6604" x2="-0.7636" y2="0.6604" width="0.2032" layer="21"/>
 <wire x1="1.4224" y1="0.6604" x2="1.4224" y2="-0.1524" width="0.2032" layer="21"/>
 <wire x1="0.7636" y1="0.6604" x2="1.4224" y2="0.6604" width="0.2032" layer="21"/>
-<text x="-1.904659375" y="1.905340625" size="1.01626875" layer="25" ratio="18">&gt;NAME</text>
-<text x="-1.906140625" y="-1.9069" size="0.8132875" layer="27" ratio="10" align="top-left">&gt;VALUE</text>
+<text x="-1.904659375" y="1.905340625" size="1" layer="25" font="vector" ratio="10">&gt;NAME</text>
+<text x="-1.906140625" y="-1.9069" size="1" layer="27" font="vector" ratio="10" align="top-left">&gt;VALUE</text>
 <rectangle x1="-0.228928125" y1="0.71221875" x2="0.2286" y2="1.2954" layer="51"/>
 <rectangle x1="0.71146875" y1="-1.295890625" x2="1.1684" y2="-0.7112" layer="51"/>
 <rectangle x1="-1.16983125" y1="-1.296990625" x2="-0.7112" y2="-0.7112" layer="51"/>
