@@ -138,6 +138,25 @@
 <pad name="2" x="2.54" y="0" drill="1.34"/>
 <pad name="3" x="5.08" y="0" drill="1.34"/>
 </package>
+<package name="SSOT-3">
+<description>SuperSOT-3</description>
+<wire x1="1.4224" y1="0.6604" x2="1.4224" y2="-0.6604" width="0.2032" layer="51"/>
+<wire x1="1.4224" y1="-0.6604" x2="-1.4224" y2="-0.6604" width="0.2032" layer="51"/>
+<wire x1="-1.4224" y1="-0.6604" x2="-1.4224" y2="0.6604" width="0.2032" layer="51"/>
+<wire x1="-1.4224" y1="0.6604" x2="1.4224" y2="0.6604" width="0.2032" layer="51"/>
+<wire x1="-1.4224" y1="-0.1524" x2="-1.4224" y2="0.6604" width="0.2032" layer="21"/>
+<wire x1="-1.4224" y1="0.6604" x2="-0.7636" y2="0.6604" width="0.2032" layer="21"/>
+<wire x1="1.4224" y1="0.6604" x2="1.4224" y2="-0.1524" width="0.2032" layer="21"/>
+<wire x1="0.7636" y1="0.6604" x2="1.4224" y2="0.6604" width="0.2032" layer="21"/>
+<text x="-1.904659375" y="1.905340625" size="1.01626875" layer="25" ratio="18">&gt;NAME</text>
+<text x="-1.906140625" y="-1.9069" size="0.8132875" layer="27" ratio="10" align="top-left">&gt;VALUE</text>
+<rectangle x1="-0.228928125" y1="0.71221875" x2="0.2286" y2="1.2954" layer="51"/>
+<rectangle x1="0.71146875" y1="-1.295890625" x2="1.1684" y2="-0.7112" layer="51"/>
+<rectangle x1="-1.16983125" y1="-1.296990625" x2="-0.7112" y2="-0.7112" layer="51"/>
+<smd name="3" x="0" y="1.1" dx="1" dy="1.4" layer="1"/>
+<smd name="2" x="0.95" y="-1.1" dx="1" dy="1.4" layer="1"/>
+<smd name="1" x="-0.95" y="-1.1" dx="1" dy="1.4" layer="1"/>
+</package>
 </packages>
 <symbols>
 <symbol name="ATTINY84">
@@ -189,7 +208,7 @@
 <pin name="A" x="-7.62" y="0" visible="pad" length="short" direction="pas"/>
 <pin name="C" x="5.08" y="0" visible="pad" length="middle" direction="pas" rot="R180"/>
 </symbol>
-<symbol name="FQP47P06">
+<symbol name="PMOS">
 <wire x1="0.762" y1="-0.762" x2="0.762" y2="0" width="0.254" layer="94"/>
 <wire x1="0.762" y1="0" x2="0.762" y2="0.762" width="0.254" layer="94"/>
 <wire x1="0.762" y1="-3.175" x2="0.762" y2="-2.54" width="0.254" layer="94"/>
@@ -285,7 +304,7 @@
 &lt;p&gt;&lt;\p&gt;
 &lt;a href="https://www.digikey.com/product-detail/en/on-semiconductor/FQP47P06/FQP47P06-ND/1057079"&gt;Digikey&lt;\a&gt;</description>
 <gates>
-<gate name="G$1" symbol="FQP47P06" x="-2.54" y="0"/>
+<gate name="G$1" symbol="PMOS" x="-2.54" y="0"/>
 </gates>
 <devices>
 <device name="" package="TO254P1067X483X2286-3">
@@ -298,6 +317,23 @@
 <technology name="">
 <attribute name="DKPN" value="FQP47P06-ND" constant="no"/>
 </technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="FDN352AP" prefix="Q">
+<gates>
+<gate name="G$1" symbol="PMOS" x="-2.54" y="0"/>
+</gates>
+<devices>
+<device name="" package="SSOT-3">
+<connects>
+<connect gate="G$1" pin="D" pad="3"/>
+<connect gate="G$1" pin="G" pad="1"/>
+<connect gate="G$1" pin="S" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
