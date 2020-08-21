@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.1">
+<eagle version="9.6.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -160,7 +160,7 @@
 <libraries>
 <library name="LED_BOARD">
 <packages>
-<package name="RGBLED5050" urn="urn:adsk.eagle:footprint:6240222/1" locally_modified="yes">
+<package name="RGBLED5050" urn="urn:adsk.eagle:footprint:22765568/1">
 <wire x1="-2.5" y1="2.5" x2="2.5" y2="2.5" width="0.127" layer="21"/>
 <wire x1="2.5" y1="2.5" x2="2.5" y2="-1.5" width="0.127" layer="21"/>
 <wire x1="2.5" y1="-1.5" x2="2.5" y2="-2.5" width="0.127" layer="21"/>
@@ -180,6 +180,13 @@
 <text x="-2" y="-4.1" size="1.27" layer="27" font="vector">&gt;VALUE</text>
 </package>
 </packages>
+<packages3d>
+<package3d name="RGBLED5050" urn="urn:adsk.eagle:package:22765567/2" type="model">
+<packageinstances>
+<packageinstance name="RGBLED5050"/>
+</packageinstances>
+</package3d>
+</packages3d>
 <symbols>
 <symbol name="DOTSTAR">
 <wire x1="-12.7" y1="10.16" x2="12.7" y2="10.16" width="0.254" layer="94"/>
@@ -197,7 +204,7 @@
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="DOTSTAR">
+<deviceset name="DOTSTAR" prefix="U">
 <gates>
 <gate name="G$1" symbol="DOTSTAR" x="0" y="0"/>
 </gates>
@@ -211,6 +218,9 @@
 <connect gate="G$1" pin="SDO" pad="6"/>
 <connect gate="G$1" pin="VCC" pad="4"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:22765567/2"/>
+</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -4698,14 +4708,14 @@ Source: AVX .. aphvc.pdf</description>
 </class>
 </classes>
 <parts>
-<part name="U$1" library="LED_BOARD" deviceset="DOTSTAR" device=""/>
-<part name="U$2" library="LED_BOARD" deviceset="DOTSTAR" device=""/>
-<part name="U$3" library="LED_BOARD" deviceset="DOTSTAR" device=""/>
-<part name="U$4" library="LED_BOARD" deviceset="DOTSTAR" device=""/>
-<part name="U$5" library="LED_BOARD" deviceset="DOTSTAR" device=""/>
-<part name="U$6" library="LED_BOARD" deviceset="DOTSTAR" device=""/>
-<part name="U$7" library="LED_BOARD" deviceset="DOTSTAR" device=""/>
-<part name="U$8" library="LED_BOARD" deviceset="DOTSTAR" device=""/>
+<part name="U$1" library="LED_BOARD" deviceset="DOTSTAR" device="" package3d_urn="urn:adsk.eagle:package:22765567/2"/>
+<part name="U$2" library="LED_BOARD" deviceset="DOTSTAR" device="" package3d_urn="urn:adsk.eagle:package:22765567/2"/>
+<part name="U$3" library="LED_BOARD" deviceset="DOTSTAR" device="" package3d_urn="urn:adsk.eagle:package:22765567/2"/>
+<part name="U$4" library="LED_BOARD" deviceset="DOTSTAR" device="" package3d_urn="urn:adsk.eagle:package:22765567/2"/>
+<part name="U$5" library="LED_BOARD" deviceset="DOTSTAR" device="" package3d_urn="urn:adsk.eagle:package:22765567/2"/>
+<part name="U$6" library="LED_BOARD" deviceset="DOTSTAR" device="" package3d_urn="urn:adsk.eagle:package:22765567/2"/>
+<part name="U$7" library="LED_BOARD" deviceset="DOTSTAR" device="" package3d_urn="urn:adsk.eagle:package:22765567/2"/>
+<part name="U$8" library="LED_BOARD" deviceset="DOTSTAR" device="" package3d_urn="urn:adsk.eagle:package:22765567/2"/>
 <part name="P+1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="P+2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="P+3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
