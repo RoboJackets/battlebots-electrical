@@ -4284,7 +4284,8 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <wire x1="37.3" y1="-18.7" x2="37.3" y2="-15.86" width="0.2" layer="1"/>
 <contactref element="R42" pad="2"/>
 <contactref element="U23" pad="6"/>
-<wire x1="33.05" y1="-17.3" x2="34.95" y2="-17.3" width="0" layer="19" extent="1-1"/>
+<wire x1="34.95" y1="-17.3" x2="33.35" y2="-18.9" width="0.2" layer="1"/>
+<wire x1="33.35" y1="-18.9" x2="33.05" y2="-18.9" width="0.2" layer="1"/>
 </signal>
 <signal name="N$8">
 <contactref element="U20" pad="4"/>
