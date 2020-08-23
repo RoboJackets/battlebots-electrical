@@ -169,9 +169,9 @@
 <smd name="1" x="-0.66" y="0" dx="0.48" dy="0.4" layer="1"/>
 <smd name="2" x="0.66" y="0" dx="0.48" dy="0.4" layer="1"/>
 <wire x1="-1.108" y1="0.4" x2="-1.108" y2="-0.4" width="0.1524" layer="21"/>
-<wire x1="-1.108" y1="-0.4" x2="1.108" y2="-0.4" width="0.1524" layer="21"/>
-<wire x1="1.108" y1="-0.4" x2="1.108" y2="0.4" width="0.1524" layer="21"/>
-<wire x1="1.108" y1="0.4" x2="-1.108" y2="0.4" width="0.1524" layer="21"/>
+<wire x1="-1.108" y1="-0.4" x2="-0.162" y2="-0.4" width="0.1524" layer="21"/>
+<wire x1="-0.162" y1="-0.4" x2="-0.162" y2="0.4" width="0.1524" layer="21"/>
+<wire x1="-0.162" y1="0.4" x2="-1.108" y2="0.4" width="0.1524" layer="21"/>
 <text x="-1" y="1" size="1" layer="25" font="vector">&gt;NAME</text>
 <text x="-1" y="-1" size="1" layer="27" font="vector" align="top-left">&gt;VALUE</text>
 <wire x1="-0.254" y1="0.381" x2="-0.254" y2="-0.381" width="0.1524" layer="21"/>
@@ -183,8 +183,8 @@
 <smd name="4" x="1.1" y="-0.65" dx="0.4" dy="1" layer="1" rot="R90"/>
 <smd name="5" x="1.1" y="0" dx="0.4" dy="1" layer="1" rot="R90"/>
 <smd name="6" x="1.1" y="0.65" dx="0.4" dy="1" layer="1" rot="R90"/>
-<wire x1="-1.1382" y1="1.1684" x2="-1.3668" y2="1.1684" width="0.1524" layer="51" curve="-180"/>
-<wire x1="-1.3668" y1="1.1684" x2="-1.1382" y2="1.1684" width="0.1524" layer="51" curve="-180"/>
+<wire x1="-1.1382" y1="1.1684" x2="-1.3668" y2="1.1684" width="0.1524" layer="21" curve="-180"/>
+<wire x1="-1.3668" y1="1.1684" x2="-1.1382" y2="1.1684" width="0.1524" layer="21" curve="-180"/>
 <wire x1="0.446" y1="0.943" x2="0.446" y2="-0.943" width="0.1524" layer="21"/>
 <wire x1="0.446" y1="-0.943" x2="-0.446" y2="-0.943" width="0.1524" layer="21"/>
 <wire x1="-0.446" y1="-0.943" x2="-0.446" y2="0.943" width="0.1524" layer="21"/>
@@ -201,12 +201,12 @@
 <smd name="6" x="1.4" y="-0.25" dx="1" dy="0.3" layer="1"/>
 <smd name="7" x="1.4" y="0.25" dx="1" dy="0.3" layer="1"/>
 <smd name="8" x="1.4" y="0.75" dx="1" dy="0.3" layer="1"/>
-<wire x1="-0.7874" y1="-1.016" x2="0.7874" y2="-1.016" width="0.1524" layer="51"/>
-<wire x1="0.7874" y1="-1.016" x2="0.7874" y2="1.016" width="0.1524" layer="51"/>
-<wire x1="0.7874" y1="1.016" x2="0.3048" y2="1.016" width="0.1524" layer="51"/>
-<wire x1="0.3048" y1="1.016" x2="-0.7874" y2="1.016" width="0.1524" layer="51"/>
-<wire x1="-0.7874" y1="1.016" x2="-0.7874" y2="-1.016" width="0.1524" layer="51"/>
-<wire x1="0.3048" y1="1.016" x2="-0.3048" y2="0.9906" width="0.1524" layer="51" curve="-180"/>
+<wire x1="-0.7874" y1="-1.016" x2="0.7874" y2="-1.016" width="0.1524" layer="21"/>
+<wire x1="0.7874" y1="-1.016" x2="0.7874" y2="1.016" width="0.1524" layer="21"/>
+<wire x1="0.7874" y1="1.016" x2="0.3048" y2="1.016" width="0.1524" layer="21"/>
+<wire x1="0.3048" y1="1.016" x2="-0.7874" y2="1.016" width="0.1524" layer="21"/>
+<wire x1="-0.7874" y1="1.016" x2="-0.7874" y2="-1.016" width="0.1524" layer="21"/>
+<wire x1="0.3048" y1="1.016" x2="-0.3048" y2="0.9906" width="0.1524" layer="21" curve="-180"/>
 <wire x1="-0.9652" y1="-1.1176" x2="0.9652" y2="-1.1176" width="0.1524" layer="21"/>
 <wire x1="0.9652" y1="1.1176" x2="-0.9652" y2="1.1176" width="0.1524" layer="21"/>
 <text x="-2.0876" y="2.1382" size="1.27" layer="21" font="vector" ratio="6" rot="SR0" align="top-left">*</text>
@@ -222,13 +222,13 @@
 <smd name="6" x="1.3" y="-0.325" dx="1.1" dy="0.45" layer="1"/>
 <smd name="7" x="1.3" y="0.325" dx="1.1" dy="0.45" layer="1"/>
 <smd name="8" x="1.3" y="0.975" dx="1.1" dy="0.45" layer="1"/>
-<wire x1="-0.6096" y1="-1.4986" x2="0.6096" y2="-1.4986" width="0.1524" layer="51"/>
-<wire x1="0.6096" y1="-1.4986" x2="0.6096" y2="1.4986" width="0.1524" layer="51"/>
-<wire x1="0.6096" y1="1.4986" x2="0.3048" y2="1.4986" width="0.1524" layer="51"/>
-<wire x1="0.3048" y1="1.4986" x2="-0.3048" y2="1.4986" width="0.1524" layer="51"/>
-<wire x1="-0.3048" y1="1.4986" x2="-0.6096" y2="1.4986" width="0.1524" layer="51"/>
-<wire x1="-0.6096" y1="1.4986" x2="-0.6096" y2="-1.4986" width="0.1524" layer="51"/>
-<wire x1="0.3048" y1="1.4986" x2="-0.3048" y2="1.4986" width="0.1524" layer="51" curve="-180"/>
+<wire x1="-0.6096" y1="-1.4986" x2="0.6096" y2="-1.4986" width="0.1524" layer="21"/>
+<wire x1="0.6096" y1="-1.4986" x2="0.6096" y2="1.4986" width="0.1524" layer="21"/>
+<wire x1="0.6096" y1="1.4986" x2="0.3048" y2="1.4986" width="0.1524" layer="21"/>
+<wire x1="0.3048" y1="1.4986" x2="-0.3048" y2="1.4986" width="0.1524" layer="21"/>
+<wire x1="-0.3048" y1="1.4986" x2="-0.6096" y2="1.4986" width="0.1524" layer="21"/>
+<wire x1="-0.6096" y1="1.4986" x2="-0.6096" y2="-1.4986" width="0.1524" layer="21"/>
+<wire x1="0.3048" y1="1.4986" x2="-0.3048" y2="1.4986" width="0.1524" layer="21" curve="-180"/>
 <wire x1="-1.016" y1="-1.6256" x2="1.016" y2="-1.6256" width="0.1524" layer="21"/>
 <wire x1="1.016" y1="1.6256" x2="-1.016" y2="1.6256" width="0.1524" layer="21"/>
 <text x="-2.1844" y="2.5654" size="1.27" layer="21" font="vector" ratio="6" rot="SR0" align="top-left">*</text>
@@ -264,13 +264,13 @@
 <wire x1="1.016" y1="1.651" x2="-1.016" y2="1.651" width="0.1524" layer="21"/>
 <text x="-1.9844" y="2.3954" size="1.27" layer="21" font="vector" ratio="6" rot="SR0" align="top-left">*</text>
 <text x="-1" y="-2" size="1" layer="27" font="vector" rot="SR0" align="top-left">&gt;VALUE</text>
-<wire x1="-0.6096" y1="-1.524" x2="0.6096" y2="-1.524" width="0.1524" layer="51"/>
-<wire x1="0.6096" y1="-1.524" x2="0.6096" y2="1.524" width="0.1524" layer="51"/>
-<wire x1="0.6096" y1="1.524" x2="0.3048" y2="1.524" width="0.1524" layer="51"/>
-<wire x1="0.3048" y1="1.524" x2="-0.3048" y2="1.524" width="0.1524" layer="51"/>
-<wire x1="-0.3048" y1="1.524" x2="-0.6096" y2="1.524" width="0.1524" layer="51"/>
-<wire x1="-0.6096" y1="-1.524" x2="-0.6096" y2="1.524" width="0.1524" layer="51"/>
-<wire x1="0.3048" y1="1.524" x2="-0.3048" y2="1.524" width="0.1524" layer="51" curve="-180"/>
+<wire x1="-0.6096" y1="-1.524" x2="0.6096" y2="-1.524" width="0.1524" layer="21"/>
+<wire x1="0.6096" y1="-1.524" x2="0.6096" y2="1.524" width="0.1524" layer="21"/>
+<wire x1="0.6096" y1="1.524" x2="0.3048" y2="1.524" width="0.1524" layer="21"/>
+<wire x1="0.3048" y1="1.524" x2="-0.3048" y2="1.524" width="0.1524" layer="21"/>
+<wire x1="-0.3048" y1="1.524" x2="-0.6096" y2="1.524" width="0.1524" layer="21"/>
+<wire x1="-0.6096" y1="-1.524" x2="-0.6096" y2="1.524" width="0.1524" layer="21"/>
+<wire x1="0.3048" y1="1.524" x2="-0.3048" y2="1.524" width="0.1524" layer="21" curve="-180"/>
 <text x="-1" y="2" size="1" layer="25" font="vector" rot="SR0">&gt;NAME</text>
 </package>
 <package name="8-SOIC">
@@ -282,12 +282,12 @@
 <smd name="6" x="2.7" y="-0.635" dx="1.55" dy="0.6" layer="1"/>
 <smd name="7" x="2.7" y="0.635" dx="1.55" dy="0.6" layer="1"/>
 <smd name="8" x="2.7" y="1.905" dx="1.55" dy="0.6" layer="1"/>
-<wire x1="-1.7812" y1="-2.4892" x2="1.7812" y2="-2.4892" width="0.1524" layer="51"/>
-<wire x1="1.7812" y1="-2.4892" x2="1.7812" y2="2.4892" width="0.1524" layer="51"/>
-<wire x1="1.7812" y1="2.4892" x2="-0.3048" y2="2.4892" width="0.1524" layer="51"/>
-<wire x1="-0.3048" y1="2.4892" x2="-1.7812" y2="2.4892" width="0.1524" layer="51"/>
-<wire x1="-1.7812" y1="2.4892" x2="-1.7812" y2="-2.4892" width="0.1524" layer="51"/>
-<wire x1="0.3048" y1="2.5146" x2="-0.3048" y2="2.4892" width="0.1524" layer="51" curve="-180"/>
+<wire x1="-1.7812" y1="-2.4892" x2="1.7812" y2="-2.4892" width="0.1524" layer="21"/>
+<wire x1="1.7812" y1="-2.4892" x2="1.7812" y2="2.4892" width="0.1524" layer="21"/>
+<wire x1="1.7812" y1="2.4892" x2="-0.3048" y2="2.4892" width="0.1524" layer="21"/>
+<wire x1="-0.3048" y1="2.4892" x2="-1.7812" y2="2.4892" width="0.1524" layer="21"/>
+<wire x1="-1.7812" y1="2.4892" x2="-1.7812" y2="-2.4892" width="0.1524" layer="21"/>
+<wire x1="0.3048" y1="2.5146" x2="-0.3048" y2="2.4892" width="0.1524" layer="21" curve="-180"/>
 <wire x1="-2.1336" y1="-2.6416" x2="2.1336" y2="-2.6416" width="0.1524" layer="21"/>
 <wire x1="2.1336" y1="2.6416" x2="-2.1336" y2="2.6416" width="0.1524" layer="21"/>
 <text x="-2.956" y="3.0368" size="1.27" layer="21" ratio="6" rot="SR0" align="top-left">*</text>
@@ -304,23 +304,19 @@
 <wire x1="-0.6" y1="-0.8" x2="0.6" y2="0" width="0.1524" layer="21"/>
 <wire x1="0.6" y1="0" x2="-0.6" y2="0.8" width="0.1524" layer="21"/>
 <wire x1="0.6" y1="0.8" x2="0.6" y2="-0.8" width="0.1524" layer="21"/>
-<wire x1="-0.6" y1="0.8" x2="-0.6" y2="-0.8" width="0.1524" layer="22"/>
-<wire x1="-0.6" y1="-0.8" x2="0.6" y2="0" width="0.1524" layer="22"/>
-<wire x1="0.6" y1="0" x2="-0.6" y2="0.8" width="0.1524" layer="22"/>
-<wire x1="0.6" y1="0.8" x2="0.6" y2="-0.8" width="0.1524" layer="22"/>
 </package>
-<package name="SM03B-SRSS-TB(LF)(SN)" urn="urn:adsk.eagle:footprint:22324088/1">
-<wire x1="-2.5" y1="-0.325" x2="2.5" y2="-0.325" width="0.127" layer="51"/>
-<wire x1="2.5" y1="-0.325" x2="2.5" y2="-4.575" width="0.127" layer="51"/>
-<wire x1="2.5" y1="-4.575" x2="-2.5" y2="-4.575" width="0.127" layer="51"/>
-<wire x1="-2.5" y1="-4.575" x2="-2.5" y2="-0.325" width="0.127" layer="51"/>
+<package name="SM03B-SRSS-TB(LF)(SN)" urn="urn:adsk.eagle:footprint:22324088/1" locally_modified="yes">
+<wire x1="-2.5" y1="-0.325" x2="2.5" y2="-0.325" width="0.127" layer="21"/>
+<wire x1="2.5" y1="-0.325" x2="2.5" y2="-4.575" width="0.127" layer="21"/>
+<wire x1="2.5" y1="-4.575" x2="-2.5" y2="-4.575" width="0.127" layer="21"/>
+<wire x1="-2.5" y1="-4.575" x2="-2.5" y2="-0.325" width="0.127" layer="21"/>
 <wire x1="-1.615" y1="-0.325" x2="-2.5" y2="-0.325" width="0.127" layer="21"/>
 <wire x1="-2.5" y1="-0.325" x2="-2.5" y2="-2.6" width="0.127" layer="21"/>
 <wire x1="-1.3" y1="-4.575" x2="1.3" y2="-4.575" width="0.127" layer="21"/>
 <wire x1="2.5" y1="-2.6" x2="2.5" y2="-0.325" width="0.127" layer="21"/>
 <wire x1="2.5" y1="-0.325" x2="1.615" y2="-0.325" width="0.127" layer="21"/>
 <circle x="-1.8" y="0.4" radius="0.1" width="0.3" layer="21"/>
-<circle x="-1.8" y="0.4" radius="0.1" width="0.3" layer="51"/>
+<circle x="-1.8" y="0.4" radius="0.1" width="0.3" layer="21"/>
 <text x="-3.81" y="1.27" size="1" layer="25" font="vector">&gt;NAME</text>
 <text x="-3.81" y="-5.35" size="1" layer="27" font="vector" align="top-left">&gt;VALUE</text>
 <smd name="2" x="0" y="0" dx="1.55" dy="0.6" layer="1" rot="R90"/>
@@ -338,13 +334,13 @@
 <smd name="6" x="2.2" y="-0.325" dx="1.45" dy="0.45" layer="1"/>
 <smd name="7" x="2.2" y="0.325" dx="1.45" dy="0.45" layer="1"/>
 <smd name="8" x="2.2" y="0.975" dx="1.45" dy="0.45" layer="1"/>
-<wire x1="-1.3494" y1="-1.5494" x2="1.3494" y2="-1.5494" width="0.1524" layer="51"/>
-<wire x1="1.3494" y1="-1.5494" x2="1.3494" y2="1.5494" width="0.1524" layer="51"/>
-<wire x1="1.3494" y1="1.5494" x2="0.3048" y2="1.5494" width="0.1524" layer="51"/>
-<wire x1="0.3048" y1="1.5494" x2="-0.3048" y2="1.5494" width="0.1524" layer="51"/>
-<wire x1="-0.3048" y1="1.5494" x2="-1.3494" y2="1.5494" width="0.1524" layer="51"/>
-<wire x1="-1.3494" y1="1.5494" x2="-1.3494" y2="-1.5494" width="0.1524" layer="51"/>
-<wire x1="0.3048" y1="1.5494" x2="-0.3048" y2="1.5494" width="0.1524" layer="51" curve="-180"/>
+<wire x1="-1.3494" y1="-1.5494" x2="1.3494" y2="-1.5494" width="0.1524" layer="21"/>
+<wire x1="1.3494" y1="-1.5494" x2="1.3494" y2="1.5494" width="0.1524" layer="21"/>
+<wire x1="1.3494" y1="1.5494" x2="0.3048" y2="1.5494" width="0.1524" layer="21"/>
+<wire x1="0.3048" y1="1.5494" x2="-0.3048" y2="1.5494" width="0.1524" layer="21"/>
+<wire x1="-0.3048" y1="1.5494" x2="-1.3494" y2="1.5494" width="0.1524" layer="21"/>
+<wire x1="-1.3494" y1="1.5494" x2="-1.3494" y2="-1.5494" width="0.1524" layer="21"/>
+<wire x1="0.3048" y1="1.5494" x2="-0.3048" y2="1.5494" width="0.1524" layer="21" curve="-180"/>
 <wire x1="-1.6764" y1="-1.6764" x2="1.6764" y2="-1.6764" width="0.1524" layer="21"/>
 <wire x1="1.6764" y1="1.6764" x2="-1.6764" y2="1.6764" width="0.1524" layer="21"/>
 <text x="-2.648" y="0.6954" size="1.27" layer="21" ratio="6" rot="SR0">*</text>
@@ -16680,7 +16676,6 @@ In this library you will find frames that can be used to help organize a schemat
 <part name="SUPPLY12" library="Hocki_Library" deviceset="9V" device=""/>
 <part name="SUPPLY17" library="Hocki_Library" deviceset="9V" device=""/>
 <part name="GND34" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
-<part name="SUPPLY18" library="SparkFun-PowerSymbols" deviceset="5V" device=""/>
 <part name="J1" library="Hocki_Library" deviceset="SM03B-SRSS-TB(LF)(SN)" device="" package3d_urn="urn:adsk.eagle:package:22261818/2"/>
 <part name="D8" library="SparkFun-LED" deviceset="LED-GREEN" device="0603" value="GREEN"/>
 <part name="D9" library="SparkFun-LED" deviceset="LED-GREEN" device="0603" value="GREEN"/>
@@ -17132,11 +17127,8 @@ A0=A+!B!C</text>
 <instance part="SUPPLY17" gate="G$1" x="165.1" y="-73.66" smashed="yes">
 <attribute name="VALUE" x="165.1" y="-70.866" size="1.778" layer="96" align="bottom-center"/>
 </instance>
-<instance part="GND34" gate="1" x="170.18" y="-83.82" smashed="yes">
-<attribute name="VALUE" x="170.18" y="-84.074" size="1.778" layer="96" align="top-center"/>
-</instance>
-<instance part="SUPPLY18" gate="G$1" x="165.1" y="-83.82" smashed="yes">
-<attribute name="VALUE" x="165.1" y="-81.026" size="1.778" layer="96" align="bottom-center"/>
+<instance part="GND34" gate="1" x="170.18" y="-91.44" smashed="yes">
+<attribute name="VALUE" x="170.18" y="-91.694" size="1.778" layer="96" align="top-center"/>
 </instance>
 <instance part="J1" gate="G$1" x="182.88" y="-81.28" smashed="yes">
 <attribute name="NAME" x="177.8" y="-72.898" size="1.778" layer="95"/>
@@ -17507,6 +17499,11 @@ A0=A+!B!C</text>
 <pinref part="GND34" gate="1" pin="GND"/>
 <pinref part="J1" gate="G$1" pin="3"/>
 <wire x1="172.72" y1="-81.28" x2="170.18" y2="-81.28" width="0.1524" layer="91"/>
+<wire x1="170.18" y1="-81.28" x2="170.18" y2="-86.36" width="0.1524" layer="91"/>
+<pinref part="J1" gate="G$1" pin="SHIELD"/>
+<wire x1="170.18" y1="-86.36" x2="170.18" y2="-88.9" width="0.1524" layer="91"/>
+<wire x1="172.72" y1="-86.36" x2="170.18" y2="-86.36" width="0.1524" layer="91"/>
+<junction x="170.18" y="-86.36"/>
 </segment>
 <segment>
 <pinref part="R32" gate="G$1" pin="1"/>
@@ -17636,12 +17633,6 @@ A0=A+!B!C</text>
 <pinref part="C9" gate="G$1" pin="1"/>
 <wire x1="157.48" y1="55.88" x2="157.48" y2="58.42" width="0.1524" layer="91"/>
 <junction x="157.48" y="58.42"/>
-</segment>
-<segment>
-<wire x1="172.72" y1="-86.36" x2="165.1" y2="-86.36" width="0.1524" layer="91"/>
-<pinref part="SUPPLY18" gate="G$1" pin="5V"/>
-<wire x1="165.1" y1="-86.36" x2="165.1" y2="-83.82" width="0.1524" layer="91"/>
-<pinref part="J1" gate="G$1" pin="SHIELD"/>
 </segment>
 <segment>
 <pinref part="D9" gate="G$1" pin="A"/>
