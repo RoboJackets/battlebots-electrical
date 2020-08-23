@@ -270,12 +270,12 @@
 <smd name="6" x="2.7" y="-0.635" dx="1.55" dy="0.6" layer="1"/>
 <smd name="7" x="2.7" y="0.635" dx="1.55" dy="0.6" layer="1"/>
 <smd name="8" x="2.7" y="1.905" dx="1.55" dy="0.6" layer="1"/>
-<wire x1="-1.7812" y1="-2.4892" x2="1.7812" y2="-2.4892" width="0.1524" layer="51"/>
-<wire x1="1.7812" y1="-2.4892" x2="1.7812" y2="2.4892" width="0.1524" layer="51"/>
-<wire x1="1.7812" y1="2.4892" x2="-0.3048" y2="2.4892" width="0.1524" layer="51"/>
-<wire x1="-0.3048" y1="2.4892" x2="-1.7812" y2="2.4892" width="0.1524" layer="51"/>
-<wire x1="-1.7812" y1="2.4892" x2="-1.7812" y2="-2.4892" width="0.1524" layer="51"/>
-<wire x1="0.3048" y1="2.5146" x2="-0.3048" y2="2.4892" width="0.1524" layer="51" curve="-180"/>
+<wire x1="-1.7812" y1="-2.4892" x2="1.7812" y2="-2.4892" width="0.1524" layer="21"/>
+<wire x1="1.7812" y1="-2.4892" x2="1.7812" y2="2.4892" width="0.1524" layer="21"/>
+<wire x1="1.7812" y1="2.4892" x2="-0.3048" y2="2.4892" width="0.1524" layer="21"/>
+<wire x1="-0.3048" y1="2.4892" x2="-1.7812" y2="2.4892" width="0.1524" layer="21"/>
+<wire x1="-1.7812" y1="2.4892" x2="-1.7812" y2="-2.4892" width="0.1524" layer="21"/>
+<wire x1="0.3048" y1="2.5146" x2="-0.3048" y2="2.4892" width="0.1524" layer="21" curve="-180"/>
 <wire x1="-2.1336" y1="-2.6416" x2="2.1336" y2="-2.6416" width="0.1524" layer="21"/>
 <wire x1="2.1336" y1="2.6416" x2="-2.1336" y2="2.6416" width="0.1524" layer="21"/>
 <text x="-2.956" y="3.0368" size="1.27" layer="21" ratio="6" rot="SR0" align="top-left">*</text>
@@ -286,9 +286,9 @@
 <smd name="1" x="-0.66" y="0" dx="0.48" dy="0.4" layer="1"/>
 <smd name="2" x="0.66" y="0" dx="0.48" dy="0.4" layer="1"/>
 <wire x1="-1.108" y1="0.4" x2="-1.108" y2="-0.4" width="0.1524" layer="21"/>
-<wire x1="-1.108" y1="-0.4" x2="1.108" y2="-0.4" width="0.1524" layer="21"/>
-<wire x1="1.108" y1="-0.4" x2="1.108" y2="0.4" width="0.1524" layer="21"/>
-<wire x1="1.108" y1="0.4" x2="-1.108" y2="0.4" width="0.1524" layer="21"/>
+<wire x1="-1.108" y1="-0.4" x2="-0.162" y2="-0.4" width="0.1524" layer="21"/>
+<wire x1="-0.162" y1="-0.4" x2="-0.162" y2="0.4" width="0.1524" layer="21"/>
+<wire x1="-0.162" y1="0.4" x2="-1.108" y2="0.4" width="0.1524" layer="21"/>
 <text x="-1" y="1" size="1" layer="25" font="vector">&gt;NAME</text>
 <text x="-1" y="-1" size="1" layer="27" font="vector" align="top-left">&gt;VALUE</text>
 <wire x1="-0.254" y1="0.381" x2="-0.254" y2="-0.381" width="0.1524" layer="21"/>
@@ -302,13 +302,13 @@
 <smd name="6" x="1.3" y="-0.325" dx="1.1" dy="0.45" layer="1"/>
 <smd name="7" x="1.3" y="0.325" dx="1.1" dy="0.45" layer="1"/>
 <smd name="8" x="1.3" y="0.975" dx="1.1" dy="0.45" layer="1"/>
-<wire x1="-0.6096" y1="-1.4986" x2="0.6096" y2="-1.4986" width="0.1524" layer="51"/>
-<wire x1="0.6096" y1="-1.4986" x2="0.6096" y2="1.4986" width="0.1524" layer="51"/>
-<wire x1="0.6096" y1="1.4986" x2="0.3048" y2="1.4986" width="0.1524" layer="51"/>
-<wire x1="0.3048" y1="1.4986" x2="-0.3048" y2="1.4986" width="0.1524" layer="51"/>
-<wire x1="-0.3048" y1="1.4986" x2="-0.6096" y2="1.4986" width="0.1524" layer="51"/>
-<wire x1="-0.6096" y1="1.4986" x2="-0.6096" y2="-1.4986" width="0.1524" layer="51"/>
-<wire x1="0.3048" y1="1.4986" x2="-0.3048" y2="1.4986" width="0.1524" layer="51" curve="-180"/>
+<wire x1="-0.6096" y1="-1.4986" x2="0.6096" y2="-1.4986" width="0.1524" layer="21"/>
+<wire x1="0.6096" y1="-1.4986" x2="0.6096" y2="1.4986" width="0.1524" layer="21"/>
+<wire x1="0.6096" y1="1.4986" x2="0.3048" y2="1.4986" width="0.1524" layer="21"/>
+<wire x1="0.3048" y1="1.4986" x2="-0.3048" y2="1.4986" width="0.1524" layer="21"/>
+<wire x1="-0.3048" y1="1.4986" x2="-0.6096" y2="1.4986" width="0.1524" layer="21"/>
+<wire x1="-0.6096" y1="1.4986" x2="-0.6096" y2="-1.4986" width="0.1524" layer="21"/>
+<wire x1="0.3048" y1="1.4986" x2="-0.3048" y2="1.4986" width="0.1524" layer="21" curve="-180"/>
 <wire x1="-1.016" y1="-1.6256" x2="1.016" y2="-1.6256" width="0.1524" layer="21"/>
 <wire x1="1.016" y1="1.6256" x2="-1.016" y2="1.6256" width="0.1524" layer="21"/>
 <text x="-2.1844" y="2.5654" size="1.27" layer="21" font="vector" ratio="6" rot="SR0" align="top-left">*</text>
@@ -324,12 +324,12 @@
 <smd name="6" x="1.4" y="-0.25" dx="1" dy="0.3" layer="1"/>
 <smd name="7" x="1.4" y="0.25" dx="1" dy="0.3" layer="1"/>
 <smd name="8" x="1.4" y="0.75" dx="1" dy="0.3" layer="1"/>
-<wire x1="-0.7874" y1="-1.016" x2="0.7874" y2="-1.016" width="0.1524" layer="51"/>
-<wire x1="0.7874" y1="-1.016" x2="0.7874" y2="1.016" width="0.1524" layer="51"/>
-<wire x1="0.7874" y1="1.016" x2="0.3048" y2="1.016" width="0.1524" layer="51"/>
-<wire x1="0.3048" y1="1.016" x2="-0.7874" y2="1.016" width="0.1524" layer="51"/>
-<wire x1="-0.7874" y1="1.016" x2="-0.7874" y2="-1.016" width="0.1524" layer="51"/>
-<wire x1="0.3048" y1="1.016" x2="-0.3048" y2="0.9906" width="0.1524" layer="51" curve="-180"/>
+<wire x1="-0.7874" y1="-1.016" x2="0.7874" y2="-1.016" width="0.1524" layer="21"/>
+<wire x1="0.7874" y1="-1.016" x2="0.7874" y2="1.016" width="0.1524" layer="21"/>
+<wire x1="0.7874" y1="1.016" x2="0.3048" y2="1.016" width="0.1524" layer="21"/>
+<wire x1="0.3048" y1="1.016" x2="-0.7874" y2="1.016" width="0.1524" layer="21"/>
+<wire x1="-0.7874" y1="1.016" x2="-0.7874" y2="-1.016" width="0.1524" layer="21"/>
+<wire x1="0.3048" y1="1.016" x2="-0.3048" y2="0.9906" width="0.1524" layer="21" curve="-180"/>
 <wire x1="-0.9652" y1="-1.1176" x2="0.9652" y2="-1.1176" width="0.1524" layer="21"/>
 <wire x1="0.9652" y1="1.1176" x2="-0.9652" y2="1.1176" width="0.1524" layer="21"/>
 <text x="-2.0876" y="2.1382" size="1.27" layer="21" font="vector" ratio="6" rot="SR0" align="top-left">*</text>
@@ -421,27 +421,27 @@
 <wire x1="1.016" y1="1.651" x2="-1.016" y2="1.651" width="0.1524" layer="21"/>
 <text x="-1.9844" y="2.3954" size="1.27" layer="21" font="vector" ratio="6" rot="SR0" align="top-left">*</text>
 <text x="-1" y="-2" size="1" layer="27" font="vector" rot="SR0" align="top-left">&gt;VALUE</text>
-<wire x1="-0.6096" y1="-1.524" x2="0.6096" y2="-1.524" width="0.1524" layer="51"/>
-<wire x1="0.6096" y1="-1.524" x2="0.6096" y2="1.524" width="0.1524" layer="51"/>
-<wire x1="0.6096" y1="1.524" x2="0.3048" y2="1.524" width="0.1524" layer="51"/>
-<wire x1="0.3048" y1="1.524" x2="-0.3048" y2="1.524" width="0.1524" layer="51"/>
-<wire x1="-0.3048" y1="1.524" x2="-0.6096" y2="1.524" width="0.1524" layer="51"/>
-<wire x1="-0.6096" y1="-1.524" x2="-0.6096" y2="1.524" width="0.1524" layer="51"/>
-<wire x1="0.3048" y1="1.524" x2="-0.3048" y2="1.524" width="0.1524" layer="51" curve="-180"/>
+<wire x1="-0.6096" y1="-1.524" x2="0.6096" y2="-1.524" width="0.1524" layer="21"/>
+<wire x1="0.6096" y1="-1.524" x2="0.6096" y2="1.524" width="0.1524" layer="21"/>
+<wire x1="0.6096" y1="1.524" x2="0.3048" y2="1.524" width="0.1524" layer="21"/>
+<wire x1="0.3048" y1="1.524" x2="-0.3048" y2="1.524" width="0.1524" layer="21"/>
+<wire x1="-0.3048" y1="1.524" x2="-0.6096" y2="1.524" width="0.1524" layer="21"/>
+<wire x1="-0.6096" y1="-1.524" x2="-0.6096" y2="1.524" width="0.1524" layer="21"/>
+<wire x1="0.3048" y1="1.524" x2="-0.3048" y2="1.524" width="0.1524" layer="21" curve="-180"/>
 <text x="-1" y="2" size="1" layer="25" font="vector" rot="SR0">&gt;NAME</text>
 </package>
-<package name="SM03B-SRSS-TB(LF)(SN)" urn="urn:adsk.eagle:footprint:22324088/1">
-<wire x1="-2.5" y1="-0.325" x2="2.5" y2="-0.325" width="0.127" layer="51"/>
-<wire x1="2.5" y1="-0.325" x2="2.5" y2="-4.575" width="0.127" layer="51"/>
-<wire x1="2.5" y1="-4.575" x2="-2.5" y2="-4.575" width="0.127" layer="51"/>
-<wire x1="-2.5" y1="-4.575" x2="-2.5" y2="-0.325" width="0.127" layer="51"/>
+<package name="SM03B-SRSS-TB(LF)(SN)" urn="urn:adsk.eagle:footprint:22324088/1" locally_modified="yes">
+<wire x1="-2.5" y1="-0.325" x2="2.5" y2="-0.325" width="0.127" layer="21"/>
+<wire x1="2.5" y1="-0.325" x2="2.5" y2="-4.575" width="0.127" layer="21"/>
+<wire x1="2.5" y1="-4.575" x2="-2.5" y2="-4.575" width="0.127" layer="21"/>
+<wire x1="-2.5" y1="-4.575" x2="-2.5" y2="-0.325" width="0.127" layer="21"/>
 <wire x1="-1.615" y1="-0.325" x2="-2.5" y2="-0.325" width="0.127" layer="21"/>
 <wire x1="-2.5" y1="-0.325" x2="-2.5" y2="-2.6" width="0.127" layer="21"/>
 <wire x1="-1.3" y1="-4.575" x2="1.3" y2="-4.575" width="0.127" layer="21"/>
 <wire x1="2.5" y1="-2.6" x2="2.5" y2="-0.325" width="0.127" layer="21"/>
 <wire x1="2.5" y1="-0.325" x2="1.615" y2="-0.325" width="0.127" layer="21"/>
 <circle x="-1.8" y="0.4" radius="0.1" width="0.3" layer="21"/>
-<circle x="-1.8" y="0.4" radius="0.1" width="0.3" layer="51"/>
+<circle x="-1.8" y="0.4" radius="0.1" width="0.3" layer="21"/>
 <text x="-3.81" y="1.27" size="1" layer="25" font="vector">&gt;NAME</text>
 <text x="-3.81" y="-5.35" size="1" layer="27" font="vector" align="top-left">&gt;VALUE</text>
 <smd name="2" x="0" y="0" dx="1.55" dy="0.6" layer="1" rot="R90"/>
@@ -460,13 +460,13 @@
 <wire x1="1.016" y1="1.251" x2="-1.016" y2="1.251" width="0.1524" layer="21"/>
 <text x="-1.9844" y="2.3954" size="1.27" layer="21" font="vector" ratio="6" rot="SR0" align="top-left">*</text>
 <text x="-1" y="-2" size="1" layer="27" font="vector" rot="SR0" align="top-left">&gt;VALUE</text>
-<wire x1="-0.6096" y1="-1.124" x2="0.6096" y2="-1.124" width="0.1524" layer="51"/>
-<wire x1="0.6096" y1="-1.124" x2="0.6096" y2="1.124" width="0.1524" layer="51"/>
-<wire x1="0.6096" y1="1.124" x2="0.3048" y2="1.124" width="0.1524" layer="51"/>
-<wire x1="0.3048" y1="1.124" x2="-0.3048" y2="1.124" width="0.1524" layer="51"/>
-<wire x1="-0.3048" y1="1.124" x2="-0.6096" y2="1.124" width="0.1524" layer="51"/>
-<wire x1="-0.6096" y1="-1.124" x2="-0.6096" y2="1.124" width="0.1524" layer="51"/>
-<wire x1="0.3048" y1="1.124" x2="-0.3048" y2="1.124" width="0.1524" layer="51" curve="-180"/>
+<wire x1="-0.6096" y1="-1.124" x2="0.6096" y2="-1.124" width="0.1524" layer="21"/>
+<wire x1="0.6096" y1="-1.124" x2="0.6096" y2="1.124" width="0.1524" layer="21"/>
+<wire x1="0.6096" y1="1.124" x2="0.3048" y2="1.124" width="0.1524" layer="21"/>
+<wire x1="0.3048" y1="1.124" x2="-0.3048" y2="1.124" width="0.1524" layer="21"/>
+<wire x1="-0.3048" y1="1.124" x2="-0.6096" y2="1.124" width="0.1524" layer="21"/>
+<wire x1="-0.6096" y1="-1.124" x2="-0.6096" y2="1.124" width="0.1524" layer="21"/>
+<wire x1="0.3048" y1="1.124" x2="-0.3048" y2="1.124" width="0.1524" layer="21" curve="-180"/>
 <text x="-1" y="2" size="1" layer="25" font="vector" rot="SR0">&gt;NAME</text>
 </package>
 <package name="SOT-23-6">
@@ -479,13 +479,13 @@
 <wire x1="1.016" y1="1.651" x2="-1.016" y2="1.651" width="0.1524" layer="21"/>
 <text x="-1.9844" y="2.3954" size="1.27" layer="21" font="vector" ratio="6" rot="SR0" align="top-left">*</text>
 <text x="-1" y="-2" size="1" layer="27" font="vector" rot="SR0" align="top-left">&gt;VALUE</text>
-<wire x1="-0.6096" y1="-1.524" x2="0.6096" y2="-1.524" width="0.1524" layer="51"/>
-<wire x1="0.6096" y1="-1.524" x2="0.6096" y2="1.524" width="0.1524" layer="51"/>
-<wire x1="0.6096" y1="1.524" x2="0.3048" y2="1.524" width="0.1524" layer="51"/>
-<wire x1="0.3048" y1="1.524" x2="-0.3048" y2="1.524" width="0.1524" layer="51"/>
-<wire x1="-0.3048" y1="1.524" x2="-0.6096" y2="1.524" width="0.1524" layer="51"/>
-<wire x1="-0.6096" y1="-1.524" x2="-0.6096" y2="1.524" width="0.1524" layer="51"/>
-<wire x1="0.3048" y1="1.524" x2="-0.3048" y2="1.524" width="0.1524" layer="51" curve="-180"/>
+<wire x1="-0.6096" y1="-1.524" x2="0.6096" y2="-1.524" width="0.1524" layer="21"/>
+<wire x1="0.6096" y1="-1.524" x2="0.6096" y2="1.524" width="0.1524" layer="21"/>
+<wire x1="0.6096" y1="1.524" x2="0.3048" y2="1.524" width="0.1524" layer="21"/>
+<wire x1="0.3048" y1="1.524" x2="-0.3048" y2="1.524" width="0.1524" layer="21"/>
+<wire x1="-0.3048" y1="1.524" x2="-0.6096" y2="1.524" width="0.1524" layer="21"/>
+<wire x1="-0.6096" y1="-1.524" x2="-0.6096" y2="1.524" width="0.1524" layer="21"/>
+<wire x1="0.3048" y1="1.524" x2="-0.3048" y2="1.524" width="0.1524" layer="21" curve="-180"/>
 <text x="-1" y="2" size="1" layer="25" font="vector" rot="SR0">&gt;NAME</text>
 <smd name="5" x="1.1" y="0" dx="1" dy="0.7" layer="1"/>
 </package>
@@ -499,15 +499,15 @@
 <text x="-3" y="3" size="1" layer="25">&gt;NAME</text>
 <text x="-3" y="-3" size="1" layer="27" align="top-left">&gt;VALUE</text>
 </package>
-<package name="SM04B-SRSS-TB(LF)(SN)" urn="urn:adsk.eagle:footprint:22261810/1">
+<package name="SM04B-SRSS-TB(LF)(SN)" urn="urn:adsk.eagle:footprint:22261810/1" locally_modified="yes">
 <circle x="-2.45" y="0.385" radius="0.1" width="0.3" layer="21"/>
-<circle x="-2.45" y="0.385" radius="0.1" width="0.3" layer="51"/>
+<circle x="-2.45" y="0.385" radius="0.1" width="0.3" layer="21"/>
 <text x="-3.72381875" y="1.131940625" size="1.271490625" layer="25">&gt;NAME</text>
 <text x="-3.713609375" y="-6.375909375" size="1.27071875" layer="27">&gt;VALUE</text>
-<wire x1="-3" y1="-0.325" x2="3" y2="-0.325" width="0.127" layer="51"/>
-<wire x1="3" y1="-0.325" x2="3" y2="-4.575" width="0.127" layer="51"/>
-<wire x1="3" y1="-4.575" x2="-3" y2="-4.575" width="0.127" layer="51"/>
-<wire x1="-3" y1="-4.575" x2="-3" y2="-0.325" width="0.127" layer="51"/>
+<wire x1="-3" y1="-0.325" x2="3" y2="-0.325" width="0.127" layer="21"/>
+<wire x1="3" y1="-0.325" x2="3" y2="-4.575" width="0.127" layer="21"/>
+<wire x1="3" y1="-4.575" x2="-3" y2="-4.575" width="0.127" layer="21"/>
+<wire x1="-3" y1="-4.575" x2="-3" y2="-0.325" width="0.127" layer="21"/>
 <wire x1="-2.2" y1="-0.325" x2="-3" y2="-0.325" width="0.127" layer="21"/>
 <wire x1="-3" y1="-0.325" x2="-3" y2="-2.6" width="0.127" layer="21"/>
 <wire x1="2.2" y1="-0.325" x2="3" y2="-0.325" width="0.127" layer="21"/>
@@ -594,13 +594,13 @@
 <circle x="-1.6" y="-1.1" radius="0.282840625" width="0.2" layer="21"/>
 </package>
 <package name="SM02B-SRSS-TB(LF)(SN)">
-<wire x1="-2" y1="-0.325" x2="2" y2="-0.325" width="0.127" layer="51"/>
-<wire x1="2" y1="-0.325" x2="2" y2="-4.575" width="0.127" layer="51"/>
-<wire x1="2" y1="-4.575" x2="-2" y2="-4.575" width="0.127" layer="51"/>
-<wire x1="-2" y1="-4.575" x2="-2" y2="-0.325" width="0.127" layer="51"/>
+<wire x1="-2" y1="-0.325" x2="2" y2="-0.325" width="0.127" layer="21"/>
+<wire x1="2" y1="-0.325" x2="2" y2="-4.575" width="0.127" layer="21"/>
+<wire x1="2" y1="-4.575" x2="-2" y2="-4.575" width="0.127" layer="21"/>
+<wire x1="-2" y1="-4.575" x2="-2" y2="-0.325" width="0.127" layer="21"/>
 <wire x1="-1.3" y1="-4.575" x2="1.3" y2="-4.575" width="0.127" layer="21"/>
 <circle x="-1.8" y="0.4" radius="0.1" width="0.3" layer="21"/>
-<circle x="-1.8" y="0.4" radius="0.1" width="0.3" layer="51"/>
+<circle x="-1.8" y="0.4" radius="0.1" width="0.3" layer="21"/>
 <text x="-3.81" y="1.27" size="1" layer="25" font="vector">&gt;NAME</text>
 <text x="-3.81" y="-5.35" size="1" layer="27" font="vector" align="top-left">&gt;VALUE</text>
 <smd name="2" x="0.5" y="0" dx="1.55" dy="0.6" layer="1" rot="R90"/>
@@ -984,17 +984,19 @@
 <pin name="3" x="-10.16" y="0" visible="pin" length="middle" direction="pas"/>
 <pin name="SHIELD" x="-10.16" y="-5.08" visible="pin" length="middle" direction="pas"/>
 </symbol>
-<symbol name="74AHC1G04GW,125">
-<pin name="VCC" x="-12.7" y="0" length="middle" direction="pas"/>
-<pin name="IN" x="-12.7" y="-5.08" length="middle" direction="pas"/>
-<pin name="OUT" x="12.7" y="0" length="middle" direction="pas" rot="R180"/>
-<wire x1="-7.62" y1="2.54" x2="-7.62" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="-7.62" y1="-7.62" x2="7.62" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="7.62" y1="-7.62" x2="7.62" y2="2.54" width="0.254" layer="94"/>
-<wire x1="7.62" y1="2.54" x2="-7.62" y2="2.54" width="0.254" layer="94"/>
-<text x="-7.62" y="3.81" size="1.778" layer="95" ratio="6" rot="SR0">&gt;NAME</text>
-<text x="-7.62" y="-8.636" size="1.778" layer="96" ratio="6" rot="SR0" align="top-left">&gt;VALUE</text>
-<pin name="GND" x="12.7" y="-5.08" length="middle" rot="R180"/>
+<symbol name="INVERTER_SINGLE">
+<pin name="VCC" x="2.54" y="5.08" visible="pad" length="short" direction="pas" rot="R270"/>
+<pin name="IN" x="-5.08" y="0" visible="pad" length="middle" direction="pas"/>
+<pin name="OUT" x="10.16" y="0" visible="pad" length="middle" direction="pas" rot="R180"/>
+<text x="-10.16" y="5.08" size="1.778" layer="95" ratio="6" rot="SR0">&gt;NAME</text>
+<pin name="GND" x="2.54" y="-5.08" visible="pad" length="short" rot="R90"/>
+<wire x1="0" y1="2.54" x2="3.937" y2="0" width="0.254" layer="94"/>
+<wire x1="3.937" y1="0" x2="0" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="-2.54" x2="0" y2="2.54" width="0.254" layer="94"/>
+<circle x="4.572" y="0" radius="0.508" width="0.1524" layer="94"/>
+<text x="-10.16" y="-7.62" size="1.778" layer="96">&gt;VALUE</text>
+<text x="2.54" y="3.556" size="1.778" layer="94">+</text>
+<text x="2.794" y="-5.08" size="1.778" layer="94">-</text>
 </symbol>
 <symbol name="AP6320">
 <pin name="IN" x="-12.7" y="2.54" length="middle" direction="pas"/>
@@ -1498,7 +1500,7 @@
 &lt;p&gt;&lt;\p&gt;
 &lt;a href="https://www.digikey.com/product-detail/en/nexperia-usa-inc/74AHC1G04GW-125/1727-3147-1-ND/1023328"&gt;DigiKey&lt;\a&gt;</description>
 <gates>
-<gate name="G$1" symbol="74AHC1G04GW,125" x="0" y="2.54"/>
+<gate name="G$1" symbol="INVERTER_SINGLE" x="0" y="2.54"/>
 </gates>
 <devices>
 <device name="" package="SOT-353">
@@ -1743,7 +1745,7 @@
 </deviceset>
 </devicesets>
 </library>
-<library name="SparkFun-PowerSymbols" urn="urn:adsk.eagle:library:530">
+<library name="SparkFun-PowerSymbols">
 <description>&lt;h3&gt;SparkFun Power Symbols&lt;/h3&gt;
 This library contains power, ground, and voltage-supply symbols.
 &lt;br&gt;
@@ -1760,20 +1762,20 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <packages>
 </packages>
 <symbols>
-<symbol name="3.3V" urn="urn:adsk.eagle:symbol:39411/1" library_version="1">
+<symbol name="3.3V">
 <description>&lt;h3&gt;3.3V Voltage Supply&lt;/h3&gt;</description>
 <wire x1="0.762" y1="1.27" x2="0" y2="2.54" width="0.254" layer="94"/>
 <wire x1="0" y1="2.54" x2="-0.762" y2="1.27" width="0.254" layer="94"/>
 <pin name="3.3V" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
 <text x="0" y="2.794" size="1.778" layer="96" align="bottom-center">&gt;VALUE</text>
 </symbol>
-<symbol name="DGND" urn="urn:adsk.eagle:symbol:39415/1" library_version="1">
+<symbol name="DGND">
 <description>&lt;h3&gt;Digital Ground Supply&lt;/h3&gt;</description>
 <wire x1="-1.905" y1="0" x2="1.905" y2="0" width="0.254" layer="94"/>
 <pin name="GND" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
 <text x="0" y="-0.254" size="1.778" layer="96" align="top-center">&gt;VALUE</text>
 </symbol>
-<symbol name="5V" urn="urn:adsk.eagle:symbol:39412/1" library_version="1">
+<symbol name="5V">
 <description>&lt;h3&gt;5V Voltage Supply&lt;/h3&gt;</description>
 <wire x1="0.762" y1="1.27" x2="0" y2="2.54" width="0.254" layer="94"/>
 <wire x1="0" y1="2.54" x2="-0.762" y2="1.27" width="0.254" layer="94"/>
@@ -1782,7 +1784,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="3.3V" urn="urn:adsk.eagle:component:39435/1" prefix="SUPPLY" library_version="1">
+<deviceset name="3.3V" prefix="SUPPLY">
 <description>&lt;h3&gt;3.3V Supply Symbol&lt;/h3&gt;
 &lt;p&gt;Power supply symbol for a specifically-stated 3.3V source.&lt;/p&gt;</description>
 <gates>
@@ -1796,7 +1798,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </device>
 </devices>
 </deviceset>
-<deviceset name="GND" urn="urn:adsk.eagle:component:39439/1" prefix="GND" library_version="1">
+<deviceset name="GND" prefix="GND">
 <description>&lt;h3&gt;Ground Supply Symbol&lt;/h3&gt;
 &lt;p&gt;Generic signal ground supply symbol.&lt;/p&gt;</description>
 <gates>
@@ -1810,7 +1812,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </device>
 </devices>
 </deviceset>
-<deviceset name="5V" urn="urn:adsk.eagle:component:39433/1" prefix="SUPPLY" library_version="1">
+<deviceset name="5V" prefix="SUPPLY">
 <description>&lt;h3&gt;5V Supply Symbol&lt;/h3&gt;
 &lt;p&gt;Power supply symbol for a specifically-stated 5V source.&lt;/p&gt;</description>
 <gates>
@@ -13212,30 +13214,30 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <parts>
 <part name="U1" library="Hocki_Library" deviceset="TEENSY_4.1" device="" package3d_urn="urn:adsk.eagle:package:22261832/3"/>
 <part name="U2" library="Hocki_Library" deviceset="ADXL375" device=""/>
-<part name="SUPPLY1" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="3.3V" device=""/>
-<part name="GND1" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
+<part name="SUPPLY1" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
+<part name="GND1" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="U3" library="Hocki_Library" deviceset="ADXL375" device=""/>
-<part name="SUPPLY2" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="3.3V" device=""/>
-<part name="GND2" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
+<part name="SUPPLY2" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
+<part name="GND2" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="U4" library="Hocki_Library" deviceset="ADXL375" device=""/>
-<part name="SUPPLY3" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="3.3V" device=""/>
-<part name="GND3" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
+<part name="SUPPLY3" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
+<part name="GND3" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="U5" library="Hocki_Library" deviceset="ADXL375" device=""/>
-<part name="SUPPLY4" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="3.3V" device=""/>
-<part name="GND4" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
+<part name="SUPPLY4" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
+<part name="GND4" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="U6" library="Hocki_Library" deviceset="LMH6612MAX/NOPB" device=""/>
 <part name="U7" library="Hocki_Library" deviceset="LMH6612MAX/NOPB" device=""/>
 <part name="U9" library="Hocki_Library" deviceset="LMH6612MAX/NOPB" device=""/>
 <part name="D1" library="Hocki_Library" deviceset="RB521S30T1G" device=""/>
 <part name="D2" library="Hocki_Library" deviceset="RB521S30T1G" device=""/>
 <part name="U10" library="Hocki_Library" deviceset="TLV3502AIDCNR" device=""/>
-<part name="SUPPLY5" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
-<part name="GND5" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
+<part name="SUPPLY5" library="SparkFun-PowerSymbols" deviceset="5V" device=""/>
+<part name="GND5" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="R3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="169"/>
 <part name="R4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="4.5k"/>
 <part name="R5" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="4.5k"/>
-<part name="GND7" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="SUPPLY6" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
+<part name="GND7" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
+<part name="SUPPLY6" library="SparkFun-PowerSymbols" deviceset="5V" device=""/>
 <part name="R6" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="169"/>
 <part name="R7" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="169"/>
 <part name="R8" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="169"/>
@@ -13243,22 +13245,22 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="R9" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="169"/>
 <part name="R10" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="4.5k"/>
 <part name="R11" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="4.5k"/>
-<part name="GND8" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="SUPPLY7" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
+<part name="GND8" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
+<part name="SUPPLY7" library="SparkFun-PowerSymbols" deviceset="5V" device=""/>
 <part name="R12" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="169"/>
 <part name="R13" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="169"/>
 <part name="R14" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="169"/>
-<part name="GND9" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
+<part name="GND9" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="R16" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="44.2k"/>
 <part name="R17" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="44.2k"/>
-<part name="GND10" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="SUPPLY9" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="3.3V" device=""/>
-<part name="GND11" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
+<part name="GND10" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
+<part name="SUPPLY9" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
+<part name="GND11" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="U11" library="Hocki_Library" deviceset="NL27WZ32USG" device=""/>
 <part name="U12" library="Hocki_Library" deviceset="NL27WZ32USG" device=""/>
 <part name="U13" library="Hocki_Library" deviceset="HMC1052L-TR" device=""/>
-<part name="GND16" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="GND17" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
+<part name="GND16" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
+<part name="GND17" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="R20" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="4.99k"/>
 <part name="C8" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value=".1uF"/>
 <part name="R21" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="4.99k"/>
@@ -13269,43 +13271,43 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="R26" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="499k"/>
 <part name="R27" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="499k"/>
 <part name="U15" library="Hocki_Library" deviceset="IRF7509" device=""/>
-<part name="GND18" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
+<part name="GND18" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="C10" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="1u"/>
-<part name="GND20" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
+<part name="GND20" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="R28" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="200"/>
-<part name="SUPPLY15" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
+<part name="SUPPLY15" library="SparkFun-PowerSymbols" deviceset="5V" device=""/>
 <part name="R29" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="665"/>
 <part name="R30" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="330"/>
-<part name="SUPPLY10" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="3.3V" device=""/>
-<part name="SUPPLY11" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="3.3V" device=""/>
-<part name="GND14" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="GND15" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="GND22" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="SUPPLY16" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
-<part name="GND23" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
+<part name="SUPPLY10" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
+<part name="SUPPLY11" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
+<part name="GND14" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
+<part name="GND15" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
+<part name="GND22" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
+<part name="SUPPLY16" library="SparkFun-PowerSymbols" deviceset="5V" device=""/>
+<part name="GND23" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="R31" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="4.99k"/>
 <part name="R32" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="4.99k"/>
 <part name="C11" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="1uF"/>
 <part name="C12" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="1uF"/>
-<part name="GND24" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="GND25" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
+<part name="GND24" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
+<part name="GND25" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="U16" library="Hocki_Library" deviceset="TMUX1219DCKR" device=""/>
 <part name="R2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="499"/>
-<part name="GND6" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="SUPPLY17" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
-<part name="GND21" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
+<part name="GND6" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
+<part name="SUPPLY17" library="SparkFun-PowerSymbols" deviceset="5V" device=""/>
+<part name="GND21" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="R33" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="499"/>
-<part name="GND26" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
+<part name="GND26" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="R34" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="499"/>
 <part name="R35" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="499"/>
 <part name="R36" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="40.2k"/>
 <part name="R37" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="7.32k"/>
-<part name="GND27" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
+<part name="GND27" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="R38" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="40.2k"/>
 <part name="R39" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="7.32k"/>
-<part name="GND28" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="GND29" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="SUPPLY8" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="3.3V" device=""/>
+<part name="GND28" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
+<part name="GND29" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
+<part name="SUPPLY8" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
 <part name="C1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="47nF"/>
 <part name="C2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="47nF"/>
 <part name="C3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="47nF"/>
@@ -13324,35 +13326,35 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="C26" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF"/>
 <part name="C27" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF"/>
 <part name="C28" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF"/>
-<part name="GND12" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="GND13" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="GND30" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="GND31" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="GND32" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
+<part name="GND12" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
+<part name="GND13" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
+<part name="GND30" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
+<part name="GND31" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
+<part name="GND32" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="C29" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF"/>
-<part name="GND33" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
+<part name="GND33" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="C30" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF"/>
-<part name="GND34" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
+<part name="GND34" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="C31" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF"/>
 <part name="C32" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF"/>
 <part name="C33" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF"/>
-<part name="GND35" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="GND36" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="GND37" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="GND38" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="GND39" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="GND40" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
+<part name="GND35" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
+<part name="GND36" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
+<part name="GND37" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
+<part name="GND38" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
+<part name="GND39" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
+<part name="GND40" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="C34" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF"/>
 <part name="C35" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF"/>
 <part name="C36" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF"/>
 <part name="C37" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF"/>
-<part name="GND41" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="GND42" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="GND43" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="GND44" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="GND45" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="GND46" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="GND47" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
+<part name="GND41" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
+<part name="GND42" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
+<part name="GND43" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
+<part name="GND44" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
+<part name="GND45" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
+<part name="GND46" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
+<part name="GND47" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="C7" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="1000pF"/>
 <part name="C9" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="1000pF"/>
 <part name="C13" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="47nF"/>
@@ -13360,87 +13362,85 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="C14" library="Hocki_Library" deviceset="ECH-U1H184GX9" device="" value="0.18uF"/>
 <part name="C16" library="Hocki_Library" deviceset="ECH-U1H184GX9" device="" value="0.18uF"/>
 <part name="C38" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF"/>
-<part name="SUPPLY21" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="3.3V" device=""/>
+<part name="SUPPLY21" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
 <part name="C39" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="1uF"/>
 <part name="C40" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="2.2uF"/>
-<part name="GND48" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="GND49" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
+<part name="GND48" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
+<part name="GND49" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="+3V1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="+3V2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="+3V3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="+3V4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="+3V5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="+3V6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
-<part name="SUPPLY12" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
+<part name="SUPPLY12" library="SparkFun-PowerSymbols" deviceset="5V" device=""/>
 <part name="U19" library="Hocki_Library" deviceset="AP2210K-*TRG1" device="" technology="3.3"/>
 <part name="U20" library="Hocki_Library" deviceset="AP2210K-*TRG1" device="" technology="5.0"/>
 <part name="C41" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="1uF"/>
-<part name="GND50" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
+<part name="GND50" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="C42" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="100pF"/>
-<part name="GND51" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
+<part name="GND51" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="C43" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="100pF"/>
-<part name="GND52" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
+<part name="GND52" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="C44" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="2.2uF"/>
-<part name="GND53" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
+<part name="GND53" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="SUPPLY13" library="Hocki_Library" deviceset="9V" device=""/>
 <part name="+3V7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="SUPPLY14" library="Hocki_Library" deviceset="9V" device=""/>
 <part name="SUPPLY18" library="Hocki_Library" deviceset="9V" device=""/>
-<part name="GND54" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="GND55" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
+<part name="GND54" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
+<part name="GND55" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="C45" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="47nF"/>
 <part name="C46" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="47nF"/>
 <part name="J1" library="Hocki_Library" deviceset="SM03B-SRSS-TB(LF)(SN)" device="" package3d_urn="urn:adsk.eagle:package:22261818/2"/>
 <part name="J2" library="Hocki_Library" deviceset="SM03B-SRSS-TB(LF)(SN)" device="" package3d_urn="urn:adsk.eagle:package:22261818/2"/>
-<part name="SUPPLY19" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
-<part name="SUPPLY20" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="C47" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="10uF"/>
 <part name="C48" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="22uF"/>
 <part name="C49" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="100pF"/>
 <part name="C50" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF"/>
-<part name="GND56" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
+<part name="GND56" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="P+1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+24V" device=""/>
-<part name="GND58" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
+<part name="GND58" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="R1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="205k"/>
 <part name="R15" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="20k"/>
-<part name="GND59" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
+<part name="GND59" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="SUPPLY22" library="Hocki_Library" deviceset="9V" device=""/>
 <part name="J3" library="Hocki_Library" deviceset="SM03B-SRSS-TB(LF)(SN)" device="" package3d_urn="urn:adsk.eagle:package:22261818/2"/>
-<part name="GND60" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="SUPPLY23" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
+<part name="GND60" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
+<part name="SUPPLY23" library="SparkFun-PowerSymbols" deviceset="5V" device=""/>
 <part name="U22" library="Hocki_Library" deviceset="74AHC1G04GW,125" device=""/>
-<part name="SUPPLY24" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="3.3V" device=""/>
-<part name="GND61" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
+<part name="SUPPLY24" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
+<part name="GND61" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="C51" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1u"/>
-<part name="GND62" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
+<part name="GND62" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="U21" library="Hocki_Library" deviceset="AP6320*" device="" technology="0"/>
 <part name="C52" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="22uF"/>
-<part name="GND57" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
+<part name="GND57" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="L1" library="Hocki_Library" deviceset="LQH5BPN100M38L" device="" value="10uH"/>
 <part name="J4" library="Hocki_Library" deviceset="SM04B-SRSS-TB(LF)(SN)" device="" package3d_urn="urn:adsk.eagle:package:22261809/2"/>
 <part name="J5" library="Hocki_Library" deviceset="SM04B-SRSS-TB(LF)(SN)" device="" package3d_urn="urn:adsk.eagle:package:22261809/2"/>
 <part name="P+2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="SUPPLY26" library="Hocki_Library" deviceset="9V" device=""/>
 <part name="U23" library="Hocki_Library" deviceset="LDL212PU50R" device=""/>
-<part name="GND63" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
+<part name="GND63" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="C53" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="4.7uF"/>
 <part name="C54" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="1uF"/>
-<part name="GND64" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
+<part name="GND64" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="P+3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="P+4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
-<part name="GND65" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="GND66" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
+<part name="GND65" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
+<part name="GND66" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="P+5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+24V" device=""/>
-<part name="GND67" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
+<part name="GND67" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="CN1" library="Hocki_Library" deviceset="JST_2PIN" device="" package3d_urn="urn:adsk.eagle:package:22261884/2"/>
 <part name="D3" library="Hocki_Library" deviceset="D26V0H1U2LP20-7" device=""/>
 <part name="R18" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="30"/>
 <part name="R19" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="30"/>
 <part name="R40" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="10k"/>
 <part name="R41" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="10k"/>
-<part name="GND68" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="GND69" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="GND70" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
+<part name="GND68" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
+<part name="GND69" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
+<part name="GND70" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="FRAME1" library="RoboJackets-Frames" deviceset="FRAME_11_17" device="">
 <attribute name="SCH_DESC" value=""/>
 </part>
@@ -13453,9 +13453,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="FRAME4" library="RoboJackets-Frames" deviceset="FRAME_11_17" device="">
 <attribute name="SCH_DESC" value=""/>
 </part>
-<part name="SUPPLY27" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
+<part name="SUPPLY27" library="SparkFun-PowerSymbols" deviceset="5V" device=""/>
 <part name="J6" library="Hocki_Library" deviceset="SM02B-SRSS-TB(LF)(SN)" device=""/>
-<part name="+3V8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="D4" library="Hocki_Library" deviceset="BAS581-02V-V-G-08" device=""/>
 <part name="D5" library="Hocki_Library" deviceset="BAS581-02V-V-G-08" device=""/>
 <part name="D6" library="Hocki_Library" deviceset="BAS581-02V-V-G-08" device=""/>
@@ -13473,21 +13472,22 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="R44" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="330"/>
 <part name="R45" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="169"/>
 <part name="R46" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="330"/>
-<part name="GND19" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="GND71" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="GND72" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="GND73" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="GND74" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
+<part name="GND19" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
+<part name="GND71" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
+<part name="GND72" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
+<part name="GND73" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
+<part name="GND74" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="SUPPLY25" library="Hocki_Library" deviceset="9V" device=""/>
-<part name="SUPPLY28" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
+<part name="SUPPLY28" library="SparkFun-PowerSymbols" deviceset="5V" device=""/>
 <part name="+3V9" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="P+6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="D13" library="SparkFun-LED" deviceset="LED-GREEN" device="0603" value="GREEN"/>
 <part name="R47" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="169"/>
-<part name="GND75" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="SUPPLY29" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="3.3V" device=""/>
+<part name="GND75" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
+<part name="SUPPLY29" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
 <part name="R48" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="665"/>
 <part name="P+7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+24V" device=""/>
+<part name="GND76" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -13762,9 +13762,6 @@ from board +3V3</text>
 <attribute name="NAME" x="266.7" y="46.482" size="1.778" layer="95"/>
 <attribute name="VALUE" x="266.7" y="32.766" size="1.778" layer="96" align="top-left"/>
 </instance>
-<instance part="+3V8" gate="G$1" x="248.92" y="38.1" smashed="yes">
-<attribute name="VALUE" x="246.38" y="33.02" size="1.778" layer="96" rot="R90"/>
-</instance>
 <instance part="D4" gate="G$1" x="271.78" y="226.06" smashed="yes" rot="R180">
 <attribute name="NAME" x="274.066" y="224.155" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="274.066" y="229.489" size="1.778" layer="96" rot="R180"/>
@@ -13869,6 +13866,9 @@ from board +3V3</text>
 <instance part="P+7" gate="1" x="337.82" y="228.6" smashed="yes">
 <attribute name="VALUE" x="335.28" y="223.52" size="1.778" layer="96" rot="R90"/>
 </instance>
+<instance part="GND76" gate="1" x="259.08" y="30.48" smashed="yes">
+<attribute name="VALUE" x="259.08" y="30.226" size="1.778" layer="96" align="top-center"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -13955,7 +13955,7 @@ from board +3V3</text>
 </segment>
 <segment>
 <pinref part="U22" gate="G$1" pin="GND"/>
-<wire x1="307.34" y1="93.98" x2="307.34" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="297.18" y1="93.98" x2="307.34" y2="91.44" width="0.1524" layer="91"/>
 <pinref part="GND61" gate="1" pin="GND"/>
 </segment>
 <segment>
@@ -14031,6 +14031,12 @@ from board +3V3</text>
 <pinref part="GND75" gate="1" pin="GND"/>
 <wire x1="375.92" y1="157.48" x2="375.92" y2="154.94" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="J6" gate="G$1" pin="SHIELD"/>
+<wire x1="261.62" y1="35.56" x2="259.08" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="259.08" y1="35.56" x2="259.08" y2="33.02" width="0.1524" layer="91"/>
+<pinref part="GND76" gate="1" pin="GND"/>
+</segment>
 </net>
 <net name="3.3V" class="0">
 <segment>
@@ -14047,7 +14053,7 @@ from board +3V3</text>
 <segment>
 <pinref part="C51" gate="G$1" pin="1"/>
 <pinref part="U22" gate="G$1" pin="VCC"/>
-<wire x1="281.94" y1="99.06" x2="279.4" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="297.18" y1="104.14" x2="279.4" y2="99.06" width="0.1524" layer="91"/>
 <wire x1="279.4" y1="99.06" x2="279.4" y2="101.6" width="0.1524" layer="91"/>
 <pinref part="SUPPLY24" gate="G$1" pin="3.3V"/>
 <wire x1="274.32" y1="99.06" x2="279.4" y2="99.06" width="0.1524" layer="91"/>
@@ -14270,11 +14276,6 @@ from board +3V3</text>
 <junction x="327.66" y="172.72"/>
 </segment>
 <segment>
-<pinref part="J6" gate="G$1" pin="SHIELD"/>
-<wire x1="261.62" y1="35.56" x2="248.92" y2="35.56" width="0.1524" layer="91"/>
-<pinref part="+3V8" gate="G$1" pin="+3V3"/>
-</segment>
-<segment>
 <pinref part="R45" gate="G$1" pin="2"/>
 <pinref part="+3V9" gate="G$1" pin="+3V3"/>
 <wire x1="353.06" y1="170.18" x2="350.52" y2="170.18" width="0.1524" layer="91"/>
@@ -14421,7 +14422,7 @@ from board +3V3</text>
 <net name="RC_SIGNAL" class="0">
 <segment>
 <pinref part="U22" gate="G$1" pin="IN"/>
-<wire x1="279.4" y1="93.98" x2="281.94" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="279.4" y1="93.98" x2="289.56" y2="99.06" width="0.1524" layer="91"/>
 <label x="279.4" y="93.98" size="1.27" layer="95" rot="R270" xref="yes"/>
 </segment>
 <segment>
@@ -14433,7 +14434,7 @@ from board +3V3</text>
 <net name="SBUS" class="0">
 <segment>
 <pinref part="U22" gate="G$1" pin="OUT"/>
-<wire x1="307.34" y1="99.06" x2="309.88" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="304.8" y1="99.06" x2="309.88" y2="99.06" width="0.1524" layer="91"/>
 <label x="309.88" y="99.06" size="1.778" layer="95" xref="yes"/>
 </segment>
 <segment>
@@ -14883,11 +14884,11 @@ from board +3V3</text>
 <instance part="SUPPLY18" gate="G$1" x="53.34" y="200.66" smashed="yes" rot="MR0">
 <attribute name="VALUE" x="53.34" y="203.454" size="1.778" layer="96" rot="MR0" align="bottom-center"/>
 </instance>
-<instance part="GND54" gate="1" x="45.72" y="218.44" smashed="yes" rot="MR0">
-<attribute name="VALUE" x="45.72" y="218.186" size="1.778" layer="96" rot="MR0" align="top-center"/>
+<instance part="GND54" gate="1" x="45.72" y="210.82" smashed="yes" rot="MR0">
+<attribute name="VALUE" x="45.72" y="210.566" size="1.778" layer="96" rot="MR0" align="top-center"/>
 </instance>
-<instance part="GND55" gate="1" x="45.72" y="190.5" smashed="yes" rot="MR0">
-<attribute name="VALUE" x="45.72" y="190.246" size="1.778" layer="96" rot="MR0" align="top-center"/>
+<instance part="GND55" gate="1" x="45.72" y="182.88" smashed="yes" rot="MR0">
+<attribute name="VALUE" x="45.72" y="182.626" size="1.778" layer="96" rot="MR0" align="top-center"/>
 </instance>
 <instance part="J1" gate="G$1" x="33.02" y="220.98" smashed="yes" rot="MR0">
 <attribute name="NAME" x="38.1" y="229.362" size="1.778" layer="95" rot="MR0"/>
@@ -14896,12 +14897,6 @@ from board +3V3</text>
 <instance part="J2" gate="G$1" x="33.02" y="193.04" smashed="yes" rot="MR0">
 <attribute name="NAME" x="38.1" y="201.422" size="1.778" layer="95" rot="MR0"/>
 <attribute name="VALUE" x="38.1" y="185.166" size="1.778" layer="96" rot="MR0" align="top-left"/>
-</instance>
-<instance part="SUPPLY19" gate="G$1" x="60.96" y="218.44" smashed="yes" rot="MR0">
-<attribute name="VALUE" x="60.96" y="221.234" size="1.778" layer="96" rot="MR0" align="bottom-center"/>
-</instance>
-<instance part="SUPPLY20" gate="G$1" x="63.5" y="190.5" smashed="yes" rot="MR0">
-<attribute name="VALUE" x="63.5" y="193.294" size="1.778" layer="96" rot="MR0" align="bottom-center"/>
 </instance>
 </instances>
 <busses>
@@ -15007,11 +15002,21 @@ from board +3V3</text>
 <pinref part="GND54" gate="1" pin="GND"/>
 <pinref part="J1" gate="G$1" pin="3"/>
 <wire x1="43.18" y1="220.98" x2="45.72" y2="220.98" width="0.1524" layer="91"/>
+<wire x1="45.72" y1="220.98" x2="45.72" y2="215.9" width="0.1524" layer="91"/>
+<pinref part="J1" gate="G$1" pin="SHIELD"/>
+<wire x1="45.72" y1="215.9" x2="45.72" y2="213.36" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="215.9" x2="45.72" y2="215.9" width="0.1524" layer="91"/>
+<junction x="45.72" y="215.9"/>
 </segment>
 <segment>
 <pinref part="GND55" gate="1" pin="GND"/>
 <pinref part="J2" gate="G$1" pin="3"/>
 <wire x1="43.18" y1="193.04" x2="45.72" y2="193.04" width="0.1524" layer="91"/>
+<wire x1="45.72" y1="193.04" x2="45.72" y2="187.96" width="0.1524" layer="91"/>
+<pinref part="J2" gate="G$1" pin="SHIELD"/>
+<wire x1="45.72" y1="187.96" x2="45.72" y2="185.42" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="187.96" x2="45.72" y2="187.96" width="0.1524" layer="91"/>
+<junction x="45.72" y="187.96"/>
 </segment>
 </net>
 <net name="3.3V" class="0">
@@ -15079,18 +15084,6 @@ from board +3V3</text>
 <segment>
 <pinref part="SUPPLY15" gate="G$1" pin="5V"/>
 <pinref part="R29" gate="G$1" pin="2"/>
-</segment>
-<segment>
-<pinref part="J1" gate="G$1" pin="SHIELD"/>
-<wire x1="43.18" y1="215.9" x2="60.96" y2="215.9" width="0.1524" layer="91"/>
-<wire x1="60.96" y1="215.9" x2="60.96" y2="218.44" width="0.1524" layer="91"/>
-<pinref part="SUPPLY19" gate="G$1" pin="5V"/>
-</segment>
-<segment>
-<pinref part="J2" gate="G$1" pin="SHIELD"/>
-<wire x1="43.18" y1="187.96" x2="63.5" y2="187.96" width="0.1524" layer="91"/>
-<wire x1="63.5" y1="187.96" x2="63.5" y2="190.5" width="0.1524" layer="91"/>
-<pinref part="SUPPLY20" gate="G$1" pin="5V"/>
 </segment>
 </net>
 <net name="VG_SIGNAL_BUF" class="0">
