@@ -1132,6 +1132,17 @@
 <text x="-5.08" y="2.54" size="1.778" layer="95">&gt;NAME</text>
 <text x="-5.08" y="-2.54" size="1.778" layer="96" align="top-left">&gt;VALUE</text>
 </symbol>
+<symbol name="TMP235A4DCKR">
+<wire x1="-5.08" y1="5.08" x2="-5.08" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-5.08" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-5.08" x2="5.08" y2="5.08" width="0.254" layer="94"/>
+<wire x1="5.08" y1="5.08" x2="-5.08" y2="5.08" width="0.254" layer="94"/>
+<pin name="VCC" x="-10.16" y="2.54" length="middle" direction="pas"/>
+<pin name="GND" x="-10.16" y="-2.54" length="middle" direction="pas"/>
+<pin name="VOUT" x="10.16" y="0" length="middle" direction="pas" rot="R180"/>
+<text x="-5.08" y="7.62" size="2.54" layer="95">&gt;NAME</text>
+<text x="-5.08" y="-7.62" size="2.54" layer="96" align="top-left">&gt;VALUE</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="TEENSY_4.1" prefix="U">
@@ -1828,6 +1839,26 @@
 <technology name="">
 <attribute name="DKPN" value="1727-7840-1-ND" constant="no"/>
 </technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TMP235A4DCKR" prefix="U">
+<description>Temperature Sensor Analog, Local -40°C ~ 150°C 10mV/°C SC-70-5
+&lt;p&gt;&lt;\p&gt;
+&lt;a href="https://www.digikey.com/product-detail/en/texas-instruments/TMP235A4DCKR/296-50016-1-ND/9462854"&gt;DigiKey&lt;\a&gt;</description>
+<gates>
+<gate name="G$1" symbol="TMP235A4DCKR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT-353">
+<connects>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="VCC" pad="4"/>
+<connect gate="G$1" pin="VOUT" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
@@ -13584,6 +13615,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="D16" library="Hocki_Library" deviceset="PESD4V0Y1BSFYL" device=""/>
 <part name="D17" library="Hocki_Library" deviceset="PESD4V0Y1BSFYL" device=""/>
 <part name="GND79" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
+<part name="U24" library="Hocki_Library" deviceset="TMP235A4DCKR" device=""/>
+<part name="SUPPLY19" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
+<part name="GND80" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -13742,32 +13776,32 @@ from board +3V3</text>
 <instance part="SUPPLY22" gate="G$1" x="320.04" y="228.6" smashed="yes">
 <attribute name="VALUE" x="320.04" y="231.394" size="1.778" layer="96" align="bottom-center"/>
 </instance>
-<instance part="J3" gate="G$1" x="231.14" y="93.98" smashed="yes" rot="MR0">
-<attribute name="NAME" x="236.22" y="102.362" size="1.778" layer="95" rot="MR0"/>
-<attribute name="VALUE" x="236.22" y="86.106" size="1.778" layer="96" rot="MR0" align="top-left"/>
+<instance part="J3" gate="G$1" x="241.3" y="93.98" smashed="yes" rot="MR0">
+<attribute name="NAME" x="246.38" y="102.362" size="1.778" layer="95" rot="MR0"/>
+<attribute name="VALUE" x="246.38" y="86.106" size="1.778" layer="96" rot="MR0" align="top-left"/>
 </instance>
-<instance part="GND60" gate="1" x="243.84" y="91.44" smashed="yes">
-<attribute name="VALUE" x="243.84" y="91.186" size="1.778" layer="96" align="top-center"/>
+<instance part="GND60" gate="1" x="254" y="91.44" smashed="yes">
+<attribute name="VALUE" x="254" y="91.186" size="1.778" layer="96" align="top-center"/>
 </instance>
-<instance part="SUPPLY23" gate="G$1" x="256.54" y="104.14" smashed="yes">
-<attribute name="VALUE" x="256.54" y="106.934" size="1.778" layer="96" align="bottom-center"/>
+<instance part="SUPPLY23" gate="G$1" x="266.7" y="104.14" smashed="yes">
+<attribute name="VALUE" x="266.7" y="106.934" size="1.778" layer="96" align="bottom-center"/>
 </instance>
-<instance part="U22" gate="G$1" x="294.64" y="99.06" smashed="yes">
-<attribute name="NAME" x="287.02" y="102.87" size="1.778" layer="95" ratio="6" rot="SR0"/>
-<attribute name="VALUE" x="281.94" y="90.424" size="1.778" layer="96" ratio="6" rot="SR0" align="top-left"/>
+<instance part="U22" gate="G$1" x="292.1" y="96.52" smashed="yes">
+<attribute name="NAME" x="297.18" y="100.33" size="1.778" layer="95" ratio="6" rot="SR0"/>
+<attribute name="VALUE" x="297.18" y="92.964" size="1.778" layer="96" ratio="6" rot="SR0" align="top-left"/>
 </instance>
-<instance part="SUPPLY24" gate="G$1" x="279.4" y="101.6" smashed="yes">
-<attribute name="VALUE" x="279.4" y="104.394" size="1.778" layer="96" align="bottom-center"/>
+<instance part="SUPPLY24" gate="G$1" x="294.64" y="104.14" smashed="yes">
+<attribute name="VALUE" x="294.64" y="106.934" size="1.778" layer="96" align="bottom-center"/>
 </instance>
-<instance part="GND61" gate="1" x="307.34" y="88.9" smashed="yes">
-<attribute name="VALUE" x="307.34" y="88.646" size="1.778" layer="96" align="top-center"/>
+<instance part="GND61" gate="1" x="294.64" y="88.9" smashed="yes">
+<attribute name="VALUE" x="294.64" y="88.646" size="1.778" layer="96" align="top-center"/>
 </instance>
-<instance part="C51" gate="G$1" x="274.32" y="96.52" smashed="yes">
-<attribute name="NAME" x="273.304" y="98.425" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="273.304" y="93.091" size="1.778" layer="96" rot="R180"/>
+<instance part="C51" gate="G$1" x="279.4" y="99.06" smashed="yes">
+<attribute name="NAME" x="278.384" y="100.965" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="278.384" y="95.631" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="GND62" gate="1" x="274.32" y="88.9" smashed="yes">
-<attribute name="VALUE" x="274.32" y="88.646" size="1.778" layer="96" align="top-center"/>
+<instance part="GND62" gate="1" x="279.4" y="91.44" smashed="yes">
+<attribute name="VALUE" x="279.4" y="91.186" size="1.778" layer="96" align="top-center"/>
 </instance>
 <instance part="U21" gate="G$1" x="264.16" y="215.9" smashed="yes">
 <attribute name="NAME" x="256.54" y="222.25" size="1.778" layer="95" ratio="6" rot="SR0"/>
@@ -14075,12 +14109,11 @@ from board +3V3</text>
 </segment>
 <segment>
 <pinref part="J3" gate="G$1" pin="3"/>
-<wire x1="241.3" y1="93.98" x2="243.84" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="251.46" y1="93.98" x2="254" y2="93.98" width="0.1524" layer="91"/>
 <pinref part="GND60" gate="1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="U22" gate="G$1" pin="GND"/>
-<wire x1="297.18" y1="93.98" x2="307.34" y2="91.44" width="0.1524" layer="91"/>
 <pinref part="GND61" gate="1" pin="GND"/>
 </segment>
 <segment>
@@ -14193,11 +14226,10 @@ from board +3V3</text>
 <segment>
 <pinref part="C51" gate="G$1" pin="1"/>
 <pinref part="U22" gate="G$1" pin="VCC"/>
-<wire x1="297.18" y1="104.14" x2="279.4" y2="99.06" width="0.1524" layer="91"/>
-<wire x1="279.4" y1="99.06" x2="279.4" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="294.64" y1="101.6" x2="294.64" y2="104.14" width="0.1524" layer="91"/>
 <pinref part="SUPPLY24" gate="G$1" pin="3.3V"/>
-<wire x1="274.32" y1="99.06" x2="279.4" y2="99.06" width="0.1524" layer="91"/>
-<junction x="279.4" y="99.06"/>
+<wire x1="279.4" y1="101.6" x2="294.64" y2="101.6" width="0.1524" layer="91"/>
+<junction x="294.64" y="101.6"/>
 </segment>
 <segment>
 <pinref part="R47" gate="G$1" pin="2"/>
@@ -14274,13 +14306,13 @@ from board +3V3</text>
 </segment>
 <segment>
 <pinref part="J3" gate="G$1" pin="2"/>
-<wire x1="241.3" y1="96.52" x2="256.54" y2="96.52" width="0.1524" layer="91"/>
-<wire x1="256.54" y1="96.52" x2="256.54" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="251.46" y1="96.52" x2="266.7" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="266.7" y1="96.52" x2="266.7" y2="104.14" width="0.1524" layer="91"/>
 <pinref part="SUPPLY23" gate="G$1" pin="5V"/>
 <pinref part="J3" gate="G$1" pin="SHIELD"/>
-<wire x1="241.3" y1="88.9" x2="256.54" y2="88.9" width="0.1524" layer="91"/>
-<wire x1="256.54" y1="88.9" x2="256.54" y2="96.52" width="0.1524" layer="91"/>
-<junction x="256.54" y="96.52"/>
+<wire x1="251.46" y1="88.9" x2="266.7" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="266.7" y1="88.9" x2="266.7" y2="96.52" width="0.1524" layer="91"/>
+<junction x="266.7" y="96.52"/>
 </segment>
 <segment>
 <pinref part="R44" gate="G$1" pin="2"/>
@@ -14570,20 +14602,20 @@ from board +3V3</text>
 <net name="RC_SIGNAL" class="0">
 <segment>
 <pinref part="U22" gate="G$1" pin="IN"/>
-<wire x1="279.4" y1="93.98" x2="289.56" y2="99.06" width="0.1524" layer="91"/>
-<label x="279.4" y="93.98" size="1.27" layer="95" rot="R270" xref="yes"/>
+<wire x1="284.48" y1="96.52" x2="287.02" y2="96.52" width="0.1524" layer="91"/>
+<label x="284.48" y="96.52" size="1.27" layer="95" rot="R270" xref="yes"/>
 </segment>
 <segment>
 <pinref part="J3" gate="G$1" pin="1"/>
-<wire x1="241.3" y1="99.06" x2="243.84" y2="99.06" width="0.1524" layer="91"/>
-<label x="243.84" y="99.06" size="1.27" layer="95" xref="yes"/>
+<wire x1="251.46" y1="99.06" x2="254" y2="99.06" width="0.1524" layer="91"/>
+<label x="254" y="99.06" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="SBUS" class="0">
 <segment>
 <pinref part="U22" gate="G$1" pin="OUT"/>
-<wire x1="304.8" y1="99.06" x2="309.88" y2="99.06" width="0.1524" layer="91"/>
-<label x="309.88" y="99.06" size="1.778" layer="95" xref="yes"/>
+<wire x1="302.26" y1="96.52" x2="304.8" y2="96.52" width="0.1524" layer="91"/>
+<label x="304.8" y="96.52" size="1.778" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="0/PWM/CRX2/CS1/RX1"/>
@@ -14767,6 +14799,13 @@ from board +3V3</text>
 <pinref part="R43" gate="G$1" pin="2"/>
 <pinref part="R48" gate="G$1" pin="1"/>
 <wire x1="353.06" y1="220.98" x2="350.52" y2="220.98" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="TEMP" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="26/MOSI1/A12"/>
+<wire x1="134.62" y1="162.56" x2="129.54" y2="162.56" width="0.1524" layer="91"/>
+<label x="129.54" y="162.56" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 </nets>
@@ -15675,6 +15714,7 @@ from board +3V3</text>
 <text x="152.4" y="83.82" size="1.27" layer="97">OR gates are required to hold unused MOSI lines 
 high to avoid chip getting confused 
 between I2C and SPI modes</text>
+<text x="154.94" y="213.36" size="2.54" layer="97">Temperature Sensor</text>
 </plain>
 <instances>
 <instance part="U2" gate="ADXL375" x="276.86" y="185.42" smashed="yes">
@@ -15816,6 +15856,16 @@ between I2C and SPI modes</text>
 <attribute name="REVISION" x="397.51" y="6.35" size="2.54" layer="94"/>
 <attribute name="SCH_DESC" x="326.39" y="6.35" size="2.54" layer="94"/>
 </instance>
+<instance part="U24" gate="G$1" x="162.56" y="228.6" smashed="yes">
+<attribute name="NAME" x="157.48" y="236.22" size="2.54" layer="95"/>
+<attribute name="VALUE" x="157.48" y="220.98" size="2.54" layer="96" align="top-left"/>
+</instance>
+<instance part="SUPPLY19" gate="G$1" x="149.86" y="233.68" smashed="yes">
+<attribute name="VALUE" x="149.86" y="236.474" size="1.778" layer="96" align="bottom-center"/>
+</instance>
+<instance part="GND80" gate="1" x="149.86" y="220.98" smashed="yes">
+<attribute name="VALUE" x="149.86" y="220.726" size="1.778" layer="96" align="top-center"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -15896,6 +15946,12 @@ between I2C and SPI modes</text>
 <wire x1="195.58" y1="193.04" x2="198.12" y2="193.04" width="0.1524" layer="91"/>
 <pinref part="GND12" gate="1" pin="GND"/>
 <wire x1="198.12" y1="193.04" x2="198.12" y2="190.5" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U24" gate="G$1" pin="GND"/>
+<wire x1="152.4" y1="226.06" x2="149.86" y2="226.06" width="0.1524" layer="91"/>
+<pinref part="GND80" gate="1" pin="GND"/>
+<wire x1="149.86" y1="226.06" x2="149.86" y2="223.52" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="3.3V" class="0">
@@ -15982,6 +16038,12 @@ between I2C and SPI modes</text>
 <wire x1="185.42" y1="134.62" x2="185.42" y2="139.7" width="0.1524" layer="91"/>
 <wire x1="190.5" y1="134.62" x2="185.42" y2="134.62" width="0.1524" layer="91"/>
 <junction x="185.42" y="134.62"/>
+</segment>
+<segment>
+<pinref part="U24" gate="G$1" pin="VCC"/>
+<wire x1="152.4" y1="231.14" x2="149.86" y2="231.14" width="0.1524" layer="91"/>
+<pinref part="SUPPLY19" gate="G$1" pin="3.3V"/>
+<wire x1="149.86" y1="231.14" x2="149.86" y2="233.68" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="MISO" class="0">
@@ -16144,6 +16206,13 @@ between I2C and SPI modes</text>
 <wire x1="139.7" y1="124.46" x2="137.16" y2="124.46" width="0.1524" layer="91"/>
 <wire x1="139.7" y1="109.22" x2="139.7" y2="124.46" width="0.1524" layer="91"/>
 <junction x="139.7" y="124.46"/>
+</segment>
+</net>
+<net name="TEMP" class="0">
+<segment>
+<pinref part="U24" gate="G$1" pin="VOUT"/>
+<wire x1="172.72" y1="228.6" x2="175.26" y2="228.6" width="0.1524" layer="91"/>
+<label x="175.26" y="228.6" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 </nets>

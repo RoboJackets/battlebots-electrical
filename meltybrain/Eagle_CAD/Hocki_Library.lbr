@@ -1411,6 +1411,17 @@
 <text x="-5.08" y="2.54" size="1.778" layer="95">&gt;NAME</text>
 <text x="-5.08" y="-2.54" size="1.778" layer="96" align="top-left">&gt;VALUE</text>
 </symbol>
+<symbol name="TMP235A4DCKR">
+<wire x1="-5.08" y1="5.08" x2="-5.08" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-5.08" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-5.08" x2="5.08" y2="5.08" width="0.254" layer="94"/>
+<wire x1="5.08" y1="5.08" x2="-5.08" y2="5.08" width="0.254" layer="94"/>
+<pin name="VCC" x="-10.16" y="2.54" length="middle" direction="pas"/>
+<pin name="GND" x="-10.16" y="-2.54" length="middle" direction="pas"/>
+<pin name="VOUT" x="10.16" y="0" length="middle" direction="pas" rot="R180"/>
+<text x="-5.08" y="7.62" size="2.54" layer="95">&gt;NAME</text>
+<text x="-5.08" y="-7.62" size="2.54" layer="96" align="top-left">&gt;VALUE</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="ADXL375" prefix="U">
@@ -2232,6 +2243,26 @@
 <technology name="">
 <attribute name="DKPN" value="497-ESDZX051-1BF4CT-ND" constant="no"/>
 </technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TMP235A4DCKR" prefix="U">
+<description>Temperature Sensor Analog, Local -40°C ~ 150°C 10mV/°C SC-70-5
+&lt;p&gt;&lt;\p&gt;
+&lt;a href="https://www.digikey.com/product-detail/en/texas-instruments/TMP235A4DCKR/296-50016-1-ND/9462854"&gt;DigiKey&lt;\a&gt;</description>
+<gates>
+<gate name="G$1" symbol="TMP235A4DCKR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT-353">
+<connects>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="VCC" pad="4"/>
+<connect gate="G$1" pin="VOUT" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
