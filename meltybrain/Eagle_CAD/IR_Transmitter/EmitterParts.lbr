@@ -89,8 +89,6 @@
 <wire x1="4.52" y1="-3" x2="-4.52" y2="-3" width="0.05" layer="39"/>
 <text x="-4.8" y="3.05" size="1" layer="25" font="vector">&gt;NAME</text>
 <text x="-4.8" y="-3.142" size="1" layer="27" font="vector" align="top-left">&gt;VALUE</text>
-<circle x="-5.2" y="0" radius="0.1" width="0.2" layer="21"/>
-<circle x="-5.2" y="0" radius="0.1" width="0.2" layer="51"/>
 <circle x="-1.27" y="0" radius="0.5" width="1" layer="29"/>
 <circle x="1.27" y="0" radius="0.5" width="1" layer="29"/>
 <circle x="-1.27" y="0" radius="0.5" width="1" layer="30"/>
@@ -98,6 +96,12 @@
 <circle x="0" y="0" radius="2.75" width="0.127" layer="51"/>
 <pad name="C" x="-1.27" y="0" drill="1" diameter="2" stop="no"/>
 <pad name="A" x="1.27" y="0" drill="1" diameter="2" stop="no"/>
+<wire x1="0.762" y1="1.524" x2="-0.254" y2="1.524" width="0.1524" layer="21"/>
+<wire x1="-0.254" y1="1.524" x2="-0.762" y2="1.524" width="0.1524" layer="21"/>
+<wire x1="0.254" y1="1.016" x2="0.254" y2="2.032" width="0.1524" layer="21"/>
+<wire x1="0.254" y1="2.032" x2="-0.254" y2="1.524" width="0.1524" layer="21"/>
+<wire x1="-0.254" y1="1.524" x2="0.254" y2="1.016" width="0.1524" layer="21"/>
+<wire x1="-0.254" y1="1.016" x2="-0.254" y2="2.032" width="0.1524" layer="21"/>
 </package>
 <package name="TO254P1067X483X2286-3">
 <wire x1="-2.8" y1="2.945" x2="7.88" y2="2.945" width="0.127" layer="21"/>
@@ -222,7 +226,7 @@
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="ATTINY84">
+<deviceset name="ATTINY84" prefix="U">
 <description>AVR AVR® ATtiny Microcontroller IC 8-Bit 16MHz 8KB (8K x 8) FLASH 14-SOIC
 &lt;p&gt;&lt;\p&gt;
 &lt;a href = "https://www.digikey.com/product-detail/en/microchip-technology/ATTINY841-SSUR/ATTINY841-SSURCT-ND/4437442"&gt;DigiKey&lt;\a&gt;</description>
