@@ -13512,8 +13512,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="GND55" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="C24" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="47nF"/>
 <part name="C23" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="47nF"/>
-<part name="J5" library="Hocki_Library" deviceset="SM03B-SRSS-TB(LF)(SN)" device="" package3d_urn="urn:adsk.eagle:package:22261818/2"/>
-<part name="J6" library="Hocki_Library" deviceset="SM03B-SRSS-TB(LF)(SN)" device="" package3d_urn="urn:adsk.eagle:package:22261818/2"/>
+<part name="J5" library="Hocki_Library" deviceset="SM03B-SRSS-TB(LF)(SN)" device="" package3d_urn="urn:adsk.eagle:package:22261818/2" override_package3d_urn="urn:adsk.eagle:package:22908627/2" override_package_urn="urn:adsk.eagle:footprint:22908629/1"/>
+<part name="J6" library="Hocki_Library" deviceset="SM03B-SRSS-TB(LF)(SN)" device="" package3d_urn="urn:adsk.eagle:package:22261818/2" override_package3d_urn="urn:adsk.eagle:package:22908618/2" override_package_urn="urn:adsk.eagle:footprint:22908619/1"/>
 <part name="C4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="10uF"/>
 <part name="C6" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="22uF"/>
 <part name="C5" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="100pF"/>
@@ -13525,7 +13525,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="R5" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="20k"/>
 <part name="GND59" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="SUPPLY22" library="Hocki_Library" deviceset="9V" device=""/>
-<part name="J1" library="Hocki_Library" deviceset="SM03B-SRSS-TB(LF)(SN)" device="" package3d_urn="urn:adsk.eagle:package:22261818/2"/>
+<part name="J1" library="Hocki_Library" deviceset="SM03B-SRSS-TB(LF)(SN)" device="" package3d_urn="urn:adsk.eagle:package:22261818/2" override_package3d_urn="urn:adsk.eagle:package:22908633/2" override_package_urn="urn:adsk.eagle:footprint:22908634/1"/>
 <part name="GND60" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="SUPPLY23" library="SparkFun-PowerSymbols" deviceset="5V" device=""/>
 <part name="U5" library="Hocki_Library" deviceset="74AHC1G04GW,125" device=""/>
@@ -13574,7 +13574,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <attribute name="SCH_DESC" value=""/>
 </part>
 <part name="SUPPLY27" library="SparkFun-PowerSymbols" deviceset="5V" device=""/>
-<part name="J3" library="Hocki_Library" deviceset="SM02B-SRSS-TB(LF)(SN)" device=""/>
+<part name="J3" library="Hocki_Library" deviceset="SM02B-SRSS-TB(LF)(SN)" device="" override_package3d_urn="urn:adsk.eagle:package:22908683/2" override_package_urn="urn:adsk.eagle:footprint:22908684/1"/>
 <part name="D2" library="Hocki_Library" deviceset="BAS581-02V-V-G-08" device=""/>
 <part name="D9" library="Hocki_Library" deviceset="BAS581-02V-V-G-08" device=""/>
 <part name="D10" library="Hocki_Library" deviceset="BAS581-02V-V-G-08" device=""/>
@@ -16893,6 +16893,11 @@ will not be understood (or retained) with this version.
 Since Version 8.3, EAGLE supports the association of 3D packages
 with devices in libraries, schematics, and board files. Those 3D
 packages will not be understood (or retained) with this version.
+</note>
+<note version="9.4" severity="warning">
+Since Version 9.4, EAGLE supports the overriding of 3D packages
+in schematics and board files. Those overridden 3d packages
+will not be understood (or retained) with this version.
 </note>
 <note version="8.4" severity="warning">
 Since Version 8.4, EAGLE supports properties for SPICE simulation. 
