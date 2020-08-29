@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.6.2">
+<eagle version="9.5.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="no" altdistance="0.1" altunitdist="mm" altunit="mm"/>
+<grid distance="0.01" unitdist="mm" unit="mm" style="lines" multiple="1" display="no" altdistance="0.1" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
@@ -183,6 +183,7 @@
 <layer number="255" name="255robobuzz" color="7" fill="1" visible="yes" active="yes"/>
 </layers>
 <board>
+<fusionsync huburn="a.cGVyc29uYWw6dWUyY2EyMWFk" projecturn="a.cGVyc29uYWw6dWUyZDhlY2M3IzIwMjAwNzEyMzE1MDc1MjU2" f3durn="urn:adsk.wipprod:dm.lineage:YGfndywUS02_83q7guT35Q" pcbguid="3c4bd254-c4ce-4655-8dd0-7a827ae63bfb" lastpulledtime="" lastsyncedchangeguid="a4fb0dd9-0eee-2ea1-3cea-b7b776e116ba"/>
 <plain>
 <wire x1="0" y1="0" x2="30.9" y2="0" width="0" layer="20"/>
 <wire x1="30.9" y1="0" x2="30.9" y2="28.5" width="0" layer="20"/>
@@ -1768,10 +1769,10 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <attribute name="NAME" x="14.2" y="20.3" size="1" layer="25" font="vector" ratio="10" rot="SR0"/>
 <attribute name="VALUE" x="14.6" y="16.3" size="1" layer="27" font="vector" rot="SR0" align="top-left"/>
 </element>
-<element name="D1" library="EmitterParts" package="DIO_SFH_4544" value="SFH_4544" x="22.7" y="18.1" smashed="yes" rot="R180">
-<attribute name="DKPN" value="475-3524-ND" x="22.7" y="18.1" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="23.4" y="22.25" size="1" layer="25" font="vector" ratio="10" rot="R180"/>
-<attribute name="VALUE" x="27.5" y="21.242" size="0.6096" layer="27" rot="R180" align="top-left"/>
+<element name="D1" library="EmitterParts" package="DIO_SFH_4544" override_package3d_urn="urn:adsk.eagle:package:22908895/2" override_package_urn="urn:adsk.eagle:footprint:22908896/1" value="SFH_4544" x="22.7" y="18.1" smashed="yes" rot="MR0">
+<attribute name="DKPN" value="475-3524-ND" x="22.7" y="18.1" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="NAME" x="23.4" y="13.95" size="1" layer="26" font="vector" ratio="10" rot="MR0"/>
+<attribute name="VALUE" x="27.5" y="14.958" size="0.6096" layer="28" rot="MR0" align="top-left"/>
 </element>
 <element name="C41" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="1u" x="14.3" y="14.2" smashed="yes" rot="R270">
 <attribute name="NAME" x="12.035" y="16.735" size="1" layer="25" font="vector" ratio="10" rot="R270"/>
@@ -1795,11 +1796,11 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <attribute name="NAME" x="10.69971875" y="22.30028125" size="1" layer="25" font="vector" ratio="10"/>
 <attribute name="VALUE" x="8.826859375" y="18.096809375" size="1.27" layer="27" align="top-left"/>
 </element>
-<element name="CN1" library="Hocki_Library" package="JST-PH-2-SMT-RA" value="" x="3.4" y="18" smashed="yes" rot="R90">
+<element name="CN1" library="Hocki_Library" package="JST-PH-2-SMT-RA" override_package3d_urn="urn:adsk.eagle:package:22908887/2" override_package_urn="urn:adsk.eagle:footprint:22908888/1" value="" x="3.4" y="18" smashed="yes" rot="R90">
 <attribute name="NAME" x="7.44" y="23.29" size="1" layer="25" font="vector" ratio="10" rot="R180"/>
 <attribute name="VALUE" x="11.02" y="15.46" size="1.27" layer="27" font="vector" rot="R90"/>
 </element>
-<element name="J1" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" package="2X3-NS" package3d_urn="urn:adsk.eagle:package:38013/1" value="AVR_SPI_PROG_3X2NS" x="5.6" y="9.6" smashed="yes">
+<element name="J1" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" package="2X3-NS" package3d_urn="urn:adsk.eagle:package:38013/1" override_package3d_urn="urn:adsk.eagle:package:22908900/2" override_package_urn="urn:adsk.eagle:footprint:37609/1" value="AVR_SPI_PROG_3X2NS" x="5.6" y="9.6" smashed="yes">
 <attribute name="NAME" x="1.433" y="9.49" size="1" layer="25" font="vector" ratio="10" rot="R90"/>
 <attribute name="VALUE" x="1.79" y="5.663" size="0.6096" layer="27" font="vector" ratio="20"/>
 </element>
@@ -1918,20 +1919,21 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <wire x1="11.125" y1="9.57103125" x2="11.125" y2="9.21" width="0.2" layer="1"/>
 <wire x1="8.56383125" y1="12.1322" x2="11.125" y2="9.57103125" width="0.2" layer="1"/>
 <wire x1="12.515" y1="10.6" x2="17" y2="10.6" width="0.2" layer="1"/>
-<wire x1="17" y1="10.6" x2="21.43" y2="15.03" width="0.2" layer="1"/>
+<wire x1="21.43" y1="15.03" x2="17" y2="10.6" width="0.2" layer="1"/>
 <wire x1="16.9" y1="21.35" x2="16.9" y2="19.25" width="0.2" layer="1"/>
 <contactref element="C2" pad="1"/>
 <wire x1="24.6" y1="9.905" x2="23.5224" y2="9.905" width="0.2" layer="1"/>
 <wire x1="22.9" y1="9.2826" x2="23.5224" y2="9.905" width="0.2" layer="1"/>
 <contactref element="D1" pad="A"/>
-<wire x1="21.43" y1="15.03" x2="21.43" y2="18.1" width="0.2" layer="1"/>
-<wire x1="21.43" y1="18.1" x2="18.05" y2="18.1" width="0.2" layer="1"/>
 <wire x1="16.9" y1="19.25" x2="18.05" y2="18.1" width="0.2" layer="1"/>
 <wire x1="18.3" y1="9.2826" x2="22.9" y2="9.2826" width="0.2" layer="1"/>
 <wire x1="11.55" y1="13" x2="11.55" y2="11.565" width="0.2" layer="1"/>
 <wire x1="11.55" y1="11.565" x2="12.515" y2="10.6" width="0.2" layer="1"/>
 <wire x1="17" y1="10.6" x2="18.3" y2="9.3" width="0.2" layer="1"/>
 <wire x1="18.3" y1="9.3" x2="18.3" y2="9.2826" width="0.2" layer="1"/>
+<via x="18.05" y="18.1" extent="1-16" drill="0.35"/>
+<wire x1="18.05" y1="18.1" x2="21.43" y2="18.1" width="0.2" layer="1"/>
+<wire x1="21.43" y1="18.1" x2="21.43" y2="15.03" width="0.2" layer="1"/>
 </signal>
 <signal name="N$5">
 <contactref element="D1" pad="C"/>
@@ -2022,6 +2024,11 @@ of those online libraries will not be understood (or retained)
 with this version.
 </note>
 <note version="8.3" severity="warning">
+Since Version 8.3, EAGLE supports Fusion synchronisation.
+This feature will not be available in this version and saving
+the document will break the link to the Fusion PCB feature.
+</note>
+<note version="8.3" severity="warning">
 Since Version 8.3, EAGLE supports URNs for individual library
 assets (packages, symbols, and devices). The URNs of those assets
 will not be understood (or retained) with this version.
@@ -2030,6 +2037,11 @@ will not be understood (or retained) with this version.
 Since Version 8.3, EAGLE supports the association of 3D packages
 with devices in libraries, schematics, and board files. Those 3D
 packages will not be understood (or retained) with this version.
+</note>
+<note version="9.4" severity="warning">
+Since Version 9.4, EAGLE supports the overriding of 3D packages
+in schematics and board files. Those overridden 3d packages
+will not be understood (or retained) with this version.
 </note>
 </compatibility>
 </eagle>
