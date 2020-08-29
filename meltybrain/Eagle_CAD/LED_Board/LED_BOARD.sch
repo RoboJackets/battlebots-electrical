@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.1">
+<eagle version="9.6.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -181,7 +181,7 @@
 </package>
 </packages>
 <packages3d>
-<package3d name="RGBLED5050" urn="urn:adsk.eagle:package:22765567/2" type="model">
+<package3d name="RGBLED5050" urn="urn:adsk.eagle:package:22765567/3" type="model">
 <packageinstances>
 <packageinstance name="RGBLED5050"/>
 </packageinstances>
@@ -219,7 +219,7 @@
 <connect gate="G$1" pin="VCC" pad="4"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:22765567/2"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:22765567/3"/>
 </package3dinstances>
 <technologies>
 <technology name=""/>
@@ -4622,9 +4622,9 @@ Source: AVX .. aphvc.pdf</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="Hocki_Library">
+<library name="Hocki_Library" urn="urn:adsk.eagle:library:22261622">
 <packages>
-<package name="SM04B-SRSS-TB(LF)(SN)" urn="urn:adsk.eagle:footprint:22261810/1">
+<package name="SM04B-SRSS-TB(LF)(SN)" urn="urn:adsk.eagle:footprint:22261669/1" library_version="1">
 <circle x="-2.45" y="0.385" radius="0.1" width="0.3" layer="21"/>
 <circle x="-2.45" y="0.385" radius="0.1" width="0.3" layer="51"/>
 <text x="-3.72381875" y="1.131940625" size="1.271490625" layer="25">&gt;NAME</text>
@@ -4647,20 +4647,20 @@ Source: AVX .. aphvc.pdf</description>
 </package>
 </packages>
 <packages3d>
-<package3d name="SM04B-SRSS-TB(LF)(SN)" urn="urn:adsk.eagle:package:22261809/2" type="model">
+<package3d name="SM04B-SRSS-TB(LF)(SN)" urn="urn:adsk.eagle:package:22261674/1" type="box" library_version="1">
 <packageinstances>
 <packageinstance name="SM04B-SRSS-TB(LF)(SN)"/>
 </packageinstances>
 </package3d>
 </packages3d>
 <symbols>
-<symbol name="SM04B-SRSS-TB(LF)(SN)">
+<symbol name="SM04B-SRSS-TB(LF)(SN)" urn="urn:adsk.eagle:symbol:22261630/1" library_version="1">
 <wire x1="-5.08" y1="7.62" x2="5.08" y2="7.62" width="0.254" layer="94"/>
-<text x="-5.083059375" y="8.1433" size="1.27153125" layer="95">&gt;NAME</text>
-<text x="-5.083540625" y="-11.9557" size="1.27176875" layer="96">&gt;VALUE</text>
 <wire x1="-5.08" y1="-10.16" x2="-5.08" y2="7.62" width="0.254" layer="94"/>
 <wire x1="-5.08" y1="-10.16" x2="5.08" y2="-10.16" width="0.254" layer="94"/>
 <wire x1="5.08" y1="-10.16" x2="5.08" y2="7.62" width="0.254" layer="94"/>
+<text x="-5.083059375" y="8.1433" size="1.27153125" layer="95">&gt;NAME</text>
+<text x="-5.083540625" y="-11.9557" size="1.27176875" layer="96">&gt;VALUE</text>
 <pin name="1" x="-7.62" y="5.08" visible="pin" length="short" direction="pas"/>
 <pin name="2" x="-7.62" y="2.54" visible="pin" length="short" direction="pas"/>
 <pin name="3" x="-7.62" y="0" visible="pin" length="short" direction="pas"/>
@@ -4669,7 +4669,7 @@ Source: AVX .. aphvc.pdf</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="SM04B-SRSS-TB(LF)(SN)" prefix="J">
+<deviceset name="SM04B-SRSS-TB(LF)(SN)" urn="urn:adsk.eagle:component:22261698/1" prefix="J" library_version="1">
 <description>Connector Header Surface Mount, Right Angle 4 position 0.039" (1.00mm)
 &lt;p&gt;&lt;\p&gt;
 &lt;a href="https://www.digikey.com/product-detail/en/jst-sales-america-inc/SM04B-SRSS-TB-LF-SN/455-1804-1-ND/926875"&gt;DigiKey&lt;\a&gt;</description>
@@ -4686,7 +4686,7 @@ Source: AVX .. aphvc.pdf</description>
 <connect gate="G$2" pin="SHIELD" pad="S1 S2"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:22261809/2"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:22261674/1"/>
 </package3dinstances>
 <technologies>
 <technology name="">
@@ -4708,14 +4708,14 @@ Source: AVX .. aphvc.pdf</description>
 </class>
 </classes>
 <parts>
-<part name="U1" library="LED_BOARD" deviceset="DOTSTAR" device="" package3d_urn="urn:adsk.eagle:package:22765567/2"/>
-<part name="U2" library="LED_BOARD" deviceset="DOTSTAR" device="" package3d_urn="urn:adsk.eagle:package:22765567/2"/>
-<part name="U3" library="LED_BOARD" deviceset="DOTSTAR" device="" package3d_urn="urn:adsk.eagle:package:22765567/2"/>
-<part name="U4" library="LED_BOARD" deviceset="DOTSTAR" device="" package3d_urn="urn:adsk.eagle:package:22765567/2"/>
-<part name="U5" library="LED_BOARD" deviceset="DOTSTAR" device="" package3d_urn="urn:adsk.eagle:package:22765567/2"/>
-<part name="U6" library="LED_BOARD" deviceset="DOTSTAR" device="" package3d_urn="urn:adsk.eagle:package:22765567/2"/>
-<part name="U7" library="LED_BOARD" deviceset="DOTSTAR" device="" package3d_urn="urn:adsk.eagle:package:22765567/2"/>
-<part name="U8" library="LED_BOARD" deviceset="DOTSTAR" device="" package3d_urn="urn:adsk.eagle:package:22765567/2"/>
+<part name="U1" library="LED_BOARD" deviceset="DOTSTAR" device="" package3d_urn="urn:adsk.eagle:package:22765567/3"/>
+<part name="U2" library="LED_BOARD" deviceset="DOTSTAR" device="" package3d_urn="urn:adsk.eagle:package:22765567/3"/>
+<part name="U3" library="LED_BOARD" deviceset="DOTSTAR" device="" package3d_urn="urn:adsk.eagle:package:22765567/3"/>
+<part name="U4" library="LED_BOARD" deviceset="DOTSTAR" device="" package3d_urn="urn:adsk.eagle:package:22765567/3"/>
+<part name="U5" library="LED_BOARD" deviceset="DOTSTAR" device="" package3d_urn="urn:adsk.eagle:package:22765567/3"/>
+<part name="U6" library="LED_BOARD" deviceset="DOTSTAR" device="" package3d_urn="urn:adsk.eagle:package:22765567/3"/>
+<part name="U7" library="LED_BOARD" deviceset="DOTSTAR" device="" package3d_urn="urn:adsk.eagle:package:22765567/3"/>
+<part name="U8" library="LED_BOARD" deviceset="DOTSTAR" device="" package3d_urn="urn:adsk.eagle:package:22765567/3"/>
 <part name="P+1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="P+2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="P+3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
@@ -4742,7 +4742,7 @@ Source: AVX .. aphvc.pdf</description>
 <part name="C8" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF"/>
 <part name="GND9" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="P+9" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
-<part name="J1" library="Hocki_Library" deviceset="SM04B-SRSS-TB(LF)(SN)" device="" package3d_urn="urn:adsk.eagle:package:22261809/2"/>
+<part name="J1" library="Hocki_Library" library_urn="urn:adsk.eagle:library:22261622" deviceset="SM04B-SRSS-TB(LF)(SN)" device="" package3d_urn="urn:adsk.eagle:package:22261674/1" override_package3d_urn="urn:adsk.eagle:package:22261674/2" override_package_urn="urn:adsk.eagle:footprint:22261669/1"/>
 <part name="P+10" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="GND10" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND11" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -5172,6 +5172,11 @@ will not be understood (or retained) with this version.
 Since Version 8.3, EAGLE supports the association of 3D packages
 with devices in libraries, schematics, and board files. Those 3D
 packages will not be understood (or retained) with this version.
+</note>
+<note version="9.4" severity="warning">
+Since Version 9.4, EAGLE supports the overriding of 3D packages
+in schematics and board files. Those overridden 3d packages
+will not be understood (or retained) with this version.
 </note>
 <note version="8.4" severity="warning">
 Since Version 8.4, EAGLE supports properties for SPICE simulation. 
