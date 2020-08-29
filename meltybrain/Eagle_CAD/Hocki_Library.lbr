@@ -584,7 +584,7 @@
 <text x="-4" y="2" size="1" layer="25">&gt;NAME</text>
 <text x="-4" y="-2" size="1" layer="27" align="top-left">&gt;VALUE</text>
 </package>
-<package name="SM03B-SRSS-TB(LF)(SN)" urn="urn:adsk.eagle:footprint:22324088/1" locally_modified="yes">
+<package name="SM03B-SRSS-TB(LF)(SN)" urn="urn:adsk.eagle:footprint:22908619/1">
 <wire x1="-2.5" y1="-0.325" x2="2.5" y2="-0.325" width="0.127" layer="21"/>
 <wire x1="2.5" y1="-0.325" x2="2.5" y2="-4.575" width="0.127" layer="21"/>
 <wire x1="2.5" y1="-4.575" x2="-2.5" y2="-4.575" width="0.127" layer="21"/>
@@ -788,7 +788,7 @@
 <text x="-2" y="-2" size="1" layer="27" font="vector" align="top-left">&gt;VALUE</text>
 <circle x="-1.6" y="-1.1" radius="0.282840625" width="0.2" layer="21"/>
 </package>
-<package name="SM02B-SRSS-TB(LF)(SN)">
+<package name="SM02B-SRSS-TB(LF)(SN)" urn="urn:adsk.eagle:footprint:22908684/1">
 <wire x1="-2" y1="-0.325" x2="2" y2="-0.325" width="0.127" layer="21"/>
 <wire x1="2" y1="-0.325" x2="2" y2="-4.575" width="0.127" layer="21"/>
 <wire x1="2" y1="-4.575" x2="-2" y2="-4.575" width="0.127" layer="21"/>
@@ -830,6 +830,16 @@
 <package3d name="SM04B-SRSS-TB(LF)(SN)" urn="urn:adsk.eagle:package:22261809/2" type="model">
 <packageinstances>
 <packageinstance name="SM04B-SRSS-TB(LF)(SN)"/>
+</packageinstances>
+</package3d>
+<package3d name="SM03B-SRSS-TB(LF)(SN)" urn="urn:adsk.eagle:package:22908618/2" type="model">
+<packageinstances>
+<packageinstance name="SM03B-SRSS-TB(LF)(SN)"/>
+</packageinstances>
+</package3d>
+<package3d name="SM02B-SRSS-TB(LF)(SN)" urn="urn:adsk.eagle:package:22908683/2" type="model">
+<packageinstances>
+<packageinstance name="SM02B-SRSS-TB(LF)(SN)"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -2176,6 +2186,9 @@
 <connect gate="G$1" pin="2" pad="2"/>
 <connect gate="G$1" pin="SHIELD" pad="S1 S2"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:22908683/2"/>
+</package3dinstances>
 <technologies>
 <technology name="">
 <attribute name="DKPN" value="455-1802-1-ND" constant="no"/>

@@ -4745,7 +4745,7 @@ Source: AVX .. aphvc.pdf</description>
 <part name="J1" library="Hocki_Library" deviceset="SM04B-SRSS-TB(LF)(SN)" device="" package3d_urn="urn:adsk.eagle:package:22261809/2"/>
 <part name="P+10" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="GND10" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="P+11" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
+<part name="GND11" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -4880,8 +4880,8 @@ Source: AVX .. aphvc.pdf</description>
 <instance part="GND10" gate="1" x="370.84" y="38.1" smashed="yes">
 <attribute name="VALUE" x="368.3" y="35.56" size="1.778" layer="96"/>
 </instance>
-<instance part="P+11" gate="1" x="375.92" y="30.48" smashed="yes" rot="R180">
-<attribute name="VALUE" x="378.46" y="35.56" size="1.778" layer="96" rot="R270"/>
+<instance part="GND11" gate="1" x="375.92" y="30.48" smashed="yes">
+<attribute name="VALUE" x="373.38" y="27.94" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -5058,11 +5058,6 @@ Source: AVX .. aphvc.pdf</description>
 <pinref part="P+10" gate="1" pin="+5V"/>
 <wire x1="375.92" y1="55.88" x2="375.92" y2="68.58" width="0.1524" layer="91"/>
 </segment>
-<segment>
-<pinref part="J1" gate="G$2" pin="SHIELD"/>
-<pinref part="P+11" gate="1" pin="+5V"/>
-<wire x1="375.92" y1="43.18" x2="375.92" y2="33.02" width="0.1524" layer="91"/>
-</segment>
 </net>
 <net name="GND" class="0">
 <segment>
@@ -5135,6 +5130,11 @@ Source: AVX .. aphvc.pdf</description>
 <wire x1="375.92" y1="48.26" x2="370.84" y2="48.26" width="0.1524" layer="91"/>
 <pinref part="GND10" gate="1" pin="GND"/>
 <wire x1="370.84" y1="48.26" x2="370.84" y2="40.64" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="J1" gate="G$2" pin="SHIELD"/>
+<wire x1="375.92" y1="43.18" x2="375.92" y2="33.02" width="0.1524" layer="91"/>
+<pinref part="GND11" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="N$15" class="0">
