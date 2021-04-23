@@ -14586,9 +14586,9 @@ from board +3V3</text>
 </net>
 <net name="S/R" class="0">
 <segment>
-<pinref part="U2" gate="G$1" pin="32/OUT1B"/>
-<wire x1="134.62" y1="147.32" x2="129.54" y2="147.32" width="0.1524" layer="91"/>
-<label x="129.54" y="147.32" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="U2" gate="G$1" pin="33/PWM/MCLK2"/>
+<wire x1="134.62" y1="144.78" x2="129.54" y2="144.78" width="0.1524" layer="91"/>
+<label x="129.54" y="144.78" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="20K_INT" class="0">
@@ -14910,24 +14910,26 @@ from board +3V3</text>
 </net>
 <net name="ESC_L" class="0">
 <segment>
-<wire x1="261.62" y1="43.18" x2="259.08" y2="43.18" width="0.1524" layer="91"/>
-<label x="259.08" y="43.18" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-<segment>
-<pinref part="U2" gate="G$1" pin="28/PWM/RX7"/>
-<wire x1="134.62" y1="157.48" x2="129.54" y2="157.48" width="0.1524" layer="91"/>
-<label x="129.54" y="157.48" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
-<net name="ESC_R" class="0">
-<segment>
-<wire x1="261.62" y1="40.64" x2="259.08" y2="40.64" width="0.1524" layer="91"/>
-<label x="259.08" y="40.64" size="1.27" layer="95" rot="R180" xref="yes"/>
+<label x="259.08" y="38.1" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="J3" gate="G$2" pin="3"/>
+<wire x1="266.7" y1="38.1" x2="259.08" y2="38.1" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U2" gate="G$1" pin="29/PWM/TX7"/>
 <wire x1="134.62" y1="154.94" x2="129.54" y2="154.94" width="0.1524" layer="91"/>
 <label x="129.54" y="154.94" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="ESC_R" class="0">
+<segment>
+<label x="259.08" y="40.64" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="J3" gate="G$2" pin="2"/>
+<wire x1="266.7" y1="40.64" x2="259.08" y2="40.64" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U2" gate="G$1" pin="36/PWM/CS"/>
+<wire x1="134.62" y1="137.16" x2="129.54" y2="137.16" width="0.1524" layer="91"/>
+<label x="129.54" y="137.16" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="N$14" class="0">
@@ -15046,6 +15048,30 @@ from board +3V3</text>
 <pinref part="FB1" gate="G$1" pin="1"/>
 <wire x1="304.8" y1="147.32" x2="297.18" y2="147.32" width="0.1524" layer="91"/>
 <junction x="297.18" y="147.32"/>
+</segment>
+</net>
+<net name="ESC_TEL_L" class="0">
+<segment>
+<pinref part="U2" gate="G$1" pin="28/PWM/RX7"/>
+<wire x1="134.62" y1="157.48" x2="129.54" y2="157.48" width="0.1524" layer="91"/>
+<label x="129.54" y="157.48" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="J3" gate="G$2" pin="4"/>
+<wire x1="266.7" y1="35.56" x2="259.08" y2="35.56" width="0.1524" layer="91"/>
+<label x="259.08" y="35.56" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="ESC_TEL_R" class="0">
+<segment>
+<pinref part="U2" gate="G$1" pin="34/RX8"/>
+<wire x1="134.62" y1="142.24" x2="129.54" y2="142.24" width="0.1524" layer="91"/>
+<label x="129.54" y="142.24" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="J3" gate="G$2" pin="1"/>
+<wire x1="266.7" y1="43.18" x2="259.08" y2="43.18" width="0.1524" layer="91"/>
+<label x="259.08" y="43.18" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 </nets>
