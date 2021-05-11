@@ -663,6 +663,21 @@
 <text x="-2" y="2.4" size="1" layer="25" font="vector">&gt;NAME</text>
 <text x="-2" y="-2.4" size="1" layer="27" font="vector" align="top-left">&gt;VALUE</text>
 </package>
+<package name="SM02B-SRSS-TB(LF)(SN)" urn="urn:adsk.eagle:footprint:22908684/1">
+<wire x1="-2" y1="-0.325" x2="2" y2="-0.325" width="0.127" layer="21"/>
+<wire x1="2" y1="-0.325" x2="2" y2="-4.575" width="0.127" layer="21"/>
+<wire x1="2" y1="-4.575" x2="-2" y2="-4.575" width="0.127" layer="21"/>
+<wire x1="-2" y1="-4.575" x2="-2" y2="-0.325" width="0.127" layer="21"/>
+<wire x1="-1.3" y1="-4.575" x2="1.3" y2="-4.575" width="0.127" layer="21"/>
+<circle x="-1.8" y="0.4" radius="0.1" width="0.3" layer="21"/>
+<circle x="-1.8" y="0.4" radius="0.1" width="0.3" layer="21"/>
+<text x="-3.81" y="1.27" size="1" layer="25" font="vector">&gt;NAME</text>
+<text x="-3.81" y="-5.35" size="1" layer="27" font="vector" align="top-left">&gt;VALUE</text>
+<smd name="2" x="0.5" y="0" dx="1.55" dy="0.6" layer="1" rot="R90"/>
+<smd name="1" x="-0.5" y="0" dx="1.55" dy="0.6" layer="1" rot="R90"/>
+<smd name="S1" x="-1.8" y="-3.875" dx="1.2" dy="1.8" layer="1" rot="R180"/>
+<smd name="S2" x="1.8" y="-3.875" dx="1.2" dy="1.8" layer="1" rot="R180"/>
+</package>
 </packages>
 <packages3d>
 <package3d name="TEENSY_4.1" urn="urn:adsk.eagle:package:22261832/3" type="model">
@@ -683,6 +698,11 @@
 <package3d name="JST-PH-2-SMT" urn="urn:adsk.eagle:package:22261884/2" type="model">
 <packageinstances>
 <packageinstance name="JST-PH-2-SMT"/>
+</packageinstances>
+</package3d>
+<package3d name="SM02B-SRSS-TB(LF)(SN)" urn="urn:adsk.eagle:package:22908683/2" type="model">
+<packageinstances>
+<packageinstance name="SM02B-SRSS-TB(LF)(SN)"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -1250,6 +1270,17 @@
 <wire x1="2.54" y1="-15.24" x2="2.54" y2="-12.7" width="0.254" layer="94"/>
 <text x="5.08" y="13.716" size="1.27" layer="97">REF1</text>
 <text x="5.08" y="-14.732" size="1.27" layer="97">REF2</text>
+</symbol>
+<symbol name="SM02B-SRSS-TB(LF)(SN)">
+<wire x1="-5.08" y1="7.62" x2="5.08" y2="7.62" width="0.254" layer="94"/>
+<wire x1="5.08" y1="7.62" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-5.08" x2="-5.08" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-5.08" x2="-5.08" y2="7.62" width="0.254" layer="94"/>
+<text x="-5.08" y="8.382" size="1.778" layer="95">&gt;NAME</text>
+<text x="-5.08" y="-5.334" size="1.778" layer="96" align="top-left">&gt;VALUE</text>
+<pin name="1" x="-10.16" y="5.08" visible="pin" length="middle" direction="pas"/>
+<pin name="2" x="-10.16" y="2.54" visible="pin" length="middle" direction="pas"/>
+<pin name="SHIELD" x="-10.16" y="-2.54" visible="pin" length="middle" direction="pas"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -1948,6 +1979,31 @@
 <technologies>
 <technology name="">
 <attribute name="DKPN" value="AD8426ACPZ-WP-ND" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SM02B-SRSS-TB(LF)(SN)" prefix="J">
+<description>Connector Header Surface Mount, Right Angle 2 position 0.039" (1.00mm)
+&lt;p&gt;&lt;\p&gt;
+&lt;a href="https://www.digikey.com/product-detail/en/jst-sales-america-inc/SM02B-SRSS-TB-LF-SN/455-1802-1-ND/926873"&gt;DigiKey&lt;\a&gt;</description>
+<gates>
+<gate name="G$1" symbol="SM02B-SRSS-TB(LF)(SN)" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SM02B-SRSS-TB(LF)(SN)">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="SHIELD" pad="S1 S2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:22908683/2"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="DKPN" value="455-1802-1-ND" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -13771,7 +13827,6 @@ In this library you will find the larger circuit elements that are used to contr
 <part name="SUPPLY29" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
 <part name="R1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="665"/>
 <part name="P+7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+24V" device=""/>
-<part name="GND76" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="D6" library="Hocki_Library" deviceset="ESDZX051-1BF4" device=""/>
 <part name="GND77" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="D12" library="Hocki_Library" deviceset="PESD5V0H1BSFYL" device=""/>
@@ -13784,7 +13839,6 @@ In this library you will find the larger circuit elements that are used to contr
 <part name="GND80" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="C33" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF"/>
 <part name="GND81" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
-<part name="J3" library="Hocki_Library" deviceset="SM04B-SRSS-TB(LF)(SN)" device="" package3d_urn="urn:adsk.eagle:package:22261809/2"/>
 <part name="C16" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF"/>
 <part name="C56" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF"/>
 <part name="SUPPLY30" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
@@ -13807,6 +13861,10 @@ In this library you will find the larger circuit elements that are used to contr
 <part name="SUPPLY33" library="SparkFun-PowerSymbols" deviceset="5V" device=""/>
 <part name="GND82" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="SUPPLY20" library="SparkFun-PowerSymbols" deviceset="5V" device=""/>
+<part name="J7" library="Hocki_Library" deviceset="SM02B-SRSS-TB(LF)(SN)" device="" package3d_urn="urn:adsk.eagle:package:22908683/2"/>
+<part name="J8" library="Hocki_Library" deviceset="SM02B-SRSS-TB(LF)(SN)" device="" package3d_urn="urn:adsk.eagle:package:22908683/2"/>
+<part name="GND61" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
+<part name="GND83" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -14157,9 +14215,6 @@ from board +3V3</text>
 <instance part="P+7" gate="1" x="337.82" y="228.6" smashed="yes">
 <attribute name="VALUE" x="335.28" y="223.52" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="GND76" gate="1" x="259.08" y="22.86" smashed="yes">
-<attribute name="VALUE" x="259.08" y="22.606" size="1.778" layer="96" align="top-center"/>
-</instance>
 <instance part="D6" gate="G$1" x="335.28" y="203.2" smashed="yes" rot="R90">
 <attribute name="NAME" x="332.74" y="198.12" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="337.82" y="198.12" size="1.778" layer="96" rot="R90" align="top-left"/>
@@ -14184,10 +14239,6 @@ from board +3V3</text>
 </instance>
 <instance part="GND79" gate="1" x="297.18" y="133.858" smashed="yes">
 <attribute name="VALUE" x="297.18" y="133.604" size="1.778" layer="96" align="top-center"/>
-</instance>
-<instance part="J3" gate="G$2" x="274.32" y="38.1" smashed="yes">
-<attribute name="NAME" x="269.236940625" y="46.2433" size="1.27153125" layer="95"/>
-<attribute name="VALUE" x="269.236459375" y="26.1443" size="1.27176875" layer="96"/>
 </instance>
 <instance part="C16" gate="G$1" x="93.98" y="20.32" smashed="yes">
 <attribute name="NAME" x="92.964" y="22.225" size="1.778" layer="95" rot="R180"/>
@@ -14228,6 +14279,20 @@ from board +3V3</text>
 </instance>
 <instance part="SUPPLY20" gate="G$1" x="388.62" y="101.6" smashed="yes">
 <attribute name="VALUE" x="388.62" y="104.394" size="1.778" layer="96" align="bottom-center"/>
+</instance>
+<instance part="J7" gate="G$1" x="276.86" y="40.64" smashed="yes">
+<attribute name="NAME" x="271.78" y="49.022" size="1.778" layer="95"/>
+<attribute name="VALUE" x="271.78" y="35.306" size="1.778" layer="96" align="top-left"/>
+</instance>
+<instance part="J8" gate="G$1" x="276.86" y="20.32" smashed="yes">
+<attribute name="NAME" x="271.78" y="28.702" size="1.778" layer="95"/>
+<attribute name="VALUE" x="271.78" y="14.986" size="1.778" layer="96" align="top-left"/>
+</instance>
+<instance part="GND61" gate="1" x="264.16" y="12.7" smashed="yes">
+<attribute name="VALUE" x="264.16" y="12.446" size="1.778" layer="96" align="top-center"/>
+</instance>
+<instance part="GND83" gate="1" x="264.16" y="33.02" smashed="yes">
+<attribute name="VALUE" x="264.16" y="32.766" size="1.778" layer="96" align="top-center"/>
 </instance>
 </instances>
 <busses>
@@ -14387,12 +14452,6 @@ from board +3V3</text>
 <wire x1="375.92" y1="157.48" x2="375.92" y2="154.94" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="259.08" y1="30.48" x2="259.08" y2="25.4" width="0.1524" layer="91"/>
-<pinref part="GND76" gate="1" pin="GND"/>
-<pinref part="J3" gate="G$2" pin="SHIELD"/>
-<wire x1="266.7" y1="30.48" x2="259.08" y2="30.48" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="GND77" gate="1" pin="GND"/>
 <pinref part="D6" gate="G$1" pin="C1"/>
 </segment>
@@ -14417,6 +14476,18 @@ from board +3V3</text>
 <pinref part="U25" gate="A" pin="GND"/>
 <pinref part="GND82" gate="1" pin="GND"/>
 <wire x1="144.78" y1="50.8" x2="162.56" y2="50.8" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="J8" gate="G$1" pin="SHIELD"/>
+<wire x1="266.7" y1="17.78" x2="264.16" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="264.16" y1="17.78" x2="264.16" y2="15.24" width="0.1524" layer="91"/>
+<pinref part="GND61" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="J7" gate="G$1" pin="SHIELD"/>
+<wire x1="266.7" y1="38.1" x2="264.16" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="264.16" y1="38.1" x2="264.16" y2="35.56" width="0.1524" layer="91"/>
+<pinref part="GND83" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="3.3V" class="0">
@@ -14942,26 +15013,26 @@ from board +3V3</text>
 </net>
 <net name="ESC_L" class="0">
 <segment>
-<label x="259.08" y="38.1" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="J3" gate="G$2" pin="3"/>
-<wire x1="266.7" y1="38.1" x2="259.08" y2="38.1" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="U2" gate="G$1" pin="29/PWM/TX7"/>
 <wire x1="134.62" y1="154.94" x2="129.54" y2="154.94" width="0.1524" layer="91"/>
 <label x="129.54" y="154.94" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
+<segment>
+<pinref part="J8" gate="G$1" pin="2"/>
+<wire x1="266.7" y1="22.86" x2="264.16" y2="22.86" width="0.1524" layer="91"/>
+<label x="264.16" y="22.86" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
 </net>
 <net name="ESC_R" class="0">
-<segment>
-<label x="259.08" y="40.64" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="J3" gate="G$2" pin="2"/>
-<wire x1="266.7" y1="40.64" x2="259.08" y2="40.64" width="0.1524" layer="91"/>
-</segment>
 <segment>
 <pinref part="U2" gate="G$1" pin="24/PWM/SCL2/TX6/A10"/>
 <wire x1="134.62" y1="167.64" x2="129.54" y2="167.64" width="0.1524" layer="91"/>
 <label x="129.54" y="167.64" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="J7" gate="G$1" pin="2"/>
+<wire x1="266.7" y1="43.18" x2="264.16" y2="43.18" width="0.1524" layer="91"/>
+<label x="264.16" y="43.18" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="N$14" class="0">
@@ -15089,9 +15160,9 @@ from board +3V3</text>
 <label x="129.54" y="157.48" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="J3" gate="G$2" pin="4"/>
-<wire x1="266.7" y1="35.56" x2="259.08" y2="35.56" width="0.1524" layer="91"/>
-<label x="259.08" y="35.56" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="J8" gate="G$1" pin="1"/>
+<wire x1="266.7" y1="25.4" x2="264.16" y2="25.4" width="0.1524" layer="91"/>
+<label x="264.16" y="25.4" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="ESC_TEL_R" class="0">
@@ -15101,9 +15172,9 @@ from board +3V3</text>
 <label x="129.54" y="142.24" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="J3" gate="G$2" pin="1"/>
-<wire x1="266.7" y1="43.18" x2="259.08" y2="43.18" width="0.1524" layer="91"/>
-<label x="259.08" y="43.18" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="J7" gate="G$1" pin="1"/>
+<wire x1="266.7" y1="45.72" x2="264.16" y2="45.72" width="0.1524" layer="91"/>
+<label x="264.16" y="45.72" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="A_RC_SIGNAL" class="0">
