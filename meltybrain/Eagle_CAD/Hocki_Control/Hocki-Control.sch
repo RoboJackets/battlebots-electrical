@@ -13783,9 +13783,6 @@ from board 5V</text>
 <text x="238.76" y="55.88" size="6.4516" layer="97">ESC Connector</text>
 <text x="152.4" y="236.22" size="2.54" layer="97">MCU 3.3V different
 from board +3V3</text>
-<text x="259.08" y="12.7" size="5.08" layer="91">TODO</text>
-<text x="284.48" y="15.24" size="5.08" layer="91">TODO</text>
-<text x="284.48" y="35.56" size="5.08" layer="91">TODO</text>
 </plain>
 <instances>
 <instance part="U2" gate="G$1" x="167.64" y="177.8" smashed="yes">
@@ -14565,9 +14562,9 @@ from board +3V3</text>
 </net>
 <net name="CS4" class="0">
 <segment>
-<pinref part="U2" gate="G$1" pin="24/PWM/SCL2/TX6/A10"/>
-<wire x1="134.62" y1="167.64" x2="129.54" y2="167.64" width="0.1524" layer="91"/>
-<label x="129.54" y="167.64" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="U2" gate="G$1" pin="25/PWM/SDA2/RX6/A11"/>
+<wire x1="134.62" y1="165.1" x2="129.54" y2="165.1" width="0.1524" layer="91"/>
+<label x="129.54" y="165.1" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="CS2" class="0">
@@ -14927,9 +14924,9 @@ from board +3V3</text>
 <wire x1="266.7" y1="40.64" x2="259.08" y2="40.64" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U2" gate="G$1" pin="36/PWM/CS"/>
-<wire x1="134.62" y1="137.16" x2="129.54" y2="137.16" width="0.1524" layer="91"/>
-<label x="129.54" y="137.16" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="U2" gate="G$1" pin="24/PWM/SCL2/TX6/A10"/>
+<wire x1="134.62" y1="167.64" x2="129.54" y2="167.64" width="0.1524" layer="91"/>
+<label x="129.54" y="167.64" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="N$14" class="0">
