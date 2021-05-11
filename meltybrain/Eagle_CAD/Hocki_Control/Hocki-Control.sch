@@ -13876,7 +13876,7 @@ In this library you will find the larger circuit elements that are used to contr
 <text x="43.18" y="60.96" size="2.54" layer="97">LED +5V separate
 from board 5V</text>
 <text x="363.22" y="111.76" size="6.4516" layer="97">RC Receiver</text>
-<text x="241.3" y="58.42" size="6.4516" layer="97">ESC Connector</text>
+<text x="241.3" y="58.42" size="6.4516" layer="97">ESC Connectors</text>
 <text x="152.4" y="236.22" size="2.54" layer="97">MCU 3.3V different
 from board +3V3</text>
 </plain>
@@ -15018,9 +15018,9 @@ from board +3V3</text>
 <label x="129.54" y="154.94" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="J8" gate="G$1" pin="2"/>
-<wire x1="266.7" y1="22.86" x2="264.16" y2="22.86" width="0.1524" layer="91"/>
-<label x="264.16" y="22.86" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="J8" gate="G$1" pin="1"/>
+<wire x1="266.7" y1="25.4" x2="264.16" y2="25.4" width="0.1524" layer="91"/>
+<label x="264.16" y="25.4" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="ESC_R" class="0">
@@ -15160,9 +15160,9 @@ from board +3V3</text>
 <label x="129.54" y="157.48" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="J8" gate="G$1" pin="1"/>
-<wire x1="266.7" y1="25.4" x2="264.16" y2="25.4" width="0.1524" layer="91"/>
-<label x="264.16" y="25.4" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="J8" gate="G$1" pin="2"/>
+<wire x1="266.7" y1="22.86" x2="264.16" y2="22.86" width="0.1524" layer="91"/>
+<label x="264.16" y="22.86" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="ESC_TEL_R" class="0">
