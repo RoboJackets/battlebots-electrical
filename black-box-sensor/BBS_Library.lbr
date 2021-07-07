@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="no" altdistance="0.1" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -152,43 +152,43 @@
 <package name="24-TFQFN">
 <text x="-2.5" y="-3" size="1" layer="27" font="vector" ratio="10" align="top-left">&gt;VALUE</text>
 <text x="-2.5" y="3" size="1" layer="25" font="vector" ratio="10">&gt;NAME</text>
-<circle x="-2.238" y="2.258" radius="0.1" width="0.0762" layer="21"/>
+<circle x="-2.438" y="1.958" radius="0.1" width="0.0762" layer="21"/>
 <wire x1="2" y1="-2" x2="-2" y2="-2" width="0.127" layer="51"/>
 <wire x1="2" y1="2" x2="-2" y2="2" width="0.127" layer="51"/>
 <wire x1="2" y1="-2" x2="2" y2="2" width="0.127" layer="51"/>
 <wire x1="-2" y1="-2" x2="-2" y2="2" width="0.127" layer="51"/>
 <wire x1="2" y1="-2" x2="1.45" y2="-2" width="0.127" layer="21"/>
 <wire x1="-2" y1="-2" x2="-1.45" y2="-2" width="0.127" layer="21"/>
-<wire x1="-2.61" y1="-2.61" x2="2.61" y2="-2.61" width="0.05" layer="39"/>
-<wire x1="-2.61" y1="2.61" x2="2.61" y2="2.61" width="0.05" layer="39"/>
-<wire x1="-2.61" y1="-2.61" x2="-2.61" y2="2.61" width="0.05" layer="39"/>
-<wire x1="2.61" y1="-2.61" x2="2.61" y2="2.61" width="0.05" layer="39"/>
+<wire x1="-2.1" y1="-2.1" x2="2.1" y2="-2.1" width="0.05" layer="39"/>
+<wire x1="-2.1" y1="2.1" x2="2.1" y2="2.1" width="0.05" layer="39"/>
+<wire x1="-2.1" y1="-2.1" x2="-2.1" y2="2.1" width="0.05" layer="39"/>
+<wire x1="2.1" y1="-2.1" x2="2.1" y2="2.1" width="0.05" layer="39"/>
 <wire x1="-2" y1="2" x2="-1.45" y2="2" width="0.127" layer="21"/>
 <wire x1="2" y1="2" x2="1.45" y2="2" width="0.127" layer="21"/>
-<smd name="1" x="-1.825" y="1.5" dx="1.06" dy="0.26" layer="1"/>
-<smd name="2" x="-1.825" y="1" dx="1.06" dy="0.26" layer="1"/>
-<smd name="3" x="-1.825" y="0.5" dx="1.06" dy="0.26" layer="1"/>
-<smd name="4" x="-1.825" y="0" dx="1.06" dy="0.26" layer="1"/>
-<smd name="5" x="-1.825" y="-0.5" dx="1.06" dy="0.26" layer="1"/>
-<smd name="6" x="-1.825" y="-1" dx="1.06" dy="0.26" layer="1"/>
-<smd name="7" x="-1.825" y="-1.5" dx="1.06" dy="0.26" layer="1"/>
-<smd name="8" x="-1" y="-1.825" dx="1.06" dy="0.26" layer="1" rot="R90"/>
-<smd name="9" x="-0.5" y="-1.825" dx="1.06" dy="0.26" layer="1" rot="R90"/>
-<smd name="10" x="0" y="-1.825" dx="1.06" dy="0.26" layer="1" rot="R90"/>
-<smd name="11" x="0.5" y="-1.825" dx="1.06" dy="0.26" layer="1" rot="R90"/>
-<smd name="12" x="1" y="-1.825" dx="1.06" dy="0.26" layer="1" rot="R90"/>
-<smd name="13" x="1.825" y="-1.5" dx="1.06" dy="0.26" layer="1" rot="R180"/>
-<smd name="14" x="1.825" y="-1" dx="1.06" dy="0.26" layer="1" rot="R180"/>
-<smd name="15" x="1.825" y="-0.5" dx="1.06" dy="0.26" layer="1" rot="R180"/>
-<smd name="16" x="1.825" y="0" dx="1.06" dy="0.26" layer="1" rot="R180"/>
-<smd name="17" x="1.825" y="0.5" dx="1.06" dy="0.26" layer="1" rot="R180"/>
-<smd name="18" x="1.825" y="1" dx="1.06" dy="0.26" layer="1" rot="R180"/>
-<smd name="19" x="1.825" y="1.5" dx="1.06" dy="0.26" layer="1" rot="R180"/>
-<smd name="20" x="1" y="1.825" dx="1.06" dy="0.26" layer="1" rot="R270"/>
-<smd name="21" x="0.5" y="1.825" dx="1.06" dy="0.26" layer="1" rot="R270"/>
-<smd name="22" x="0" y="1.825" dx="1.06" dy="0.26" layer="1" rot="R270"/>
-<smd name="23" x="-0.5" y="1.825" dx="1.06" dy="0.26" layer="1" rot="R270"/>
-<smd name="24" x="-1" y="1.825" dx="1.06" dy="0.26" layer="1" rot="R270"/>
+<smd name="1" x="-1.775" y="1.5" dx="0.8" dy="0.3" layer="1"/>
+<smd name="2" x="-1.775" y="1" dx="0.8" dy="0.3" layer="1"/>
+<smd name="3" x="-1.775" y="0.5" dx="0.8" dy="0.3" layer="1"/>
+<smd name="4" x="-1.775" y="0" dx="0.8" dy="0.3" layer="1"/>
+<smd name="5" x="-1.775" y="-0.5" dx="0.8" dy="0.3" layer="1"/>
+<smd name="6" x="-1.775" y="-1" dx="0.8" dy="0.3" layer="1"/>
+<smd name="7" x="-1.775" y="-1.5" dx="0.8" dy="0.3" layer="1"/>
+<smd name="8" x="-1" y="-1.775" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="9" x="-0.5" y="-1.775" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="10" x="0" y="-1.775" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="11" x="0.5" y="-1.775" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="12" x="1" y="-1.775" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="13" x="1.775" y="-1.5" dx="0.8" dy="0.3" layer="1" rot="R180"/>
+<smd name="14" x="1.775" y="-1" dx="0.8" dy="0.3" layer="1" rot="R180"/>
+<smd name="15" x="1.775" y="-0.5" dx="0.8" dy="0.3" layer="1" rot="R180"/>
+<smd name="16" x="1.775" y="0" dx="0.8" dy="0.3" layer="1" rot="R180"/>
+<smd name="17" x="1.775" y="0.5" dx="0.8" dy="0.3" layer="1" rot="R180"/>
+<smd name="18" x="1.775" y="1" dx="0.8" dy="0.3" layer="1" rot="R180"/>
+<smd name="19" x="1.775" y="1.5" dx="0.8" dy="0.3" layer="1" rot="R180"/>
+<smd name="20" x="1" y="1.775" dx="0.8" dy="0.3" layer="1" rot="R270"/>
+<smd name="21" x="0.5" y="1.775" dx="0.8" dy="0.3" layer="1" rot="R270"/>
+<smd name="22" x="0" y="1.775" dx="0.8" dy="0.3" layer="1" rot="R270"/>
+<smd name="23" x="-0.5" y="1.775" dx="0.8" dy="0.3" layer="1" rot="R270"/>
+<smd name="24" x="-1" y="1.775" dx="0.8" dy="0.3" layer="1" rot="R270"/>
 </package>
 </packages>
 <symbols>
@@ -208,9 +208,10 @@
 <pin name="SA0/MISO" x="20.32" y="6.35" length="middle" direction="pas" rot="R180"/>
 <pin name="I2C_B/SPI" x="-20.32" y="-6.35" length="middle" direction="pas"/>
 <pin name="GND" x="20.32" y="-8.89" length="middle" direction="pas" rot="R180"/>
-<pin name="VREGD" x="20.32" y="-6.35" length="middle" direction="pas" rot="R180"/>
+<pin name="VREGD" x="20.32" y="-3.81" length="middle" direction="pas" rot="R180"/>
 <pin name="INT2/PWR_CTRL" x="20.32" y="3.81" length="middle" direction="pas" rot="R180"/>
 <pin name="RST_B" x="-20.32" y="-8.89" length="middle" direction="pas"/>
+<pin name="RSVD_GND" x="20.32" y="-6.35" length="middle" direction="pas" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -228,11 +229,12 @@
 <devices>
 <device name="" package="24-TFQFN">
 <connects>
-<connect gate="G$1" pin="GND" pad="1 5 6 7 9 10 14 19 20 21 22 23 24"/>
+<connect gate="G$1" pin="GND" pad="1 5 14 19" route="any"/>
 <connect gate="G$1" pin="I2C_B/SPI" pad="8"/>
 <connect gate="G$1" pin="INT1" pad="3"/>
 <connect gate="G$1" pin="INT2/PWR_CTRL" pad="2"/>
 <connect gate="G$1" pin="RST_B" pad="4"/>
+<connect gate="G$1" pin="RSVD_GND" pad="6 7 9 10 20 21 22 23 24"/>
 <connect gate="G$1" pin="SA0/MISO" pad="13"/>
 <connect gate="G$1" pin="SCL/SCLK" pad="11"/>
 <connect gate="G$1" pin="SDA/MOSI/SPI_DATA" pad="12"/>
