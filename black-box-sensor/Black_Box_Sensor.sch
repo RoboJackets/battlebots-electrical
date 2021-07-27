@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.1">
+<eagle version="9.6.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -696,6 +696,13 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pin name="GND" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
 <text x="0" y="-0.254" size="1.778" layer="96" align="top-center">&gt;VALUE</text>
 </symbol>
+<symbol name="3.3V" urn="urn:adsk.eagle:symbol:39411/1" library_version="1">
+<description>&lt;h3&gt;3.3V Voltage Supply&lt;/h3&gt;</description>
+<wire x1="0.762" y1="1.27" x2="0" y2="2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="-0.762" y2="1.27" width="0.254" layer="94"/>
+<pin name="3.3V" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
+<text x="0" y="2.794" size="1.778" layer="96" align="bottom-center">&gt;VALUE</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="GND" urn="urn:adsk.eagle:component:39439/1" prefix="GND" library_version="1">
@@ -703,6 +710,20 @@ You are welcome to use this library for commercial purposes. For attribution, we
 &lt;p&gt;Generic signal ground supply symbol.&lt;/p&gt;</description>
 <gates>
 <gate name="1" symbol="DGND" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="3.3V" urn="urn:adsk.eagle:component:39435/1" prefix="SUPPLY" library_version="1">
+<description>&lt;h3&gt;3.3V Supply Symbol&lt;/h3&gt;
+&lt;p&gt;Power supply symbol for a specifically-stated 3.3V source.&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="3.3V" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
@@ -5095,6 +5116,51 @@ Source: AVX .. aphvc.pdf</description>
 <part name="GND2" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
 <part name="SUPPLY2" library="RoboJackets-Supplies" deviceset="VBATT" device=""/>
 <part name="SUPPLY3" library="RoboJackets-Supplies" deviceset="+3.3V" device=""/>
+<part name="SUPPLY4" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="3.3V" device=""/>
+<part name="GND3" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
+<part name="GND4" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
+<part name="GND5" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
+<part name="C5" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="10uF">
+<spice>
+<pinmapping spiceprefix="C">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+</part>
+<part name="SUPPLY5" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="3.3V" device=""/>
+<part name="GND6" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
+<part name="C6" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="100nF">
+<spice>
+<pinmapping spiceprefix="C">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+</part>
+<part name="SUPPLY6" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="3.3V" device=""/>
+<part name="SUPPLY7" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="3.3V" device=""/>
+<part name="C7" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603K" package3d_urn="urn:adsk.eagle:package:23680/2" value="1uF"/>
+<part name="C11" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603K" package3d_urn="urn:adsk.eagle:package:23680/2" value="0.1uF"/>
+<part name="C12" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603K" package3d_urn="urn:adsk.eagle:package:23680/2" value="0.1uF"/>
+<part name="GND7" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
+<part name="GND8" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
+<part name="C3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF">
+<spice>
+<pinmapping spiceprefix="C">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+</part>
+<part name="C4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF">
+<spice>
+<pinmapping spiceprefix="C">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+</part>
 </parts>
 <sheets>
 <sheet>
@@ -5148,6 +5214,64 @@ Source: AVX .. aphvc.pdf</description>
 <instance part="SUPPLY3" gate="P" x="111.76" y="119.38" smashed="yes">
 <attribute name="VALUE" x="109.855" y="122.555" size="1.778" layer="96"/>
 </instance>
+<instance part="SUPPLY4" gate="G$1" x="25.4" y="99.06" smashed="yes">
+<attribute name="VALUE" x="25.4" y="101.854" size="1.778" layer="96" align="bottom-center"/>
+</instance>
+<instance part="GND3" gate="1" x="-7.62" y="83.82" smashed="yes">
+<attribute name="VALUE" x="-7.62" y="83.566" size="1.778" layer="96" align="top-center"/>
+</instance>
+<instance part="GND4" gate="1" x="7.62" y="83.82" smashed="yes">
+<attribute name="VALUE" x="7.62" y="83.566" size="1.778" layer="96" align="top-center"/>
+</instance>
+<instance part="GND5" gate="1" x="73.66" y="68.58" smashed="yes">
+<attribute name="VALUE" x="73.66" y="68.326" size="1.778" layer="96" align="top-center"/>
+</instance>
+<instance part="C5" gate="G$1" x="17.78" y="91.44" smashed="yes">
+<attribute name="NAME" x="18.796" y="92.075" size="1.778" layer="95"/>
+<attribute name="VALUE" x="18.796" y="87.249" size="1.778" layer="96"/>
+</instance>
+<instance part="SUPPLY5" gate="G$1" x="20.32" y="99.06" smashed="yes">
+<attribute name="VALUE" x="20.32" y="101.854" size="1.778" layer="96" align="bottom-center"/>
+</instance>
+<instance part="GND6" gate="1" x="63.5" y="-7.62" smashed="yes">
+<attribute name="VALUE" x="63.5" y="-7.874" size="1.778" layer="96" align="top-center"/>
+</instance>
+<instance part="C6" gate="G$1" x="68.58" y="1.27" smashed="yes">
+<attribute name="NAME" x="69.596" y="1.905" size="1.778" layer="95"/>
+<attribute name="VALUE" x="69.596" y="-2.921" size="1.778" layer="96"/>
+</instance>
+<instance part="SUPPLY6" gate="G$1" x="22.86" y="20.32" smashed="yes">
+<attribute name="VALUE" x="22.86" y="23.114" size="1.778" layer="96" align="bottom-center"/>
+</instance>
+<instance part="SUPPLY7" gate="G$1" x="15.24" y="20.32" smashed="yes">
+<attribute name="VALUE" x="15.24" y="23.114" size="1.778" layer="96" align="bottom-center"/>
+</instance>
+<instance part="C7" gate="G$1" x="-15.24" y="11.43" smashed="yes">
+<attribute name="NAME" x="-14.224" y="12.065" size="1.778" layer="95"/>
+<attribute name="VALUE" x="-14.224" y="7.239" size="1.778" layer="96"/>
+</instance>
+<instance part="C11" gate="G$1" x="-5.08" y="11.43" smashed="yes">
+<attribute name="NAME" x="-4.064" y="12.065" size="1.778" layer="95"/>
+<attribute name="VALUE" x="-4.064" y="7.239" size="1.778" layer="96"/>
+</instance>
+<instance part="C12" gate="G$1" x="2.54" y="11.43" smashed="yes">
+<attribute name="NAME" x="3.556" y="12.065" size="1.778" layer="95"/>
+<attribute name="VALUE" x="3.556" y="7.239" size="1.778" layer="96"/>
+</instance>
+<instance part="GND7" gate="1" x="-15.24" y="2.54" smashed="yes">
+<attribute name="VALUE" x="-15.24" y="2.286" size="1.778" layer="96" align="top-center"/>
+</instance>
+<instance part="GND8" gate="1" x="2.54" y="2.54" smashed="yes">
+<attribute name="VALUE" x="2.54" y="2.286" size="1.778" layer="96" align="top-center"/>
+</instance>
+<instance part="C3" gate="G$1" x="7.62" y="91.44" smashed="yes">
+<attribute name="NAME" x="8.636" y="92.075" size="1.778" layer="95"/>
+<attribute name="VALUE" x="8.636" y="87.249" size="1.778" layer="96"/>
+</instance>
+<instance part="C4" gate="G$1" x="-7.62" y="91.44" smashed="yes">
+<attribute name="NAME" x="-6.604" y="92.075" size="1.778" layer="95"/>
+<attribute name="VALUE" x="-6.604" y="87.249" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -5181,6 +5305,50 @@ Source: AVX .. aphvc.pdf</description>
 <pinref part="GND2" gate="1" pin="GND"/>
 <pinref part="C2" gate="G$1" pin="2"/>
 </segment>
+<segment>
+<pinref part="U1" gate="ADXL375BCCZ-RL7" pin="GND"/>
+<pinref part="GND5" gate="1" pin="GND"/>
+<wire x1="71.12" y1="71.12" x2="73.66" y2="71.12" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND4" gate="1" pin="GND"/>
+<pinref part="C5" gate="G$1" pin="2"/>
+<wire x1="17.78" y1="86.36" x2="7.62" y2="86.36" width="0.1524" layer="91"/>
+<pinref part="C3" gate="G$1" pin="2"/>
+<junction x="7.62" y="86.36"/>
+<pinref part="U1" gate="ADXL375BCCZ-RL7" pin="VS"/>
+<wire x1="17.78" y1="86.36" x2="25.4" y2="86.36" width="0.1524" layer="91"/>
+<junction x="17.78" y="86.36"/>
+</segment>
+<segment>
+<pinref part="GND3" gate="1" pin="GND"/>
+<pinref part="C4" gate="G$1" pin="2"/>
+</segment>
+<segment>
+<pinref part="U4" gate="G$1" pin="GND"/>
+<pinref part="GND6" gate="1" pin="GND"/>
+<pinref part="U4" gate="G$1" pin="RSVD_GND"/>
+<wire x1="63.5" y1="1.27" x2="63.5" y2="-1.27" width="0.1524" layer="91"/>
+<junction x="63.5" y="-5.08"/>
+<pinref part="C6" gate="G$1" pin="2"/>
+<wire x1="63.5" y1="-1.27" x2="63.5" y2="-5.08" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="-3.81" x2="68.58" y2="-5.08" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="-5.08" x2="63.5" y2="-5.08" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="C7" gate="G$1" pin="2"/>
+<pinref part="GND7" gate="1" pin="GND"/>
+<wire x1="-15.24" y1="5.08" x2="-15.24" y2="6.35" width="0.1524" layer="91"/>
+<pinref part="C11" gate="G$1" pin="2"/>
+<wire x1="-15.24" y1="5.08" x2="-5.08" y2="5.08" width="0.1524" layer="91"/>
+<wire x1="-5.08" y1="5.08" x2="-5.08" y2="6.35" width="0.1524" layer="91"/>
+<junction x="-15.24" y="5.08"/>
+</segment>
+<segment>
+<pinref part="GND8" gate="1" pin="GND"/>
+<pinref part="C12" gate="G$1" pin="2"/>
+<wire x1="2.54" y1="5.08" x2="2.54" y2="6.35" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="+3.3V" class="0">
 <segment>
@@ -5190,6 +5358,56 @@ Source: AVX .. aphvc.pdf</description>
 <wire x1="104.14" y1="116.84" x2="111.76" y2="116.84" width="0.1524" layer="91"/>
 <junction x="104.14" y="116.84"/>
 <pinref part="SUPPLY3" gate="P" pin="+3.3V"/>
+</segment>
+</net>
+<net name="3.3V" class="0">
+<segment>
+<pinref part="U1" gate="ADXL375BCCZ-RL7" pin="VDDI/O"/>
+<wire x1="25.4" y1="91.44" x2="25.4" y2="96.52" width="0.1524" layer="91"/>
+<pinref part="C4" gate="G$1" pin="1"/>
+<wire x1="25.4" y1="96.52" x2="-7.62" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="-7.62" y1="96.52" x2="-7.62" y2="93.98" width="0.1524" layer="91"/>
+<pinref part="SUPPLY4" gate="G$1" pin="3.3V"/>
+<wire x1="25.4" y1="96.52" x2="25.4" y2="99.06" width="0.1524" layer="91"/>
+<junction x="25.4" y="96.52"/>
+</segment>
+<segment>
+<pinref part="C11" gate="G$1" pin="1"/>
+<pinref part="C7" gate="G$1" pin="1"/>
+<wire x1="-15.24" y1="13.97" x2="-5.08" y2="13.97" width="0.1524" layer="91"/>
+<pinref part="U4" gate="G$1" pin="VDD"/>
+<wire x1="22.86" y1="16.51" x2="-15.24" y2="16.51" width="0.1524" layer="91"/>
+<wire x1="-15.24" y1="16.51" x2="-15.24" y2="13.97" width="0.1524" layer="91"/>
+<junction x="-15.24" y="13.97"/>
+<pinref part="SUPPLY6" gate="G$1" pin="3.3V"/>
+<wire x1="22.86" y1="16.51" x2="22.86" y2="20.32" width="0.1524" layer="91"/>
+<junction x="22.86" y="16.51"/>
+</segment>
+</net>
+<net name="N$1" class="0">
+<segment>
+<pinref part="U4" gate="G$1" pin="VREGD"/>
+<pinref part="C6" gate="G$1" pin="1"/>
+<wire x1="63.5" y1="3.81" x2="68.58" y2="3.81" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$2" class="0">
+<segment>
+<pinref part="C5" gate="G$1" pin="1"/>
+<pinref part="C3" gate="G$1" pin="1"/>
+<wire x1="7.62" y1="93.98" x2="17.78" y2="93.98" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$3" class="0">
+<segment>
+<pinref part="U4" gate="G$1" pin="VDDIO"/>
+<pinref part="C12" gate="G$1" pin="1"/>
+<wire x1="22.86" y1="13.97" x2="10.16" y2="13.97" width="0.1524" layer="91"/>
+<wire x1="10.16" y1="13.97" x2="2.54" y2="13.97" width="0.1524" layer="91"/>
+<pinref part="U4" gate="G$1" pin="I2C_B/SPI"/>
+<wire x1="22.86" y1="1.27" x2="10.16" y2="1.27" width="0.1524" layer="91"/>
+<wire x1="10.16" y1="1.27" x2="10.16" y2="13.97" width="0.1524" layer="91"/>
+<junction x="10.16" y="13.97"/>
 </segment>
 </net>
 </nets>
