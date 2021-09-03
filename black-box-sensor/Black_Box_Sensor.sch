@@ -554,6 +554,31 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <text x="-2" y="2.4" size="1" layer="25" font="vector">&gt;NAME</text>
 <text x="-2" y="-2.4" size="1" layer="27" font="vector" align="top-left">&gt;VALUE</text>
 </package>
+<package name="CONN_B4B-PH-SM4-TB_JST">
+<smd name="1" x="3" y="1.2552" dx="0.9906" dy="5.5118" layer="1"/>
+<smd name="2" x="1" y="1.2552" dx="0.9906" dy="5.5118" layer="1"/>
+<smd name="3" x="-1" y="1.2552" dx="0.9906" dy="5.5118" layer="1"/>
+<smd name="4" x="-3" y="1.2552" dx="0.9906" dy="5.5118" layer="1"/>
+<smd name="5" x="-5.4" y="-0.9948" dx="1.6002" dy="2.9972" layer="1"/>
+<smd name="6" x="5.4" y="-0.9948" dx="1.6002" dy="2.9972" layer="1"/>
+<wire x1="-6.096" y1="-3.6322" x2="6.096" y2="-3.6322" width="0.1524" layer="21"/>
+<wire x1="6.096" y1="-3.6322" x2="6.096" y2="-2.8194" width="0.1524" layer="21"/>
+<wire x1="6.096" y1="3.6322" x2="3.8354" y2="3.6322" width="0.1524" layer="21"/>
+<wire x1="-6.096" y1="3.6322" x2="-6.096" y2="0.8382" width="0.1524" layer="21"/>
+<wire x1="2.1844" y1="3.6322" x2="1.8288" y2="3.6322" width="0.1524" layer="21"/>
+<wire x1="0.1778" y1="3.6322" x2="-0.1778" y2="3.6322" width="0.1524" layer="21"/>
+<wire x1="-1.8288" y1="3.6322" x2="-2.1844" y2="3.6322" width="0.1524" layer="21"/>
+<wire x1="-3.8354" y1="3.6322" x2="-6.096" y2="3.6322" width="0.1524" layer="21"/>
+<wire x1="-6.096" y1="-2.8194" x2="-6.096" y2="-3.6322" width="0.1524" layer="21"/>
+<wire x1="6.096" y1="0.8382" x2="6.096" y2="3.6322" width="0.1524" layer="21"/>
+<wire x1="-5.969" y1="-3.5052" x2="5.969" y2="-3.5052" width="0.1524" layer="51"/>
+<wire x1="5.969" y1="-3.5052" x2="5.969" y2="3.5052" width="0.1524" layer="51"/>
+<wire x1="5.969" y1="3.5052" x2="-5.969" y2="3.5052" width="0.1524" layer="51"/>
+<wire x1="-5.969" y1="3.5052" x2="-5.969" y2="-3.5052" width="0.1524" layer="51"/>
+<text x="-5.8166" y="5.6896" size="1" layer="25" font="vector" rot="SR0">&gt;NAME</text>
+<text x="-5.5372" y="-7.0104" size="1" layer="27" font="vector" rot="SR0">&gt;VALUE</text>
+<circle x="4" y="5" radius="0.2" width="0.2" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="ADXL375BCCZ-RL7">
@@ -788,6 +813,31 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <wire x1="2.54" y1="-15.24" x2="2.54" y2="-12.7" width="0.254" layer="94"/>
 <text x="5.08" y="13.716" size="1.27" layer="97">REF1</text>
 <text x="5.08" y="-14.732" size="1.27" layer="97">REF2</text>
+</symbol>
+<symbol name="CONN_004P_000C_1">
+<pin name="1" x="0" y="0" length="middle" direction="pas"/>
+<pin name="2" x="0" y="-2.54" length="middle" direction="pas"/>
+<pin name="3" x="0" y="-5.08" length="middle" direction="pas"/>
+<pin name="4" x="0" y="-7.62" length="middle" direction="pas"/>
+<wire x1="10.16" y1="0" x2="5.08" y2="0" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="-2.54" x2="5.08" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="-5.08" x2="5.08" y2="-5.08" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="-7.62" x2="5.08" y2="-7.62" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="0" x2="8.89" y2="0.8382" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="-2.54" x2="8.89" y2="-1.7018" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="-5.08" x2="8.89" y2="-4.2418" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="-7.62" x2="8.89" y2="-6.7818" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="0" x2="8.89" y2="-0.8382" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="-2.54" x2="8.89" y2="-3.3782" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="-5.08" x2="8.89" y2="-5.9182" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="-7.62" x2="8.89" y2="-8.4582" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="2.54" x2="5.08" y2="-12.7" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="-12.7" x2="12.7" y2="-12.7" width="0.1524" layer="94"/>
+<wire x1="12.7" y1="-12.7" x2="12.7" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="12.7" y1="2.54" x2="5.08" y2="2.54" width="0.1524" layer="94"/>
+<text x="4.1656" y="5.3086" size="2.0828" layer="95" ratio="6" rot="SR0">&gt;NAME</text>
+<text x="3.81" y="-16.256" size="2.0828" layer="96" ratio="6">&gt;VALUE</text>
+<pin name="ANCHOR" x="0" y="-10.16" length="middle" direction="pas"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -1063,6 +1113,30 @@ USB - mini B USB 2.0 Receptacle Connector 5 Position, Right Angle
 <technologies>
 <technology name="">
 <attribute name="DKPN" value="AD8426ACPZ-WP-ND" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="B4B-PH-SM4-TBT(LF)(SN)" prefix="J">
+<description>Connector Header Surface Mount 4 position 0.079" (2.00mm)
+&lt;p&gt; &lt;/p&gt;
+&lt;a href = "https://www.digikey.com/en/products/detail/jst-sales-america-inc/B4B-PH-SM4-TBT-LF-SN/2217689?s=N4IgjCBcoBw1oDGUBmBDANgZwKYBoQB7KAbRACYAGAZjADYB2EAXQIAcAXKEAZQ4CcAlgDsA5iAC%2BBMAE4YMhCGSR02fEVIhKLdl0i8BI8VJABacouUCAruuKQyAVhYSTFhyABWWDgAI2ABY6IHSKggAm3KZglBC63CAEAI4cAJ7ccSBpbDjcaFjIrkA"&gt; DigiKey &lt;/a&gt;</description>
+<gates>
+<gate name="A" symbol="CONN_004P_000C_1" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="CONN_B4B-PH-SM4-TB_JST">
+<connects>
+<connect gate="A" pin="1" pad="1" route="any"/>
+<connect gate="A" pin="2" pad="2"/>
+<connect gate="A" pin="3" pad="3"/>
+<connect gate="A" pin="4" pad="4"/>
+<connect gate="A" pin="ANCHOR" pad="5 6"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DKPN" value="455-2873-1-ND" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -9278,6 +9352,9 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <part name="R5" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="499"/>
 <part name="SUPPLY14" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
 <part name="GND21" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
+<part name="J3" library="BBS_Library" deviceset="B4B-PH-SM4-TBT(LF)(SN)" device=""/>
+<part name="SUPPLY15" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
+<part name="GND22" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -9540,6 +9617,16 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <instance part="GND21" gate="1" x="177.8" y="-60.96" smashed="yes">
 <attribute name="VALUE" x="177.8" y="-61.214" size="1.778" layer="96" align="top-center"/>
 </instance>
+<instance part="J3" gate="A" x="33.02" y="-35.56" smashed="yes">
+<attribute name="NAME" x="37.1856" y="-30.2514" size="2.0828" layer="95" ratio="6" rot="SR0"/>
+<attribute name="VALUE" x="36.83" y="-51.816" size="2.0828" layer="96" ratio="6"/>
+</instance>
+<instance part="SUPPLY15" gate="G$1" x="27.94" y="-30.48" smashed="yes">
+<attribute name="VALUE" x="27.94" y="-27.686" size="1.778" layer="96" align="bottom-center"/>
+</instance>
+<instance part="GND22" gate="1" x="27.94" y="-48.26" smashed="yes">
+<attribute name="VALUE" x="27.94" y="-48.514" size="1.778" layer="96" align="top-center"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -9720,6 +9807,15 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <pinref part="R4" gate="G$1" pin="1"/>
 <pinref part="GND21" gate="1" pin="GND"/>
 </segment>
+<segment>
+<pinref part="J3" gate="A" pin="ANCHOR"/>
+<pinref part="GND22" gate="1" pin="GND"/>
+<wire x1="33.02" y1="-45.72" x2="27.94" y2="-45.72" width="0.1524" layer="91"/>
+<pinref part="J3" gate="A" pin="4"/>
+<wire x1="33.02" y1="-43.18" x2="27.94" y2="-43.18" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="-43.18" x2="27.94" y2="-45.72" width="0.1524" layer="91"/>
+<junction x="27.94" y="-45.72"/>
+</segment>
 </net>
 <net name="+3.3V" class="0">
 <segment>
@@ -9869,6 +9965,12 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <pinref part="SUPPLY14" gate="G$1" pin="3.3V"/>
 <pinref part="R5" gate="G$1" pin="2"/>
 <wire x1="177.8" y1="-27.94" x2="177.8" y2="-30.48" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="SUPPLY15" gate="G$1" pin="3.3V"/>
+<wire x1="27.94" y1="-30.48" x2="27.94" y2="-35.56" width="0.1524" layer="91"/>
+<pinref part="J3" gate="A" pin="1"/>
+<wire x1="27.94" y1="-35.56" x2="33.02" y2="-35.56" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -10185,6 +10287,30 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <pinref part="U8" gate="G$1" pin="REFA"/>
 <wire x1="233.68" y1="-25.4" x2="238.76" y2="-25.4" width="0.1524" layer="91"/>
 <label x="238.76" y="-25.4" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="V+" class="0">
+<segment>
+<pinref part="J3" gate="A" pin="2"/>
+<wire x1="33.02" y1="-38.1" x2="27.94" y2="-38.1" width="0.1524" layer="91"/>
+<label x="27.94" y="-38.1" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U8" gate="G$1" pin="INA+"/>
+<wire x1="203.2" y1="-25.4" x2="198.12" y2="-25.4" width="0.1524" layer="91"/>
+<label x="198.12" y="-25.4" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="V-" class="0">
+<segment>
+<pinref part="J3" gate="A" pin="3"/>
+<wire x1="33.02" y1="-40.64" x2="27.94" y2="-40.64" width="0.1524" layer="91"/>
+<label x="27.94" y="-40.64" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U8" gate="G$1" pin="INA-"/>
+<wire x1="203.2" y1="-35.56" x2="198.12" y2="-35.56" width="0.1524" layer="91"/>
+<label x="198.12" y="-35.56" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 </nets>
