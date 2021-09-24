@@ -34,8 +34,8 @@
 *.drl
 *.gpi
 *.pls
-*.ger
-*.xln
+#*.ger
+#*.xln
 
 *.drd
 *.drd.*
