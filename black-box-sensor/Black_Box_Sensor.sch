@@ -11205,6 +11205,133 @@ Source: www.kingbright.com</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="adafruit" urn="urn:adsk.eagle:library:420">
+<packages>
+<package name="AVRISP" urn="urn:adsk.eagle:footprint:6240098/1" library_version="2">
+<wire x1="-2.54" y1="3.048" x2="-1.778" y2="3.81" width="0.127" layer="21"/>
+<wire x1="-1.778" y1="3.81" x2="1.778" y2="3.81" width="0.127" layer="21"/>
+<wire x1="1.778" y1="3.81" x2="2.54" y2="3.048" width="0.127" layer="21"/>
+<wire x1="2.54" y1="3.048" x2="2.54" y2="1.778" width="0.127" layer="21"/>
+<wire x1="2.54" y1="1.778" x2="2.032" y2="1.27" width="0.127" layer="21"/>
+<wire x1="2.032" y1="1.27" x2="2.54" y2="0.762" width="0.127" layer="21"/>
+<wire x1="2.54" y1="0.762" x2="2.54" y2="-0.762" width="0.127" layer="21"/>
+<wire x1="2.54" y1="-0.762" x2="2.032" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="2.032" y1="-1.27" x2="2.54" y2="-1.778" width="0.127" layer="21"/>
+<wire x1="2.54" y1="-1.778" x2="2.54" y2="-3.048" width="0.127" layer="21"/>
+<wire x1="2.54" y1="-3.048" x2="1.778" y2="-3.81" width="0.127" layer="21"/>
+<wire x1="1.778" y1="-3.81" x2="-1.778" y2="-3.81" width="0.127" layer="21"/>
+<wire x1="-1.778" y1="-3.81" x2="-2.54" y2="-3.048" width="0.127" layer="21"/>
+<wire x1="-2.54" y1="-3.048" x2="-2.54" y2="-1.778" width="0.127" layer="21"/>
+<wire x1="-2.54" y1="-1.778" x2="-2.032" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="-2.032" y1="-1.27" x2="-2.54" y2="-0.762" width="0.127" layer="21"/>
+<wire x1="-2.54" y1="-0.762" x2="-2.54" y2="0.762" width="0.127" layer="21"/>
+<wire x1="-2.54" y1="0.762" x2="-2.032" y2="1.27" width="0.127" layer="21"/>
+<wire x1="-2.032" y1="1.27" x2="-2.54" y2="1.778" width="0.127" layer="21"/>
+<wire x1="-2.54" y1="1.778" x2="-2.54" y2="3.048" width="0.127" layer="21"/>
+<pad name="3" x="-1.27" y="0" drill="0.9" diameter="1.6256"/>
+<pad name="4" x="1.27" y="0" drill="0.9" diameter="1.6256"/>
+<pad name="2" x="1.27" y="2.54" drill="0.9" diameter="1.6256"/>
+<pad name="1" x="-1.27" y="2.54" drill="0.9" diameter="1.6256"/>
+<pad name="5" x="-1.27" y="-2.54" drill="0.9" diameter="1.6256"/>
+<pad name="6" x="1.27" y="-2.54" drill="0.9" diameter="1.6256"/>
+<text x="-3.048" y="-3.048" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<text x="-3.048" y="3.556" size="1.016" layer="21" font="vector">1</text>
+</package>
+<package name="AVRISP-BOX" urn="urn:adsk.eagle:footprint:6240293/1" library_version="2">
+<pad name="3" x="-1.143" y="0" drill="0.9" diameter="1.6256"/>
+<pad name="4" x="1.143" y="0" drill="0.9" diameter="1.6256"/>
+<pad name="2" x="1.397" y="2.54" drill="0.9" diameter="1.6256"/>
+<pad name="1" x="-1.397" y="2.54" drill="0.9" diameter="1.6256"/>
+<pad name="5" x="-1.397" y="-2.54" drill="0.9" diameter="1.6256"/>
+<pad name="6" x="1.397" y="-2.54" drill="0.9" diameter="1.6256"/>
+<text x="-6.048" y="-2.948" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<wire x1="-4.4" y1="7.6" x2="4.4" y2="7.6" width="0.127" layer="21"/>
+<wire x1="4.4" y1="7.6" x2="4.4" y2="-7.6" width="0.127" layer="21"/>
+<wire x1="4.4" y1="-7.6" x2="-4.4" y2="-7.6" width="0.127" layer="21"/>
+<wire x1="-4.4" y1="-7.6" x2="-4.4" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="-4.4" y1="-1.5" x2="-4.4" y2="1.5" width="0.127" layer="21"/>
+<wire x1="-4.4" y1="1.5" x2="-4.4" y2="7.6" width="0.127" layer="21"/>
+<wire x1="-4.4" y1="1.5" x2="-3.3" y2="1.5" width="0.127" layer="21"/>
+<wire x1="-3.3" y1="1.5" x2="-3.3" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="-3.3" y1="-1.5" x2="-4.4" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="-3.2" y1="6.5" x2="3.2" y2="6.5" width="0.127" layer="21"/>
+<wire x1="3.2" y1="6.5" x2="3.2" y2="-6.5" width="0.127" layer="21"/>
+<wire x1="3.2" y1="-6.5" x2="-3.2" y2="-6.5" width="0.127" layer="21"/>
+<wire x1="-3.2" y1="-6.5" x2="-3.2" y2="6.5" width="0.127" layer="21"/>
+</package>
+</packages>
+<packages3d>
+<package3d name="AVRISP" urn="urn:adsk.eagle:package:6240744/1" type="box" library_version="2">
+<packageinstances>
+<packageinstance name="AVRISP"/>
+</packageinstances>
+</package3d>
+<package3d name="AVRISP-BOX" urn="urn:adsk.eagle:package:6240936/1" type="box" library_version="2">
+<packageinstances>
+<packageinstance name="AVRISP-BOX"/>
+</packageinstances>
+</package3d>
+</packages3d>
+<symbols>
+<symbol name="AVRISP" urn="urn:adsk.eagle:symbol:6239557/1" library_version="2">
+<wire x1="-7.62" y1="5.08" x2="10.16" y2="5.08" width="0.254" layer="94"/>
+<wire x1="10.16" y1="5.08" x2="10.16" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-5.08" x2="-7.62" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-5.08" x2="-7.62" y2="5.08" width="0.254" layer="94"/>
+<text x="-2.54" y="-7.62" size="1.778" layer="95">&gt;NAME</text>
+<pin name="MISO" x="-12.7" y="2.54" length="middle" direction="in"/>
+<pin name="SCK" x="-12.7" y="0" length="middle" direction="out"/>
+<pin name="RST" x="-12.7" y="-2.54" length="middle" direction="out"/>
+<pin name="GND" x="15.24" y="-2.54" length="middle" direction="pwr" rot="R180"/>
+<pin name="MOSI" x="15.24" y="0" length="middle" direction="out" rot="R180"/>
+<pin name="VCC" x="15.24" y="2.54" length="middle" direction="pwr" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="AVRISP" urn="urn:adsk.eagle:component:6241048/1" prefix="ISP" library_version="2">
+<description>&lt;b&gt;AVR ISP HEADER&lt;/b&gt;
+&lt;br&gt;
+Standard 6 pin header for AVR programming</description>
+<gates>
+<gate name="G$1" symbol="AVRISP" x="-2.54" y="0"/>
+</gates>
+<devices>
+<device name="-6" package="AVRISP">
+<connects>
+<connect gate="G$1" pin="GND" pad="6"/>
+<connect gate="G$1" pin="MISO" pad="1"/>
+<connect gate="G$1" pin="MOSI" pad="4"/>
+<connect gate="G$1" pin="RST" pad="5"/>
+<connect gate="G$1" pin="SCK" pad="3"/>
+<connect gate="G$1" pin="VCC" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:6240744/1"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-BOX" package="AVRISP-BOX">
+<connects>
+<connect gate="G$1" pin="GND" pad="6"/>
+<connect gate="G$1" pin="MISO" pad="1"/>
+<connect gate="G$1" pin="MOSI" pad="4"/>
+<connect gate="G$1" pin="RST" pad="5"/>
+<connect gate="G$1" pin="SCK" pad="3"/>
+<connect gate="G$1" pin="VCC" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:6240936/1"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -11423,11 +11550,11 @@ Source: www.kingbright.com</description>
 <part name="J3" library="BBS_Library" deviceset="B4B-PH-SM4-TBT(LF)(SN)" device=""/>
 <part name="SUPPLY15" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
 <part name="GND22" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
-<part name="LED1" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="CHIP-LED0805" package3d_urn="urn:adsk.eagle:package:15818/2">
+<part name="LED1" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="CHIP-LED0805" package3d_urn="urn:adsk.eagle:package:15818/2" value="GREEN">
 <attribute name="DJKPN" value="3372-0805YGBD008S01TR-ND"/>
 </part>
 <part name="SUPPLY16" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
-<part name="LED2" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="KA-3528ASYC" package3d_urn="urn:adsk.eagle:package:15831/1">
+<part name="LED2" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="KA-3528ASYC" package3d_urn="urn:adsk.eagle:package:15831/1" value="PINK">
 <attribute name="DJKPN" value="754-1534-1-ND"/>
 </part>
 <part name="R3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="100">
@@ -11454,6 +11581,9 @@ Source: www.kingbright.com</description>
 <part name="SUPPLY3" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
 <part name="SUPPLY17" library="RoboJackets-Supplies" deviceset="VBATT" device=""/>
 <part name="GND25" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
+<part name="ISP1" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="AVRISP" device="-6" package3d_urn="urn:adsk.eagle:package:6240744/1"/>
+<part name="SUPPLY18" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
+<part name="GND26" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -11764,6 +11894,15 @@ Source: www.kingbright.com</description>
 </instance>
 <instance part="GND25" gate="1" x="132.08" y="101.6" smashed="yes">
 <attribute name="VALUE" x="132.08" y="101.346" size="1.778" layer="96" align="top-center"/>
+</instance>
+<instance part="ISP1" gate="G$1" x="-48.26" y="5.08" smashed="yes">
+<attribute name="NAME" x="-50.8" y="-2.54" size="1.778" layer="95"/>
+</instance>
+<instance part="SUPPLY18" gate="G$1" x="-27.94" y="7.62" smashed="yes">
+<attribute name="VALUE" x="-27.94" y="10.414" size="1.778" layer="96" align="bottom-center"/>
+</instance>
+<instance part="GND26" gate="1" x="203.2" y="-60.96" smashed="yes">
+<attribute name="VALUE" x="203.2" y="-61.214" size="1.778" layer="96" align="top-center"/>
 </instance>
 </instances>
 <busses>
@@ -12432,16 +12571,16 @@ Source: www.kingbright.com</description>
 <pinref part="U8" gate="G$1" pin="INB-"/>
 <wire x1="203.2" y1="-55.88" x2="193.04" y2="-55.88" width="0.1524" layer="91"/>
 <wire x1="193.04" y1="-55.88" x2="193.04" y2="-68.58" width="0.1524" layer="91"/>
-<wire x1="193.04" y1="-68.58" x2="243.84" y2="-68.58" width="0.1524" layer="91"/>
-<wire x1="243.84" y1="-68.58" x2="243.84" y2="-50.8" width="0.1524" layer="91"/>
-<pinref part="U8" gate="G$1" pin="OUTB"/>
-<wire x1="243.84" y1="-50.8" x2="233.68" y2="-50.8" width="0.1524" layer="91"/>
-<label x="243.84" y="-50.8" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="U8" gate="G$1" pin="REFA"/>
 <wire x1="233.68" y1="-25.4" x2="238.76" y2="-25.4" width="0.1524" layer="91"/>
 <label x="238.76" y="-25.4" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U8" gate="G$1" pin="OUTB"/>
+<wire x1="243.84" y1="-50.8" x2="233.68" y2="-50.8" width="0.1524" layer="91"/>
+<label x="243.84" y="-50.8" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="V+" class="0">
