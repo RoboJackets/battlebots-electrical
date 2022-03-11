@@ -12311,6 +12311,9 @@ Example: SX-32S</description>
 <part name="P+3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="GND27" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="U$1" library="BBS_Library" deviceset="TXU0304" device=""/>
+<part name="GND28" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
+<part name="SUPPLY9" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
+<part name="P+4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -12601,8 +12604,8 @@ Example: SX-32S</description>
 <instance part="ISP1" gate="G$1" x="-45.72" y="10.16" smashed="yes">
 <attribute name="NAME" x="-48.26" y="2.54" size="1.778" layer="95"/>
 </instance>
-<instance part="GND26" gate="1" x="203.2" y="-60.96" smashed="yes">
-<attribute name="VALUE" x="203.2" y="-61.214" size="1.778" layer="96" align="top-center"/>
+<instance part="GND26" gate="1" x="200.66" y="-60.96" smashed="yes">
+<attribute name="VALUE" x="200.66" y="-61.214" size="1.778" layer="96" align="top-center"/>
 </instance>
 <instance part="Y1" gate="G$1" x="162.56" y="35.56" smashed="yes" rot="R270">
 <attribute name="NAME" x="164.592" y="35.56" size="1.778" layer="95" font="vector" rot="R270" align="bottom-center"/>
@@ -12635,6 +12638,15 @@ Example: SX-32S</description>
 <attribute name="VALUE" x="-27.94" y="2.286" size="1.778" layer="96" align="top-center"/>
 </instance>
 <instance part="U$1" gate="G$1" x="-68.58" y="-33.02" smashed="yes"/>
+<instance part="GND28" gate="1" x="-50.8" y="-50.8" smashed="yes">
+<attribute name="VALUE" x="-50.8" y="-51.054" size="1.778" layer="96" align="top-center"/>
+</instance>
+<instance part="SUPPLY9" gate="G$1" x="-86.36" y="-17.78" smashed="yes">
+<attribute name="VALUE" x="-86.36" y="-14.986" size="1.778" layer="96" align="bottom-center"/>
+</instance>
+<instance part="P+4" gate="1" x="-50.8" y="-15.24" smashed="yes">
+<attribute name="VALUE" x="-50.8" y="-15.24" size="1.778" layer="96" rot="R90"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -12854,6 +12866,12 @@ Example: SX-32S</description>
 <wire x1="-27.94" y1="7.62" x2="-27.94" y2="5.08" width="0.1524" layer="91"/>
 <pinref part="GND27" gate="1" pin="GND"/>
 </segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="GND"/>
+<wire x1="-53.34" y1="-45.72" x2="-50.8" y2="-45.72" width="0.1524" layer="91"/>
+<wire x1="-50.8" y1="-45.72" x2="-50.8" y2="-48.26" width="0.1524" layer="91"/>
+<pinref part="GND28" gate="1" pin="GND"/>
+</segment>
 </net>
 <net name="3.3V" class="0">
 <segment>
@@ -12906,9 +12924,8 @@ Example: SX-32S</description>
 </segment>
 <segment>
 <pinref part="U2" gate="ADXL375BCCZ-RL7" pin="VDDI/O"/>
-<wire x1="22.86" y1="55.88" x2="22.86" y2="58.42" width="0.1524" layer="91"/>
 <pinref part="C8" gate="G$1" pin="1"/>
-<wire x1="22.86" y1="58.42" x2="22.86" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="55.88" x2="22.86" y2="60.96" width="0.1524" layer="91"/>
 <wire x1="22.86" y1="60.96" x2="12.7" y2="60.96" width="0.1524" layer="91"/>
 <pinref part="C7" gate="G$1" pin="1"/>
 <wire x1="5.08" y1="60.96" x2="12.7" y2="60.96" width="0.1524" layer="91"/>
@@ -12962,6 +12979,16 @@ Example: SX-32S</description>
 <junction x="104.14" y="116.84"/>
 <pinref part="SUPPLY3" gate="G$1" pin="3.3V"/>
 </segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="VCCA"/>
+<wire x1="-83.82" y1="-20.32" x2="-86.36" y2="-20.32" width="0.1524" layer="91"/>
+<wire x1="-86.36" y1="-20.32" x2="-86.36" y2="-17.78" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="OE"/>
+<wire x1="-83.82" y1="-45.72" x2="-86.36" y2="-45.72" width="0.1524" layer="91"/>
+<wire x1="-86.36" y1="-45.72" x2="-86.36" y2="-20.32" width="0.1524" layer="91"/>
+<junction x="-86.36" y="-20.32"/>
+<pinref part="SUPPLY9" gate="G$1" pin="3.3V"/>
+</segment>
 </net>
 <net name="N$1" class="0">
 <segment>
@@ -13008,6 +13035,11 @@ Example: SX-32S</description>
 <wire x1="81.28" y1="-38.1" x2="76.2" y2="-38.1" width="0.1524" layer="91"/>
 <label x="76.2" y="-38.1" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="A1"/>
+<wire x1="-83.82" y1="-25.4" x2="-88.9" y2="-25.4" width="0.1524" layer="91"/>
+<label x="-88.9" y="-25.4" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
 </net>
 <net name="MOSI1" class="0">
 <segment>
@@ -13042,6 +13074,11 @@ Example: SX-32S</description>
 <wire x1="116.84" y1="-38.1" x2="121.92" y2="-38.1" width="0.1524" layer="91"/>
 <label x="121.92" y="-38.1" size="1.27" layer="95" xref="yes"/>
 </segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="A2"/>
+<wire x1="-83.82" y1="-30.48" x2="-88.9" y2="-30.48" width="0.1524" layer="91"/>
+<label x="-88.9" y="-30.48" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
 </net>
 <net name="MOSI" class="0">
 <segment>
@@ -13063,6 +13100,11 @@ Example: SX-32S</description>
 <pinref part="J1" gate="G$1" pin="CMD"/>
 <wire x1="81.28" y1="-43.18" x2="76.2" y2="-43.18" width="0.1524" layer="91"/>
 <label x="76.2" y="-43.18" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="A4Y"/>
+<wire x1="-83.82" y1="-40.64" x2="-88.9" y2="-40.64" width="0.1524" layer="91"/>
+<label x="-88.9" y="-40.64" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="CS2" class="0">
@@ -13238,8 +13280,7 @@ Example: SX-32S</description>
 <net name="VREF/2" class="0">
 <segment>
 <pinref part="U8" gate="G$1" pin="INB-"/>
-<wire x1="203.2" y1="-55.88" x2="193.04" y2="-55.88" width="0.1524" layer="91"/>
-<wire x1="193.04" y1="-55.88" x2="193.04" y2="-68.58" width="0.1524" layer="91"/>
+<wire x1="203.2" y1="-55.88" x2="200.66" y2="-55.88" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U8" gate="G$1" pin="REFA"/>
@@ -13375,6 +13416,12 @@ Example: SX-32S</description>
 <pinref part="P+3" gate="1" pin="+5V"/>
 <wire x1="-27.94" y1="12.7" x2="-27.94" y2="15.24" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="VCCB"/>
+<wire x1="-53.34" y1="-20.32" x2="-50.8" y2="-20.32" width="0.1524" layer="91"/>
+<wire x1="-50.8" y1="-20.32" x2="-50.8" y2="-17.78" width="0.1524" layer="91"/>
+<pinref part="P+4" gate="1" pin="+5V"/>
+</segment>
 </net>
 <net name="MISO_5V" class="0">
 <segment>
@@ -13387,12 +13434,10 @@ Example: SX-32S</description>
 <wire x1="223.52" y1="40.64" x2="226.06" y2="40.64" width="0.1524" layer="91"/>
 <label x="226.06" y="40.64" size="1.27" layer="95" xref="yes"/>
 </segment>
-</net>
-<net name="SCK_5V" class="0">
 <segment>
-<pinref part="ISP1" gate="G$1" pin="SCK"/>
-<wire x1="-58.42" y1="10.16" x2="-60.96" y2="10.16" width="0.1524" layer="91"/>
-<label x="-60.96" y="10.16" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="U$1" gate="G$1" pin="B2Y"/>
+<wire x1="-53.34" y1="-30.48" x2="-48.26" y2="-30.48" width="0.1524" layer="91"/>
+<label x="-48.26" y="-30.48" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="RST_5V" class="0">
@@ -13413,12 +13458,39 @@ Example: SX-32S</description>
 <label x="226.06" y="38.1" size="1.27" layer="95" xref="yes"/>
 <wire x1="223.52" y1="38.1" x2="226.06" y2="38.1" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="B4"/>
+<wire x1="-53.34" y1="-40.64" x2="-48.26" y2="-40.64" width="0.1524" layer="91"/>
+<label x="-48.26" y="-40.64" size="1.27" layer="95" xref="yes"/>
+</segment>
 </net>
 <net name="SCLK_5V" class="0">
 <segment>
 <pinref part="U3" gate="G$1" pin="PB1(SCK)"/>
 <wire x1="223.52" y1="35.56" x2="226.06" y2="35.56" width="0.1524" layer="91"/>
 <label x="226.06" y="35.56" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="ISP1" gate="G$1" pin="SCK"/>
+<wire x1="-58.42" y1="10.16" x2="-60.96" y2="10.16" width="0.1524" layer="91"/>
+<label x="-60.96" y="10.16" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="B1Y"/>
+<wire x1="-53.34" y1="-25.4" x2="-48.26" y2="-25.4" width="0.1524" layer="91"/>
+<label x="-48.26" y="-25.4" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="N$10" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="B3Y"/>
+<wire x1="-53.34" y1="-35.56" x2="-48.26" y2="-35.56" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$13" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="A3"/>
+<wire x1="-83.82" y1="-35.56" x2="-88.9" y2="-35.56" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
