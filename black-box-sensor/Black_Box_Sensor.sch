@@ -12850,8 +12850,8 @@ Example: SX-32S</description>
 <instance part="P+1" gate="1" x="172.72" y="88.9" smashed="yes">
 <attribute name="VALUE" x="170.18" y="83.82" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="P+2" gate="1" x="157.48" y="73.66" smashed="yes">
-<attribute name="VALUE" x="154.94" y="68.58" size="1.778" layer="96" rot="R90"/>
+<instance part="P+2" gate="1" x="160.02" y="76.2" smashed="yes">
+<attribute name="VALUE" x="157.48" y="71.12" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="P+3" gate="1" x="-27.94" y="17.78" smashed="yes">
 <attribute name="VALUE" x="-27.94" y="17.78" size="1.778" layer="96" rot="R90"/>
@@ -13724,7 +13724,7 @@ Example: SX-32S</description>
 <wire x1="160.02" y1="68.58" x2="160.02" y2="63.5" width="0.1524" layer="91"/>
 <junction x="160.02" y="68.58"/>
 <junction x="160.02" y="63.5"/>
-<wire x1="157.48" y1="71.12" x2="160.02" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="73.66" x2="160.02" y2="71.12" width="0.1524" layer="91"/>
 <junction x="160.02" y="71.12"/>
 <pinref part="U3" gate="G$1" pin="UCAP"/>
 <wire x1="175.26" y1="48.26" x2="160.02" y2="48.26" width="0.1524" layer="91"/>
