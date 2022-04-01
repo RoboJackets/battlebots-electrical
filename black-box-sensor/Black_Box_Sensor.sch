@@ -12507,7 +12507,7 @@ Example: SX-32S</description>
 <part name="P+2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="P+3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="GND27" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
-<part name="U$1" library="BBS_Library" deviceset="TXU0304" device=""/>
+<part name="U9" library="BBS_Library" deviceset="TXU0304" device=""/>
 <part name="GND28" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="SUPPLY9" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
 <part name="P+4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
@@ -12859,7 +12859,7 @@ Example: SX-32S</description>
 <instance part="GND27" gate="1" x="-27.94" y="2.54" smashed="yes">
 <attribute name="VALUE" x="-27.94" y="2.286" size="1.778" layer="96" align="top-center"/>
 </instance>
-<instance part="U$1" gate="G$1" x="-68.58" y="-33.02" smashed="yes"/>
+<instance part="U9" gate="G$1" x="-68.58" y="-33.02" smashed="yes"/>
 <instance part="GND28" gate="1" x="-50.8" y="-50.8" smashed="yes">
 <attribute name="VALUE" x="-50.8" y="-51.054" size="1.778" layer="96" align="top-center"/>
 </instance>
@@ -13157,7 +13157,7 @@ Example: SX-32S</description>
 <pinref part="GND27" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="GND"/>
+<pinref part="U9" gate="G$1" pin="GND"/>
 <wire x1="-53.34" y1="-45.72" x2="-50.8" y2="-45.72" width="0.1524" layer="91"/>
 <wire x1="-50.8" y1="-45.72" x2="-50.8" y2="-48.26" width="0.1524" layer="91"/>
 <pinref part="GND28" gate="1" pin="GND"/>
@@ -13308,7 +13308,7 @@ Example: SX-32S</description>
 <pinref part="SUPPLY3" gate="G$1" pin="3.3V"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="VCCA"/>
+<pinref part="U9" gate="G$1" pin="VCCA"/>
 <wire x1="-83.82" y1="-20.32" x2="-86.36" y2="-20.32" width="0.1524" layer="91"/>
 <wire x1="-86.36" y1="-20.32" x2="-86.36" y2="-17.78" width="0.1524" layer="91"/>
 <pinref part="SUPPLY9" gate="G$1" pin="3.3V"/>
@@ -13364,7 +13364,7 @@ Example: SX-32S</description>
 <label x="71.12" y="-38.1" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="A1"/>
+<pinref part="U9" gate="G$1" pin="A1"/>
 <wire x1="-83.82" y1="-25.4" x2="-88.9" y2="-25.4" width="0.1524" layer="91"/>
 <label x="-88.9" y="-25.4" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
@@ -13403,7 +13403,7 @@ Example: SX-32S</description>
 <label x="116.84" y="-38.1" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="A2"/>
+<pinref part="U9" gate="G$1" pin="A2"/>
 <wire x1="-83.82" y1="-30.48" x2="-88.9" y2="-30.48" width="0.1524" layer="91"/>
 <label x="-88.9" y="-30.48" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
@@ -13430,7 +13430,7 @@ Example: SX-32S</description>
 <label x="71.12" y="-43.18" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="A4Y"/>
+<pinref part="U9" gate="G$1" pin="A4Y"/>
 <wire x1="-83.82" y1="-40.64" x2="-88.9" y2="-40.64" width="0.1524" layer="91"/>
 <label x="-88.9" y="-40.64" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
@@ -13753,7 +13753,7 @@ Example: SX-32S</description>
 <wire x1="-27.94" y1="12.7" x2="-27.94" y2="15.24" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="VCCB"/>
+<pinref part="U9" gate="G$1" pin="VCCB"/>
 <wire x1="-53.34" y1="-20.32" x2="-50.8" y2="-20.32" width="0.1524" layer="91"/>
 <wire x1="-50.8" y1="-20.32" x2="-50.8" y2="-17.78" width="0.1524" layer="91"/>
 <pinref part="P+4" gate="1" pin="+5V"/>
@@ -13799,7 +13799,7 @@ Example: SX-32S</description>
 <label x="228.6" y="40.64" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="B2Y"/>
+<pinref part="U9" gate="G$1" pin="B2Y"/>
 <wire x1="-53.34" y1="-30.48" x2="-48.26" y2="-30.48" width="0.1524" layer="91"/>
 <label x="-48.26" y="-30.48" size="1.27" layer="95" xref="yes"/>
 </segment>
@@ -13823,7 +13823,7 @@ Example: SX-32S</description>
 <wire x1="223.52" y1="38.1" x2="228.6" y2="38.1" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="B4"/>
+<pinref part="U9" gate="G$1" pin="B4"/>
 <wire x1="-53.34" y1="-40.64" x2="-48.26" y2="-40.64" width="0.1524" layer="91"/>
 <label x="-48.26" y="-40.64" size="1.27" layer="95" xref="yes"/>
 </segment>
@@ -13840,14 +13840,14 @@ Example: SX-32S</description>
 <label x="-63.5" y="10.16" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="B1Y"/>
+<pinref part="U9" gate="G$1" pin="B1Y"/>
 <wire x1="-53.34" y1="-25.4" x2="-48.26" y2="-25.4" width="0.1524" layer="91"/>
 <label x="-48.26" y="-25.4" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="OE" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="OE"/>
+<pinref part="U9" gate="G$1" pin="OE"/>
 <wire x1="-83.82" y1="-45.72" x2="-88.9" y2="-45.72" width="0.1524" layer="91"/>
 <label x="-88.9" y="-45.72" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
