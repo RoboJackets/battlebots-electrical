@@ -747,7 +747,7 @@ Source: http://focus.ti.com/lit/ds/symlink/sn74lvc1g3157.pdf</description>
 <rectangle x1="-0.7" y1="0.375" x2="-0.3" y2="0.975" layer="29" rot="R180"/>
 <rectangle x1="-0.75" y1="-0.325" x2="0" y2="0" layer="21"/>
 </package>
-<package name="SOT25" urn="urn:adsk.eagle:footprint:30328/1">
+<package name="SOT-25" urn="urn:adsk.eagle:footprint:30328/1" locally_modified="yes">
 <description>&lt;b&gt;Small Outline Transistor&lt;/b&gt;&lt;p&gt;
 TSC [Taiwan Semiconductor Company, Ltd]&lt;br&gt;
 Source: http://www.taiwansemi.com .. 5205_0409c.pdf</description>
@@ -1158,7 +1158,9 @@ Source: Analog Devices .. 780914713ADD8704_0.pdf</description>
 <wire x1="-7.62" y1="-5.08" x2="-7.62" y2="5.08" width="0.1524" layer="94"/>
 <pin name="VIN" x="-12.7" y="2.54" length="middle"/>
 <pin name="VOUT" x="12.7" y="2.54" length="middle" rot="R180"/>
-<pin name="VSS" x="0" y="-10.16" length="middle" rot="R90"/>
+<pin name="VSS" x="12.7" y="-2.54" length="middle" rot="R180"/>
+<text x="-7.62" y="-5.334" size="1.778" layer="96" align="top-left">&gt;VALUE</text>
+<text x="-7.62" y="5.334" size="1.778" layer="95">&gt;NAME</text>
 </symbol>
 <symbol name="TXU0304">
 <pin name="VCCA" x="-15.24" y="12.7" length="middle"/>
@@ -1190,6 +1192,18 @@ Source: Analog Devices .. 780914713ADD8704_0.pdf</description>
 <wire x1="12.7" y1="7.62" x2="-12.7" y2="7.62" width="0.254" layer="94"/>
 <text x="-12.7" y="7.874" size="1.778" layer="95" ratio="6" rot="SR0">&gt;NAME</text>
 <text x="-12.7" y="-7.874" size="1.778" layer="96" ratio="6" rot="SR0" align="top-left">&gt;VALUE</text>
+</symbol>
+<symbol name="XC6222B331MR-G">
+<wire x1="-7.62" y1="5.08" x2="7.62" y2="5.08" width="0.1524" layer="94"/>
+<wire x1="7.62" y1="5.08" x2="7.62" y2="-5.08" width="0.1524" layer="94"/>
+<wire x1="7.62" y1="-5.08" x2="-7.62" y2="-5.08" width="0.1524" layer="94"/>
+<wire x1="-7.62" y1="-5.08" x2="-7.62" y2="5.08" width="0.1524" layer="94"/>
+<pin name="VIN" x="-12.7" y="2.54" length="middle"/>
+<pin name="VOUT" x="12.7" y="2.54" length="middle" rot="R180"/>
+<pin name="VSS" x="12.7" y="-2.54" length="middle" rot="R180"/>
+<pin name="CE" x="-12.7" y="-2.54" length="middle"/>
+<text x="-7.62" y="-5.334" size="1.778" layer="96" align="top-left">&gt;VALUE</text>
+<text x="-7.62" y="5.334" size="1.778" layer="95">&gt;NAME</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -1527,7 +1541,7 @@ USB - mini B USB 2.0 Receptacle Connector 5 Position, Right Angle
 <gate name="G$1" symbol="XC6201P332MR-G" x="-10.16" y="5.08"/>
 </gates>
 <devices>
-<device name="" package="SOT25">
+<device name="" package="SOT-25">
 <connects>
 <connect gate="G$1" pin="VIN" pad="1"/>
 <connect gate="G$1" pin="VOUT" pad="5"/>
@@ -1588,6 +1602,24 @@ https://www.ti.com/lit/ds/symlink/txu0304.pdf?ts=1646321006193&amp;ref_url=https
 <technology name="5">
 <attribute name="DKPN" value="LT1129CST-5#PBF-ND" constant="no"/>
 </technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="XC6222B331MR-G">
+<gates>
+<gate name="G$1" symbol="XC6222B331MR-G" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT-25">
+<connects>
+<connect gate="G$1" pin="CE" pad="3"/>
+<connect gate="G$1" pin="VIN" pad="1"/>
+<connect gate="G$1" pin="VOUT" pad="5"/>
+<connect gate="G$1" pin="VSS" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
