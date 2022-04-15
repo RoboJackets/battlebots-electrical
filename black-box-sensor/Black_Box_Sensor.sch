@@ -354,20 +354,6 @@
 <smd name="23" x="-0.5" y="1.775" dx="0.8" dy="0.3" layer="1" rot="R270"/>
 <smd name="24" x="-1" y="1.775" dx="0.8" dy="0.3" layer="1" rot="R270"/>
 </package>
-<package name="SOT-23-5_MC_MCH">
-<smd name="1" x="-1.2954" y="0.95" dx="1.3208" dy="0.508" layer="1"/>
-<smd name="2" x="-1.2954" y="0" dx="1.3208" dy="0.508" layer="1"/>
-<smd name="3" x="-1.2954" y="-0.95" dx="1.3208" dy="0.508" layer="1"/>
-<smd name="4" x="1.2954" y="-0.95" dx="1.3208" dy="0.508" layer="1"/>
-<smd name="5" x="1.2954" y="0.95" dx="1.3208" dy="0.508" layer="1"/>
-<wire x1="-0.9144" y1="-1.5494" x2="0.9144" y2="-1.5494" width="0.1524" layer="51"/>
-<wire x1="0.9144" y1="-1.5494" x2="0.9144" y2="1.5494" width="0.1524" layer="51"/>
-<wire x1="0.9144" y1="1.5494" x2="-0.9144" y2="1.5494" width="0.1524" layer="51"/>
-<wire x1="-0.9144" y1="1.5494" x2="-0.9144" y2="-1.5494" width="0.1524" layer="51"/>
-<circle x="-1.2" y="1.9" radius="0.2" width="0" layer="21"/>
-<text x="-0.87" y="1.74" size="1" layer="25" font="vector" ratio="10">&gt;NAME</text>
-<text x="-0.97" y="-1.81" size="1" layer="27" font="vector" ratio="10" align="top-left">&gt;VALUE</text>
-</package>
 <package name="MOLEX_104031-0811">
 <wire x1="-5.003" y1="5.7" x2="-5.975" y2="5.7" width="0.127" layer="21"/>
 <wire x1="-5.975" y1="5.7" x2="-5.975" y2="-3.806" width="0.127" layer="21"/>
@@ -624,6 +610,34 @@ Source: Analog Devices .. 780914713ADD8704_0.pdf</description>
 <rectangle x1="2.25" y1="1.15" x2="3.2" y2="1.45" layer="51"/>
 <rectangle x1="2.25" y1="1.8" x2="3.2" y2="2.1" layer="51"/>
 </package>
+<package name="SOT-25" urn="urn:adsk.eagle:footprint:30328/1" locally_modified="yes">
+<description>&lt;b&gt;Small Outline Transistor&lt;/b&gt;&lt;p&gt;
+TSC [Taiwan Semiconductor Company, Ltd]&lt;br&gt;
+Source: http://www.taiwansemi.com .. 5205_0409c.pdf</description>
+<wire x1="1.422" y1="0.785" x2="1.422" y2="-0.785" width="0.1524" layer="21"/>
+<wire x1="1.422" y1="-0.785" x2="-1.422" y2="-0.785" width="0.1524" layer="51"/>
+<wire x1="-1.422" y1="-0.785" x2="-1.422" y2="0.785" width="0.1524" layer="21"/>
+<wire x1="-1.422" y1="0.785" x2="1.422" y2="0.785" width="0.1524" layer="51"/>
+<wire x1="-0.522" y1="0.785" x2="0.522" y2="0.785" width="0.1524" layer="21"/>
+<wire x1="-0.428" y1="-0.785" x2="-0.522" y2="-0.785" width="0.1524" layer="21"/>
+<wire x1="0.522" y1="-0.785" x2="0.428" y2="-0.785" width="0.1524" layer="21"/>
+<wire x1="-1.328" y1="-0.785" x2="-1.422" y2="-0.785" width="0.1524" layer="21"/>
+<wire x1="1.422" y1="-0.785" x2="1.328" y2="-0.785" width="0.1524" layer="21"/>
+<wire x1="1.328" y1="0.785" x2="1.422" y2="0.785" width="0.1524" layer="21"/>
+<wire x1="-1.422" y1="0.785" x2="-1.328" y2="0.785" width="0.1524" layer="21"/>
+<smd name="1" x="-0.95" y="-1.3" dx="0.55" dy="1.2" layer="1"/>
+<smd name="2" x="0" y="-1.3" dx="0.55" dy="1.2" layer="1"/>
+<smd name="3" x="0.95" y="-1.3" dx="0.55" dy="1.2" layer="1"/>
+<smd name="4" x="0.95" y="1.3" dx="0.55" dy="1.2" layer="1"/>
+<smd name="5" x="-0.95" y="1.3" dx="0.55" dy="1.2" layer="1"/>
+<text x="-1.905" y="1.905" size="1.27" layer="25">&gt;NAME</text>
+<text x="-1.905" y="-3.429" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-1.2" y1="-1.5" x2="-0.7" y2="-0.85" layer="51"/>
+<rectangle x1="-0.25" y1="-1.5" x2="0.25" y2="-0.85" layer="51"/>
+<rectangle x1="0.7" y1="-1.5" x2="1.2" y2="-0.85" layer="51"/>
+<rectangle x1="0.7" y1="0.85" x2="1.2" y2="1.5" layer="51"/>
+<rectangle x1="-1.2" y1="0.85" x2="-0.7" y2="1.5" layer="51"/>
+</package>
 </packages>
 <symbols>
 <symbol name="ADXL375BCCZ-RL7">
@@ -716,18 +730,6 @@ Source: Analog Devices .. 780914713ADD8704_0.pdf</description>
 <pin name="INT2/PWR_CTRL" x="20.32" y="2.54" length="middle" direction="pas" rot="R180"/>
 <pin name="RST_B" x="-20.32" y="-10.16" length="middle" direction="pas"/>
 <pin name="RSVD_GND" x="20.32" y="-7.62" length="middle" direction="pas" rot="R180"/>
-</symbol>
-<symbol name="MIC5504-3.3YM5-TR">
-<pin name="VIN" x="-17.78" y="5.08" length="middle" direction="in"/>
-<pin name="GND" x="-17.78" y="-5.08" length="middle" direction="pwr"/>
-<pin name="EN" x="17.78" y="-5.08" length="middle" direction="in" rot="R180"/>
-<pin name="VOUT" x="17.78" y="5.08" length="middle" direction="out" rot="R180"/>
-<wire x1="-12.7" y1="7.62" x2="-12.7" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="-12.7" y1="-7.62" x2="12.7" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="12.7" y1="-7.62" x2="12.7" y2="7.62" width="0.254" layer="94"/>
-<wire x1="12.7" y1="7.62" x2="-12.7" y2="7.62" width="0.254" layer="94"/>
-<text x="-12.3444" y="9.1186" size="2.0828" layer="95" ratio="6" rot="SR0">&gt;NAME</text>
-<text x="-12.9794" y="-11.2014" size="2.0828" layer="96" ratio="6" rot="SR0">&gt;VALUE</text>
 </symbol>
 <symbol name="104031-0811">
 <wire x1="-12.7" y1="12.7" x2="12.7" y2="12.7" width="0.254" layer="94"/>
@@ -904,6 +906,18 @@ Source: Analog Devices .. 780914713ADD8704_0.pdf</description>
 <text x="-10.16" y="16.002" size="1.778" layer="95">&gt;NAME</text>
 <text x="-10.16" y="-15.494" size="1.778" layer="96" align="top-left">&gt;VALUE</text>
 </symbol>
+<symbol name="XC6222B331MR-G">
+<wire x1="-10.16" y1="7.62" x2="10.16" y2="7.62" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="7.62" x2="10.16" y2="-7.62" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="-7.62" x2="-10.16" y2="-7.62" width="0.1524" layer="94"/>
+<wire x1="-10.16" y1="-7.62" x2="-10.16" y2="7.62" width="0.1524" layer="94"/>
+<pin name="VIN" x="-15.24" y="5.08" length="middle"/>
+<pin name="VOUT" x="15.24" y="5.08" length="middle" rot="R180"/>
+<pin name="VSS" x="15.24" y="-5.08" length="middle" rot="R180"/>
+<pin name="CE" x="-15.24" y="-5.08" length="middle"/>
+<text x="-10.16" y="-7.874" size="1.778" layer="96" align="top-left">&gt;VALUE</text>
+<text x="-10.16" y="7.874" size="1.778" layer="95">&gt;NAME</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="ADXL375" prefix="U">
@@ -1026,29 +1040,6 @@ Source: Analog Devices .. 780914713ADD8704_0.pdf</description>
 <technologies>
 <technology name="">
 <attribute name="DKPN" value="FXAS21002CQR1TR-ND" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="MIC5504-3.3YM5-TR" prefix="U">
-<description>Linear Voltage Regulator IC Positive Fixed 1 Output 300mA SOT-23-5
-&lt;p&gt;
-&lt;a href="http://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en580292"&gt;Datasheet&lt;/a&gt;</description>
-<gates>
-<gate name="A" symbol="MIC5504-3.3YM5-TR" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="SOT-23-5_MC_MCH">
-<connects>
-<connect gate="A" pin="EN" pad="3"/>
-<connect gate="A" pin="GND" pad="2"/>
-<connect gate="A" pin="VIN" pad="1"/>
-<connect gate="A" pin="VOUT" pad="5"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="DKPN" value="576-4764-1-ND" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -1234,6 +1225,25 @@ https://www.ti.com/lit/ds/symlink/txu0304.pdf?ts=1646321006193&amp;ref_url=https
 <technology name="">
 <attribute name="DKPN" value="296-TXU0304BQARCT-ND" constant="no"/>
 </technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="XC6222B331MR-G">
+<description>Linear Voltage Regulator IC Positive Fixed 3.3V Output 700mA SOT-25-5</description>
+<gates>
+<gate name="G$1" symbol="XC6222B331MR-G" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT-25">
+<connects>
+<connect gate="G$1" pin="CE" pad="3"/>
+<connect gate="G$1" pin="VIN" pad="1"/>
+<connect gate="G$1" pin="VOUT" pad="5"/>
+<connect gate="G$1" pin="VSS" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
@@ -12272,29 +12282,8 @@ Example: SX-32S</description>
 <part name="U2" library="BBS_Library" deviceset="ADXL375" device=""/>
 <part name="U3" library="BBS_Library" deviceset="ATMEGA32U4" device="-AU"/>
 <part name="U4" library="BBS_Library" deviceset="FXAS21002CQR1" device=""/>
-<part name="U5" library="BBS_Library" deviceset="MIC5504-3.3YM5-TR" device=""/>
 <part name="SUPPLY1" library="RoboJackets-Supplies" deviceset="VBATT" device=""/>
 <part name="GND1" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
-<part name="C1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="1µF">
-<spice>
-<pinmapping spiceprefix="C">
-<pinmap gate="G$1" pin="1" pinorder="1"/>
-<pinmap gate="G$1" pin="2" pinorder="2"/>
-</pinmapping>
-</spice>
-<attribute name="DKPN" value="CC0603KRX7R6BB105"/>
-<attribute name="VOLTAGE" value="10V"/>
-</part>
-<part name="C2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="1µF">
-<spice>
-<pinmapping spiceprefix="C">
-<pinmap gate="G$1" pin="1" pinorder="1"/>
-<pinmap gate="G$1" pin="2" pinorder="2"/>
-</pinmapping>
-</spice>
-<attribute name="DKPN" value="CC0603KRX7R6BB105"/>
-<attribute name="VOLTAGE" value="10V"/>
-</part>
 <part name="GND2" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="SUPPLY4" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
 <part name="GND4" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
@@ -12525,7 +12514,6 @@ Example: SX-32S</description>
 <part name="JP1" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X3" device="" package3d_urn="urn:adsk.eagle:package:22458/2"/>
 <part name="P+5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="GND30" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
-<part name="P+6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="P+7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="U7" library="BBS_Library" deviceset="LT1129CST-*#PBF" device="" technology="5"/>
 <part name="GND31" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
@@ -12545,6 +12533,27 @@ Example: SX-32S</description>
 <part name="C23" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603K" package3d_urn="urn:adsk.eagle:package:23680/2" value="0.1uF"/>
 <part name="GND32" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="GND33" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
+<part name="U$1" library="BBS_Library" deviceset="XC6222B331MR-G" device=""/>
+<part name="C1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="1µF">
+<spice>
+<pinmapping spiceprefix="C">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="DKPN" value="CC0603KRX7R6BB105"/>
+<attribute name="VOLTAGE" value="10V"/>
+</part>
+<part name="C2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="1µF">
+<spice>
+<pinmapping spiceprefix="C">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="DKPN" value="CC0603KRX7R6BB105"/>
+<attribute name="VOLTAGE" value="10V"/>
+</part>
 </parts>
 <sheets>
 <sheet>
@@ -12567,30 +12576,14 @@ Example: SX-32S</description>
 <attribute name="NAME" x="27.94" y="19.558" size="1.778" layer="95"/>
 <attribute name="VALUE" x="27.94" y="-6.858" size="1.778" layer="96" align="top-left"/>
 </instance>
-<instance part="U5" gate="A" x="76.2" y="111.76" smashed="yes">
-<attribute name="NAME" x="63.8556" y="120.8786" size="2.0828" layer="95" ratio="6" rot="SR0"/>
-<attribute name="VALUE" x="63.2206" y="100.5586" size="2.0828" layer="96" ratio="6" rot="SR0"/>
-</instance>
 <instance part="SUPPLY1" gate="G$1" x="-2.54" y="121.92" smashed="yes">
 <attribute name="VALUE" x="-4.445" y="125.095" size="1.778" layer="96"/>
 </instance>
-<instance part="GND1" gate="1" x="55.88" y="104.14" smashed="yes">
-<attribute name="VALUE" x="55.88" y="103.886" size="1.778" layer="96" align="top-center"/>
+<instance part="GND1" gate="1" x="53.34" y="101.6" smashed="yes">
+<attribute name="VALUE" x="53.34" y="101.346" size="1.778" layer="96" align="top-center"/>
 </instance>
-<instance part="C1" gate="G$1" x="55.88" y="114.3" smashed="yes">
-<attribute name="NAME" x="56.896" y="114.935" size="1.778" layer="95"/>
-<attribute name="VALUE" x="56.896" y="110.109" size="1.778" layer="96"/>
-<attribute name="VOLTAGE" x="55.88" y="114.3" size="1.778" layer="96" display="off"/>
-<attribute name="DKPN" x="55.88" y="114.3" size="1.778" layer="96" display="off"/>
-</instance>
-<instance part="C2" gate="G$1" x="99.06" y="114.3" smashed="yes">
-<attribute name="NAME" x="100.076" y="114.935" size="1.778" layer="95"/>
-<attribute name="VALUE" x="100.076" y="110.109" size="1.778" layer="96"/>
-<attribute name="VOLTAGE" x="99.06" y="114.3" size="1.778" layer="96" display="off"/>
-<attribute name="DKPN" x="99.06" y="114.3" size="1.778" layer="96" display="off"/>
-</instance>
-<instance part="GND2" gate="1" x="99.06" y="104.14" smashed="yes">
-<attribute name="VALUE" x="99.06" y="103.886" size="1.778" layer="96" align="top-center"/>
+<instance part="GND2" gate="1" x="91.44" y="101.6" smashed="yes">
+<attribute name="VALUE" x="91.44" y="101.346" size="1.778" layer="96" align="top-center"/>
 </instance>
 <instance part="SUPPLY4" gate="G$1" x="25.4" y="99.06" smashed="yes">
 <attribute name="VALUE" x="25.4" y="101.854" size="1.778" layer="96" align="bottom-center"/>
@@ -12816,18 +12809,18 @@ Example: SX-32S</description>
 <instance part="GND24" gate="1" x="-30.48" y="-45.72" smashed="yes">
 <attribute name="VALUE" x="-30.48" y="-45.974" size="1.778" layer="96" align="top-center"/>
 </instance>
-<instance part="CN1" gate="G$1" x="142.24" y="106.68" smashed="yes">
-<attribute name="NAME" x="135.89" y="112.395" size="1.778" layer="95"/>
-<attribute name="VALUE" x="135.89" y="99.06" size="1.778" layer="96"/>
+<instance part="CN1" gate="G$1" x="119.38" y="106.68" smashed="yes">
+<attribute name="NAME" x="113.03" y="112.395" size="1.778" layer="95"/>
+<attribute name="VALUE" x="113.03" y="99.06" size="1.778" layer="96"/>
 </instance>
-<instance part="SUPPLY3" gate="G$1" x="99.06" y="119.38" smashed="yes">
-<attribute name="VALUE" x="99.06" y="122.174" size="1.778" layer="96" align="bottom-center"/>
+<instance part="SUPPLY3" gate="G$1" x="91.44" y="119.38" smashed="yes">
+<attribute name="VALUE" x="91.44" y="122.174" size="1.778" layer="96" align="bottom-center"/>
 </instance>
-<instance part="SUPPLY17" gate="G$1" x="132.08" y="111.76" smashed="yes">
-<attribute name="VALUE" x="130.175" y="114.935" size="1.778" layer="96"/>
+<instance part="SUPPLY17" gate="G$1" x="109.22" y="111.76" smashed="yes">
+<attribute name="VALUE" x="107.315" y="114.935" size="1.778" layer="96"/>
 </instance>
-<instance part="GND25" gate="1" x="132.08" y="101.6" smashed="yes">
-<attribute name="VALUE" x="132.08" y="101.346" size="1.778" layer="96" align="top-center"/>
+<instance part="GND25" gate="1" x="109.22" y="101.6" smashed="yes">
+<attribute name="VALUE" x="109.22" y="101.346" size="1.778" layer="96" align="top-center"/>
 </instance>
 <instance part="ISP1" gate="G$1" x="-45.72" y="10.16" smashed="yes">
 <attribute name="NAME" x="-48.26" y="2.54" size="1.778" layer="95"/>
@@ -12923,11 +12916,8 @@ Example: SX-32S</description>
 <instance part="GND30" gate="1" x="190.5" y="101.6" smashed="yes">
 <attribute name="VALUE" x="190.5" y="101.346" size="1.778" layer="96" align="top-center"/>
 </instance>
-<instance part="P+6" gate="1" x="96.52" y="111.76" smashed="yes">
-<attribute name="VALUE" x="93.98" y="106.68" size="1.778" layer="96" rot="R90"/>
-</instance>
-<instance part="P+7" gate="1" x="55.88" y="121.92" smashed="yes">
-<attribute name="VALUE" x="53.34" y="116.84" size="1.778" layer="96" rot="R90"/>
+<instance part="P+7" gate="1" x="53.34" y="121.92" smashed="yes">
+<attribute name="VALUE" x="50.8" y="116.84" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="U7" gate="G$1" x="17.78" y="111.76" smashed="yes">
 <attribute name="NAME" x="5.08" y="119.634" size="1.778" layer="95" ratio="6" rot="SR0"/>
@@ -12963,6 +12953,22 @@ Example: SX-32S</description>
 <instance part="GND33" gate="1" x="-43.18" y="-10.16" smashed="yes" rot="R180">
 <attribute name="VALUE" x="-43.18" y="-9.906" size="1.778" layer="96" rot="R180" align="top-center"/>
 </instance>
+<instance part="U$1" gate="G$1" x="73.66" y="111.76" smashed="yes">
+<attribute name="VALUE" x="63.5" y="103.886" size="1.778" layer="96" align="top-left"/>
+<attribute name="NAME" x="63.5" y="119.634" size="1.778" layer="95"/>
+</instance>
+<instance part="C1" gate="G$1" x="53.34" y="111.76" smashed="yes" rot="MR0">
+<attribute name="NAME" x="52.324" y="112.395" size="1.778" layer="95" rot="MR0"/>
+<attribute name="VALUE" x="52.324" y="107.569" size="1.778" layer="96" rot="MR0"/>
+<attribute name="VOLTAGE" x="53.34" y="111.76" size="1.778" layer="96" rot="MR0" display="off"/>
+<attribute name="DKPN" x="53.34" y="111.76" size="1.778" layer="96" rot="MR0" display="off"/>
+</instance>
+<instance part="C2" gate="G$1" x="91.44" y="114.3" smashed="yes">
+<attribute name="NAME" x="92.456" y="114.935" size="1.778" layer="95"/>
+<attribute name="VALUE" x="92.456" y="110.109" size="1.778" layer="96"/>
+<attribute name="VOLTAGE" x="91.44" y="114.3" size="1.778" layer="96" display="off"/>
+<attribute name="DKPN" x="91.44" y="114.3" size="1.778" layer="96" display="off"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -12971,7 +12977,7 @@ Example: SX-32S</description>
 <segment>
 <pinref part="CN1" gate="G$1" pin="1"/>
 <pinref part="SUPPLY17" gate="G$1" pin="VBATT"/>
-<wire x1="139.7" y1="109.22" x2="132.08" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="109.22" x2="109.22" y2="109.22" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U7" gate="G$1" pin="VIN"/>
@@ -12983,16 +12989,8 @@ Example: SX-32S</description>
 <net name="GND" class="0">
 <segment>
 <pinref part="GND1" gate="1" pin="GND"/>
-<pinref part="U5" gate="A" pin="GND"/>
+<wire x1="53.34" y1="106.68" x2="53.34" y2="104.14" width="0.1524" layer="91"/>
 <pinref part="C1" gate="G$1" pin="2"/>
-<wire x1="55.88" y1="106.68" x2="58.42" y2="106.68" width="0.1524" layer="91"/>
-<wire x1="55.88" y1="109.22" x2="55.88" y2="106.68" width="0.1524" layer="91"/>
-<junction x="55.88" y="106.68"/>
-</segment>
-<segment>
-<pinref part="GND2" gate="1" pin="GND"/>
-<pinref part="C2" gate="G$1" pin="2"/>
-<wire x1="99.06" y1="106.68" x2="99.06" y2="109.22" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U1" gate="ADXL375BCCZ-RL7" pin="GND"/>
@@ -13157,11 +13155,11 @@ Example: SX-32S</description>
 <segment>
 <pinref part="CN1" gate="G$1" pin="SHIELD"/>
 <pinref part="GND25" gate="1" pin="GND"/>
-<wire x1="139.7" y1="104.14" x2="132.08" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="104.14" x2="109.22" y2="104.14" width="0.1524" layer="91"/>
 <pinref part="CN1" gate="G$1" pin="2"/>
-<wire x1="139.7" y1="106.68" x2="132.08" y2="106.68" width="0.1524" layer="91"/>
-<wire x1="132.08" y1="106.68" x2="132.08" y2="104.14" width="0.1524" layer="91"/>
-<junction x="132.08" y="104.14"/>
+<wire x1="116.84" y1="106.68" x2="109.22" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="106.68" x2="109.22" y2="104.14" width="0.1524" layer="91"/>
+<junction x="109.22" y="104.14"/>
 </segment>
 <segment>
 <pinref part="GND14" gate="1" pin="GND"/>
@@ -13230,6 +13228,15 @@ Example: SX-32S</description>
 <segment>
 <pinref part="GND33" gate="1" pin="GND"/>
 <pinref part="C23" gate="G$1" pin="1"/>
+</segment>
+<segment>
+<pinref part="C2" gate="G$1" pin="2"/>
+<pinref part="U$1" gate="G$1" pin="VSS"/>
+<wire x1="91.44" y1="106.68" x2="91.44" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="106.68" x2="91.44" y2="106.68" width="0.1524" layer="91"/>
+<pinref part="GND2" gate="1" pin="GND"/>
+<wire x1="91.44" y1="104.14" x2="91.44" y2="106.68" width="0.1524" layer="91"/>
+<junction x="91.44" y="106.68"/>
 </segment>
 </net>
 <net name="3.3V" class="0">
@@ -13331,12 +13338,12 @@ Example: SX-32S</description>
 <wire x1="-7.62" y1="-17.78" x2="-7.62" y2="-22.86" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U5" gate="A" pin="VOUT"/>
-<pinref part="C2" gate="G$1" pin="1"/>
-<wire x1="93.98" y1="116.84" x2="99.06" y2="116.84" width="0.1524" layer="91"/>
-<wire x1="99.06" y1="116.84" x2="99.06" y2="119.38" width="0.1524" layer="91"/>
-<junction x="99.06" y="116.84"/>
+<wire x1="91.44" y1="116.84" x2="91.44" y2="119.38" width="0.1524" layer="91"/>
 <pinref part="SUPPLY3" gate="G$1" pin="3.3V"/>
+<pinref part="C2" gate="G$1" pin="1"/>
+<pinref part="U$1" gate="G$1" pin="VOUT"/>
+<wire x1="88.9" y1="116.84" x2="91.44" y2="116.84" width="0.1524" layer="91"/>
+<junction x="91.44" y="116.84"/>
 </segment>
 <segment>
 <wire x1="-83.82" y1="-20.32" x2="-86.36" y2="-20.32" width="0.1524" layer="91"/>
@@ -13802,26 +13809,26 @@ Example: SX-32S</description>
 <wire x1="190.5" y1="109.22" x2="198.12" y2="109.22" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U5" gate="A" pin="VIN"/>
-<pinref part="C1" gate="G$1" pin="1"/>
-<wire x1="55.88" y1="116.84" x2="58.42" y2="116.84" width="0.1524" layer="91"/>
-<pinref part="P+7" gate="1" pin="+5V"/>
-<wire x1="55.88" y1="119.38" x2="55.88" y2="116.84" width="0.1524" layer="91"/>
-<junction x="55.88" y="116.84"/>
-</segment>
-<segment>
-<pinref part="U5" gate="A" pin="EN"/>
-<wire x1="96.52" y1="106.68" x2="93.98" y2="106.68" width="0.1524" layer="91"/>
-<pinref part="P+6" gate="1" pin="+5V"/>
-<wire x1="96.52" y1="109.22" x2="96.52" y2="106.68" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="P+8" gate="1" pin="+5V"/>
 <pinref part="C21" gate="G$1" pin="1"/>
 <wire x1="38.1" y1="119.38" x2="38.1" y2="116.84" width="0.1524" layer="91"/>
 <pinref part="U7" gate="G$1" pin="VOUT"/>
 <wire x1="35.56" y1="116.84" x2="38.1" y2="116.84" width="0.1524" layer="91"/>
 <junction x="38.1" y="116.84"/>
+</segment>
+<segment>
+<pinref part="P+7" gate="1" pin="+5V"/>
+<wire x1="53.34" y1="119.38" x2="53.34" y2="116.84" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="VIN"/>
+<wire x1="58.42" y1="116.84" x2="55.88" y2="116.84" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="CE"/>
+<wire x1="58.42" y1="106.68" x2="55.88" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="106.68" x2="55.88" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="116.84" x2="55.88" y2="116.84" width="0.1524" layer="91"/>
+<junction x="55.88" y="116.84"/>
+<pinref part="C1" gate="G$1" pin="1"/>
+<wire x1="53.34" y1="114.3" x2="53.34" y2="116.84" width="0.1524" layer="91"/>
+<junction x="53.34" y="116.84"/>
 </segment>
 </net>
 <net name="MISO_5V" class="0">
