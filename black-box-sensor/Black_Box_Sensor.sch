@@ -12541,6 +12541,10 @@ Example: SX-32S</description>
 </part>
 <part name="P+8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="U9" library="BBS_Library" deviceset="TXU0304" device=""/>
+<part name="C22" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603K" package3d_urn="urn:adsk.eagle:package:23680/2" value="0.1uF"/>
+<part name="C23" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603K" package3d_urn="urn:adsk.eagle:package:23680/2" value="0.1uF"/>
+<part name="GND32" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
+<part name="GND33" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -12945,6 +12949,20 @@ Example: SX-32S</description>
 <attribute name="NAME" x="-78.74" y="-17.018" size="1.778" layer="95"/>
 <attribute name="VALUE" x="-78.74" y="-48.514" size="1.778" layer="96" align="top-left"/>
 </instance>
+<instance part="C22" gate="G$1" x="-96.52" y="-15.24" smashed="yes">
+<attribute name="NAME" x="-95.504" y="-14.605" size="1.778" layer="95"/>
+<attribute name="VALUE" x="-95.504" y="-19.431" size="1.778" layer="96"/>
+</instance>
+<instance part="C23" gate="G$1" x="-43.18" y="-15.24" smashed="yes">
+<attribute name="NAME" x="-42.164" y="-14.605" size="1.778" layer="95"/>
+<attribute name="VALUE" x="-42.164" y="-19.431" size="1.778" layer="96"/>
+</instance>
+<instance part="GND32" gate="1" x="-96.52" y="-10.16" smashed="yes" rot="R180">
+<attribute name="VALUE" x="-96.52" y="-9.906" size="1.778" layer="96" rot="R180" align="top-center"/>
+</instance>
+<instance part="GND33" gate="1" x="-43.18" y="-10.16" smashed="yes" rot="R180">
+<attribute name="VALUE" x="-43.18" y="-9.906" size="1.778" layer="96" rot="R180" align="top-center"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -13205,6 +13223,14 @@ Example: SX-32S</description>
 <wire x1="38.1" y1="109.22" x2="38.1" y2="106.68" width="0.1524" layer="91"/>
 <junction x="38.1" y="106.68"/>
 </segment>
+<segment>
+<pinref part="GND32" gate="1" pin="GND"/>
+<pinref part="C22" gate="G$1" pin="1"/>
+</segment>
+<segment>
+<pinref part="GND33" gate="1" pin="GND"/>
+<pinref part="C23" gate="G$1" pin="1"/>
+</segment>
 </net>
 <net name="3.3V" class="0">
 <segment>
@@ -13317,6 +13343,9 @@ Example: SX-32S</description>
 <wire x1="-86.36" y1="-20.32" x2="-86.36" y2="-17.78" width="0.1524" layer="91"/>
 <pinref part="SUPPLY9" gate="G$1" pin="3.3V"/>
 <pinref part="U9" gate="G$1" pin="VCCA"/>
+<pinref part="C22" gate="G$1" pin="2"/>
+<wire x1="-86.36" y1="-20.32" x2="-96.52" y2="-20.32" width="0.1524" layer="91"/>
+<junction x="-86.36" y="-20.32"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -13762,6 +13791,9 @@ Example: SX-32S</description>
 <wire x1="-50.8" y1="-20.32" x2="-50.8" y2="-17.78" width="0.1524" layer="91"/>
 <pinref part="P+4" gate="1" pin="+5V"/>
 <pinref part="U9" gate="G$1" pin="VCCB"/>
+<pinref part="C23" gate="G$1" pin="2"/>
+<wire x1="-50.8" y1="-20.32" x2="-43.18" y2="-20.32" width="0.1524" layer="91"/>
+<junction x="-50.8" y="-20.32"/>
 </segment>
 <segment>
 <pinref part="P+5" gate="1" pin="+5V"/>
