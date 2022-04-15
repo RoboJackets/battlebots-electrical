@@ -553,6 +553,38 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <text x="-5.5372" y="-7.0104" size="1" layer="27" font="vector" rot="SR0">&gt;VALUE</text>
 <circle x="4" y="5" radius="0.2" width="0.2" layer="21"/>
 </package>
+<package name="SOT-223-3">
+<wire x1="1.8542" y1="3.3528" x2="1.8542" y2="-3.3528" width="0.127" layer="51"/>
+<wire x1="1.8542" y1="-3.3528" x2="-1.8542" y2="-3.3528" width="0.127" layer="51"/>
+<wire x1="-1.8542" y1="-3.3528" x2="-1.8542" y2="3.3528" width="0.127" layer="51"/>
+<wire x1="-1.8542" y1="3.3528" x2="1.8542" y2="3.3528" width="0.127" layer="51"/>
+<wire x1="1.8542" y1="2.05" x2="1.8542" y2="3.35" width="0.127" layer="21"/>
+<wire x1="1.8542" y1="3.35" x2="-1.8542" y2="3.35" width="0.127" layer="21"/>
+<wire x1="-1.8542" y1="3.35" x2="-1.8542" y2="3.05" width="0.127" layer="21"/>
+<wire x1="1.8542" y1="-3.35" x2="1.8542" y2="-2.05" width="0.127" layer="21"/>
+<wire x1="-1.8542" y1="-3.05" x2="-1.8542" y2="-3.35" width="0.127" layer="21"/>
+<wire x1="-1.8542" y1="-3.35" x2="1.8542" y2="-3.35" width="0.127" layer="21"/>
+<wire x1="4.1489" y1="1.8883" x2="4.1489" y2="-1.8883" width="0.05" layer="39"/>
+<wire x1="4.1489" y1="-1.8883" x2="2.1042" y2="-1.8883" width="0.05" layer="39"/>
+<wire x1="2.1042" y1="-1.8883" x2="2.1042" y2="-3.6028" width="0.05" layer="39"/>
+<wire x1="2.1042" y1="-3.6028" x2="-2.1042" y2="-3.6028" width="0.05" layer="39"/>
+<wire x1="-2.1042" y1="-3.6028" x2="-2.1042" y2="-3.044" width="0.05" layer="39"/>
+<wire x1="-2.1042" y1="-3.044" x2="-4.1489" y2="-3.044" width="0.05" layer="39"/>
+<wire x1="-4.1489" y1="-3.044" x2="-4.1489" y2="3.044" width="0.05" layer="39"/>
+<wire x1="-4.1489" y1="3.044" x2="-2.1042" y2="3.044" width="0.05" layer="39"/>
+<wire x1="-2.1042" y1="3.044" x2="-2.1042" y2="3.6028" width="0.05" layer="39"/>
+<wire x1="-2.1042" y1="3.6028" x2="2.1042" y2="3.6028" width="0.05" layer="39"/>
+<wire x1="2.1042" y1="3.6028" x2="2.1042" y2="1.8883" width="0.05" layer="39"/>
+<wire x1="2.1042" y1="1.8883" x2="4.1489" y2="1.8883" width="0.05" layer="39"/>
+<circle x="-4.7" y="2.3" radius="0.1" width="0.3" layer="21"/>
+<circle x="-4.7" y="2.3" radius="0.1" width="0.3" layer="51"/>
+<text x="-2.58" y="4.01" size="1" layer="25" font="vector" ratio="10">&gt;NAME</text>
+<text x="-2.58" y="-4.05" size="1" layer="27" font="vector" ratio="10" align="top-left">&gt;VALUE</text>
+<smd name="4" x="3.1496" y="0" dx="1.4986" dy="3.2766" layer="1"/>
+<smd name="2" x="-3.1496" y="0" dx="1.4986" dy="0.9906" layer="1"/>
+<smd name="1" x="-3.1496" y="2.2987" dx="1.4986" dy="0.9906" layer="1"/>
+<smd name="3" x="-3.1496" y="-2.2987" dx="1.4986" dy="0.9906" layer="1"/>
+</package>
 <package name="TSSOP14" urn="urn:adsk.eagle:footprint:3765/1">
 <description>&lt;b&gt;14-Lead Thin Shrink Small Outline Package [TSSOP]&lt;/b&gt;&lt;p&gt;
 Source: Analog Devices .. 780914713ADD8704_0.pdf</description>
@@ -591,38 +623,6 @@ Source: Analog Devices .. 780914713ADD8704_0.pdf</description>
 <rectangle x1="2.25" y1="0.5" x2="3.2" y2="0.8" layer="51"/>
 <rectangle x1="2.25" y1="1.15" x2="3.2" y2="1.45" layer="51"/>
 <rectangle x1="2.25" y1="1.8" x2="3.2" y2="2.1" layer="51"/>
-</package>
-<package name="SOT-223-3">
-<wire x1="1.8542" y1="3.3528" x2="1.8542" y2="-3.3528" width="0.127" layer="51"/>
-<wire x1="1.8542" y1="-3.3528" x2="-1.8542" y2="-3.3528" width="0.127" layer="51"/>
-<wire x1="-1.8542" y1="-3.3528" x2="-1.8542" y2="3.3528" width="0.127" layer="51"/>
-<wire x1="-1.8542" y1="3.3528" x2="1.8542" y2="3.3528" width="0.127" layer="51"/>
-<wire x1="1.8542" y1="2.05" x2="1.8542" y2="3.35" width="0.127" layer="21"/>
-<wire x1="1.8542" y1="3.35" x2="-1.8542" y2="3.35" width="0.127" layer="21"/>
-<wire x1="-1.8542" y1="3.35" x2="-1.8542" y2="3.05" width="0.127" layer="21"/>
-<wire x1="1.8542" y1="-3.35" x2="1.8542" y2="-2.05" width="0.127" layer="21"/>
-<wire x1="-1.8542" y1="-3.05" x2="-1.8542" y2="-3.35" width="0.127" layer="21"/>
-<wire x1="-1.8542" y1="-3.35" x2="1.8542" y2="-3.35" width="0.127" layer="21"/>
-<wire x1="4.1489" y1="1.8883" x2="4.1489" y2="-1.8883" width="0.05" layer="39"/>
-<wire x1="4.1489" y1="-1.8883" x2="2.1042" y2="-1.8883" width="0.05" layer="39"/>
-<wire x1="2.1042" y1="-1.8883" x2="2.1042" y2="-3.6028" width="0.05" layer="39"/>
-<wire x1="2.1042" y1="-3.6028" x2="-2.1042" y2="-3.6028" width="0.05" layer="39"/>
-<wire x1="-2.1042" y1="-3.6028" x2="-2.1042" y2="-3.044" width="0.05" layer="39"/>
-<wire x1="-2.1042" y1="-3.044" x2="-4.1489" y2="-3.044" width="0.05" layer="39"/>
-<wire x1="-4.1489" y1="-3.044" x2="-4.1489" y2="3.044" width="0.05" layer="39"/>
-<wire x1="-4.1489" y1="3.044" x2="-2.1042" y2="3.044" width="0.05" layer="39"/>
-<wire x1="-2.1042" y1="3.044" x2="-2.1042" y2="3.6028" width="0.05" layer="39"/>
-<wire x1="-2.1042" y1="3.6028" x2="2.1042" y2="3.6028" width="0.05" layer="39"/>
-<wire x1="2.1042" y1="3.6028" x2="2.1042" y2="1.8883" width="0.05" layer="39"/>
-<wire x1="2.1042" y1="1.8883" x2="4.1489" y2="1.8883" width="0.05" layer="39"/>
-<circle x="-4.7" y="2.3" radius="0.1" width="0.3" layer="21"/>
-<circle x="-4.7" y="2.3" radius="0.1" width="0.3" layer="51"/>
-<text x="-2.58" y="4.01" size="1" layer="25" font="vector" ratio="10">&gt;NAME</text>
-<text x="-2.58" y="-4.05" size="1" layer="27" font="vector" ratio="10" align="top-left">&gt;VALUE</text>
-<smd name="4" x="3.1496" y="0" dx="1.4986" dy="3.2766" layer="1"/>
-<smd name="2" x="-3.1496" y="0" dx="1.4986" dy="0.9906" layer="1"/>
-<smd name="1" x="-3.1496" y="2.2987" dx="1.4986" dy="0.9906" layer="1"/>
-<smd name="3" x="-3.1496" y="-2.2987" dx="1.4986" dy="0.9906" layer="1"/>
 </package>
 </packages>
 <symbols>
@@ -873,6 +873,17 @@ Source: Analog Devices .. 780914713ADD8704_0.pdf</description>
 <text x="3.81" y="-16.256" size="2.0828" layer="96" ratio="6">&gt;VALUE</text>
 <pin name="ANCHOR" x="0" y="-10.16" length="middle" direction="pas"/>
 </symbol>
+<symbol name="LT1129">
+<pin name="VIN" x="-17.78" y="5.08" length="middle" direction="pas"/>
+<pin name="GND" x="17.78" y="-5.08" length="middle" direction="pas" rot="R180"/>
+<pin name="VOUT" x="17.78" y="5.08" length="middle" direction="pas" rot="R180"/>
+<wire x1="-12.7" y1="7.62" x2="-12.7" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-7.62" x2="12.7" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-7.62" x2="12.7" y2="7.62" width="0.254" layer="94"/>
+<wire x1="12.7" y1="7.62" x2="-12.7" y2="7.62" width="0.254" layer="94"/>
+<text x="-12.7" y="7.874" size="1.778" layer="95" ratio="6" rot="SR0">&gt;NAME</text>
+<text x="-12.7" y="-7.874" size="1.778" layer="96" ratio="6" rot="SR0" align="top-left">&gt;VALUE</text>
+</symbol>
 <symbol name="TXU0304">
 <pin name="VCCA" x="-15.24" y="12.7" length="middle"/>
 <pin name="A1" x="-15.24" y="7.62" length="middle"/>
@@ -890,17 +901,8 @@ Source: Analog Devices .. 780914713ADD8704_0.pdf</description>
 <wire x1="10.16" y1="15.24" x2="10.16" y2="-15.24" width="0.254" layer="94"/>
 <wire x1="10.16" y1="-15.24" x2="-10.16" y2="-15.24" width="0.254" layer="94"/>
 <wire x1="-10.16" y1="-15.24" x2="-10.16" y2="15.24" width="0.254" layer="94"/>
-</symbol>
-<symbol name="LT1129">
-<pin name="VIN" x="-17.78" y="5.08" length="middle" direction="pas"/>
-<pin name="GND" x="17.78" y="-5.08" length="middle" direction="pas" rot="R180"/>
-<pin name="VOUT" x="17.78" y="5.08" length="middle" direction="pas" rot="R180"/>
-<wire x1="-12.7" y1="7.62" x2="-12.7" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="-12.7" y1="-7.62" x2="12.7" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="12.7" y1="-7.62" x2="12.7" y2="7.62" width="0.254" layer="94"/>
-<wire x1="12.7" y1="7.62" x2="-12.7" y2="7.62" width="0.254" layer="94"/>
-<text x="-12.7" y="7.874" size="1.778" layer="95" ratio="6" rot="SR0">&gt;NAME</text>
-<text x="-12.7" y="-7.874" size="1.778" layer="96" ratio="6" rot="SR0" align="top-left">&gt;VALUE</text>
+<text x="-10.16" y="16.002" size="1.778" layer="95">&gt;NAME</text>
+<text x="-10.16" y="-15.494" size="1.778" layer="96" align="top-left">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -1183,7 +1185,29 @@ USB - mini B USB 2.0 Receptacle Connector 5 Position, Right Angle
 </device>
 </devices>
 </deviceset>
-<deviceset name="TXU0304">
+<deviceset name="LT1129CST-*#PBF" prefix="U">
+<description>Linear Voltage Regulator IC Positive Fixed 1 Output 700mA SOT-223-5
+&lt;p&gt;
+&lt;a href="https://www.analog.com/media/en/technical-documentation/data-sheets/112935ff.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="LT1129" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT-223-3">
+<connects>
+<connect gate="G$1" pin="GND" pad="2 4"/>
+<connect gate="G$1" pin="VIN" pad="1"/>
+<connect gate="G$1" pin="VOUT" pad="3"/>
+</connects>
+<technologies>
+<technology name="5">
+<attribute name="DKPN" value="LT1129CST-5#PBF-ND" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TXU0304" prefix="U">
 <description>Voltage Level Translator Unidirectional 1 Circuit 4 Channel 200Mbps 14-WQFN (3x2.5)
 
 https://www.ti.com/lit/ds/symlink/txu0304.pdf?ts=1646321006193&amp;ref_url=https%253A%252F%252Fwww.mouser.com%252F</description>
@@ -1209,28 +1233,6 @@ https://www.ti.com/lit/ds/symlink/txu0304.pdf?ts=1646321006193&amp;ref_url=https
 <technologies>
 <technology name="">
 <attribute name="DKPN" value="296-TXU0304BQARCT-ND" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="LT1129CST-*#PBF" prefix="U">
-<description>Linear Voltage Regulator IC Positive Fixed 1 Output 700mA SOT-223-5
-&lt;p&gt;
-&lt;a href="https://www.analog.com/media/en/technical-documentation/data-sheets/112935ff.pdf"&gt;Datasheet&lt;/a&gt;</description>
-<gates>
-<gate name="G$1" symbol="LT1129" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="SOT-223-3">
-<connects>
-<connect gate="G$1" pin="GND" pad="2 4"/>
-<connect gate="G$1" pin="VIN" pad="1"/>
-<connect gate="G$1" pin="VOUT" pad="3"/>
-</connects>
-<technologies>
-<technology name="5">
-<attribute name="DKPN" value="LT1129CST-5#PBF-ND" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -12507,7 +12509,6 @@ Example: SX-32S</description>
 <part name="P+2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="P+3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="GND27" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
-<part name="U9" library="BBS_Library" deviceset="TXU0304" device=""/>
 <part name="GND28" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="SUPPLY9" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
 <part name="P+4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
@@ -12539,6 +12540,7 @@ Example: SX-32S</description>
 <attribute name="VOLTAGE" value="10V"/>
 </part>
 <part name="P+8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
+<part name="U9" library="BBS_Library" deviceset="TXU0304" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -12859,7 +12861,6 @@ Example: SX-32S</description>
 <instance part="GND27" gate="1" x="-27.94" y="2.54" smashed="yes">
 <attribute name="VALUE" x="-27.94" y="2.286" size="1.778" layer="96" align="top-center"/>
 </instance>
-<instance part="U9" gate="G$1" x="-68.58" y="-33.02" smashed="yes"/>
 <instance part="GND28" gate="1" x="-50.8" y="-50.8" smashed="yes">
 <attribute name="VALUE" x="-50.8" y="-51.054" size="1.778" layer="96" align="top-center"/>
 </instance>
@@ -12939,6 +12940,10 @@ Example: SX-32S</description>
 </instance>
 <instance part="P+8" gate="1" x="38.1" y="121.92" smashed="yes">
 <attribute name="VALUE" x="35.56" y="116.84" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="U9" gate="G$1" x="-68.58" y="-33.02" smashed="yes">
+<attribute name="NAME" x="-78.74" y="-17.018" size="1.778" layer="95"/>
+<attribute name="VALUE" x="-78.74" y="-48.514" size="1.778" layer="96" align="top-left"/>
 </instance>
 </instances>
 <busses>
@@ -13157,10 +13162,10 @@ Example: SX-32S</description>
 <pinref part="GND27" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="U9" gate="G$1" pin="GND"/>
 <wire x1="-53.34" y1="-45.72" x2="-50.8" y2="-45.72" width="0.1524" layer="91"/>
 <wire x1="-50.8" y1="-45.72" x2="-50.8" y2="-48.26" width="0.1524" layer="91"/>
 <pinref part="GND28" gate="1" pin="GND"/>
+<pinref part="U9" gate="G$1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="U8" gate="G$1" pin="INB-"/>
@@ -13308,10 +13313,10 @@ Example: SX-32S</description>
 <pinref part="SUPPLY3" gate="G$1" pin="3.3V"/>
 </segment>
 <segment>
-<pinref part="U9" gate="G$1" pin="VCCA"/>
 <wire x1="-83.82" y1="-20.32" x2="-86.36" y2="-20.32" width="0.1524" layer="91"/>
 <wire x1="-86.36" y1="-20.32" x2="-86.36" y2="-17.78" width="0.1524" layer="91"/>
 <pinref part="SUPPLY9" gate="G$1" pin="3.3V"/>
+<pinref part="U9" gate="G$1" pin="VCCA"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -13364,9 +13369,9 @@ Example: SX-32S</description>
 <label x="71.12" y="-38.1" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U9" gate="G$1" pin="A1"/>
 <wire x1="-83.82" y1="-25.4" x2="-88.9" y2="-25.4" width="0.1524" layer="91"/>
 <label x="-88.9" y="-25.4" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="U9" gate="G$1" pin="A1"/>
 </segment>
 </net>
 <net name="MOSI1" class="0">
@@ -13403,9 +13408,9 @@ Example: SX-32S</description>
 <label x="116.84" y="-38.1" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U9" gate="G$1" pin="A2"/>
 <wire x1="-83.82" y1="-30.48" x2="-88.9" y2="-30.48" width="0.1524" layer="91"/>
 <label x="-88.9" y="-30.48" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="U9" gate="G$1" pin="A2"/>
 </segment>
 </net>
 <net name="MOSI" class="0">
@@ -13430,9 +13435,9 @@ Example: SX-32S</description>
 <label x="71.12" y="-43.18" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U9" gate="G$1" pin="A4Y"/>
 <wire x1="-83.82" y1="-40.64" x2="-88.9" y2="-40.64" width="0.1524" layer="91"/>
 <label x="-88.9" y="-40.64" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="U9" gate="G$1" pin="A4Y"/>
 </segment>
 </net>
 <net name="CS2" class="0">
@@ -13753,10 +13758,10 @@ Example: SX-32S</description>
 <wire x1="-27.94" y1="12.7" x2="-27.94" y2="15.24" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U9" gate="G$1" pin="VCCB"/>
 <wire x1="-53.34" y1="-20.32" x2="-50.8" y2="-20.32" width="0.1524" layer="91"/>
 <wire x1="-50.8" y1="-20.32" x2="-50.8" y2="-17.78" width="0.1524" layer="91"/>
 <pinref part="P+4" gate="1" pin="+5V"/>
+<pinref part="U9" gate="G$1" pin="VCCB"/>
 </segment>
 <segment>
 <pinref part="P+5" gate="1" pin="+5V"/>
@@ -13799,9 +13804,9 @@ Example: SX-32S</description>
 <label x="228.6" y="40.64" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U9" gate="G$1" pin="B2Y"/>
 <wire x1="-53.34" y1="-30.48" x2="-48.26" y2="-30.48" width="0.1524" layer="91"/>
 <label x="-48.26" y="-30.48" size="1.27" layer="95" xref="yes"/>
+<pinref part="U9" gate="G$1" pin="B2Y"/>
 </segment>
 </net>
 <net name="RST_5V" class="0">
@@ -13823,9 +13828,9 @@ Example: SX-32S</description>
 <wire x1="223.52" y1="38.1" x2="228.6" y2="38.1" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U9" gate="G$1" pin="B4"/>
 <wire x1="-53.34" y1="-40.64" x2="-48.26" y2="-40.64" width="0.1524" layer="91"/>
 <label x="-48.26" y="-40.64" size="1.27" layer="95" xref="yes"/>
+<pinref part="U9" gate="G$1" pin="B4"/>
 </segment>
 </net>
 <net name="SCLK_5V" class="0">
@@ -13840,16 +13845,16 @@ Example: SX-32S</description>
 <label x="-63.5" y="10.16" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U9" gate="G$1" pin="B1Y"/>
 <wire x1="-53.34" y1="-25.4" x2="-48.26" y2="-25.4" width="0.1524" layer="91"/>
 <label x="-48.26" y="-25.4" size="1.27" layer="95" xref="yes"/>
+<pinref part="U9" gate="G$1" pin="B1Y"/>
 </segment>
 </net>
 <net name="OE" class="0">
 <segment>
-<pinref part="U9" gate="G$1" pin="OE"/>
 <wire x1="-83.82" y1="-45.72" x2="-88.9" y2="-45.72" width="0.1524" layer="91"/>
 <label x="-88.9" y="-45.72" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="U9" gate="G$1" pin="OE"/>
 </segment>
 </net>
 <net name="CS1_5V" class="0">
