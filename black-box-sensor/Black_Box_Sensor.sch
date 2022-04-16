@@ -649,6 +649,24 @@ Source: http://www.taiwansemi.com .. 5205_0409c.pdf</description>
 <rectangle x1="0.7" y1="0.85" x2="1.2" y2="1.5" layer="51"/>
 <rectangle x1="-1.2" y1="0.85" x2="-0.7" y2="1.5" layer="51"/>
 </package>
+<package name="DIOM5225X250N">
+<wire x1="-2.85" y1="1.45" x2="-2.85" y2="-1.45" width="0.127" layer="51"/>
+<wire x1="2.85" y1="-1.45" x2="2.85" y2="1.45" width="0.127" layer="51"/>
+<wire x1="2.85" y1="1.45" x2="-2.85" y2="1.45" width="0.127" layer="21"/>
+<wire x1="-2.85" y1="-1.45" x2="2.85" y2="-1.45" width="0.127" layer="21"/>
+<wire x1="-2.85" y1="-1.45" x2="2.85" y2="-1.45" width="0.127" layer="51"/>
+<wire x1="2.85" y1="1.45" x2="-2.85" y2="1.45" width="0.127" layer="51"/>
+<wire x1="-3.6" y1="1.7" x2="3.6" y2="1.7" width="0.05" layer="39"/>
+<wire x1="3.6" y1="1.7" x2="3.6" y2="-1.7" width="0.05" layer="39"/>
+<wire x1="3.6" y1="-1.7" x2="-3.6" y2="-1.7" width="0.05" layer="39"/>
+<wire x1="-3.6" y1="-1.7" x2="-3.6" y2="1.7" width="0.05" layer="39"/>
+<text x="-3" y="2" size="0.6096" layer="25" font="vector" ratio="10">&gt;NAME</text>
+<text x="-3" y="-2" size="0.6096" layer="27" font="vector" ratio="10" align="top-left">&gt;VALUE</text>
+<circle x="-3.9" y="0.1" radius="0.1" width="0.2" layer="21"/>
+<circle x="-3.9" y="0.1" radius="0.1" width="0.1" layer="51"/>
+<smd name="C" x="-2.135" y="0" dx="2.43" dy="1.61" layer="1"/>
+<smd name="A" x="2.135" y="0" dx="2.43" dy="1.61" layer="1" rot="R180"/>
+</package>
 </packages>
 <symbols>
 <symbol name="ADXL375BCCZ-RL7">
@@ -928,6 +946,21 @@ Source: http://www.taiwansemi.com .. 5205_0409c.pdf</description>
 <pin name="CE" x="-15.24" y="-5.08" length="middle"/>
 <text x="-10.16" y="-7.874" size="1.778" layer="96" align="top-left">&gt;VALUE</text>
 <text x="-10.16" y="7.874" size="1.778" layer="95">&gt;NAME</text>
+</symbol>
+<symbol name="SCHOTTKY">
+<wire x1="1.27" y1="-2.54" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="-1.27" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="0.508" x2="-1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="-2.54" x2="1.27" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0" x2="1.27" y2="-0.508" width="0.254" layer="94"/>
+<text x="2.54" y="0" size="1.778" layer="95">&gt;NAME</text>
+<text x="2.54" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="A" x="0" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
+<pin name="C" x="0" y="2.54" visible="off" length="short" direction="pas" rot="R270"/>
+<wire x1="1.27" y1="-0.508" x2="0.762" y2="-0.508" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="0.508" x2="-0.762" y2="0.508" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -1255,6 +1288,27 @@ https://www.ti.com/lit/ds/symlink/txu0304.pdf?ts=1646321006193&amp;ref_url=https
 </connects>
 <technologies>
 <technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="CDBA240LL-HF" prefix="D">
+<description>40V, 2A Schottky diode with 1mA reverse leakage current and 350mV forward voltage.
+&lt;p&gt; &lt;/p&gt;
+&lt;a href = "https://www.comchiptech.com/admin/files/product/CDBA240LL-HF%20RevD765674.pdf"&gt; Datasheet &lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="SCHOTTKY" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="DIOM5225X250N">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DKPN" value="641-1698-1-ND" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -12507,7 +12561,6 @@ Example: SX-32S</description>
 <part name="GND15" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="P+1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="P+2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
-<part name="P+3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="GND27" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="GND28" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="SUPPLY9" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
@@ -12565,6 +12618,10 @@ Example: SX-32S</description>
 <attribute name="DKPN" value="CC0603KRX7R6BB105"/>
 <attribute name="VOLTAGE" value="10V"/>
 </part>
+<part name="D1" library="BBS_Library" deviceset="CDBA240LL-HF" device=""/>
+<part name="P+6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
+<part name="D2" library="BBS_Library" deviceset="CDBA240LL-HF" device=""/>
+<part name="P+9" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -12785,40 +12842,40 @@ Example: SX-32S</description>
 <attribute name="NAME" x="37.1856" y="-30.2514" size="2.0828" layer="95" ratio="6" rot="SR0"/>
 <attribute name="VALUE" x="36.83" y="-51.816" size="2.0828" layer="96" ratio="6"/>
 </instance>
-<instance part="SUPPLY15" gate="G$1" x="27.94" y="-30.48" smashed="yes">
-<attribute name="VALUE" x="27.94" y="-27.686" size="1.778" layer="96" align="bottom-center"/>
+<instance part="SUPPLY15" gate="G$1" x="30.48" y="-33.02" smashed="yes">
+<attribute name="VALUE" x="30.48" y="-30.226" size="1.778" layer="96" align="bottom-center"/>
 </instance>
-<instance part="GND22" gate="1" x="27.94" y="-48.26" smashed="yes">
-<attribute name="VALUE" x="27.94" y="-48.514" size="1.778" layer="96" align="top-center"/>
+<instance part="GND22" gate="1" x="30.48" y="-50.8" smashed="yes">
+<attribute name="VALUE" x="30.48" y="-51.054" size="1.778" layer="96" align="top-center"/>
 </instance>
-<instance part="LED1" gate="G$1" x="-7.62" y="-25.4" smashed="yes">
-<attribute name="NAME" x="-4.064" y="-29.972" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="-1.905" y="-29.972" size="1.778" layer="96" rot="R90"/>
-<attribute name="DJKPN" x="-7.62" y="-25.4" size="1.778" layer="96" display="off"/>
+<instance part="LED1" gate="G$1" x="-2.54" y="-33.02" smashed="yes">
+<attribute name="NAME" x="1.016" y="-37.592" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="3.175" y="-37.592" size="1.778" layer="96" rot="R90"/>
+<attribute name="DJKPN" x="-2.54" y="-33.02" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="SUPPLY16" gate="G$1" x="-7.62" y="-17.78" smashed="yes">
-<attribute name="VALUE" x="-7.62" y="-14.986" size="1.778" layer="96" align="bottom-center"/>
+<instance part="SUPPLY16" gate="G$1" x="-2.54" y="-25.4" smashed="yes">
+<attribute name="VALUE" x="-2.54" y="-22.606" size="1.778" layer="96" align="bottom-center"/>
 </instance>
-<instance part="LED2" gate="G$1" x="-20.32" y="-27.94" smashed="yes">
-<attribute name="NAME" x="-16.764" y="-32.512" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="-14.605" y="-32.512" size="1.778" layer="96" rot="R90"/>
-<attribute name="DJKPN" x="-20.32" y="-27.94" size="1.778" layer="96" display="off"/>
+<instance part="LED2" gate="G$1" x="-17.78" y="-33.02" smashed="yes">
+<attribute name="NAME" x="-14.224" y="-37.592" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="-12.065" y="-37.592" size="1.778" layer="96" rot="R90"/>
+<attribute name="DJKPN" x="-17.78" y="-33.02" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="R3" gate="G$1" x="-25.4" y="-38.1" smashed="yes">
-<attribute name="NAME" x="-28.448" y="-36.3474" size="1.778" layer="95"/>
-<attribute name="VALUE" x="-24.13" y="-36.322" size="1.778" layer="96"/>
-<attribute name="DJKPN" x="-25.4" y="-38.1" size="1.778" layer="96" display="off"/>
+<instance part="R3" gate="G$1" x="-22.86" y="-43.18" smashed="yes">
+<attribute name="NAME" x="-25.908" y="-41.4274" size="1.778" layer="95"/>
+<attribute name="VALUE" x="-21.59" y="-41.402" size="1.778" layer="96"/>
+<attribute name="DJKPN" x="-22.86" y="-43.18" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="R6" gate="G$1" x="-2.54" y="-35.56" smashed="yes">
-<attribute name="NAME" x="-5.588" y="-33.8074" size="1.778" layer="95"/>
-<attribute name="VALUE" x="-1.27" y="-33.782" size="1.778" layer="96"/>
-<attribute name="DJKPN" x="-2.54" y="-35.56" size="1.778" layer="96" display="off"/>
+<instance part="R6" gate="G$1" x="2.54" y="-43.18" smashed="yes">
+<attribute name="NAME" x="-0.508" y="-41.4274" size="1.778" layer="95"/>
+<attribute name="VALUE" x="3.81" y="-41.402" size="1.778" layer="96"/>
+<attribute name="DJKPN" x="2.54" y="-43.18" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="GND23" gate="1" x="2.54" y="-43.18" smashed="yes">
-<attribute name="VALUE" x="2.54" y="-43.434" size="1.778" layer="96" align="top-center"/>
+<instance part="GND23" gate="1" x="7.62" y="-50.8" smashed="yes">
+<attribute name="VALUE" x="7.62" y="-51.054" size="1.778" layer="96" align="top-center"/>
 </instance>
-<instance part="GND24" gate="1" x="-30.48" y="-45.72" smashed="yes">
-<attribute name="VALUE" x="-30.48" y="-45.974" size="1.778" layer="96" align="top-center"/>
+<instance part="GND24" gate="1" x="-27.94" y="-50.8" smashed="yes">
+<attribute name="VALUE" x="-27.94" y="-51.054" size="1.778" layer="96" align="top-center"/>
 </instance>
 <instance part="CN1" gate="G$1" x="119.38" y="106.68" smashed="yes">
 <attribute name="NAME" x="113.03" y="112.395" size="1.778" layer="95"/>
@@ -12862,9 +12919,6 @@ Example: SX-32S</description>
 </instance>
 <instance part="P+2" gate="1" x="160.02" y="76.2" smashed="yes">
 <attribute name="VALUE" x="157.48" y="71.12" size="1.778" layer="96" rot="R90"/>
-</instance>
-<instance part="P+3" gate="1" x="-27.94" y="17.78" smashed="yes">
-<attribute name="VALUE" x="-27.94" y="17.78" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="GND27" gate="1" x="-27.94" y="2.54" smashed="yes">
 <attribute name="VALUE" x="-27.94" y="2.286" size="1.778" layer="96" align="top-center"/>
@@ -12979,6 +13033,20 @@ Example: SX-32S</description>
 <attribute name="VALUE" x="92.456" y="110.109" size="1.778" layer="96"/>
 <attribute name="VOLTAGE" x="91.44" y="114.3" size="1.778" layer="96" display="off"/>
 <attribute name="DKPN" x="91.44" y="114.3" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="D1" gate="G$1" x="154.94" y="-27.94" smashed="yes" rot="MR90">
+<attribute name="NAME" x="154.94" y="-25.4" size="1.778" layer="95" rot="MR90"/>
+<attribute name="VALUE" x="152.4" y="-25.4" size="1.778" layer="96" rot="MR90"/>
+</instance>
+<instance part="P+6" gate="1" x="160.02" y="-22.86" smashed="yes">
+<attribute name="VALUE" x="160.02" y="-22.86" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="D2" gate="G$1" x="-22.86" y="12.7" smashed="yes" rot="MR90">
+<attribute name="NAME" x="-22.86" y="15.24" size="1.778" layer="95" rot="MR90"/>
+<attribute name="VALUE" x="-25.4" y="15.24" size="1.778" layer="96" rot="MR90"/>
+</instance>
+<instance part="P+9" gate="1" x="-17.78" y="17.78" smashed="yes">
+<attribute name="VALUE" x="-17.78" y="17.78" size="1.778" layer="96" rot="R90"/>
 </instance>
 </instances>
 <busses>
@@ -13145,22 +13213,23 @@ Example: SX-32S</description>
 <pinref part="GND21" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="J3" gate="A" pin="ANCHOR"/>
 <pinref part="GND22" gate="1" pin="GND"/>
-<wire x1="33.02" y1="-45.72" x2="27.94" y2="-45.72" width="0.1524" layer="91"/>
 <pinref part="J3" gate="A" pin="4"/>
-<wire x1="33.02" y1="-43.18" x2="27.94" y2="-43.18" width="0.1524" layer="91"/>
-<wire x1="27.94" y1="-43.18" x2="27.94" y2="-45.72" width="0.1524" layer="91"/>
-<junction x="27.94" y="-45.72"/>
+<wire x1="33.02" y1="-43.18" x2="30.48" y2="-43.18" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="-43.18" x2="30.48" y2="-45.72" width="0.1524" layer="91"/>
+<pinref part="J3" gate="A" pin="ANCHOR"/>
+<wire x1="30.48" y1="-45.72" x2="30.48" y2="-48.26" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="-45.72" x2="30.48" y2="-45.72" width="0.1524" layer="91"/>
+<junction x="30.48" y="-45.72"/>
 </segment>
 <segment>
 <pinref part="R6" gate="G$1" pin="2"/>
-<wire x1="2.54" y1="-35.56" x2="2.54" y2="-40.64" width="0.1524" layer="91"/>
+<wire x1="7.62" y1="-43.18" x2="7.62" y2="-48.26" width="0.1524" layer="91"/>
 <pinref part="GND23" gate="1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="R3" gate="G$1" pin="1"/>
-<wire x1="-30.48" y1="-38.1" x2="-30.48" y2="-43.18" width="0.1524" layer="91"/>
+<wire x1="-27.94" y1="-43.18" x2="-27.94" y2="-48.26" width="0.1524" layer="91"/>
 <pinref part="GND24" gate="1" pin="GND"/>
 </segment>
 <segment>
@@ -13337,14 +13406,14 @@ Example: SX-32S</description>
 </segment>
 <segment>
 <pinref part="SUPPLY15" gate="G$1" pin="3.3V"/>
-<wire x1="27.94" y1="-30.48" x2="27.94" y2="-35.56" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="-33.02" x2="30.48" y2="-35.56" width="0.1524" layer="91"/>
 <pinref part="J3" gate="A" pin="1"/>
-<wire x1="27.94" y1="-35.56" x2="33.02" y2="-35.56" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="-35.56" x2="33.02" y2="-35.56" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="SUPPLY16" gate="G$1" pin="3.3V"/>
 <pinref part="LED1" gate="G$1" pin="A"/>
-<wire x1="-7.62" y1="-17.78" x2="-7.62" y2="-22.86" width="0.1524" layer="91"/>
+<wire x1="-2.54" y1="-25.4" x2="-2.54" y2="-30.48" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="91.44" y1="116.84" x2="91.44" y2="119.38" width="0.1524" layer="91"/>
@@ -13570,14 +13639,16 @@ Example: SX-32S</description>
 </net>
 <net name="VBUS" class="0">
 <segment>
-<pinref part="J2" gate="G$1" pin="5"/>
-<wire x1="149.86" y1="-30.48" x2="147.32" y2="-30.48" width="0.1524" layer="91"/>
-<label x="149.86" y="-30.48" size="1.27" layer="95" rot="R90" xref="yes"/>
-</segment>
-<segment>
 <pinref part="U3" gate="G$1" pin="VBUS"/>
 <wire x1="175.26" y1="78.74" x2="170.18" y2="78.74" width="0.1524" layer="91"/>
 <label x="170.18" y="78.74" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="J2" gate="G$1" pin="5"/>
+<wire x1="147.32" y1="-30.48" x2="147.32" y2="-27.94" width="0.1524" layer="91"/>
+<pinref part="D1" gate="G$1" pin="A"/>
+<wire x1="147.32" y1="-27.94" x2="149.86" y2="-27.94" width="0.1524" layer="91"/>
+<label x="147.32" y="-27.94" size="1.27" layer="95" rot="R90" xref="yes"/>
 </segment>
 </net>
 <net name="CS4" class="0">
@@ -13721,14 +13792,14 @@ Example: SX-32S</description>
 <segment>
 <pinref part="LED2" gate="G$1" pin="C"/>
 <pinref part="R3" gate="G$1" pin="2"/>
-<wire x1="-20.32" y1="-33.02" x2="-20.32" y2="-38.1" width="0.1524" layer="91"/>
+<wire x1="-17.78" y1="-38.1" x2="-17.78" y2="-43.18" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$6" class="0">
 <segment>
 <pinref part="LED1" gate="G$1" pin="C"/>
 <pinref part="R6" gate="G$1" pin="1"/>
-<wire x1="-7.62" y1="-30.48" x2="-7.62" y2="-35.56" width="0.1524" layer="91"/>
+<wire x1="-2.54" y1="-38.1" x2="-2.54" y2="-43.18" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="LED" class="0">
@@ -13738,9 +13809,9 @@ Example: SX-32S</description>
 <label x="228.6" y="25.4" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<wire x1="-20.32" y1="-20.32" x2="-20.32" y2="-25.4" width="0.1524" layer="91"/>
+<wire x1="-17.78" y1="-25.4" x2="-17.78" y2="-30.48" width="0.1524" layer="91"/>
 <pinref part="LED2" gate="G$1" pin="A"/>
-<label x="-20.32" y="-20.32" size="1.27" layer="95" rot="R90" xref="yes"/>
+<label x="-17.78" y="-25.4" size="1.27" layer="95" rot="R90" xref="yes"/>
 </segment>
 </net>
 <net name="N$7" class="0">
@@ -13797,12 +13868,6 @@ Example: SX-32S</description>
 <pinref part="P+2" gate="1" pin="+5V"/>
 </segment>
 <segment>
-<pinref part="ISP1" gate="G$1" pin="VCC"/>
-<wire x1="-30.48" y1="12.7" x2="-27.94" y2="12.7" width="0.1524" layer="91"/>
-<pinref part="P+3" gate="1" pin="+5V"/>
-<wire x1="-27.94" y1="12.7" x2="-27.94" y2="15.24" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <wire x1="-53.34" y1="-20.32" x2="-50.8" y2="-20.32" width="0.1524" layer="91"/>
 <wire x1="-50.8" y1="-20.32" x2="-50.8" y2="-17.78" width="0.1524" layer="91"/>
 <pinref part="P+4" gate="1" pin="+5V"/>
@@ -13838,6 +13903,18 @@ Example: SX-32S</description>
 <pinref part="C1" gate="G$1" pin="1"/>
 <wire x1="53.34" y1="114.3" x2="53.34" y2="116.84" width="0.1524" layer="91"/>
 <junction x="53.34" y="116.84"/>
+</segment>
+<segment>
+<pinref part="D1" gate="G$1" pin="C"/>
+<wire x1="157.48" y1="-27.94" x2="160.02" y2="-27.94" width="0.1524" layer="91"/>
+<pinref part="P+6" gate="1" pin="+5V"/>
+<wire x1="160.02" y1="-25.4" x2="160.02" y2="-27.94" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="D2" gate="G$1" pin="C"/>
+<wire x1="-20.32" y1="12.7" x2="-17.78" y2="12.7" width="0.1524" layer="91"/>
+<pinref part="P+9" gate="1" pin="+5V"/>
+<wire x1="-17.78" y1="15.24" x2="-17.78" y2="12.7" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="MISO_5V" class="0">
@@ -13970,6 +14047,13 @@ Example: SX-32S</description>
 <pinref part="U3" gate="G$1" pin="PF0(ADC0)"/>
 <wire x1="223.52" y1="83.82" x2="228.6" y2="83.82" width="0.1524" layer="91"/>
 <label x="228.6" y="83.82" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="N$9" class="0">
+<segment>
+<pinref part="ISP1" gate="G$1" pin="VCC"/>
+<pinref part="D2" gate="G$1" pin="A"/>
+<wire x1="-27.94" y1="12.7" x2="-30.48" y2="12.7" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
