@@ -701,6 +701,29 @@
 <text x="-2" y="5" size="1" layer="25" font="vector" ratio="10">&gt;NAME</text>
 <text x="-2" y="-5" size="1" layer="27" font="vector" ratio="10" align="top-left">&gt;VALUE</text>
 </package>
+<package name="LGA-12_2X2X1_STM">
+<description>https://www.st.com/content/ccc/resource/technical/document/datasheet/54/2a/85/76/e3/97/42/18/DM00075867.pdf/files/DM00075867.pdf/jcr:content/translations/en.DM00075867.pdf</description>
+<smd name="1" x="-0.75" y="0.75" dx="0.37668125" dy="0.3515375" layer="1"/>
+<smd name="2" x="-0.75" y="0.25" dx="0.37668125" dy="0.3515375" layer="1"/>
+<smd name="3" x="-0.75" y="-0.25" dx="0.37668125" dy="0.3515375" layer="1"/>
+<smd name="4" x="-0.75" y="-0.75" dx="0.37668125" dy="0.3515375" layer="1"/>
+<smd name="5" x="-0.25" y="-0.75" dx="0.37668125" dy="0.3515375" layer="1" rot="R90"/>
+<smd name="6" x="0.25" y="-0.75" dx="0.37668125" dy="0.3515375" layer="1" rot="R90"/>
+<smd name="7" x="0.75" y="-0.75" dx="0.37668125" dy="0.3515375" layer="1" rot="R180"/>
+<smd name="8" x="0.75" y="-0.25" dx="0.37668125" dy="0.3515375" layer="1" rot="R180"/>
+<smd name="9" x="0.75" y="0.25" dx="0.37668125" dy="0.3515375" layer="1" rot="R180"/>
+<smd name="10" x="0.75" y="0.75" dx="0.37668125" dy="0.3515375" layer="1" rot="R180"/>
+<smd name="11" x="0.25" y="0.75" dx="0.37668125" dy="0.3515375" layer="1" rot="R270"/>
+<smd name="12" x="-0.25" y="0.75" dx="0.37668125" dy="0.3515375" layer="1" rot="R270"/>
+<text x="-1.0272" y="-1.335" size="1" layer="27" font="vector" ratio="10" rot="SR0" align="top-left">&gt;VALUE</text>
+<wire x1="-1" y1="-0.25" x2="0.25" y2="1" width="0.2" layer="51"/>
+<wire x1="-1" y1="-1" x2="1" y2="-1" width="0.2" layer="21"/>
+<wire x1="1" y1="-1" x2="1" y2="1" width="0.2" layer="21"/>
+<wire x1="1" y1="1" x2="-1" y2="1" width="0.2" layer="21"/>
+<wire x1="-1" y1="1" x2="-1" y2="-1" width="0.2" layer="21"/>
+<text x="-1.0366" y="1.305" size="1" layer="25" font="vector" ratio="10" rot="SR0">&gt;NAME</text>
+<circle x="-1.5" y="0.8" radius="0.2" width="0.1524" layer="21"/>
+</package>
 </packages>
 <packages3d>
 <package3d name="TEENSY_4.1" urn="urn:adsk.eagle:package:22261832/3" type="model">
@@ -1324,6 +1347,24 @@
 <pin name="VCCB" x="15.24" y="7.62" length="middle" direction="pas" rot="R180"/>
 <text x="-10.16" y="10.16" size="1.778" layer="95">&gt;NAME</text>
 <text x="-10.16" y="-7.62" size="1.778" layer="96" align="top-left">&gt;VALUE</text>
+</symbol>
+<symbol name="LIS3MDLTR">
+<pin name="SCL/SPC" x="-25.4" y="-2.54" length="middle" direction="pas"/>
+<pin name="GND" x="25.4" y="-7.62" length="middle" direction="pas" rot="R180"/>
+<pin name="C1" x="-25.4" y="-7.62" length="middle" direction="pas"/>
+<pin name="VDD" x="-25.4" y="7.62" length="middle" direction="pas"/>
+<pin name="VDD_IO" x="-25.4" y="5.08" length="middle" direction="pas"/>
+<pin name="INT" x="-25.4" y="-5.08" length="middle" direction="pas"/>
+<pin name="DRDY" x="25.4" y="2.54" length="middle" direction="pas" rot="R180"/>
+<pin name="SDO/SA1" x="25.4" y="5.08" length="middle" direction="pas" rot="R180"/>
+<pin name="CS" x="25.4" y="0" length="middle" direction="pas" rot="R180"/>
+<pin name="SDA/SDI/SDO" x="25.4" y="7.62" length="middle" direction="pas" rot="R180"/>
+<wire x1="-20.32" y1="10.16" x2="-20.32" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-20.32" y1="-10.16" x2="20.32" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="20.32" y1="-10.16" x2="20.32" y2="10.16" width="0.254" layer="94"/>
+<wire x1="20.32" y1="10.16" x2="-20.32" y2="10.16" width="0.254" layer="94"/>
+<text x="-20.32" y="10.668" size="1.778" layer="95" ratio="6" rot="SR0">&gt;NAME</text>
+<text x="-20.32" y="-10.668" size="1.778" layer="96" align="top-left">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -2078,6 +2119,35 @@
 <technologies>
 <technology name="">
 <attribute name="DKPN" value="296-34699-5-ND" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LIS3MDLTR" prefix="U">
+<description>Magnetoresistive Sensor X, Y, Z Axis 12-LGA (2x2)
+
+https://www.st.com/content/ccc/resource/technical/document/datasheet/54/2a/85/76/e3/97/42/18/DM00075867.pdf/files/DM00075867.pdf/jcr:content/translations/en.DM00075867.pdf</description>
+<gates>
+<gate name="A" symbol="LIS3MDLTR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="LGA-12_2X2X1_STM">
+<connects>
+<connect gate="A" pin="C1" pad="4"/>
+<connect gate="A" pin="CS" pad="10"/>
+<connect gate="A" pin="DRDY" pad="8"/>
+<connect gate="A" pin="GND" pad="2 3 12"/>
+<connect gate="A" pin="INT" pad="7"/>
+<connect gate="A" pin="SCL/SPC" pad="1"/>
+<connect gate="A" pin="SDA/SDI/SDO" pad="11"/>
+<connect gate="A" pin="SDO/SA1" pad="9"/>
+<connect gate="A" pin="VDD" pad="5"/>
+<connect gate="A" pin="VDD_IO" pad="6"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DKPN" value="497-13892-1-ND" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -13840,6 +13910,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="GND61" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="GND83" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="U5" library="Hocki_Library" deviceset="TXS0104ED" device=""/>
+<part name="U25" library="Hocki_Library" deviceset="LIS3MDLTR" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -16739,6 +16810,10 @@ between I2C and SPI modes</text>
 <instance part="R36" gate="G$1" x="180.34" y="170.18" smashed="yes" rot="R180">
 <attribute name="NAME" x="184.15" y="168.6814" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="184.15" y="173.482" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="U25" gate="A" x="195.58" y="134.62" smashed="yes">
+<attribute name="NAME" x="175.26" y="145.288" size="1.778" layer="95" ratio="6" rot="SR0"/>
+<attribute name="VALUE" x="175.26" y="123.952" size="1.778" layer="96" align="top-left"/>
 </instance>
 </instances>
 <busses>
