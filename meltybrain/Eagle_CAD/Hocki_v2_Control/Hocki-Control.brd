@@ -696,6 +696,29 @@
 <text x="-2" y="5" size="1" layer="25" font="vector" ratio="10">&gt;NAME</text>
 <text x="-2" y="-5" size="1" layer="27" font="vector" ratio="10" align="top-left">&gt;VALUE</text>
 </package>
+<package name="LGA-12_2X2X1_STM">
+<description>https://www.st.com/content/ccc/resource/technical/document/datasheet/54/2a/85/76/e3/97/42/18/DM00075867.pdf/files/DM00075867.pdf/jcr:content/translations/en.DM00075867.pdf</description>
+<smd name="1" x="-0.75" y="0.75" dx="0.37668125" dy="0.3515375" layer="1"/>
+<smd name="2" x="-0.75" y="0.25" dx="0.37668125" dy="0.3515375" layer="1"/>
+<smd name="3" x="-0.75" y="-0.25" dx="0.37668125" dy="0.3515375" layer="1"/>
+<smd name="4" x="-0.75" y="-0.75" dx="0.37668125" dy="0.3515375" layer="1"/>
+<smd name="5" x="-0.25" y="-0.75" dx="0.37668125" dy="0.3515375" layer="1" rot="R90"/>
+<smd name="6" x="0.25" y="-0.75" dx="0.37668125" dy="0.3515375" layer="1" rot="R90"/>
+<smd name="7" x="0.75" y="-0.75" dx="0.37668125" dy="0.3515375" layer="1" rot="R180"/>
+<smd name="8" x="0.75" y="-0.25" dx="0.37668125" dy="0.3515375" layer="1" rot="R180"/>
+<smd name="9" x="0.75" y="0.25" dx="0.37668125" dy="0.3515375" layer="1" rot="R180"/>
+<smd name="10" x="0.75" y="0.75" dx="0.37668125" dy="0.3515375" layer="1" rot="R180"/>
+<smd name="11" x="0.25" y="0.75" dx="0.37668125" dy="0.3515375" layer="1" rot="R270"/>
+<smd name="12" x="-0.25" y="0.75" dx="0.37668125" dy="0.3515375" layer="1" rot="R270"/>
+<text x="-1.0272" y="-1.335" size="1" layer="27" font="vector" ratio="10" rot="SR0" align="top-left">&gt;VALUE</text>
+<wire x1="-1" y1="-0.25" x2="0.25" y2="1" width="0.2" layer="51"/>
+<wire x1="-1" y1="-1" x2="1" y2="-1" width="0.2" layer="21"/>
+<wire x1="1" y1="-1" x2="1" y2="1" width="0.2" layer="21"/>
+<wire x1="1" y1="1" x2="-1" y2="1" width="0.2" layer="21"/>
+<wire x1="-1" y1="1" x2="-1" y2="-1" width="0.2" layer="21"/>
+<text x="-1.0366" y="1.305" size="1" layer="25" font="vector" ratio="10" rot="SR0">&gt;NAME</text>
+<circle x="-1.5" y="0.8" radius="0.2" width="0.1524" layer="21"/>
+</package>
 </packages>
 <packages3d>
 <package3d name="TEENSY_4.1" urn="urn:adsk.eagle:package:22261832/3" type="model">
@@ -6129,6 +6152,11 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <attribute name="DKPN" value="296-34699-5-ND" x="21" y="7" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="26" y="9" size="1" layer="25" font="vector" ratio="10" rot="R270"/>
 <attribute name="VALUE" x="16" y="9" size="1" layer="27" font="vector" ratio="10" rot="R270" align="top-left"/>
+</element>
+<element name="U25" library="Hocki_Library" package="LGA-12_2X2X1_STM" value="LIS3MDLTR" x="-55" y="-40" smashed="yes">
+<attribute name="DKPN" value="497-13892-1-ND" x="-55" y="-40" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="-56.0366" y="-38.695" size="1" layer="25" font="vector" ratio="10" rot="SR0"/>
+<attribute name="VALUE" x="-56.0272" y="-41.335" size="1" layer="27" font="vector" ratio="10" rot="SR0" align="top-left"/>
 </element>
 </elements>
 <signals>
