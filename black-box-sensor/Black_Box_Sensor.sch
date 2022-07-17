@@ -667,6 +667,42 @@ Source: http://www.taiwansemi.com .. 5205_0409c.pdf</description>
 <smd name="C" x="-2.135" y="0" dx="2.43" dy="1.61" layer="1"/>
 <smd name="A" x="2.135" y="0" dx="2.43" dy="1.61" layer="1" rot="R180"/>
 </package>
+<package name="PQFN50P300X300X80-16N">
+<description>&lt;p&gt;
+&lt;a href="https://invensense.tdk.com/wp-content/uploads/2017/11/DS-000195-IAM-20380_v1.0-Typ.pdf?ref_disty=digikey"&gt;Datasheet&lt;/a&gt;</description>
+<wire x1="-1.55" y1="1.55" x2="1.55" y2="1.55" width="0.2" layer="21"/>
+<wire x1="1.55" y1="1.55" x2="1.55" y2="-1.55" width="0.2" layer="21"/>
+<wire x1="1.55" y1="-1.55" x2="-1.55" y2="-1.55" width="0.2" layer="21"/>
+<wire x1="-1.55" y1="-1.55" x2="-1.55" y2="1.55" width="0.2" layer="21"/>
+<wire x1="-1.55" y1="1.4" x2="-1.55" y2="1.55" width="0.127" layer="21"/>
+<wire x1="-1.55" y1="1.55" x2="-0.9" y2="1.55" width="0.127" layer="21"/>
+<wire x1="0.9" y1="1.55" x2="1.55" y2="1.55" width="0.127" layer="21"/>
+<wire x1="1.55" y1="1.55" x2="1.55" y2="1.4" width="0.127" layer="21"/>
+<wire x1="-1.55" y1="-1.4" x2="-1.55" y2="-1.55" width="0.127" layer="21"/>
+<wire x1="-1.55" y1="-1.55" x2="-0.9" y2="-1.55" width="0.127" layer="21"/>
+<wire x1="0.9" y1="-1.55" x2="1.55" y2="-1.55" width="0.127" layer="21"/>
+<wire x1="1.55" y1="-1.55" x2="1.55" y2="-1.4" width="0.127" layer="21"/>
+<text x="-2" y="2" size="0.6107375" layer="25" font="vector" ratio="10">&gt;NAME</text>
+<text x="-2" y="-2" size="0.609659375" layer="27" font="vector" ratio="10" align="top-left">&gt;VALUE</text>
+<circle x="-2" y="1" radius="0.05" width="0.1" layer="21"/>
+<rectangle x1="-1.65" y1="-1.65" x2="1.65" y2="1.65" layer="39"/>
+<smd name="1" x="-1.26" y="1" dx="0.49" dy="0.35" layer="1" roundness="25"/>
+<smd name="2" x="-1.26" y="0.5" dx="0.49" dy="0.35" layer="1" roundness="25"/>
+<smd name="3" x="-1.26" y="0" dx="0.49" dy="0.35" layer="1" roundness="25"/>
+<smd name="4" x="-1.26" y="-0.5" dx="0.49" dy="0.35" layer="1" roundness="25"/>
+<smd name="5" x="-1.26" y="-1" dx="0.49" dy="0.35" layer="1" roundness="25"/>
+<smd name="6" x="-0.5" y="-1.26" dx="0.49" dy="0.35" layer="1" roundness="25" rot="R90"/>
+<smd name="7" x="0" y="-1.26" dx="0.49" dy="0.35" layer="1" roundness="25" rot="R90"/>
+<smd name="8" x="0.5" y="-1.26" dx="0.49" dy="0.35" layer="1" roundness="25" rot="R90"/>
+<smd name="9" x="1.26" y="-1" dx="0.49" dy="0.35" layer="1" roundness="25" rot="R180"/>
+<smd name="10" x="1.26" y="-0.5" dx="0.49" dy="0.35" layer="1" roundness="25" rot="R180"/>
+<smd name="11" x="1.26" y="0" dx="0.49" dy="0.35" layer="1" roundness="25" rot="R180"/>
+<smd name="12" x="1.26" y="0.5" dx="0.49" dy="0.35" layer="1" roundness="25" rot="R180"/>
+<smd name="13" x="1.26" y="1" dx="0.49" dy="0.35" layer="1" roundness="25" rot="R180"/>
+<smd name="14" x="0.5" y="1.26" dx="0.49" dy="0.35" layer="1" roundness="25" rot="R270"/>
+<smd name="15" x="0" y="1.26" dx="0.49" dy="0.35" layer="1" roundness="25" rot="R270"/>
+<smd name="16" x="-0.5" y="1.26" dx="0.49" dy="0.35" layer="1" roundness="25" rot="R270"/>
+</package>
 </packages>
 <symbols>
 <symbol name="ADXL375BCCZ-RL7">
@@ -961,6 +997,24 @@ Source: http://www.taiwansemi.com .. 5205_0409c.pdf</description>
 <pin name="C" x="0" y="2.54" visible="off" length="short" direction="pas" rot="R270"/>
 <wire x1="1.27" y1="-0.508" x2="0.762" y2="-0.508" width="0.254" layer="94"/>
 <wire x1="-1.27" y1="0.508" x2="-0.762" y2="0.508" width="0.254" layer="94"/>
+</symbol>
+<symbol name="IAM-20380">
+<wire x1="12.7" y1="10.16" x2="12.7" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-10.16" x2="-12.7" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-10.16" x2="-12.7" y2="10.16" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="10.16" x2="12.7" y2="10.16" width="0.254" layer="94"/>
+<text x="-12.7" y="11.43" size="1.778" layer="95">&gt;NAME</text>
+<text x="-12.7" y="-11.43" size="1.78078125" layer="96" align="top-left">&gt;VALUE</text>
+<pin name="VDDIO" x="-17.78" y="5.08" length="middle" direction="pas"/>
+<pin name="SCL/SPC" x="-17.78" y="-5.08" length="middle" direction="pas"/>
+<pin name="SDA/SDI" x="-17.78" y="-2.54" length="middle" direction="pas"/>
+<pin name="CS" x="-17.78" y="0" length="middle" direction="pas"/>
+<pin name="INT" x="17.78" y="5.08" length="middle" direction="pas" rot="R180"/>
+<pin name="VDD" x="-17.78" y="7.62" length="middle" direction="pas"/>
+<pin name="GND" x="17.78" y="-7.62" length="middle" direction="pas" rot="R180"/>
+<pin name="REGOUT" x="17.78" y="2.54" length="middle" direction="pas" rot="R180"/>
+<pin name="SA0/SDO" x="17.78" y="7.62" length="middle" direction="pas" rot="R180"/>
+<pin name="FSYNC" x="-17.78" y="-7.62" length="middle" direction="pas"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -1308,6 +1362,36 @@ https://www.ti.com/lit/ds/symlink/txu0304.pdf?ts=1646321006193&amp;ref_url=https
 <technologies>
 <technology name="">
 <attribute name="DKPN" value="641-1698-1-ND" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="IAM-20380" prefix="U">
+<description>Gyroscope X (Pitch), Y (Roll), Z (Yaw) ±250, 500, 1000, 2000 27kHz I²C, SPI 16-LGA (3x3) VDD = 1.8V
+
+&lt;p&gt;
+&lt;a href="https://invensense.tdk.com/wp-content/uploads/2017/11/DS-000195-IAM-20380_v1.0-Typ.pdf?ref_disty=digikey"&gt;Datasheet&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="IAM-20380" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="PQFN50P300X300X80-16N">
+<connects>
+<connect gate="G$1" pin="CS" pad="5"/>
+<connect gate="G$1" pin="FSYNC" pad="8"/>
+<connect gate="G$1" pin="GND" pad="9 10 11 12 13 15"/>
+<connect gate="G$1" pin="INT" pad="6"/>
+<connect gate="G$1" pin="REGOUT" pad="14"/>
+<connect gate="G$1" pin="SA0/SDO" pad="4"/>
+<connect gate="G$1" pin="SCL/SPC" pad="2"/>
+<connect gate="G$1" pin="SDA/SDI" pad="3"/>
+<connect gate="G$1" pin="VDD" pad="16"/>
+<connect gate="G$1" pin="VDDIO" pad="1"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DKPN" value="1428-1153-2-ND"/>
 </technology>
 </technologies>
 </device>
@@ -12623,6 +12707,7 @@ Example: SX-32S</description>
 <part name="P+6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="P+9" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="R16" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="10k"/>
+<part name="U5" library="BBS_Library" deviceset="IAM-20380" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -13046,6 +13131,10 @@ Example: SX-32S</description>
 <instance part="R16" gate="G$1" x="172.72" y="91.44" smashed="yes" rot="R90">
 <attribute name="NAME" x="170.9674" y="85.852" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="170.942" y="92.71" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="U5" gate="G$1" x="114.3" y="25.4" smashed="yes">
+<attribute name="NAME" x="101.6" y="36.83" size="1.778" layer="95"/>
+<attribute name="VALUE" x="101.6" y="13.97" size="1.78078125" layer="96" align="top-left"/>
 </instance>
 </instances>
 <busses>
