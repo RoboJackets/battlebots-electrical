@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.6.2">
+<eagle version="9.5.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -2660,8 +2660,8 @@
 </deviceset>
 <deviceset name="LIS3MDLTR" prefix="U">
 <description>Magnetoresistive Sensor X, Y, Z Axis 12-LGA (2x2)
-
-https://www.st.com/content/ccc/resource/technical/document/datasheet/54/2a/85/76/e3/97/42/18/DM00075867.pdf/files/DM00075867.pdf/jcr:content/translations/en.DM00075867.pdf</description>
+&lt;p&gt;&lt;\p&gt;
+&lt;a href="https://www.digikey.com/en/products/detail/stmicroelectronics/LIS3MDLTR/4309733?s=N4IgjCBcpgnAHLKoDGUBmBDANgZwKYA0IA9lANogAMIAugL7EC0ATMiGpAC4BOArkVIUQAVjr1GINpErYAlrgDMdYgDZ2cgCZQQTMFQjEADlx0hiARy4BPHYZA2j%2BHZlxoJQA"&gt;DigiKey&lt;\a&gt;</description>
 <gates>
 <gate name="A" symbol="LIS3MDLTR" x="0" y="0"/>
 </gates>
