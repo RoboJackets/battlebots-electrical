@@ -13705,16 +13705,11 @@ Example: SX-32S</description>
 <label x="73.66" y="50.8" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="INT1" class="0">
+<net name="SDA" class="0">
 <segment>
 <pinref part="U3" gate="G$1" pin="PD1(INT1/SDA)"/>
 <wire x1="223.52" y1="12.7" x2="228.6" y2="12.7" width="0.1524" layer="91"/>
 <label x="228.6" y="12.7" size="1.27" layer="95" xref="yes"/>
-</segment>
-<segment>
-<pinref part="U1" gate="ADXL375BCCZ-RL7" pin="INT2"/>
-<wire x1="71.12" y1="86.36" x2="76.2" y2="86.36" width="0.1524" layer="91"/>
-<label x="76.2" y="86.36" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <wire x1="35.56" y1="-10.16" x2="30.48" y2="-10.16" width="0.1524" layer="91"/>
@@ -13722,16 +13717,11 @@ Example: SX-32S</description>
 <pinref part="U5" gate="G$1" pin="SDA/SDI"/>
 </segment>
 </net>
-<net name="INT0" class="0">
+<net name="SCL" class="0">
 <segment>
 <pinref part="U3" gate="G$1" pin="PD0(INT0/OC0B/SCL)"/>
 <wire x1="223.52" y1="10.16" x2="228.6" y2="10.16" width="0.1524" layer="91"/>
 <label x="228.6" y="10.16" size="1.27" layer="95" xref="yes"/>
-</segment>
-<segment>
-<pinref part="U1" gate="ADXL375BCCZ-RL7" pin="INT1"/>
-<wire x1="71.12" y1="91.44" x2="76.2" y2="91.44" width="0.1524" layer="91"/>
-<label x="76.2" y="91.44" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <wire x1="35.56" y1="-12.7" x2="30.48" y2="-12.7" width="0.1524" layer="91"/>
@@ -14113,6 +14103,30 @@ Example: SX-32S</description>
 <pinref part="U5" gate="G$1" pin="FSYNC"/>
 <wire x1="35.56" y1="-15.24" x2="30.48" y2="-15.24" width="0.1524" layer="91"/>
 <label x="30.48" y="-15.24" size="1.27" layer="95" rot="MR0" xref="yes"/>
+</segment>
+</net>
+<net name="INT0" class="0">
+<segment>
+<pinref part="U1" gate="ADXL375BCCZ-RL7" pin="INT1"/>
+<wire x1="71.12" y1="91.44" x2="76.2" y2="91.44" width="0.1524" layer="91"/>
+<label x="76.2" y="91.44" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U3" gate="G$1" pin="PB5(OC1A/ADC12/!OC4B)"/>
+<wire x1="223.52" y1="45.72" x2="228.6" y2="45.72" width="0.1524" layer="91"/>
+<label x="228.6" y="45.72" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="INT1" class="0">
+<segment>
+<pinref part="U1" gate="ADXL375BCCZ-RL7" pin="INT2"/>
+<wire x1="71.12" y1="86.36" x2="76.2" y2="86.36" width="0.1524" layer="91"/>
+<label x="76.2" y="86.36" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U3" gate="G$1" pin="PB6(OC1B/OC4B/ADC13)"/>
+<wire x1="223.52" y1="48.26" x2="228.6" y2="48.26" width="0.1524" layer="91"/>
+<label x="228.6" y="48.26" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 </nets>
