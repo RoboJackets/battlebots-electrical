@@ -675,6 +675,72 @@ Source: http://www.taiwansemi.com .. 5205_0409c.pdf</description>
 <smd name="15" x="0" y="1.26" dx="0.49" dy="0.35" layer="1" roundness="25" rot="R270"/>
 <smd name="16" x="-0.5" y="1.26" dx="0.49" dy="0.35" layer="1" roundness="25" rot="R270"/>
 </package>
+<package name="TQFP48">
+<description>ARM-Based Microcontroller</description>
+<wire x1="-3.5" y1="-3.5" x2="-3.5" y2="3.5" width="0.15" layer="51"/>
+<wire x1="-3.5" y1="3.5" x2="3.5" y2="3.5" width="0.15" layer="51"/>
+<wire x1="3.5" y1="3.5" x2="3.5" y2="-3.5" width="0.15" layer="51"/>
+<wire x1="3.5" y1="-3.5" x2="-3.5" y2="-3.5" width="0.15" layer="51"/>
+<wire x1="-5.05" y1="-5.05" x2="-5.05" y2="5.05" width="0.1" layer="39"/>
+<wire x1="-5.05" y1="5.05" x2="5.05" y2="5.05" width="0.1" layer="39"/>
+<wire x1="5.05" y1="5.05" x2="5.05" y2="-5.05" width="0.1" layer="39"/>
+<wire x1="5.05" y1="-5.05" x2="-5.05" y2="-5.05" width="0.1" layer="39"/>
+<wire x1="-3" y1="-3" x2="-3" y2="3" width="0.15" layer="21"/>
+<wire x1="-3" y1="3" x2="3" y2="3" width="0.15" layer="21"/>
+<wire x1="3" y1="3" x2="3" y2="-3" width="0.15" layer="21"/>
+<wire x1="3" y1="-3" x2="-3" y2="-3" width="0.15" layer="21"/>
+<text x="-4.875" y="5.25" size="1" layer="25">&gt;NAME</text>
+<circle x="-5.5" y="2.75" radius="0.25" width="0" layer="21"/>
+<circle x="-2.2" y="2.2" radius="0.4" width="0" layer="21"/>
+<smd name="1" x="-4.2" y="2.75" dx="1.5" dy="0.3" layer="1"/>
+<smd name="2" x="-4.2" y="2.25" dx="1.5" dy="0.3" layer="1"/>
+<smd name="3" x="-4.2" y="1.75" dx="1.5" dy="0.3" layer="1"/>
+<smd name="4" x="-4.2" y="1.25" dx="1.5" dy="0.3" layer="1"/>
+<smd name="5" x="-4.2" y="0.75" dx="1.5" dy="0.3" layer="1"/>
+<smd name="6" x="-4.2" y="0.25" dx="1.5" dy="0.3" layer="1"/>
+<smd name="7" x="-4.2" y="-0.25" dx="1.5" dy="0.3" layer="1"/>
+<smd name="8" x="-4.2" y="-0.75" dx="1.5" dy="0.3" layer="1"/>
+<smd name="9" x="-4.2" y="-1.25" dx="1.5" dy="0.3" layer="1"/>
+<smd name="10" x="-4.2" y="-1.75" dx="1.5" dy="0.3" layer="1"/>
+<smd name="11" x="-4.2" y="-2.25" dx="1.5" dy="0.3" layer="1"/>
+<smd name="12" x="-4.2" y="-2.75" dx="1.5" dy="0.3" layer="1"/>
+<smd name="25" x="4.2" y="-2.75" dx="1.5" dy="0.3" layer="1"/>
+<smd name="26" x="4.2" y="-2.25" dx="1.5" dy="0.3" layer="1"/>
+<smd name="27" x="4.2" y="-1.75" dx="1.5" dy="0.3" layer="1"/>
+<smd name="28" x="4.2" y="-1.25" dx="1.5" dy="0.3" layer="1"/>
+<smd name="29" x="4.2" y="-0.75" dx="1.5" dy="0.3" layer="1"/>
+<smd name="30" x="4.2" y="-0.25" dx="1.5" dy="0.3" layer="1"/>
+<smd name="31" x="4.2" y="0.25" dx="1.5" dy="0.3" layer="1"/>
+<smd name="32" x="4.2" y="0.75" dx="1.5" dy="0.3" layer="1"/>
+<smd name="33" x="4.2" y="1.25" dx="1.5" dy="0.3" layer="1"/>
+<smd name="34" x="4.2" y="1.75" dx="1.5" dy="0.3" layer="1"/>
+<smd name="35" x="4.2" y="2.25" dx="1.5" dy="0.3" layer="1"/>
+<smd name="36" x="4.2" y="2.75" dx="1.5" dy="0.3" layer="1"/>
+<smd name="13" x="-2.75" y="-4.2" dx="0.3" dy="1.5" layer="1"/>
+<smd name="14" x="-2.25" y="-4.2" dx="0.3" dy="1.5" layer="1"/>
+<smd name="15" x="-1.75" y="-4.2" dx="0.3" dy="1.5" layer="1"/>
+<smd name="16" x="-1.25" y="-4.2" dx="0.3" dy="1.5" layer="1"/>
+<smd name="17" x="-0.75" y="-4.2" dx="0.3" dy="1.5" layer="1"/>
+<smd name="18" x="-0.25" y="-4.2" dx="0.3" dy="1.5" layer="1"/>
+<smd name="19" x="0.25" y="-4.2" dx="0.3" dy="1.5" layer="1"/>
+<smd name="20" x="0.75" y="-4.2" dx="0.3" dy="1.5" layer="1"/>
+<smd name="21" x="1.25" y="-4.2" dx="0.3" dy="1.5" layer="1"/>
+<smd name="22" x="1.75" y="-4.2" dx="0.3" dy="1.5" layer="1"/>
+<smd name="23" x="2.25" y="-4.2" dx="0.3" dy="1.5" layer="1"/>
+<smd name="24" x="2.75" y="-4.2" dx="0.3" dy="1.5" layer="1"/>
+<smd name="37" x="2.75" y="4.2" dx="0.3" dy="1.5" layer="1"/>
+<smd name="38" x="2.25" y="4.2" dx="0.3" dy="1.5" layer="1"/>
+<smd name="39" x="1.75" y="4.2" dx="0.3" dy="1.5" layer="1"/>
+<smd name="40" x="1.25" y="4.2" dx="0.3" dy="1.5" layer="1"/>
+<smd name="41" x="0.75" y="4.2" dx="0.3" dy="1.5" layer="1"/>
+<smd name="42" x="0.25" y="4.2" dx="0.3" dy="1.5" layer="1"/>
+<smd name="43" x="-0.25" y="4.2" dx="0.3" dy="1.5" layer="1"/>
+<smd name="44" x="-0.75" y="4.2" dx="0.3" dy="1.5" layer="1"/>
+<smd name="45" x="-1.25" y="4.2" dx="0.3" dy="1.5" layer="1"/>
+<smd name="46" x="-1.75" y="4.2" dx="0.3" dy="1.5" layer="1"/>
+<smd name="47" x="-2.25" y="4.2" dx="0.3" dy="1.5" layer="1"/>
+<smd name="48" x="-2.75" y="4.2" dx="0.3" dy="1.5" layer="1"/>
+</package>
 </packages>
 </library>
 <library name="rcl" urn="urn:adsk.eagle:library:334">
@@ -2591,6 +2657,24 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <attribute name="POPULARITY" value="37" x="-2.8" y="-30.7" size="1.778" layer="27" display="off"/>
 <attribute name="SPICEPREFIX" value="C" x="-2.8" y="-30.7" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="-3.435" y="-32.605" size="1.27" layer="27"/>
+</element>
+<element name="U4" library="BBS_Library" package="TQFP48" value="ATSAMD21G17A-AUMICROCHIP_TECHNOLOGY_-_ATMEL_ATSAMD21G17A-AU_0_0" x="-9.5" y="-28" smashed="yes">
+<attribute name="CENTROID_NOT_SPECIFIED" value="No" x="-9.5" y="-28" size="1.778" layer="27" display="off"/>
+<attribute name="DATASHEET" value="http://www.atmel.com/images/atmel-42181-sam-d21_datasheet.pdf" x="-9.5" y="-28" size="1.778" layer="27" display="off"/>
+<attribute name="DIGIKEY_DESCRIPTION" value="IC MCU 32BIT 128KB FLASH 48TQFP" x="-9.5" y="-28" size="1.778" layer="27" display="off"/>
+<attribute name="DIGIKEY_PART_NUMBER" value="1611-ATSAMD21G17A-AU-ND" x="-9.5" y="-28" size="1.778" layer="27" display="off"/>
+<attribute name="LEAD_FREE" value="yes" x="-9.5" y="-28" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="Microchip Technology / Atmel" x="-9.5" y="-28" size="1.778" layer="27" display="off"/>
+<attribute name="MOUSER_PART_NUMBER" value="556-ATSAMD21G17A-AU" x="-9.5" y="-28" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="ATSAMD21G17A-AU" x="-9.5" y="-28" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="-14.375" y="-22.75" size="1" layer="25"/>
+<attribute name="PACKAGE" value="TQFP48" x="-9.5" y="-28" size="1.778" layer="27" display="off"/>
+<attribute name="PREFIX" value="U" x="-9.5" y="-28" size="1.778" layer="27" display="off"/>
+<attribute name="RECOMMENDED_LAND_PATTERN" value="http://www.atmel.com/Images/Atmel-8826-SEEPROM-PCB-Mounting-Guidelines-Surface-Mount-Packages-ApplicationNote.pdf" x="-9.5" y="-28" size="1.778" layer="27" display="off"/>
+<attribute name="ROHS" value="yes" x="-9.5" y="-28" size="1.778" layer="27" display="off"/>
+<attribute name="TEMPERATURE_RANGE_HIGH" value="+85°C" x="-9.5" y="-28" size="1.778" layer="27" display="off"/>
+<attribute name="TEMPERATURE_RANGE_LOW" value="-40°C" x="-9.5" y="-28" size="1.778" layer="27" display="off"/>
+<attribute name="VOLTAGE" value="3.6V" x="-9.5" y="-28" size="1.778" layer="27" display="off"/>
 </element>
 </elements>
 <signals>

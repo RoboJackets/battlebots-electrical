@@ -662,6 +662,72 @@ Source: http://www.taiwansemi.com .. 5205_0409c.pdf</description>
 <smd name="15" x="0" y="1.26" dx="0.49" dy="0.35" layer="1" roundness="25" rot="R270"/>
 <smd name="16" x="-0.5" y="1.26" dx="0.49" dy="0.35" layer="1" roundness="25" rot="R270"/>
 </package>
+<package name="TQFP48">
+<description>ARM-Based Microcontroller</description>
+<wire x1="-3.5" y1="-3.5" x2="-3.5" y2="3.5" width="0.15" layer="51"/>
+<wire x1="-3.5" y1="3.5" x2="3.5" y2="3.5" width="0.15" layer="51"/>
+<wire x1="3.5" y1="3.5" x2="3.5" y2="-3.5" width="0.15" layer="51"/>
+<wire x1="3.5" y1="-3.5" x2="-3.5" y2="-3.5" width="0.15" layer="51"/>
+<wire x1="-5.05" y1="-5.05" x2="-5.05" y2="5.05" width="0.1" layer="39"/>
+<wire x1="-5.05" y1="5.05" x2="5.05" y2="5.05" width="0.1" layer="39"/>
+<wire x1="5.05" y1="5.05" x2="5.05" y2="-5.05" width="0.1" layer="39"/>
+<wire x1="5.05" y1="-5.05" x2="-5.05" y2="-5.05" width="0.1" layer="39"/>
+<wire x1="-3" y1="-3" x2="-3" y2="3" width="0.15" layer="21"/>
+<wire x1="-3" y1="3" x2="3" y2="3" width="0.15" layer="21"/>
+<wire x1="3" y1="3" x2="3" y2="-3" width="0.15" layer="21"/>
+<wire x1="3" y1="-3" x2="-3" y2="-3" width="0.15" layer="21"/>
+<text x="-4.875" y="5.25" size="1" layer="25">&gt;NAME</text>
+<circle x="-5.5" y="2.75" radius="0.25" width="0" layer="21"/>
+<circle x="-2.2" y="2.2" radius="0.4" width="0" layer="21"/>
+<smd name="1" x="-4.2" y="2.75" dx="1.5" dy="0.3" layer="1"/>
+<smd name="2" x="-4.2" y="2.25" dx="1.5" dy="0.3" layer="1"/>
+<smd name="3" x="-4.2" y="1.75" dx="1.5" dy="0.3" layer="1"/>
+<smd name="4" x="-4.2" y="1.25" dx="1.5" dy="0.3" layer="1"/>
+<smd name="5" x="-4.2" y="0.75" dx="1.5" dy="0.3" layer="1"/>
+<smd name="6" x="-4.2" y="0.25" dx="1.5" dy="0.3" layer="1"/>
+<smd name="7" x="-4.2" y="-0.25" dx="1.5" dy="0.3" layer="1"/>
+<smd name="8" x="-4.2" y="-0.75" dx="1.5" dy="0.3" layer="1"/>
+<smd name="9" x="-4.2" y="-1.25" dx="1.5" dy="0.3" layer="1"/>
+<smd name="10" x="-4.2" y="-1.75" dx="1.5" dy="0.3" layer="1"/>
+<smd name="11" x="-4.2" y="-2.25" dx="1.5" dy="0.3" layer="1"/>
+<smd name="12" x="-4.2" y="-2.75" dx="1.5" dy="0.3" layer="1"/>
+<smd name="25" x="4.2" y="-2.75" dx="1.5" dy="0.3" layer="1"/>
+<smd name="26" x="4.2" y="-2.25" dx="1.5" dy="0.3" layer="1"/>
+<smd name="27" x="4.2" y="-1.75" dx="1.5" dy="0.3" layer="1"/>
+<smd name="28" x="4.2" y="-1.25" dx="1.5" dy="0.3" layer="1"/>
+<smd name="29" x="4.2" y="-0.75" dx="1.5" dy="0.3" layer="1"/>
+<smd name="30" x="4.2" y="-0.25" dx="1.5" dy="0.3" layer="1"/>
+<smd name="31" x="4.2" y="0.25" dx="1.5" dy="0.3" layer="1"/>
+<smd name="32" x="4.2" y="0.75" dx="1.5" dy="0.3" layer="1"/>
+<smd name="33" x="4.2" y="1.25" dx="1.5" dy="0.3" layer="1"/>
+<smd name="34" x="4.2" y="1.75" dx="1.5" dy="0.3" layer="1"/>
+<smd name="35" x="4.2" y="2.25" dx="1.5" dy="0.3" layer="1"/>
+<smd name="36" x="4.2" y="2.75" dx="1.5" dy="0.3" layer="1"/>
+<smd name="13" x="-2.75" y="-4.2" dx="0.3" dy="1.5" layer="1"/>
+<smd name="14" x="-2.25" y="-4.2" dx="0.3" dy="1.5" layer="1"/>
+<smd name="15" x="-1.75" y="-4.2" dx="0.3" dy="1.5" layer="1"/>
+<smd name="16" x="-1.25" y="-4.2" dx="0.3" dy="1.5" layer="1"/>
+<smd name="17" x="-0.75" y="-4.2" dx="0.3" dy="1.5" layer="1"/>
+<smd name="18" x="-0.25" y="-4.2" dx="0.3" dy="1.5" layer="1"/>
+<smd name="19" x="0.25" y="-4.2" dx="0.3" dy="1.5" layer="1"/>
+<smd name="20" x="0.75" y="-4.2" dx="0.3" dy="1.5" layer="1"/>
+<smd name="21" x="1.25" y="-4.2" dx="0.3" dy="1.5" layer="1"/>
+<smd name="22" x="1.75" y="-4.2" dx="0.3" dy="1.5" layer="1"/>
+<smd name="23" x="2.25" y="-4.2" dx="0.3" dy="1.5" layer="1"/>
+<smd name="24" x="2.75" y="-4.2" dx="0.3" dy="1.5" layer="1"/>
+<smd name="37" x="2.75" y="4.2" dx="0.3" dy="1.5" layer="1"/>
+<smd name="38" x="2.25" y="4.2" dx="0.3" dy="1.5" layer="1"/>
+<smd name="39" x="1.75" y="4.2" dx="0.3" dy="1.5" layer="1"/>
+<smd name="40" x="1.25" y="4.2" dx="0.3" dy="1.5" layer="1"/>
+<smd name="41" x="0.75" y="4.2" dx="0.3" dy="1.5" layer="1"/>
+<smd name="42" x="0.25" y="4.2" dx="0.3" dy="1.5" layer="1"/>
+<smd name="43" x="-0.25" y="4.2" dx="0.3" dy="1.5" layer="1"/>
+<smd name="44" x="-0.75" y="4.2" dx="0.3" dy="1.5" layer="1"/>
+<smd name="45" x="-1.25" y="4.2" dx="0.3" dy="1.5" layer="1"/>
+<smd name="46" x="-1.75" y="4.2" dx="0.3" dy="1.5" layer="1"/>
+<smd name="47" x="-2.25" y="4.2" dx="0.3" dy="1.5" layer="1"/>
+<smd name="48" x="-2.75" y="4.2" dx="0.3" dy="1.5" layer="1"/>
+</package>
 </packages>
 <symbols>
 <symbol name="ADXL375BCCZ-RL7">
@@ -953,6 +1019,111 @@ Source: http://www.taiwansemi.com .. 5205_0409c.pdf</description>
 <pin name="REGOUT" x="17.78" y="2.54" length="middle" direction="pas" rot="R180"/>
 <pin name="SA0/SDO" x="17.78" y="7.62" length="middle" direction="pas" rot="R180"/>
 <pin name="FSYNC" x="-17.78" y="-7.62" length="middle" direction="pas"/>
+</symbol>
+<symbol name="ATSAMD21G17A-AU">
+<description>ARM-Based Microcontroller</description>
+<wire x1="2.54" y1="-104.14" x2="2.54" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-5.08" x2="30.48" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="30.48" y1="-5.08" x2="30.48" y2="-104.14" width="0.254" layer="94"/>
+<wire x1="30.48" y1="-104.14" x2="2.54" y2="-104.14" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-7.62" x2="2.54" y2="-7.62" width="0.15" layer="94"/>
+<wire x1="2.54" y1="-10.16" x2="2.54" y2="-10.16" width="0.15" layer="94"/>
+<wire x1="2.54" y1="-12.7" x2="2.54" y2="-12.7" width="0.15" layer="94"/>
+<wire x1="2.54" y1="-15.24" x2="2.54" y2="-15.24" width="0.15" layer="94"/>
+<wire x1="2.54" y1="-17.78" x2="2.54" y2="-17.78" width="0.15" layer="94"/>
+<wire x1="2.54" y1="-27.94" x2="2.54" y2="-27.94" width="0.15" layer="94"/>
+<wire x1="2.54" y1="-30.48" x2="2.54" y2="-30.48" width="0.15" layer="94"/>
+<wire x1="2.54" y1="-33.02" x2="2.54" y2="-33.02" width="0.15" layer="94"/>
+<wire x1="2.54" y1="-35.56" x2="2.54" y2="-35.56" width="0.15" layer="94"/>
+<wire x1="2.54" y1="-38.1" x2="2.54" y2="-38.1" width="0.15" layer="94"/>
+<wire x1="2.54" y1="-40.64" x2="2.54" y2="-40.64" width="0.15" layer="94"/>
+<wire x1="2.54" y1="-43.18" x2="2.54" y2="-43.18" width="0.15" layer="94"/>
+<wire x1="2.54" y1="-45.72" x2="2.54" y2="-45.72" width="0.15" layer="94"/>
+<wire x1="2.54" y1="-48.26" x2="2.54" y2="-48.26" width="0.15" layer="94"/>
+<wire x1="2.54" y1="-50.8" x2="2.54" y2="-50.8" width="0.15" layer="94"/>
+<wire x1="2.54" y1="-53.34" x2="2.54" y2="-53.34" width="0.15" layer="94"/>
+<wire x1="2.54" y1="-55.88" x2="2.54" y2="-55.88" width="0.15" layer="94"/>
+<wire x1="2.54" y1="-58.42" x2="2.54" y2="-58.42" width="0.15" layer="94"/>
+<wire x1="2.54" y1="-60.96" x2="2.54" y2="-60.96" width="0.15" layer="94"/>
+<wire x1="2.54" y1="-63.5" x2="2.54" y2="-63.5" width="0.15" layer="94"/>
+<wire x1="2.54" y1="-66.04" x2="2.54" y2="-66.04" width="0.15" layer="94"/>
+<wire x1="2.54" y1="-68.58" x2="2.54" y2="-68.58" width="0.15" layer="94"/>
+<wire x1="2.54" y1="-71.12" x2="2.54" y2="-71.12" width="0.15" layer="94"/>
+<wire x1="2.54" y1="-73.66" x2="2.54" y2="-73.66" width="0.15" layer="94"/>
+<wire x1="2.54" y1="-76.2" x2="2.54" y2="-76.2" width="0.15" layer="94"/>
+<wire x1="2.54" y1="-78.74" x2="2.54" y2="-78.74" width="0.15" layer="94"/>
+<wire x1="2.54" y1="-81.28" x2="2.54" y2="-81.28" width="0.15" layer="94"/>
+<wire x1="2.54" y1="-83.82" x2="2.54" y2="-83.82" width="0.15" layer="94"/>
+<wire x1="2.54" y1="-86.36" x2="2.54" y2="-86.36" width="0.15" layer="94"/>
+<wire x1="2.54" y1="-88.9" x2="2.54" y2="-88.9" width="0.15" layer="94"/>
+<wire x1="2.54" y1="-91.44" x2="2.54" y2="-91.44" width="0.15" layer="94"/>
+<wire x1="2.54" y1="-93.98" x2="2.54" y2="-93.98" width="0.15" layer="94"/>
+<wire x1="2.54" y1="-96.52" x2="2.54" y2="-96.52" width="0.15" layer="94"/>
+<wire x1="2.54" y1="-99.06" x2="2.54" y2="-99.06" width="0.15" layer="94"/>
+<wire x1="2.54" y1="-101.6" x2="2.54" y2="-101.6" width="0.15" layer="94"/>
+<wire x1="2.54" y1="-22.86" x2="2.54" y2="-22.86" width="0.15" layer="94"/>
+<wire x1="30.48" y1="-10.16" x2="30.48" y2="-10.16" width="0.15" layer="94"/>
+<wire x1="30.48" y1="-12.7" x2="30.48" y2="-12.7" width="0.15" layer="94"/>
+<wire x1="30.48" y1="-15.24" x2="30.48" y2="-15.24" width="0.15" layer="94"/>
+<wire x1="30.48" y1="-17.78" x2="30.48" y2="-17.78" width="0.15" layer="94"/>
+<wire x1="30.48" y1="-20.32" x2="30.48" y2="-20.32" width="0.15" layer="94"/>
+<wire x1="30.48" y1="-22.86" x2="30.48" y2="-22.86" width="0.15" layer="94"/>
+<wire x1="30.48" y1="-25.4" x2="30.48" y2="-25.4" width="0.15" layer="94"/>
+<wire x1="30.48" y1="-27.94" x2="30.48" y2="-27.94" width="0.15" layer="94"/>
+<wire x1="30.48" y1="-93.98" x2="30.48" y2="-93.98" width="0.15" layer="94"/>
+<wire x1="30.48" y1="-96.52" x2="30.48" y2="-96.52" width="0.15" layer="94"/>
+<wire x1="30.48" y1="-99.06" x2="30.48" y2="-99.06" width="0.15" layer="94"/>
+<wire x1="30.48" y1="-101.6" x2="30.48" y2="-101.6" width="0.15" layer="94"/>
+<text x="2.54" y="-2.54" size="2.54" layer="95" align="top-left">&gt;NAME</text>
+<text x="2.54" y="-109.22" size="2.54" layer="95" align="top-left">ATSAMD21G17A-AU</text>
+<pin name="VDDANA" x="-2.54" y="-7.62" length="middle"/>
+<pin name="VDDCORE" x="-2.54" y="-10.16" length="middle"/>
+<pin name="VDDIN" x="-2.54" y="-12.7" length="middle"/>
+<pin name="1_VDDIO" x="-2.54" y="-15.24" length="middle"/>
+<pin name="2_VDDIO" x="-2.54" y="-17.78" length="middle"/>
+<pin name="PA00" x="-2.54" y="-27.94" length="middle"/>
+<pin name="PA01" x="-2.54" y="-30.48" length="middle"/>
+<pin name="PA02" x="-2.54" y="-33.02" length="middle"/>
+<pin name="PA03" x="-2.54" y="-35.56" length="middle"/>
+<pin name="PA04" x="-2.54" y="-38.1" length="middle"/>
+<pin name="PA05" x="-2.54" y="-40.64" length="middle"/>
+<pin name="PA06" x="-2.54" y="-43.18" length="middle"/>
+<pin name="PA07" x="-2.54" y="-45.72" length="middle"/>
+<pin name="PA08" x="-2.54" y="-48.26" length="middle"/>
+<pin name="PA09" x="-2.54" y="-50.8" length="middle"/>
+<pin name="PA10" x="-2.54" y="-53.34" length="middle"/>
+<pin name="PA11" x="-2.54" y="-55.88" length="middle"/>
+<pin name="PA12" x="-2.54" y="-58.42" length="middle"/>
+<pin name="PA13" x="-2.54" y="-60.96" length="middle"/>
+<pin name="PA14" x="-2.54" y="-63.5" length="middle"/>
+<pin name="PA15" x="-2.54" y="-66.04" length="middle"/>
+<pin name="PA16" x="-2.54" y="-68.58" length="middle"/>
+<pin name="PA17" x="-2.54" y="-71.12" length="middle"/>
+<pin name="PA18" x="-2.54" y="-73.66" length="middle"/>
+<pin name="PA19" x="-2.54" y="-76.2" length="middle"/>
+<pin name="PA20" x="-2.54" y="-78.74" length="middle"/>
+<pin name="PA21" x="-2.54" y="-81.28" length="middle"/>
+<pin name="PA22" x="-2.54" y="-83.82" length="middle"/>
+<pin name="PA23" x="-2.54" y="-86.36" length="middle"/>
+<pin name="PA24" x="-2.54" y="-88.9" length="middle"/>
+<pin name="PA25" x="-2.54" y="-91.44" length="middle"/>
+<pin name="PA27" x="-2.54" y="-93.98" length="middle"/>
+<pin name="PA28" x="-2.54" y="-96.52" length="middle"/>
+<pin name="PA30" x="-2.54" y="-99.06" length="middle"/>
+<pin name="PA31" x="-2.54" y="-101.6" length="middle"/>
+<pin name="!RESET!" x="-2.54" y="-22.86" length="middle"/>
+<pin name="PB02" x="35.56" y="-10.16" length="middle" rot="R180"/>
+<pin name="PB03" x="35.56" y="-12.7" length="middle" rot="R180"/>
+<pin name="PB08" x="35.56" y="-15.24" length="middle" rot="R180"/>
+<pin name="PB09" x="35.56" y="-17.78" length="middle" rot="R180"/>
+<pin name="PB10" x="35.56" y="-20.32" length="middle" rot="R180"/>
+<pin name="PB11" x="35.56" y="-22.86" length="middle" rot="R180"/>
+<pin name="PB22" x="35.56" y="-25.4" length="middle" rot="R180"/>
+<pin name="PB23" x="35.56" y="-27.94" length="middle" rot="R180"/>
+<pin name="1_GND" x="35.56" y="-93.98" length="middle" rot="R180"/>
+<pin name="2_GND" x="35.56" y="-96.52" length="middle" rot="R180"/>
+<pin name="3_GND" x="35.56" y="-99.06" length="middle" rot="R180"/>
+<pin name="GNDANA" x="35.56" y="-101.6" length="middle" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -1294,6 +1465,85 @@ https://www.ti.com/lit/ds/symlink/txu0304.pdf?ts=1646321006193&amp;ref_url=https
 <technologies>
 <technology name="">
 <attribute name="DKPN" value="1428-1153-2-ND"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ATSAMD21G17A-AU" prefix="U">
+<description>ARM-Based Microcontroller</description>
+<gates>
+<gate name="G$0" symbol="ATSAMD21G17A-AU" x="0" y="0"/>
+</gates>
+<devices>
+<device name="MICROCHIP_TECHNOLOGY_-_ATMEL_ATSAMD21G17A-AU_0_0" package="TQFP48">
+<connects>
+<connect gate="G$0" pin="!RESET!" pad="40"/>
+<connect gate="G$0" pin="1_GND" pad="42"/>
+<connect gate="G$0" pin="1_VDDIO" pad="36"/>
+<connect gate="G$0" pin="2_GND" pad="18"/>
+<connect gate="G$0" pin="2_VDDIO" pad="17"/>
+<connect gate="G$0" pin="3_GND" pad="35"/>
+<connect gate="G$0" pin="GNDANA" pad="5"/>
+<connect gate="G$0" pin="PA00" pad="1"/>
+<connect gate="G$0" pin="PA01" pad="2"/>
+<connect gate="G$0" pin="PA02" pad="3"/>
+<connect gate="G$0" pin="PA03" pad="4"/>
+<connect gate="G$0" pin="PA04" pad="9"/>
+<connect gate="G$0" pin="PA05" pad="10"/>
+<connect gate="G$0" pin="PA06" pad="11"/>
+<connect gate="G$0" pin="PA07" pad="12"/>
+<connect gate="G$0" pin="PA08" pad="13"/>
+<connect gate="G$0" pin="PA09" pad="14"/>
+<connect gate="G$0" pin="PA10" pad="15"/>
+<connect gate="G$0" pin="PA11" pad="16"/>
+<connect gate="G$0" pin="PA12" pad="21"/>
+<connect gate="G$0" pin="PA13" pad="22"/>
+<connect gate="G$0" pin="PA14" pad="23"/>
+<connect gate="G$0" pin="PA15" pad="24"/>
+<connect gate="G$0" pin="PA16" pad="25"/>
+<connect gate="G$0" pin="PA17" pad="26"/>
+<connect gate="G$0" pin="PA18" pad="27"/>
+<connect gate="G$0" pin="PA19" pad="28"/>
+<connect gate="G$0" pin="PA20" pad="29"/>
+<connect gate="G$0" pin="PA21" pad="30"/>
+<connect gate="G$0" pin="PA22" pad="31"/>
+<connect gate="G$0" pin="PA23" pad="32"/>
+<connect gate="G$0" pin="PA24" pad="33"/>
+<connect gate="G$0" pin="PA25" pad="34"/>
+<connect gate="G$0" pin="PA27" pad="39"/>
+<connect gate="G$0" pin="PA28" pad="41"/>
+<connect gate="G$0" pin="PA30" pad="45"/>
+<connect gate="G$0" pin="PA31" pad="46"/>
+<connect gate="G$0" pin="PB02" pad="47"/>
+<connect gate="G$0" pin="PB03" pad="48"/>
+<connect gate="G$0" pin="PB08" pad="7"/>
+<connect gate="G$0" pin="PB09" pad="8"/>
+<connect gate="G$0" pin="PB10" pad="19"/>
+<connect gate="G$0" pin="PB11" pad="20"/>
+<connect gate="G$0" pin="PB22" pad="37"/>
+<connect gate="G$0" pin="PB23" pad="38"/>
+<connect gate="G$0" pin="VDDANA" pad="6"/>
+<connect gate="G$0" pin="VDDCORE" pad="43"/>
+<connect gate="G$0" pin="VDDIN" pad="44"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="CENTROID_NOT_SPECIFIED" value="No"/>
+<attribute name="DATASHEET" value="http://www.atmel.com/images/atmel-42181-sam-d21_datasheet.pdf"/>
+<attribute name="DIGIKEY_DESCRIPTION" value="IC MCU 32BIT 128KB FLASH 48TQFP"/>
+<attribute name="DIGIKEY_PART_NUMBER" value="1611-ATSAMD21G17A-AU-ND"/>
+<attribute name="LEAD_FREE" value="yes"/>
+<attribute name="MF" value="Microchip Technology / Atmel"/>
+<attribute name="MOUSER_PART_NUMBER" value="556-ATSAMD21G17A-AU"/>
+<attribute name="MPN" value="ATSAMD21G17A-AU"/>
+<attribute name="PACKAGE" value="TQFP48"/>
+<attribute name="PREFIX" value="U"/>
+<attribute name="RECOMMENDED_LAND_PATTERN" value="http://www.atmel.com/Images/Atmel-8826-SEEPROM-PCB-Mounting-Guidelines-Surface-Mount-Packages-ApplicationNote.pdf"/>
+<attribute name="ROHS" value="yes"/>
+<attribute name="TEMPERATURE_RANGE_HIGH" value="+85°C"/>
+<attribute name="TEMPERATURE_RANGE_LOW" value="-40°C"/>
+<attribute name="VOLTAGE" value="3.6V"/>
 </technology>
 </technologies>
 </device>
@@ -12635,6 +12885,7 @@ Example: SX-32S</description>
 <part name="SUPPLY10" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
 <part name="GND36" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="GND37" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
+<part name="U4" library="BBS_Library" deviceset="ATSAMD21G17A-AU" device="MICROCHIP_TECHNOLOGY_-_ATMEL_ATSAMD21G17A-AU_0_0"/>
 </parts>
 <sheets>
 <sheet>
@@ -13068,6 +13319,9 @@ Example: SX-32S</description>
 </instance>
 <instance part="GND37" gate="1" x="86.36" y="-2.54" smashed="yes">
 <attribute name="VALUE" x="86.36" y="-2.794" size="1.778" layer="96" align="top-center"/>
+</instance>
+<instance part="U4" gate="G$0" x="269.24" y="200.66" smashed="yes">
+<attribute name="NAME" x="271.78" y="198.12" size="2.54" layer="95" align="top-left"/>
 </instance>
 </instances>
 <busses>
