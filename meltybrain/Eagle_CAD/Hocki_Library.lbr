@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.1">
+<eagle version="9.6.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -921,6 +921,41 @@
 <text x="-1.0366" y="1.305" size="1" layer="25" font="vector" ratio="10" rot="SR0">&gt;NAME</text>
 <circle x="-1.5" y="0.8" radius="0.2" width="0.1524" layer="21"/>
 </package>
+<package name="HRP5">
+<wire x1="4.418" y1="4.6975" x2="4.418" y2="-4.6975" width="0.127" layer="51"/>
+<wire x1="4.418" y1="-4.6975" x2="-3.582" y2="-4.6975" width="0.127" layer="51"/>
+<wire x1="-3.582" y1="-4.6975" x2="-3.582" y2="4.6975" width="0.127" layer="51"/>
+<wire x1="-3.582" y1="4.6975" x2="4.418" y2="4.6975" width="0.127" layer="51"/>
+<rectangle x1="0.875" y1="0.39" x2="2.505" y2="1.88" layer="31"/>
+<rectangle x1="0.875" y1="2.66" x2="2.505" y2="4.15" layer="31"/>
+<rectangle x1="0.875" y1="-1.88" x2="2.505" y2="-0.39" layer="31"/>
+<rectangle x1="0.875" y1="-4.15" x2="2.505" y2="-2.66" layer="31"/>
+<rectangle x1="-1.795" y1="0.39" x2="-0.165" y2="1.88" layer="31"/>
+<rectangle x1="-1.795" y1="2.66" x2="-0.165" y2="4.15" layer="31"/>
+<rectangle x1="-1.795" y1="-1.88" x2="-0.165" y2="-0.39" layer="31"/>
+<rectangle x1="-1.795" y1="-4.15" x2="-0.165" y2="-2.66" layer="31"/>
+<rectangle x1="3.545" y1="0.39" x2="5.175" y2="1.88" layer="31"/>
+<rectangle x1="3.545" y1="2.66" x2="5.175" y2="4.15" layer="31"/>
+<rectangle x1="3.545" y1="-1.88" x2="5.175" y2="-0.39" layer="31"/>
+<rectangle x1="3.545" y1="-4.15" x2="5.175" y2="-2.66" layer="31"/>
+<wire x1="-2.64" y1="-4.6975" x2="-3.582" y2="-4.6975" width="0.127" layer="21"/>
+<wire x1="-3.582" y1="4.6975" x2="-2.64" y2="4.6975" width="0.127" layer="21"/>
+<wire x1="-3.582" y1="-4.6975" x2="-3.582" y2="4.6975" width="0.127" layer="21"/>
+<wire x1="-5.945" y1="4.9475" x2="-5.945" y2="-4.9475" width="0.05" layer="39"/>
+<wire x1="-5.945" y1="-4.9475" x2="5.95" y2="-4.9475" width="0.05" layer="39"/>
+<wire x1="5.95" y1="-4.9475" x2="5.95" y2="4.9475" width="0.05" layer="39"/>
+<wire x1="5.95" y1="4.9475" x2="-5.945" y2="4.9475" width="0.05" layer="39"/>
+<circle x="-6.695" y="3.44" radius="0.1" width="0.2" layer="21"/>
+<circle x="-6.65" y="3.45" radius="0.2" width="0.2" layer="21"/>
+<text x="-5.95" y="5.25" size="1" layer="25" font="vector" ratio="10">&gt;NAME</text>
+<text x="-5.95" y="-5.25" size="1" layer="27" font="vector" ratio="10" align="top-left">&gt;VALUE</text>
+<smd name="1" x="-4.81" y="3.44" dx="1.77" dy="0.92" layer="1"/>
+<smd name="2" x="-4.81" y="1.72" dx="1.77" dy="0.92" layer="1"/>
+<smd name="3" x="-4.81" y="0" dx="1.77" dy="0.92" layer="1"/>
+<smd name="4" x="-4.81" y="-1.72" dx="1.77" dy="0.92" layer="1"/>
+<smd name="5" x="-4.81" y="-3.44" dx="1.77" dy="0.92" layer="1"/>
+<smd name="6" x="1.69" y="0" dx="8.02" dy="9.09" layer="1" cream="no"/>
+</package>
 </packages>
 <packages3d>
 <package3d name="SM03B-SRSS-TB(LF)(SN)" urn="urn:adsk.eagle:package:22261818/2" locally_modified="yes" type="model">
@@ -1689,6 +1724,18 @@
 <wire x1="20.32" y1="10.16" x2="-20.32" y2="10.16" width="0.254" layer="94"/>
 <text x="-20.32" y="10.668" size="1.778" layer="95" ratio="6" rot="SR0">&gt;NAME</text>
 <text x="-20.32" y="-10.668" size="1.778" layer="96" align="top-left">&gt;VALUE</text>
+</symbol>
+<symbol name="BA50DD0WHFP-TR">
+<wire x1="-7.62" y1="7.62" x2="7.62" y2="7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="7.62" x2="7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-7.62" x2="-7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-7.62" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
+<text x="-7.62" y="8.128" size="1.778" layer="95">&gt;NAME</text>
+<text x="-7.62" y="-8.128" size="1.778" layer="96" align="top-left">&gt;VALUE</text>
+<pin name="CTL" x="-12.7" y="-5.08" length="middle" direction="in"/>
+<pin name="VCC" x="-12.7" y="5.08" length="middle" direction="pwr"/>
+<pin name="GND" x="12.7" y="-5.08" length="middle" direction="pwr" rot="R180"/>
+<pin name="OUT" x="12.7" y="5.08" length="middle" direction="out" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -2682,6 +2729,29 @@
 <technologies>
 <technology name="">
 <attribute name="DKPN" value="497-13892-1-ND" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="BA50DD0WHFP-TR" prefix="U">
+<description>Linear Regulator 9V 2A Fixed 
+&lt;p&gt;
+&lt;a href="https://fscdn.rohm.com/en/products/databook/datasheet/ic/power/linear_regulator/baxxdd0-e.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="BA50DD0WHFP-TR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="HRP5">
+<connects>
+<connect gate="G$1" pin="CTL" pad="1"/>
+<connect gate="G$1" pin="GND" pad="3 6"/>
+<connect gate="G$1" pin="OUT" pad="4"/>
+<connect gate="G$1" pin="VCC" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DKPN" value="BA90DD0WHFPCT-ND" constant="no"/>
 </technology>
 </technologies>
 </device>
