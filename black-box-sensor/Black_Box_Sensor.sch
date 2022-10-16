@@ -11926,6 +11926,18 @@ Standard 6 pin header for AVR programming</description>
 </spice>
 <attribute name="DKPN" value="CGA3E2X7R1E104K080AA "/>
 </part>
+<part name="C9" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="1µF">
+<spice>
+<pinmapping spiceprefix="C">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="DKPN" value="CC0603KRX7R6BB105"/>
+<attribute name="VOLTAGE" value="10V"/>
+</part>
+<part name="R8" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="499"/>
+<part name="R9" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="499"/>
 </parts>
 <sheets>
 <sheet>
@@ -11936,9 +11948,9 @@ Standard 6 pin header for AVR programming</description>
 <attribute name="NAME" x="30.48" y="93.98" size="1.778" layer="95"/>
 <attribute name="VALUE" x="30.48" y="66.04" size="1.778" layer="96"/>
 </instance>
-<instance part="U2" gate="ADXL375BCCZ-RL7" x="45.72" y="45.72" smashed="yes">
-<attribute name="NAME" x="27.94" y="58.42" size="1.778" layer="95"/>
-<attribute name="VALUE" x="27.94" y="30.48" size="1.778" layer="96"/>
+<instance part="U2" gate="ADXL375BCCZ-RL7" x="48.26" y="45.72" smashed="yes">
+<attribute name="NAME" x="30.48" y="58.42" size="1.778" layer="95"/>
+<attribute name="VALUE" x="30.48" y="30.48" size="1.778" layer="96"/>
 </instance>
 <instance part="SUPPLY1" gate="G$1" x="2.54" y="132.08" smashed="yes">
 <attribute name="VALUE" x="0.635" y="135.255" size="1.778" layer="96"/>
@@ -11949,60 +11961,60 @@ Standard 6 pin header for AVR programming</description>
 <instance part="GND2" gate="1" x="96.52" y="111.76" smashed="yes">
 <attribute name="VALUE" x="96.52" y="111.506" size="1.778" layer="96" align="top-center"/>
 </instance>
-<instance part="SUPPLY4" gate="G$1" x="25.4" y="99.06" smashed="yes">
-<attribute name="VALUE" x="25.4" y="101.854" size="1.778" layer="96" align="bottom-center"/>
+<instance part="SUPPLY4" gate="G$1" x="22.86" y="93.98" smashed="yes">
+<attribute name="VALUE" x="22.86" y="96.774" size="1.778" layer="96" align="bottom-center"/>
 </instance>
-<instance part="GND4" gate="1" x="7.62" y="83.82" smashed="yes">
-<attribute name="VALUE" x="7.62" y="83.566" size="1.778" layer="96" align="top-center"/>
+<instance part="GND4" gate="1" x="10.16" y="81.28" smashed="yes">
+<attribute name="VALUE" x="10.16" y="81.026" size="1.778" layer="96" align="top-center"/>
 </instance>
-<instance part="GND5" gate="1" x="73.66" y="68.58" smashed="yes">
-<attribute name="VALUE" x="73.66" y="68.326" size="1.778" layer="96" align="top-center"/>
+<instance part="GND5" gate="1" x="73.66" y="66.04" smashed="yes">
+<attribute name="VALUE" x="73.66" y="65.786" size="1.778" layer="96" align="top-center"/>
 </instance>
-<instance part="C3" gate="G$1" x="7.62" y="91.44" smashed="yes">
-<attribute name="NAME" x="8.636" y="92.075" size="1.778" layer="95"/>
-<attribute name="VALUE" x="8.636" y="87.249" size="1.778" layer="96"/>
-<attribute name="DKPN" x="7.62" y="91.44" size="1.778" layer="96" display="off"/>
+<instance part="C3" gate="G$1" x="17.78" y="86.36" smashed="yes" rot="R270">
+<attribute name="NAME" x="18.415" y="85.344" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="16.764" y="85.471" size="1.778" layer="96" rot="R180"/>
+<attribute name="DKPN" x="17.78" y="86.36" size="1.778" layer="96" rot="R270" display="off"/>
 </instance>
-<instance part="C4" gate="G$1" x="0" y="91.44" smashed="yes">
-<attribute name="NAME" x="1.016" y="92.075" size="1.778" layer="95"/>
-<attribute name="VALUE" x="1.016" y="87.249" size="1.778" layer="96"/>
-<attribute name="DKPN" x="0" y="91.44" size="1.778" layer="96" display="off"/>
+<instance part="C4" gate="G$1" x="17.78" y="91.44" smashed="yes" rot="R270">
+<attribute name="NAME" x="18.415" y="90.424" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="16.764" y="90.551" size="1.778" layer="96" rot="R180"/>
+<attribute name="DKPN" x="17.78" y="91.44" size="1.778" layer="96" rot="R270" display="off"/>
 </instance>
 <instance part="U6" gate="A" x="-27.94" y="58.42" smashed="yes">
 <attribute name="NAME" x="-38.1" y="74.93" size="1.778" layer="95" rot="SR0"/>
 <attribute name="VALUE" x="-38.1" y="42.418" size="1.778" layer="96" rot="SR0" align="top-left"/>
 </instance>
-<instance part="C5" gate="G$1" x="-5.08" y="76.2" smashed="yes" rot="R90">
-<attribute name="NAME" x="-5.715" y="79.756" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="4.191" y="79.756" size="1.778" layer="96" rot="R180"/>
+<instance part="C5" gate="G$1" x="-5.08" y="71.12" smashed="yes" rot="R90">
+<attribute name="NAME" x="-5.715" y="74.676" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="4.191" y="74.676" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="SUPPLY5" gate="G$1" x="-12.7" y="83.82" smashed="yes">
-<attribute name="VALUE" x="-12.7" y="86.614" size="1.778" layer="96" align="bottom-center"/>
+<instance part="SUPPLY5" gate="G$1" x="-10.16" y="73.66" smashed="yes">
+<attribute name="VALUE" x="-10.16" y="76.454" size="1.778" layer="96" align="bottom-center"/>
 </instance>
-<instance part="GND3" gate="1" x="2.54" y="71.12" smashed="yes">
-<attribute name="VALUE" x="2.54" y="70.866" size="1.778" layer="96" align="top-center"/>
+<instance part="GND3" gate="1" x="2.54" y="66.04" smashed="yes">
+<attribute name="VALUE" x="2.54" y="65.786" size="1.778" layer="96" align="top-center"/>
 </instance>
-<instance part="GND7" gate="1" x="-7.62" y="38.1" smashed="yes">
-<attribute name="VALUE" x="-7.62" y="37.846" size="1.778" layer="96" align="top-center"/>
+<instance part="GND7" gate="1" x="-10.16" y="40.64" smashed="yes">
+<attribute name="VALUE" x="-10.16" y="40.386" size="1.778" layer="96" align="top-center"/>
 </instance>
-<instance part="C7" gate="G$1" x="5.08" y="58.42" smashed="yes">
-<attribute name="NAME" x="6.096" y="59.055" size="1.778" layer="95"/>
-<attribute name="VALUE" x="6.096" y="54.229" size="1.778" layer="96"/>
-<attribute name="DKPN" x="5.08" y="58.42" size="1.778" layer="96" display="off"/>
+<instance part="C7" gate="G$1" x="17.78" y="55.88" smashed="yes" rot="R270">
+<attribute name="NAME" x="18.415" y="54.864" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="16.764" y="54.991" size="1.778" layer="96" rot="R180"/>
+<attribute name="DKPN" x="17.78" y="55.88" size="1.778" layer="96" rot="R270" display="off"/>
 </instance>
-<instance part="C8" gate="G$1" x="12.7" y="58.42" smashed="yes">
-<attribute name="NAME" x="13.716" y="59.055" size="1.778" layer="95"/>
-<attribute name="VALUE" x="13.716" y="54.229" size="1.778" layer="96"/>
-<attribute name="DKPN" x="12.7" y="58.42" size="1.778" layer="96" display="off"/>
+<instance part="C8" gate="G$1" x="17.78" y="50.8" smashed="yes" rot="R270">
+<attribute name="NAME" x="18.415" y="49.784" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="16.764" y="49.911" size="1.778" layer="96" rot="R180"/>
+<attribute name="DKPN" x="17.78" y="50.8" size="1.778" layer="96" rot="R270" display="off"/>
 </instance>
-<instance part="GND9" gate="1" x="12.7" y="50.8" smashed="yes">
-<attribute name="VALUE" x="12.7" y="50.546" size="1.778" layer="96" align="top-center"/>
+<instance part="GND9" gate="1" x="10.16" y="45.72" smashed="yes">
+<attribute name="VALUE" x="10.16" y="45.466" size="1.778" layer="96" align="top-center"/>
 </instance>
-<instance part="SUPPLY8" gate="G$1" x="22.86" y="63.5" smashed="yes">
-<attribute name="VALUE" x="22.86" y="66.294" size="1.778" layer="96" align="bottom-center"/>
+<instance part="SUPPLY8" gate="G$1" x="22.86" y="58.42" smashed="yes">
+<attribute name="VALUE" x="22.86" y="61.214" size="1.778" layer="96" align="bottom-center"/>
 </instance>
-<instance part="GND10" gate="1" x="71.12" y="33.02" smashed="yes">
-<attribute name="VALUE" x="71.12" y="32.766" size="1.778" layer="96" align="top-center"/>
+<instance part="GND10" gate="1" x="73.66" y="30.48" smashed="yes">
+<attribute name="VALUE" x="73.66" y="30.226" size="1.778" layer="96" align="top-center"/>
 </instance>
 <instance part="J1" gate="G$1" x="93.98" y="-43.18" smashed="yes">
 <attribute name="NAME" x="81.28" y="-29.718" size="1.778" layer="95"/>
@@ -12113,18 +12125,18 @@ Standard 6 pin header for AVR programming</description>
 <instance part="GND24" gate="1" x="-27.94" y="-50.8" smashed="yes">
 <attribute name="VALUE" x="-27.94" y="-51.054" size="1.778" layer="96" align="top-center"/>
 </instance>
-<instance part="CN1" gate="G$1" x="124.46" y="116.84" smashed="yes">
-<attribute name="NAME" x="118.11" y="122.555" size="1.778" layer="95"/>
-<attribute name="VALUE" x="118.11" y="109.22" size="1.778" layer="96"/>
+<instance part="CN1" gate="G$1" x="162.56" y="121.92" smashed="yes">
+<attribute name="NAME" x="156.21" y="127.635" size="1.778" layer="95"/>
+<attribute name="VALUE" x="156.21" y="114.3" size="1.778" layer="96"/>
 </instance>
 <instance part="SUPPLY3" gate="G$1" x="96.52" y="129.54" smashed="yes">
 <attribute name="VALUE" x="96.52" y="132.334" size="1.778" layer="96" align="bottom-center"/>
 </instance>
-<instance part="SUPPLY17" gate="G$1" x="114.3" y="121.92" smashed="yes">
-<attribute name="VALUE" x="112.395" y="125.095" size="1.778" layer="96"/>
+<instance part="SUPPLY17" gate="G$1" x="152.4" y="127" smashed="yes">
+<attribute name="VALUE" x="150.495" y="130.175" size="1.778" layer="96"/>
 </instance>
-<instance part="GND25" gate="1" x="114.3" y="111.76" smashed="yes">
-<attribute name="VALUE" x="114.3" y="111.506" size="1.778" layer="96" align="top-center"/>
+<instance part="GND25" gate="1" x="152.4" y="116.84" smashed="yes">
+<attribute name="VALUE" x="152.4" y="116.586" size="1.778" layer="96" align="top-center"/>
 </instance>
 <instance part="ISP1" gate="G$1" x="-45.72" y="10.16" smashed="yes">
 <attribute name="NAME" x="-48.26" y="2.54" size="1.778" layer="95"/>
@@ -12159,15 +12171,15 @@ Standard 6 pin header for AVR programming</description>
 <attribute name="NAME" x="264.9474" y="45.212" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="264.922" y="52.07" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="JP1" gate="A" x="162.56" y="116.84" smashed="yes">
-<attribute name="NAME" x="156.21" y="122.555" size="1.778" layer="95"/>
-<attribute name="VALUE" x="156.21" y="109.22" size="1.778" layer="96"/>
+<instance part="JP1" gate="A" x="142.24" y="121.92" smashed="yes">
+<attribute name="NAME" x="135.89" y="127.635" size="1.778" layer="95"/>
+<attribute name="VALUE" x="135.89" y="114.3" size="1.778" layer="96"/>
 </instance>
-<instance part="P+5" gate="1" x="152.4" y="124.46" smashed="yes">
-<attribute name="VALUE" x="149.86" y="119.38" size="1.778" layer="96" rot="R90"/>
+<instance part="P+5" gate="1" x="134.62" y="129.54" smashed="yes">
+<attribute name="VALUE" x="132.08" y="124.46" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="GND30" gate="1" x="152.4" y="111.76" smashed="yes">
-<attribute name="VALUE" x="152.4" y="111.506" size="1.778" layer="96" align="top-center"/>
+<instance part="GND30" gate="1" x="121.92" y="104.14" smashed="yes">
+<attribute name="VALUE" x="121.92" y="103.886" size="1.778" layer="96" align="top-center"/>
 </instance>
 <instance part="P+7" gate="1" x="58.42" y="132.08" smashed="yes">
 <attribute name="VALUE" x="55.88" y="127" size="1.778" layer="96" rot="R90"/>
@@ -12236,21 +12248,21 @@ Standard 6 pin header for AVR programming</description>
 <attribute name="NAME" x="40.64" y="3.81" size="1.778" layer="95"/>
 <attribute name="VALUE" x="40.64" y="-19.05" size="1.78078125" layer="96" align="top-left"/>
 </instance>
-<instance part="C24" gate="G$1" x="38.1" y="17.78" smashed="yes" rot="R90">
-<attribute name="NAME" x="40.005" y="21.336" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="42.291" y="18.796" size="1.778" layer="96" rot="R90"/>
-<attribute name="DKPN" x="38.1" y="17.78" size="1.778" layer="96" rot="R90" display="off"/>
+<instance part="C24" gate="G$1" x="38.1" y="15.24" smashed="yes" rot="R90">
+<attribute name="NAME" x="41.656" y="15.875" size="1.778" layer="95"/>
+<attribute name="VALUE" x="41.656" y="13.589" size="1.778" layer="96"/>
+<attribute name="DKPN" x="38.1" y="15.24" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
 <instance part="GND15" gate="1" x="73.66" y="-20.32" smashed="yes">
 <attribute name="VALUE" x="73.66" y="-20.574" size="1.778" layer="96" align="top-center"/>
 </instance>
 <instance part="C25" gate="G$1" x="38.1" y="7.62" smashed="yes" rot="R90">
-<attribute name="NAME" x="40.005" y="11.176" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="42.291" y="8.636" size="1.778" layer="96" rot="R90"/>
+<attribute name="NAME" x="41.656" y="8.255" size="1.778" layer="95"/>
+<attribute name="VALUE" x="41.656" y="5.969" size="1.778" layer="96"/>
 <attribute name="DKPN" x="38.1" y="7.62" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
-<instance part="SUPPLY2" gate="G$1" x="33.02" y="20.32" smashed="yes">
-<attribute name="VALUE" x="33.02" y="23.114" size="1.778" layer="96" align="bottom-center"/>
+<instance part="SUPPLY2" gate="G$1" x="33.02" y="17.78" smashed="yes">
+<attribute name="VALUE" x="33.02" y="20.574" size="1.778" layer="96" align="bottom-center"/>
 </instance>
 <instance part="C26" gate="G$1" x="73.66" y="-7.62" smashed="yes">
 <attribute name="NAME" x="77.216" y="-9.525" size="1.778" layer="95"/>
@@ -12265,8 +12277,8 @@ Standard 6 pin header for AVR programming</description>
 <instance part="SUPPLY10" gate="G$1" x="20.32" y="0" smashed="yes">
 <attribute name="VALUE" x="20.32" y="2.794" size="1.778" layer="96" align="bottom-center"/>
 </instance>
-<instance part="GND36" gate="1" x="20.32" y="-20.32" smashed="yes">
-<attribute name="VALUE" x="20.32" y="-20.574" size="1.778" layer="96" align="top-center"/>
+<instance part="GND36" gate="1" x="20.32" y="-17.78" smashed="yes">
+<attribute name="VALUE" x="20.32" y="-18.034" size="1.778" layer="96" align="top-center"/>
 </instance>
 <instance part="GND37" gate="1" x="86.36" y="-2.54" smashed="yes">
 <attribute name="VALUE" x="86.36" y="-2.794" size="1.778" layer="96" align="top-center"/>
@@ -12281,23 +12293,23 @@ Standard 6 pin header for AVR programming</description>
 <instance part="GND6" gate="1" x="195.58" y="-2.54" smashed="yes">
 <attribute name="VALUE" x="195.58" y="-2.794" size="1.778" layer="96" align="top-center"/>
 </instance>
-<instance part="C11" gate="G$1" x="129.54" y="91.44" smashed="yes">
-<attribute name="NAME" x="130.556" y="92.075" size="1.778" layer="95"/>
-<attribute name="VALUE" x="130.556" y="87.249" size="1.778" layer="96"/>
-<attribute name="DKPN" x="129.54" y="91.44" size="1.778" layer="96" display="off"/>
+<instance part="C11" gate="G$1" x="124.46" y="91.44" smashed="yes">
+<attribute name="NAME" x="125.476" y="92.075" size="1.778" layer="95"/>
+<attribute name="VALUE" x="125.476" y="87.249" size="1.778" layer="96"/>
+<attribute name="DKPN" x="124.46" y="91.44" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="C12" gate="G$1" x="121.92" y="91.44" smashed="yes">
-<attribute name="NAME" x="122.936" y="92.075" size="1.778" layer="95"/>
-<attribute name="VALUE" x="122.936" y="87.249" size="1.778" layer="96"/>
-<attribute name="DKPN" x="121.92" y="91.44" size="1.778" layer="96" display="off"/>
+<instance part="C12" gate="G$1" x="116.84" y="91.44" smashed="yes">
+<attribute name="NAME" x="117.856" y="92.075" size="1.778" layer="95"/>
+<attribute name="VALUE" x="117.856" y="87.249" size="1.778" layer="96"/>
+<attribute name="DKPN" x="116.84" y="91.44" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="C28" gate="G$1" x="114.3" y="91.44" smashed="yes">
-<attribute name="NAME" x="115.316" y="92.075" size="1.778" layer="95"/>
-<attribute name="VALUE" x="115.316" y="87.249" size="1.778" layer="96"/>
-<attribute name="DKPN" x="114.3" y="91.44" size="1.778" layer="96" display="off"/>
+<instance part="C28" gate="G$1" x="109.22" y="91.44" smashed="yes">
+<attribute name="NAME" x="110.236" y="92.075" size="1.778" layer="95"/>
+<attribute name="VALUE" x="110.236" y="87.249" size="1.778" layer="96"/>
+<attribute name="DKPN" x="109.22" y="91.44" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="GND8" gate="1" x="114.3" y="83.82" smashed="yes">
-<attribute name="VALUE" x="114.3" y="83.566" size="1.778" layer="96" align="top-center"/>
+<instance part="GND8" gate="1" x="109.22" y="83.82" smashed="yes">
+<attribute name="VALUE" x="109.22" y="83.566" size="1.778" layer="96" align="top-center"/>
 </instance>
 <instance part="R17" gate="G$1" x="144.78" y="86.36" smashed="yes" rot="R180">
 <attribute name="NAME" x="150.368" y="84.6074" size="1.778" layer="95" rot="R180"/>
@@ -12308,6 +12320,20 @@ Standard 6 pin header for AVR programming</description>
 <attribute name="VALUE" x="133.604" y="85.471" size="1.778" layer="96" rot="R180"/>
 <attribute name="DKPN" x="137.16" y="86.36" size="1.778" layer="96" rot="R270" display="off"/>
 </instance>
+<instance part="C9" gate="G$1" x="144.78" y="91.44" smashed="yes" rot="R270">
+<attribute name="NAME" x="145.415" y="90.424" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="140.589" y="90.424" size="1.778" layer="96" rot="R270"/>
+<attribute name="VOLTAGE" x="144.78" y="91.44" size="1.778" layer="96" rot="R270" display="off"/>
+<attribute name="DKPN" x="144.78" y="91.44" size="1.778" layer="96" rot="R270" display="off"/>
+</instance>
+<instance part="R8" gate="G$1" x="121.92" y="114.3" smashed="yes" rot="R90">
+<attribute name="NAME" x="120.1674" y="111.252" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="120.142" y="115.57" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="R9" gate="G$1" x="129.54" y="121.92" smashed="yes" rot="R180">
+<attribute name="NAME" x="132.588" y="120.1674" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="128.27" y="120.142" size="1.778" layer="96" rot="R180"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -12316,7 +12342,7 @@ Standard 6 pin header for AVR programming</description>
 <segment>
 <pinref part="CN1" gate="G$1" pin="1"/>
 <pinref part="SUPPLY17" gate="G$1" pin="VBATT"/>
-<wire x1="121.92" y1="119.38" x2="114.3" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="124.46" x2="152.4" y2="124.46" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U7" gate="G$1" pin="VIN"/>
@@ -12332,47 +12358,10 @@ Standard 6 pin header for AVR programming</description>
 <pinref part="C1" gate="G$1" pin="2"/>
 </segment>
 <segment>
-<pinref part="U1" gate="ADXL375BCCZ-RL7" pin="GND"/>
-<pinref part="GND5" gate="1" pin="GND"/>
-<wire x1="71.12" y1="71.12" x2="73.66" y2="71.12" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="C4" gate="G$1" pin="2"/>
-<pinref part="GND4" gate="1" pin="GND"/>
-<wire x1="0" y1="86.36" x2="7.62" y2="86.36" width="0.1524" layer="91"/>
-<pinref part="U1" gate="ADXL375BCCZ-RL7" pin="VS"/>
-<pinref part="C3" gate="G$1" pin="2"/>
-<wire x1="25.4" y1="86.36" x2="7.62" y2="86.36" width="0.1524" layer="91"/>
-<junction x="7.62" y="86.36"/>
-<junction x="7.62" y="86.36"/>
-</segment>
-<segment>
-<pinref part="C5" gate="G$1" pin="2"/>
-<wire x1="0" y1="76.2" x2="2.54" y2="76.2" width="0.1524" layer="91"/>
-<wire x1="2.54" y1="76.2" x2="2.54" y2="73.66" width="0.1524" layer="91"/>
-<pinref part="GND3" gate="1" pin="GND"/>
-</segment>
-<segment>
 <pinref part="U6" gate="A" pin="GND"/>
-<wire x1="-12.7" y1="45.72" x2="-7.62" y2="45.72" width="0.1524" layer="91"/>
-<wire x1="-7.62" y1="45.72" x2="-7.62" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="-12.7" y1="45.72" x2="-10.16" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="-10.16" y1="45.72" x2="-10.16" y2="43.18" width="0.1524" layer="91"/>
 <pinref part="GND7" gate="1" pin="GND"/>
-</segment>
-<segment>
-<pinref part="C8" gate="G$1" pin="2"/>
-<pinref part="C7" gate="G$1" pin="2"/>
-<wire x1="12.7" y1="53.34" x2="5.08" y2="53.34" width="0.1524" layer="91"/>
-<wire x1="12.7" y1="53.34" x2="20.32" y2="53.34" width="0.1524" layer="91"/>
-<junction x="12.7" y="53.34"/>
-<wire x1="20.32" y1="53.34" x2="20.32" y2="50.8" width="0.1524" layer="91"/>
-<pinref part="U2" gate="ADXL375BCCZ-RL7" pin="VS"/>
-<wire x1="20.32" y1="50.8" x2="22.86" y2="50.8" width="0.1524" layer="91"/>
-<pinref part="GND9" gate="1" pin="GND"/>
-</segment>
-<segment>
-<pinref part="U2" gate="ADXL375BCCZ-RL7" pin="GND"/>
-<pinref part="GND10" gate="1" pin="GND"/>
-<wire x1="68.58" y1="35.56" x2="71.12" y2="35.56" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="J2" gate="G$1" pin="1"/>
@@ -12439,11 +12428,11 @@ Standard 6 pin header for AVR programming</description>
 <segment>
 <pinref part="CN1" gate="G$1" pin="SHIELD"/>
 <pinref part="GND25" gate="1" pin="GND"/>
-<wire x1="121.92" y1="114.3" x2="114.3" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="119.38" x2="152.4" y2="119.38" width="0.1524" layer="91"/>
 <pinref part="CN1" gate="G$1" pin="2"/>
-<wire x1="121.92" y1="116.84" x2="114.3" y2="116.84" width="0.1524" layer="91"/>
-<wire x1="114.3" y1="116.84" x2="114.3" y2="114.3" width="0.1524" layer="91"/>
-<junction x="114.3" y="114.3"/>
+<wire x1="160.02" y1="121.92" x2="152.4" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="152.4" y1="121.92" x2="152.4" y2="119.38" width="0.1524" layer="91"/>
+<junction x="152.4" y="119.38"/>
 </segment>
 <segment>
 <pinref part="ISP1" gate="G$1" pin="GND"/>
@@ -12467,11 +12456,6 @@ Standard 6 pin header for AVR programming</description>
 <pinref part="R10" gate="G$1" pin="1"/>
 <pinref part="GND29" gate="1" pin="GND"/>
 <wire x1="266.7" y1="27.94" x2="266.7" y2="30.48" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="JP1" gate="A" pin="3"/>
-<pinref part="GND30" gate="1" pin="GND"/>
-<wire x1="160.02" y1="114.3" x2="152.4" y2="114.3" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND31" gate="1" pin="GND"/>
@@ -12503,7 +12487,7 @@ Standard 6 pin header for AVR programming</description>
 <segment>
 <pinref part="C27" gate="G$1" pin="2"/>
 <pinref part="GND36" gate="1" pin="GND"/>
-<wire x1="20.32" y1="-12.7" x2="20.32" y2="-17.78" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="-12.7" x2="20.32" y2="-15.24" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U5" gate="G$1" pin="SA0/SDO"/>
@@ -12511,8 +12495,8 @@ Standard 6 pin header for AVR programming</description>
 <wire x1="71.12" y1="0" x2="73.66" y2="0" width="0.1524" layer="91"/>
 <pinref part="C24" gate="G$1" pin="2"/>
 <wire x1="73.66" y1="0" x2="86.36" y2="0" width="0.1524" layer="91"/>
-<wire x1="43.18" y1="17.78" x2="45.72" y2="17.78" width="0.1524" layer="91"/>
-<wire x1="45.72" y1="17.78" x2="45.72" y2="7.62" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="15.24" x2="45.72" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="45.72" y1="15.24" x2="45.72" y2="7.62" width="0.1524" layer="91"/>
 <pinref part="C25" gate="G$1" pin="2"/>
 <wire x1="45.72" y1="7.62" x2="43.18" y2="7.62" width="0.1524" layer="91"/>
 <wire x1="45.72" y1="7.62" x2="73.66" y2="7.62" width="0.1524" layer="91"/>
@@ -12540,53 +12524,91 @@ Standard 6 pin header for AVR programming</description>
 <junction x="195.58" y="2.54"/>
 </segment>
 <segment>
-<wire x1="114.3" y1="86.36" x2="121.92" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="86.36" x2="116.84" y2="86.36" width="0.1524" layer="91"/>
 <pinref part="C11" gate="G$1" pin="2"/>
-<wire x1="121.92" y1="86.36" x2="129.54" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="86.36" x2="124.46" y2="86.36" width="0.1524" layer="91"/>
 <pinref part="C12" gate="G$1" pin="2"/>
-<junction x="121.92" y="86.36"/>
+<junction x="116.84" y="86.36"/>
 <pinref part="C28" gate="G$1" pin="2"/>
 <pinref part="GND8" gate="1" pin="GND"/>
-<junction x="114.3" y="86.36"/>
+<junction x="109.22" y="86.36"/>
 <pinref part="C6" gate="G$1" pin="2"/>
-<junction x="129.54" y="86.36"/>
+<junction x="124.46" y="86.36"/>
+<wire x1="124.46" y1="86.36" x2="129.54" y2="86.36" width="0.1524" layer="91"/>
+<pinref part="C9" gate="G$1" pin="2"/>
 <wire x1="129.54" y1="86.36" x2="132.08" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="91.44" x2="129.54" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="91.44" x2="129.54" y2="86.36" width="0.1524" layer="91"/>
+<junction x="129.54" y="86.36"/>
+</segment>
+<segment>
+<pinref part="C5" gate="G$1" pin="2"/>
+<pinref part="GND3" gate="1" pin="GND"/>
+<wire x1="0" y1="71.12" x2="2.54" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="2.54" y1="71.12" x2="2.54" y2="68.58" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U2" gate="ADXL375BCCZ-RL7" pin="GND"/>
+<wire x1="71.12" y1="35.56" x2="73.66" y2="35.56" width="0.1524" layer="91"/>
+<pinref part="GND10" gate="1" pin="GND"/>
+<wire x1="73.66" y1="35.56" x2="73.66" y2="33.02" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U1" gate="ADXL375BCCZ-RL7" pin="GND"/>
+<wire x1="71.12" y1="71.12" x2="73.66" y2="71.12" width="0.1524" layer="91"/>
+<pinref part="GND5" gate="1" pin="GND"/>
+<wire x1="73.66" y1="71.12" x2="73.66" y2="68.58" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="C4" gate="G$1" pin="2"/>
+<wire x1="12.7" y1="91.44" x2="10.16" y2="91.44" width="0.1524" layer="91"/>
+<pinref part="GND4" gate="1" pin="GND"/>
+<wire x1="10.16" y1="91.44" x2="10.16" y2="86.36" width="0.1524" layer="91"/>
+<pinref part="C3" gate="G$1" pin="2"/>
+<wire x1="10.16" y1="86.36" x2="10.16" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="12.7" y1="86.36" x2="10.16" y2="86.36" width="0.1524" layer="91"/>
+<junction x="10.16" y="86.36"/>
+</segment>
+<segment>
+<pinref part="GND9" gate="1" pin="GND"/>
+<wire x1="10.16" y1="48.26" x2="10.16" y2="50.8" width="0.1524" layer="91"/>
+<pinref part="C7" gate="G$1" pin="2"/>
+<wire x1="10.16" y1="50.8" x2="10.16" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="10.16" y1="55.88" x2="12.7" y2="55.88" width="0.1524" layer="91"/>
+<pinref part="C8" gate="G$1" pin="2"/>
+<wire x1="12.7" y1="50.8" x2="10.16" y2="50.8" width="0.1524" layer="91"/>
+<junction x="10.16" y="50.8"/>
+</segment>
+<segment>
+<pinref part="R8" gate="G$1" pin="1"/>
+<pinref part="GND30" gate="1" pin="GND"/>
+<wire x1="121.92" y1="109.22" x2="121.92" y2="106.68" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="3.3V" class="0">
 <segment>
-<pinref part="U1" gate="ADXL375BCCZ-RL7" pin="VDDI/O"/>
-<wire x1="25.4" y1="91.44" x2="25.4" y2="96.52" width="0.1524" layer="91"/>
-<wire x1="25.4" y1="96.52" x2="7.62" y2="96.52" width="0.1524" layer="91"/>
-<pinref part="SUPPLY4" gate="G$1" pin="3.3V"/>
-<wire x1="25.4" y1="96.52" x2="25.4" y2="99.06" width="0.1524" layer="91"/>
-<junction x="25.4" y="96.52"/>
-<pinref part="C3" gate="G$1" pin="1"/>
-<wire x1="7.62" y1="93.98" x2="7.62" y2="96.52" width="0.1524" layer="91"/>
-<pinref part="C4" gate="G$1" pin="1"/>
-<wire x1="0" y1="93.98" x2="0" y2="96.52" width="0.1524" layer="91"/>
-<wire x1="0" y1="96.52" x2="7.62" y2="96.52" width="0.1524" layer="91"/>
-<junction x="7.62" y="96.52"/>
-</segment>
-<segment>
 <pinref part="U6" gate="A" pin="VCC"/>
-<wire x1="-12.7" y1="71.12" x2="-12.7" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="-12.7" y1="71.12" x2="-10.16" y2="71.12" width="0.1524" layer="91"/>
 <pinref part="C5" gate="G$1" pin="1"/>
-<wire x1="-12.7" y1="76.2" x2="-12.7" y2="83.82" width="0.1524" layer="91"/>
-<wire x1="-7.62" y1="76.2" x2="-12.7" y2="76.2" width="0.1524" layer="91"/>
-<junction x="-12.7" y="76.2"/>
+<wire x1="-10.16" y1="71.12" x2="-10.16" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="-7.62" y1="71.12" x2="-10.16" y2="71.12" width="0.1524" layer="91"/>
+<junction x="-10.16" y="71.12"/>
 <pinref part="SUPPLY5" gate="G$1" pin="3.3V"/>
 </segment>
 <segment>
-<pinref part="U2" gate="ADXL375BCCZ-RL7" pin="VDDI/O"/>
-<pinref part="C8" gate="G$1" pin="1"/>
-<wire x1="22.86" y1="55.88" x2="22.86" y2="60.96" width="0.1524" layer="91"/>
-<wire x1="22.86" y1="60.96" x2="12.7" y2="60.96" width="0.1524" layer="91"/>
-<pinref part="C7" gate="G$1" pin="1"/>
-<wire x1="5.08" y1="60.96" x2="12.7" y2="60.96" width="0.1524" layer="91"/>
-<junction x="12.7" y="60.96"/>
 <pinref part="SUPPLY8" gate="G$1" pin="3.3V"/>
-<wire x1="22.86" y1="63.5" x2="22.86" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="58.42" x2="22.86" y2="55.88" width="0.1524" layer="91"/>
+<pinref part="U2" gate="ADXL375BCCZ-RL7" pin="VDDI/O"/>
+<wire x1="25.4" y1="55.88" x2="22.86" y2="55.88" width="0.1524" layer="91"/>
+<pinref part="C7" gate="G$1" pin="1"/>
+<wire x1="20.32" y1="55.88" x2="22.86" y2="55.88" width="0.1524" layer="91"/>
+<junction x="22.86" y="55.88"/>
+<pinref part="U2" gate="ADXL375BCCZ-RL7" pin="VS"/>
+<pinref part="C8" gate="G$1" pin="1"/>
+<wire x1="25.4" y1="50.8" x2="22.86" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="50.8" x2="20.32" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="55.88" x2="22.86" y2="50.8" width="0.1524" layer="91"/>
+<junction x="22.86" y="50.8"/>
 </segment>
 <segment>
 <pinref part="J1" gate="G$1" pin="VDD"/>
@@ -12647,14 +12669,14 @@ Standard 6 pin header for AVR programming</description>
 <segment>
 <pinref part="SUPPLY2" gate="G$1" pin="3.3V"/>
 <pinref part="C24" gate="G$1" pin="1"/>
-<wire x1="33.02" y1="20.32" x2="33.02" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="17.78" x2="33.02" y2="15.24" width="0.1524" layer="91"/>
 <pinref part="U5" gate="G$1" pin="VDD"/>
-<wire x1="33.02" y1="17.78" x2="35.56" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="15.24" x2="35.56" y2="15.24" width="0.1524" layer="91"/>
 <wire x1="35.56" y1="0" x2="33.02" y2="0" width="0.1524" layer="91"/>
 <wire x1="33.02" y1="0" x2="33.02" y2="7.62" width="0.1524" layer="91"/>
-<junction x="33.02" y="17.78"/>
+<junction x="33.02" y="15.24"/>
 <pinref part="C25" gate="G$1" pin="1"/>
-<wire x1="33.02" y1="7.62" x2="33.02" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="7.62" x2="33.02" y2="15.24" width="0.1524" layer="91"/>
 <wire x1="35.56" y1="7.62" x2="33.02" y2="7.62" width="0.1524" layer="91"/>
 <junction x="33.02" y="7.62"/>
 </segment>
@@ -12680,16 +12702,31 @@ Standard 6 pin header for AVR programming</description>
 <wire x1="152.4" y1="88.9" x2="149.86" y2="88.9" width="0.1524" layer="91"/>
 <junction x="149.86" y="88.9"/>
 <pinref part="SUPPLY6" gate="G$1" pin="3.3V"/>
-<wire x1="149.86" y1="93.98" x2="129.54" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="149.86" y1="93.98" x2="124.46" y2="93.98" width="0.1524" layer="91"/>
 <pinref part="C11" gate="G$1" pin="1"/>
-<wire x1="129.54" y1="93.98" x2="121.92" y2="93.98" width="0.1524" layer="91"/>
-<junction x="129.54" y="93.98"/>
+<wire x1="124.46" y1="93.98" x2="116.84" y2="93.98" width="0.1524" layer="91"/>
+<junction x="124.46" y="93.98"/>
 <pinref part="C12" gate="G$1" pin="1"/>
-<wire x1="121.92" y1="93.98" x2="114.3" y2="93.98" width="0.1524" layer="91"/>
-<junction x="121.92" y="93.98"/>
+<wire x1="116.84" y1="93.98" x2="109.22" y2="93.98" width="0.1524" layer="91"/>
+<junction x="116.84" y="93.98"/>
 <pinref part="C28" gate="G$1" pin="1"/>
 <pinref part="R17" gate="G$1" pin="1"/>
 <junction x="149.86" y="86.36"/>
+</segment>
+<segment>
+<pinref part="SUPPLY4" gate="G$1" pin="3.3V"/>
+<wire x1="22.86" y1="93.98" x2="22.86" y2="91.44" width="0.1524" layer="91"/>
+<pinref part="U1" gate="ADXL375BCCZ-RL7" pin="VDDI/O"/>
+<wire x1="22.86" y1="91.44" x2="25.4" y2="91.44" width="0.1524" layer="91"/>
+<pinref part="C4" gate="G$1" pin="1"/>
+<wire x1="20.32" y1="91.44" x2="22.86" y2="91.44" width="0.1524" layer="91"/>
+<junction x="22.86" y="91.44"/>
+<pinref part="U1" gate="ADXL375BCCZ-RL7" pin="VS"/>
+<pinref part="C3" gate="G$1" pin="1"/>
+<wire x1="25.4" y1="86.36" x2="22.86" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="86.36" x2="20.32" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="91.44" x2="22.86" y2="86.36" width="0.1524" layer="91"/>
+<junction x="22.86" y="86.36"/>
 </segment>
 </net>
 <net name="CS1" class="0">
@@ -12717,8 +12754,8 @@ Standard 6 pin header for AVR programming</description>
 </segment>
 <segment>
 <pinref part="U2" gate="ADXL375BCCZ-RL7" pin="SCL/SCLK"/>
-<wire x1="22.86" y1="40.64" x2="17.78" y2="40.64" width="0.1524" layer="91"/>
-<label x="17.78" y="40.64" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="25.4" y1="40.64" x2="20.32" y2="40.64" width="0.1524" layer="91"/>
+<label x="20.32" y="40.64" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="J1" gate="G$1" pin="CLK"/>
@@ -12756,8 +12793,8 @@ Standard 6 pin header for AVR programming</description>
 </segment>
 <segment>
 <pinref part="U2" gate="ADXL375BCCZ-RL7" pin="SDO/ALTADDRESS"/>
-<wire x1="68.58" y1="45.72" x2="73.66" y2="45.72" width="0.1524" layer="91"/>
-<label x="73.66" y="45.72" size="1.27" layer="95" xref="yes"/>
+<wire x1="71.12" y1="45.72" x2="76.2" y2="45.72" width="0.1524" layer="91"/>
+<label x="76.2" y="45.72" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="J1" gate="G$1" pin="DAT0"/>
@@ -12810,8 +12847,8 @@ Standard 6 pin header for AVR programming</description>
 </segment>
 <segment>
 <pinref part="U2" gate="ADXL375BCCZ-RL7" pin="CS"/>
-<wire x1="22.86" y1="45.72" x2="17.78" y2="45.72" width="0.1524" layer="91"/>
-<label x="17.78" y="45.72" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="25.4" y1="45.72" x2="20.32" y2="45.72" width="0.1524" layer="91"/>
+<label x="20.32" y="45.72" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="U4" gate="G$0" pin="PA21"/>
@@ -12827,8 +12864,8 @@ Standard 6 pin header for AVR programming</description>
 </segment>
 <segment>
 <pinref part="U2" gate="ADXL375BCCZ-RL7" pin="SDA/SDI/SDIO"/>
-<wire x1="22.86" y1="35.56" x2="17.78" y2="35.56" width="0.1524" layer="91"/>
-<label x="17.78" y="35.56" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="25.4" y1="35.56" x2="20.32" y2="35.56" width="0.1524" layer="91"/>
+<label x="20.32" y="35.56" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="D-" class="0">
@@ -12879,8 +12916,8 @@ Standard 6 pin header for AVR programming</description>
 <net name="INT2" class="0">
 <segment>
 <pinref part="U2" gate="ADXL375BCCZ-RL7" pin="INT1"/>
-<wire x1="68.58" y1="55.88" x2="73.66" y2="55.88" width="0.1524" layer="91"/>
-<label x="73.66" y="55.88" size="1.27" layer="95" xref="yes"/>
+<wire x1="71.12" y1="55.88" x2="76.2" y2="55.88" width="0.1524" layer="91"/>
+<label x="76.2" y="55.88" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <wire x1="152.4" y1="53.34" x2="147.32" y2="53.34" width="0.1524" layer="91"/>
@@ -12891,8 +12928,8 @@ Standard 6 pin header for AVR programming</description>
 <net name="INT3" class="0">
 <segment>
 <pinref part="U2" gate="ADXL375BCCZ-RL7" pin="INT2"/>
-<wire x1="68.58" y1="50.8" x2="73.66" y2="50.8" width="0.1524" layer="91"/>
-<label x="73.66" y="50.8" size="1.27" layer="95" xref="yes"/>
+<wire x1="71.12" y1="50.8" x2="76.2" y2="50.8" width="0.1524" layer="91"/>
+<label x="76.2" y="50.8" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <wire x1="152.4" y1="50.8" x2="147.32" y2="50.8" width="0.1524" layer="91"/>
@@ -13036,8 +13073,8 @@ Standard 6 pin header for AVR programming</description>
 <segment>
 <pinref part="P+5" gate="1" pin="+5V"/>
 <pinref part="JP1" gate="A" pin="1"/>
-<wire x1="152.4" y1="121.92" x2="152.4" y2="119.38" width="0.1524" layer="91"/>
-<wire x1="152.4" y1="119.38" x2="160.02" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="127" x2="134.62" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="124.46" x2="139.7" y2="124.46" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="P+8" gate="1" pin="+5V"/>
@@ -13132,14 +13169,18 @@ Standard 6 pin header for AVR programming</description>
 </net>
 <net name="RECEIVER" class="0">
 <segment>
-<pinref part="JP1" gate="A" pin="2"/>
-<wire x1="160.02" y1="116.84" x2="149.86" y2="116.84" width="0.1524" layer="91"/>
-<label x="149.86" y="116.84" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-<segment>
 <wire x1="152.4" y1="68.58" x2="147.32" y2="68.58" width="0.1524" layer="91"/>
 <label x="147.32" y="68.58" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="U4" gate="G$0" pin="PA03"/>
+</segment>
+<segment>
+<pinref part="R8" gate="G$1" pin="2"/>
+<wire x1="121.92" y1="119.38" x2="121.92" y2="121.92" width="0.1524" layer="91"/>
+<pinref part="R9" gate="G$1" pin="2"/>
+<wire x1="121.92" y1="121.92" x2="124.46" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="121.92" x2="119.38" y2="121.92" width="0.1524" layer="91"/>
+<junction x="121.92" y="121.92"/>
+<label x="119.38" y="121.92" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="N$9" class="0">
@@ -13234,9 +13275,23 @@ Standard 6 pin header for AVR programming</description>
 <wire x1="139.7" y1="86.36" x2="139.7" y2="81.28" width="0.1524" layer="91"/>
 <junction x="139.7" y="86.36"/>
 <wire x1="152.4" y1="81.28" x2="139.7" y2="81.28" width="0.1524" layer="91"/>
-<wire x1="139.7" y1="81.28" x2="134.62" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="81.28" x2="137.16" y2="81.28" width="0.1524" layer="91"/>
 <junction x="139.7" y="81.28"/>
-<label x="134.62" y="81.28" size="1.27" layer="95" rot="R180" xref="yes"/>
+<label x="137.16" y="81.28" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="N$1" class="0">
+<segment>
+<pinref part="U4" gate="G$0" pin="VDDCORE"/>
+<pinref part="C9" gate="G$1" pin="1"/>
+<wire x1="152.4" y1="91.44" x2="147.32" y2="91.44" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$7" class="0">
+<segment>
+<pinref part="JP1" gate="A" pin="2"/>
+<wire x1="139.7" y1="121.92" x2="134.62" y2="121.92" width="0.1524" layer="91"/>
+<pinref part="R9" gate="G$1" pin="1"/>
 </segment>
 </net>
 </nets>

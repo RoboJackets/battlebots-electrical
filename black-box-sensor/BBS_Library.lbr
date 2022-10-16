@@ -1406,8 +1406,8 @@ Source: Analog Devices .. 780914713ADD8704_0.pdf</description>
 <pin name="PA21" x="-20.32" y="-25.4" length="middle"/>
 <pin name="PA22" x="-20.32" y="-27.94" length="middle"/>
 <pin name="PA23" x="-20.32" y="-30.48" length="middle"/>
-<pin name="PA24" x="-20.32" y="-33.02" length="middle"/>
-<pin name="PA25" x="-20.32" y="-35.56" length="middle"/>
+<pin name="PA24/D-" x="-20.32" y="-33.02" length="middle"/>
+<pin name="PA25/D+" x="-20.32" y="-35.56" length="middle"/>
 <pin name="PA27" x="-20.32" y="-38.1" length="middle"/>
 <pin name="PA28" x="-20.32" y="-40.64" length="middle"/>
 <pin name="PA30" x="-20.32" y="-43.18" length="middle"/>
@@ -1930,8 +1930,8 @@ https://www.ti.com/lit/ds/symlink/txu0304.pdf?ts=1646321006193&amp;ref_url=https
 <connect gate="G$0" pin="PA21" pad="30"/>
 <connect gate="G$0" pin="PA22" pad="31"/>
 <connect gate="G$0" pin="PA23" pad="32"/>
-<connect gate="G$0" pin="PA24" pad="33"/>
-<connect gate="G$0" pin="PA25" pad="34"/>
+<connect gate="G$0" pin="PA24/D-" pad="33"/>
+<connect gate="G$0" pin="PA25/D+" pad="34"/>
 <connect gate="G$0" pin="PA27" pad="39"/>
 <connect gate="G$0" pin="PA28" pad="41"/>
 <connect gate="G$0" pin="PA30" pad="45"/>
